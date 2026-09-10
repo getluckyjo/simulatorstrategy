@@ -302,8 +302,8 @@ entry to Golfzon. Ernie Els — two-time U.S. Open champion — on the official 
 Open. No hardware, no site cost, integration on their SDK.
 
 **The opening (see §14).** We arrive as a customer: the Virgin Golf order — Golfzon in every Virgin
-Active club in Southern Africa — and upsell the challenge. The pitch site for this is
-`page/golfzon.html`.
+Active club in Southern Africa — and upsell the challenge. The stage-one site is `golfzon/`
+(deployed as getluckygolfzon.vercel.app); the artifact copy is `page/golfzon.html`.
 
 **Entry paths, in order:**
 1. **Sean Pyun, direct.** The most empowered person outside Daejeon and the one whose mandate
@@ -489,52 +489,59 @@ Three deal shapes, in the order we offer them:
 
 ## 14. The Virgin Active play — arriving at Golfzon as a customer (added 10 September 2026)
 
-**The idea.** Instead of walking into Golfzon as a start-up asking for an integration, we walk in
-as a customer with a national order behind us: **"Virgin Golf" — a Golfzon golf zone in every
-Virgin Active health club in Southern Africa** — and then upsell the challenge on top. Get Lucky
-pitches Virgin Active; Golfzon supplies the platform; Santam's paper and Ernie's name make it a
-decision rather than a conversation. The pitch site is `page/golfzon.html`.
+**The idea, in two stages.** Stage one: we go to Golfzon as a **buyer**. Get Lucky and Ernie Els
+are building **"Virgin Golf by Ernie Els"** — a golf zone in every Virgin Active health club in
+Southern Africa — and we are sourcing **200 simulators** for it. That brief gets the face-to-face
+meeting (Fairfax, November 2026). Stage two, in the room: the insured hole-in-one challenge inside
+Golfzon's software everywhere, the Million Dollar Shot, the US pilot — the whole of this document.
+**Nothing from stage two is on the stage-one site** beyond one teaser line.
+
+**The stage-one site** is `golfzon/` (a static site in the Get Lucky brand — PosterGothic, Inter,
+deep green, cream, gold — built from the Ernie partnership page design and the four Ernie
+photographs uploaded to `main`), deployed to Vercel as `getluckygolfzon.vercel.app`. A copy with
+inlined assets is published privately as the artifact from `page/golfzon.html`.
 
 **Why Virgin Active (sources in `research/market-research.md` §15):**
 
 | Fact | Why it matters |
 |---|---|
-| 136 clubs across South Africa, Botswana and Namibia; **623,000 active members** (March 2026); Southern Africa is Virgin Active's largest territory at **35% of group revenue** (Italy 27%, UK 24%) | The only national chain in Africa that can take a 250-bay order |
+| 136 clubs across South Africa, Botswana and Namibia; **623,000 active members** (March 2026); Southern Africa is Virgin Active's largest territory at **35% of group revenue** (Italy 27%, UK 24%) | The only national chain in Africa that can take a 200-bay order |
 | **Sir Richard Branson opened the first Collection Country Club at Point (Green Point, Cape Town) in February 2026**: 5,500 m², a $5m-plus refit, padel, recovery suite — **and a golf simulator**; more Collection upgrades planned across SA in 2026 | Golf in the club is already Virgin Active's own idea at the premium tier; we scale it |
 | Brait (80%, Christo Wiese; Virgin Group 20%) said on 18 June 2026 it will **list or sell Virgin Active within two years**, backed by a $147m rights offer; Southern African revenue +6% on yield from refurbished clubs; group EBITDA +37% | A premium-yield product in every club is what the listing story needs; the balance sheet already spends on refits |
 | Group CEO Dean Kowarski is repositioning the clubs as "social wellness clubs" | A golf zone is social wellness with a scoreboard |
 | **Virgin Active UK is installing two Trackman iO bays at Chiswick Riverside (2026)** | If the group standard is set in London it will be Trackman. We want it set in Cape Town, on Golfzon — this is the line that makes Golfzon move |
-| Golfzon markets a gyms-and-fitness vertical (commercial bays from $21,300) but has no chain-wide reference customer | We would be the case study their own sales pages ask for |
+| Golfzon markets a gyms-and-fitness vertical (commercial bays from $21,300; TwoVision NX quoted by third parties at $55–90k) but has no chain-wide reference customer | We would be the case study their own sales pages ask for |
 
-**The shape:** two bays in a standard club, three to four in a Collection club. Phase 1 (2027)
-10–12 Collection/flagship clubs, ~40 bays; Phase 2 (2027–28) 50 metro clubs, ~100 bays; Phase 3
-(2028–29) the rest incl. Botswana and Namibia, ~110 bays. **About 250 bays; a $6–10m platform
-order** at Golfzon's published commercial pricing (our estimate, installed). Members book it like a
-padel court; the Get Lucky challenge runs on the designated hole of every course from day one.
+**The order as briefed:** 200 units in three bay types — 40 Signature (TwoVision NX; 10–12
+Collection/flagship clubs at 3–4 bays), 120 Play (TwoVision / Vision Standard; 60 metro clubs at 2
+bays), 40 Practice (GDR Plus). Phase 1 (2027) 40 units; Phase 2 (2027–28) 100; Phase 3 (2028–29)
+60. Indicative order value at published and third-party pricing: **$8–12m** depending on mix — our
+estimate, not on the site. What we ask Golfzon for: pricing for 200 in three phases, two-bay and
+four-bay reference designs, a Southern African installation/service model, Network Play and a
+Golfzon Tour leg, and a named lead.
 
 **What it does for the strategy.** (1) The Golfzon conversation opens with an order, not an ask —
 Sean Pyun's mandate is growth, and a new territory with a national chain is growth. (2) It puts the
-challenge on 250 bays in the one market where we already hold a written skill-based opinion and a
-bound underwriter, so the SA deployment becomes the reference for the US and the telemetry that
-prices Santam's rate card. (3) It gives Virgin Active a listing-story product and Ernie a home-market
-moment. The challenge is not a revenue line for either operator — at a 10% attach the slip earns a
-bay a few hundred dollars a year — and we say so; the money for Golfzon is the hardware, for Virgin
-Active the bookings, and for us the US.
+challenge (stage two) on 200 bays in the one market where we already hold a written skill-based
+opinion and a bound underwriter, so the SA deployment becomes the reference for the US and the
+telemetry that prices Santam's rate card. (3) It gives Virgin Active a listing-story product and
+Ernie a home-market moment.
 
-**Honesty.** Virgin Active has not been approached, and neither has Golfzon. "Virgin Golf" is our
-working name; use of the Virgin brand is Virgin Active's and Virgin Group's call (the brand is
-licensed from Virgin Group). Bay counts are our proposal. Virgin Active South Africa's current
-managing director is not confirmed in our research (Jessica Spira left in 2023); confirm before
-the letter goes.
+**Honesty.** Virgin Active has not been approached, and neither has Golfzon. "Virgin Golf by Ernie
+Els" is our working name; use of the Virgin brand is Virgin Active's and Virgin Group's call (the
+brand is licensed from Virgin Group). Unit counts are a basis for a quote, not a purchase order —
+the site says so in the footer. Who signs the purchase order (Virgin Active, Get Lucky, or a JV) is
+an open question for the Virgin Active conversation. Virgin Active South Africa's current
+managing director is not confirmed in our research (Jessica Spira left in 2023).
 
-**Sequence.** Send the Golfzon pitch site to Sean Pyun in September–October with the Santam
-indication and the Ernie letter; ask for Southern African pricing, a two-bay and a four-bay
-reference design, and a named Golfzon lead. Pitch Virgin Active in Q4 2026, in Cape Town, together.
-The US pilot ask (Part Two of the site) rides on the same visit to Fairfax in November.
+**Sequence.** Send the site to Sean Pyun in September–October with the Ernie letter; ask for
+pricing, reference designs and a named lead; Fairfax in November; Virgin Active in Q4 2026 with
+Golfzon's name on the cover; stage two in the room.
 
 **Adds to the next-10 list:** (11) Virgin Active discovery — who owns club product and the
 Collection roll-out, and the Vitality relationship — by 30 September 2026 (JLR). (12) Golfzon
-Southern African pricing request the moment Pyun replies (JLR).
+Southern African pricing request the moment Pyun replies (JLR). (13) Ernie's counsel: the
+"by Ernie Els" naming needs sign-off before the site is sent (JLR).
 
 ---
 

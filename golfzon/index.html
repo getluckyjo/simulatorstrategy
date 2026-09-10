@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virgin Golf by Ernie Els × Golfzon</title>
+<meta name="description" content="Get Lucky and Ernie Els are building Virgin Golf: a golf zone in every Virgin Active club in Southern Africa. 200 simulators. One platform partner. A brief for Golfzon.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Virgin Golf by Ernie Els × Golfzon">
+<meta property="og:description" content="200 simulators for a golf zone in every Virgin Active club in Southern Africa. A brief for Golfzon from Get Lucky Golf Club and Ernie Els.">
+<meta property="og:image" content="/images/ernie-hero.jpg">
+<link rel="icon" type="image/png" href="/logos/logo-color.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="/fonts/PosterGothicRoundATF-Heavy.woff2" as="font" type="font/woff2" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @font-face { font-family: "PosterGothic"; src: url("/fonts/PosterGothicRoundATF-Heavy.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
+  :root {
+    --green: #335231; --green-light: #4a7a3d; --green-dark: #1e3120; --green-deep: #16261a;
+    --cream: #f5f0e1; --cream-dark: #e8e0cc; --white: #fdfcf5;
+    --gold: #c9a94e; --gold-light: #e8d48b; --gold-text: #7a5d20;
+    --charcoal: #2a2a2a;
+    --display: "PosterGothic", Impact, "Arial Narrow", "Arial Black", sans-serif;
+    --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+    --wrap: 72rem; --r: 18px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--green-deep); color: var(--cream); font-family: var(--sans); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  h1, h2, h3, .display { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: .01em; line-height: .95; margin: 0; text-wrap: balance; }
+  h1 { font-size: clamp(2.6rem, 8vw, 5.6rem); }
+  h2 { font-size: clamp(2rem, 5vw, 3.6rem); }
+  h3 { font-size: 1.35rem; line-height: 1.05; }
+  p { margin: 0; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding-inline: 24px; }
+  .eyebrow { font-family: var(--sans); font-size: .74rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+  .eyebrow.g { color: var(--green-light); }
+  .gold { color: var(--gold); } .mute { opacity: .7; } .tab { font-variant-numeric: tabular-nums; }
+  .lede { font-size: 1.15rem; line-height: 1.65; max-width: 44rem; }
+  @media (min-width: 640px) { .lede { font-size: 1.25rem; } }
+  .btn { display: inline-flex; align-items: center; gap: .5rem; border-radius: 999px; padding: 1rem 2rem; font-size: .82rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; transition: transform .15s ease, background .15s ease, border-color .15s ease, color .15s ease; }
+  .btn.gold { background: var(--gold); color: var(--green-deep); } .btn.gold:hover { transform: scale(1.04); background: var(--gold-light); }
+  .btn.ghost { border: 1px solid rgba(245,240,225,.35); color: var(--cream); } .btn.ghost:hover { border-color: var(--gold); color: var(--gold); }
+  .btn.ghost.dark { border-color: rgba(51,82,49,.35); color: var(--green); } .btn.ghost.dark:hover { border-color: var(--green); }
+  .btns { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 2.4rem; }
+  .halftone { position: absolute; inset: 0; background-image: radial-gradient(rgba(245,240,225,.16) 1px, transparent 1.4px); background-size: 7px 7px; pointer-events: none; }
+  .topo { background-image: repeating-radial-gradient(circle at 12% 18%, transparent 0 46px, rgba(245,240,225,.035) 46px 47px), repeating-radial-gradient(circle at 88% 82%, transparent 0 60px, rgba(245,240,225,.03) 60px 61px); }
+  section { position: relative; padding-block: 88px; }
+  @media (min-width: 640px) { section { padding-block: 112px; } }
+  .bg { position: absolute; inset: 0; overflow: hidden; }
+  .bg img { width: 100%; height: 100%; object-fit: cover; }
+  .bg .tint { position: absolute; inset: 0; }
+  .rel { position: relative; z-index: 1; }
+  .cream { background: var(--cream); color: var(--charcoal); }
+  .cream h2, .cream h3 { color: var(--green); }
+  .cream .lede, .cream p { color: rgba(42,42,42,.82); }
+  .deep { background: var(--green-deep); } .grn { background: var(--green); }
+
+  /* nav */
+  .nav { position: sticky; top: 0; z-index: 50; background: rgba(22,38,26,.82); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(245,240,225,.08); }
+  .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+  .nav img { height: 40px; width: auto; }
+  .nav .links { display: none; gap: 26px; font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+  .nav .links a { text-decoration: none; opacity: .78; } .nav .links a:hover { opacity: 1; color: var(--gold); }
+  @media (min-width: 900px) { .nav .links { display: flex; } }
+  .nav .cta { font-size: .72rem; padding: .7rem 1.2rem; }
+
+  /* hero */
+  .hero { min-height: min(82vh, 860px); display: flex; align-items: center; text-align: center; padding-block: 96px 80px; }
+  .hero .bg img { object-position: 68% 35%; }
+  .hero .tint.a { background: linear-gradient(90deg, rgba(22,38,26,.95), rgba(22,38,26,.7) 55%, rgba(22,38,26,.42)); }
+  .hero .tint.b { background: linear-gradient(180deg, rgba(22,38,26,.7), transparent 40%, rgba(22,38,26,.96)); }
+  .hero .wrap { max-width: 58rem; }
+  .hero .logo { height: 76px; width: auto; margin: 0 auto 2.2rem; }
+  .hero h1 span { color: var(--gold); display: block; }
+  .hero .lede { margin: 1.8rem auto 0; }
+  .hero .btns { justify-content: center; }
+  .hero .tag { margin-top: 2.4rem; font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; opacity: .5; }
+
+  /* stat strips */
+  .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  @media (min-width: 760px) { .stats { grid-template-columns: repeat(4, 1fr); } }
+  .stat .n { font-family: var(--display); font-size: clamp(2.4rem, 5vw, 3.4rem); color: var(--gold); line-height: 1; }
+  .stat .l { margin-top: .5rem; font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--cream); }
+  .stat .s { margin-top: .3rem; font-size: .8rem; line-height: 1.4; color: rgba(245,240,225,.55); }
+  .cream .stat .n { color: var(--green); } .cream .stat .l { color: var(--charcoal); } .cream .stat .s { color: rgba(42,42,42,.55); }
+
+  /* cards */
+  .cards { display: grid; gap: 18px; margin-top: 3rem; }
+  .cards.c2 { grid-template-columns: 1fr; } .cards.c3 { grid-template-columns: 1fr; } .cards.c4 { grid-template-columns: 1fr 1fr; }
+  @media (min-width: 700px) { .cards.c2 { grid-template-columns: 1fr 1fr; } .cards.c3 { grid-template-columns: repeat(3, 1fr); } .cards.c4 { grid-template-columns: repeat(4, 1fr); } }
+  .card { border-radius: var(--r); border: 1px solid rgba(245,240,225,.1); background: rgba(30,49,32,.55); padding: 26px; display: flex; flex-direction: column; gap: 10px; }
+  .card h3 { color: var(--cream); }
+  .card p { font-size: .95rem; line-height: 1.55; color: rgba(245,240,225,.68); }
+  .card .ic { width: 44px; height: 44px; border-radius: 50%; background: rgba(201,169,78,.15); display: grid; place-items: center; color: var(--gold); margin-bottom: 4px; }
+  .card .ic svg { width: 22px; height: 22px; }
+  .cream .card { border-color: rgba(51,82,49,.12); background: rgba(253,252,245,.6); }
+  .cream .card h3 { color: var(--green); } .cream .card p { color: rgba(42,42,42,.72); }
+  .cream .card .ic { background: rgba(51,82,49,.1); color: var(--green); }
+
+  /* two-col */
+  .two { display: grid; gap: 40px; align-items: start; }
+  @media (min-width: 900px) { .two { grid-template-columns: 1fr 1fr; gap: 56px; } }
+
+  /* order table */
+  .tablewrap { overflow-x: auto; border-radius: var(--r); border: 1px solid rgba(51,82,49,.14); background: rgba(253,252,245,.7); margin-top: 2rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .93rem; }
+  th, td { text-align: left; padding: 13px 16px; border-bottom: 1px solid rgba(51,82,49,.1); vertical-align: top; }
+  th { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-text); background: rgba(51,82,49,.06); }
+  tr:last-child td { border-bottom: 0; }
+  td.n { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; font-weight: 600; color: var(--green); }
+  tfoot td { font-weight: 700; color: var(--green); background: rgba(51,82,49,.06); }
+
+  /* list with gold ticks */
+  .ticks { list-style: none; padding: 0; margin: 1.6rem 0 0; display: grid; gap: 14px; }
+  .ticks li { display: grid; grid-template-columns: 26px 1fr; gap: 12px; align-items: start; line-height: 1.5; }
+  .ticks li::before { content: ""; width: 18px; height: 18px; margin-top: 4px; border-radius: 50%; background: var(--gold); -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center / 14px no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center / 14px no-repeat; background-color: var(--gold); }
+  .ticks li b { display: block; color: var(--cream); }
+  .cream .ticks li b { color: var(--green-dark); }
+  .ticks li span { font-size: .95rem; opacity: .75; }
+
+  /* phases */
+  .phases { display: grid; gap: 14px; margin-top: 2rem; }
+  @media (min-width: 700px) { .phases { grid-template-columns: repeat(3, 1fr); } }
+  .phase { border-radius: var(--r); padding: 24px; background: rgba(30,49,32,.55); border: 1px solid rgba(245,240,225,.1); }
+  .phase .k { font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+  .phase .n { font-family: var(--display); font-size: 2.6rem; line-height: 1; margin: .4rem 0 .3rem; }
+  .phase .n small { font-family: var(--sans); font-size: .95rem; font-weight: 500; text-transform: none; letter-spacing: 0; opacity: .6; margin-left: 6px; }
+  .phase p { font-size: .92rem; color: rgba(245,240,225,.68); }
+  .phase.top { background: var(--gold); border-color: var(--gold); color: var(--green-deep); }
+  .phase.top .k { color: var(--green-deep); } .phase.top p { color: rgba(30,49,32,.8); }
+
+  /* resume list */
+  .resume { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }
+  .resume li { display: grid; grid-template-columns: 22px 1fr; gap: 12px; }
+  .resume li svg { width: 20px; height: 20px; color: var(--gold); margin-top: 3px; }
+  .resume b { display: block; color: var(--cream); } .resume span { font-size: .92rem; color: rgba(245,240,225,.65); line-height: 1.5; }
+
+  /* team */
+  .team { display: grid; gap: 18px; margin-top: 2.6rem; }
+  @media (min-width: 700px) { .team { grid-template-columns: 1fr 1fr; } }
+  .person { display: grid; grid-template-columns: 84px 1fr; gap: 18px; align-items: center; border-radius: var(--r); border: 1px solid rgba(245,240,225,.1); background: rgba(30,49,32,.55); padding: 20px; }
+  .person img { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(201,169,78,.5); }
+  .person b { display: block; font-family: var(--display); font-size: 1.25rem; text-transform: uppercase; }
+  .person .role { font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+  .person p { font-size: .9rem; color: rgba(245,240,225,.65); margin-top: .4rem; }
+  .partners { margin-top: 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: 22px 36px; border-radius: var(--r); border: 1px solid rgba(245,240,225,.1); background: rgba(30,49,32,.4); padding: 22px 26px; }
+  .partners img { height: 40px; width: auto; }
+  .partners p { font-size: .9rem; color: rgba(245,240,225,.7); flex: 1 1 22rem; }
+
+  /* timeline */
+  .tl { list-style: none; padding: 0; margin: 2.4rem 0 0; display: grid; gap: 0; border-left: 2px solid rgba(51,82,49,.2); }
+  .tl li { position: relative; padding: 0 0 22px 26px; }
+  .tl li::before { content: ""; position: absolute; left: -8px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: var(--green); border: 3px solid var(--cream); }
+  .tl li.key::before { background: var(--gold); }
+  .tl time { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-text); }
+  .tl b { display: block; color: var(--green-dark); font-size: 1.05rem; }
+  .tl span { font-size: .92rem; color: rgba(42,42,42,.65); }
+
+  /* teaser */
+  .teaser { border-radius: var(--r); border: 1px solid rgba(201,169,78,.35); background: rgba(30,49,32,.5); padding: 28px 30px; display: grid; gap: 18px; align-items: center; }
+  @media (min-width: 760px) { .teaser { grid-template-columns: auto 1fr auto; gap: 28px; } }
+  .teaser .ic { width: 56px; height: 56px; border-radius: 50%; background: rgba(201,169,78,.15); display: grid; place-items: center; color: var(--gold); }
+  .teaser .ic svg { width: 26px; height: 26px; }
+  .teaser h3 { color: var(--cream); font-size: 1.6rem; } .teaser p { color: rgba(245,240,225,.7); margin-top: .4rem; }
+
+  /* cta */
+  .cta { text-align: center; padding-block: 120px; }
+  .cta .bg img { object-position: 30% center; }
+  .cta .tint { background: linear-gradient(90deg, rgba(22,38,26,.78), rgba(22,38,26,.9) 50%, rgba(22,38,26,.86)); }
+  .cta h2 span { color: var(--gold); display: block; }
+  .cta .btns { justify-content: center; }
+  .cta .flag { width: 40px; height: 40px; color: var(--gold); margin: 0 auto 1.4rem; }
+  footer { padding-block: 40px; border-top: 1px solid rgba(245,240,225,.08); font-size: .78rem; color: rgba(245,240,225,.5); }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 18px 32px; align-items: center; justify-content: space-between; }
+  footer img { height: 36px; width: auto; }
+  footer p { max-width: 54rem; line-height: 1.55; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a href="#top" aria-label="Get Lucky Golf Club"><img src="/logos/logo-dark-bg.png" alt="Get Lucky Golf Club" width="600" height="449"></a>
+    <div class="links">
+      <a href="#concept">The concept</a>
+      <a href="#order">The order</a>
+      <a href="#why">Why Golfzon</a>
+      <a href="#who">Who we are</a>
+      <a href="#timeline">Timeline</a>
+    </div>
+    <a class="btn gold cta" href="#meet">Book the meeting</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="bg" aria-hidden="true">
+    <img src="/images/ernie-hero.jpg" alt="" width="1024" height="864">
+    <div class="tint a"></div><div class="tint b"></div><div class="halftone" style="opacity:.5"></div>
+  </div>
+  <div class="wrap rel">
+    <img class="logo" src="/logos/logo-dark-bg.png" alt="Get Lucky Golf Club" width="600" height="449">
+    <p class="eyebrow">A brief for Golfzon · from Get Lucky Golf Club and Ernie Els</p>
+    <h1>Virgin Golf by Ernie Els. <span>200 simulators. One platform partner.</span></h1>
+    <p class="lede">Get Lucky and Ernie Els are building Virgin Golf: a golf zone in every Virgin Active health club in Southern Africa. We are choosing the simulator platform now, ahead of the Virgin Active roll-out proposal. We think it should be Golfzon, and we would like to meet you to say why.</p>
+    <div class="btns">
+      <a class="btn gold" href="#order">See the order</a>
+      <a class="btn ghost" href="#meet">Book the meeting</a>
+    </div>
+    <p class="tag">136 clubs · 623,000 members · Southern Africa · 2027–2029</p>
+  </div>
+</header>
+
+<section class="cream" id="concept">
+  <div class="bg" aria-hidden="true">
+    <img src="/images/ernie-invitation.jpg" alt="" width="2000" height="1334" style="object-position:50% 35%">
+    <div class="tint" style="background:linear-gradient(180deg, rgba(245,240,225,.9), rgba(245,240,225,.84) 50%, rgba(245,240,225,.94))"></div>
+  </div>
+  <div class="wrap rel">
+    <div class="two">
+      <div>
+        <p class="eyebrow g">The concept</p>
+        <h2>A golf zone in every Virgin Active club.</h2>
+        <p class="lede" style="margin-top:1.4rem">Virgin Active is the largest health-club operator in Africa: 136 clubs across South Africa, Botswana and Namibia and 623,000 active members. It is Virgin Active's biggest territory in the world, ahead of Italy and the UK. And in February 2026 it put a golf simulator into its first Collection Country Club, opened by Sir Richard Branson in Cape Town.</p>
+        <p class="lede" style="margin-top:1.2rem">Virgin Golf by Ernie Els takes that idea to every club: two bays in a standard club, four in a Collection club, booked the way members book a padel court. South Africa's most famous golfer on the door, and the country's most established insurer, Santam, behind the brand that runs it.</p>
+        <p style="margin-top:1.6rem; font-size:.82rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:rgba(42,42,42,.5)">— Johannes le Roux, Founder &amp; MD, Get Lucky Golf Club</p>
+      </div>
+      <div>
+        <ul class="ticks">
+          <li><div><b>The operator is ready for it.</b><span>Virgin Active calls its clubs "social wellness clubs" and is moving upmarket. The Collection tier already includes padel, recovery and a golf simulator, with more Collection upgrades planned across South Africa in 2026.</span></div></li>
+          <li><div><b>The owner needs a yield story.</b><span>Brait, which owns 80% of Virgin Active, told the market in June 2026 that it will list or sell the business within two years. Southern African revenue is growing on yield from refurbished clubs. A golf zone in every club is a yield product.</span></div></li>
+          <li><div><b>Ernie makes it a brand, not a bay.</b><span>Four majors, two U.S. Opens, a South African. Virgin Golf by Ernie Els gives every club a name members recognise before they walk in.</span></div></li>
+          <li><div><b>The proposal goes to Virgin Active in Q4 2026.</b><span>Our platform partner is chosen before then, so that we walk in with a reference design, a price and a name. We would like that name to be Golfzon.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="deep topo">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><div class="n tab">136</div><div class="l">Virgin Active clubs</div><div class="s">South Africa, Botswana and Namibia. 35% of Virgin Active's global revenue.</div></div>
+      <div class="stat"><div class="n tab">623,000</div><div class="l">Active members</div><div class="s">At March 2026. A member walks past the bay every visit, not only on golf days.</div></div>
+      <div class="stat"><div class="n tab">200</div><div class="l">Simulators</div><div class="s">Across three phases, 2027 to 2029. Collection and flagship clubs first.</div></div>
+      <div class="stat"><div class="n tab">139,000</div><div class="l">Handicapped golfers</div><div class="s">At 460-plus South African clubs. A winter and a weeknight home for all of them.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cream" id="order">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <p class="eyebrow g">The order</p>
+        <h2>What we are buying.</h2>
+        <p class="lede" style="margin-top:1.4rem">Two hundred simulators over three years, in three kinds of bay. Signature bays in the Collection clubs, play bays in the metro clubs, practice bays where the floor plan asks for them. One software platform across the chain so that a member in Sandton can play a member in Umhlanga on the same course on the same night.</p>
+        <ul class="ticks">
+          <li><div><b>Signature bays</b><span>The full experience for the Collection clubs: moving swing plate, multi-surface mat, the course library with Pebble Beach and St Andrews. Our assumption is TwoVision NX.</span></div></li>
+          <li><div><b>Play bays</b><span>The volume bay for a standard club: a two-bay zone that books by the hour, runs leagues and hosts a Friday night. TwoVision or Vision Standard.</span></div></li>
+          <li><div><b>Practice bays</b><span>A range bay for coaching and drills, tied to Golfzon Leadbetter content. GDR Plus.</span></div></li>
+        </ul>
+      </div>
+      <div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Bay</th><th>Where</th><th class="n">Units</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Signature</strong><br><span class="mute" style="font-size:.85rem">TwoVision NX</span></td><td>10–12 Collection and flagship clubs at 3–4 bays</td><td class="n">40</td></tr>
+              <tr><td><strong>Play</strong><br><span class="mute" style="font-size:.85rem">TwoVision / Vision Standard</span></td><td>60 metro clubs in Johannesburg, Pretoria, Cape Town and Durban at 2 bays</td><td class="n">120</td></tr>
+              <tr><td><strong>Practice</strong><br><span class="mute" style="font-size:.85rem">GDR Plus</span></td><td>Coaching bays in the larger clubs; the remaining clubs at 1 bay</td><td class="n">40</td></tr>
+            </tbody>
+            <tfoot><tr><td colspan="2">Total, 2027–2029</td><td class="n">200</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="phases">
+          <div class="phase"><div class="k">Phase 1 · 2027</div><div class="n">40<small>units</small></div><p>Collection and flagship clubs. The proof and the press. Point in Cape Town first.</p></div>
+          <div class="phase"><div class="k">Phase 2 · 2027–28</div><div class="n">100<small>units</small></div><p>The metro clubs. Network Play across cities, the member ladder, corporate nights.</p></div>
+          <div class="phase top"><div class="k">Phase 3 · 2028–29</div><div class="n">60<small>units</small></div><p>The rest of the chain, including Botswana and Namibia.</p></div>
+        </div>
+        <p style="margin-top:1.2rem; font-size:.82rem; color:rgba(42,42,42,.55)">Bay mix and phasing are our working assumptions and the basis for a quote, not a purchase order. The model mix is open to Golfzon's recommendation.</p>
+      </div>
+    </div>
+
+    <div class="cards c4" style="margin-top:3.4rem">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4z"/><path d="M8 20h8M12 16v4"/></svg></div><h3>Pricing for 200</h3><p>Unit and installation pricing by bay type, in three phases, with the financing options Golfzon offers commercial buyers.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div><h3>Reference designs</h3><p>A two-bay zone for a standard club and a four-bay zone for a Collection club: footprint, ceiling height, power, acoustics.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><h3>Service in Southern Africa</h3><p>Installation, training, spares and support for a 136-club chain: Golfzon's own team, a certified partner, or one we build together.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8a5 5 0 1 0-10 0v3l-2 3h14l-2-3z"/><path d="M10 18a2 2 0 0 0 4 0"/></svg></div><h3>Network Play and the Tour</h3><p>Chain-wide leagues, a Virgin Golf ladder, Golfzon Global membership for every player, and a Southern African leg of the Golfzon Tour.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="deep topo" id="why">
+  <div class="bg" aria-hidden="true">
+    <img src="/images/ernie-celebrate.jpg" alt="" width="1920" height="1080" style="object-position:50% 22%">
+    <div class="tint" style="background:linear-gradient(90deg, rgba(22,38,26,.96), rgba(22,38,26,.9) 50%, rgba(22,38,26,.84))"></div>
+    <div class="halftone" style="opacity:.4"></div>
+  </div>
+  <div class="wrap rel">
+    <p class="eyebrow">Why Golfzon</p>
+    <h2>The platform we want on the door <span class="gold">next to Ernie's name.</span></h2>
+    <p class="lede" style="margin-top:1.4rem; color:rgba(245,240,225,.78)">We have looked at the market. Golfzon is the only platform that is at once the world's largest, the official simulator of the U.S. Open, and already selling into gyms and fitness centres. What it does not yet have is a national health-club chain as a reference customer. We would like to be that.</p>
+    <div class="cards c3">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/><path d="M6 5H3v2a3 3 0 0 0 3 3M18 5h3v2a3 3 0 0 1-3 3"/></svg></div><h3>The U.S. Open's simulator</h3><p>Official indoor simulator of the U.S. Open and U.S. Women's Open. Our founding partner won the U.S. Open twice. That sentence sells itself in every club.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3>Thirteen thousand venues</h3><p>The most installed commercial platform in the world, Golf Digest's best simulator seven years running, 240-plus courses, and a moving swing plate nobody else matches at scale.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-5.5 7-12a7 7 0 0 0-14 0c0 6.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div><h3>A team in Virginia</h3><p>Golfzon's Global Business Division moved to Fairfax County in March 2026. A new territory is exactly the decision that office exists to make, and we will come to it.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16M6 15l4-6 4 4 4-7"/></svg></div><h3>Gyms are already a Golfzon vertical</h3><p>Golfzon sells to gyms and fitness centres today. A 136-club chain with 623,000 members is the case study those sales pages are missing.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 11a4 4 0 1 0-8 0M4 21a8 8 0 0 1 16 0"/></svg></div><h3>Leadbetter is in the group</h3><p>Coaching is half of a gym's golf product. Golfzon Leadbetter content in the practice bays makes Virgin Golf a place to get better, not just a place to play.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>Before the standard is set elsewhere</h3><p>Virgin Active's UK clubs are installing Trackman this year. If the group standard is set in London it will not be Golfzon. We would like it set in Cape Town.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cream" id="who">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <p class="eyebrow g">Who we are</p>
+        <h2>Get Lucky Golf Club.</h2>
+        <p class="lede" style="margin-top:1.4rem">Get Lucky runs South Africa's hole-in-one challenge: a golfer buys a swing at a signature par-3 for a prize up to R1,000,000, and the prize is insured. It is live at 25 partner courses, has sold 10,000 paid entries, and is underwritten by Santam, which also sponsors the platform in a three-year naming-rights deal.</p>
+        <p class="lede" style="margin-top:1.2rem">Ernie Els is our founding partner. Virgin Golf by Ernie Els is the next thing we are building together, and the simulator platform is its foundation.</p>
+        <div class="stats" style="margin-top:2.4rem">
+          <div class="stat"><div class="n tab">25</div><div class="l">Partner courses</div><div class="s">Live across South Africa</div></div>
+          <div class="stat"><div class="n tab">10,000</div><div class="l">Paid entries</div><div class="s">Insured, on the tee</div></div>
+          <div class="stat"><div class="n tab">$490K</div><div class="l">Santam sponsorship</div><div class="s">Three-year naming rights</div></div>
+          <div class="stat"><div class="n tab">4</div><div class="l">Majors</div><div class="s">Ernie Els, founding partner</div></div>
+        </div>
+      </div>
+      <div class="card" style="background:var(--green); border-color:var(--green); padding:30px">
+        <p class="eyebrow" style="margin-bottom:1.2rem">The name on the door</p>
+        <ul class="resume">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>Four majors, two of them U.S. Opens</b><span>Oakmont 1994, Congressional 1997, Muirfield 2002, Royal Lytham 2012.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>Former world number one, Hall of Fame</b><span>More than 70 professional wins on every tour that matters.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>A business that already travels</b><span>Ernie Els Design on five continents, Ernie Els Wines, the Els for Autism Foundation.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>South Africa's golfer</b><span>The one name every Virgin Active member already knows. Virgin Golf by Ernie Els is a brand on day one.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="deep">
+  <div class="wrap">
+    <p class="eyebrow">The people you would deal with</p>
+    <h2>Operators, not a procurement desk.</h2>
+    <div class="team">
+      <div class="person"><img src="/images/johannes.jpg" alt="Johannes le Roux" width="320" height="320"><div><b>Johannes le Roux</b><span class="role">Founder &amp; Managing Director</span><p>Serial entrepreneur and brand builder behind The Duchess, backed by AB InBev and RMB. Leads Get Lucky and the Virgin Golf project. Will travel to Fairfax.</p></div></div>
+      <div class="person"><img src="/images/andrew.jpg" alt="Andrew Davenport" width="320" height="149"><div><b>Andrew Davenport</b><span class="role">Founder &amp; Marketing Director</span><p>Brand strategist with 15 years in beverage and entertainment marketing. Runs partnerships, the Get Lucky Golf Show and the Virgin Active relationship.</p></div></div>
+    </div>
+    <div class="partners">
+      <img src="/logos/santam-white.png" alt="Santam" width="320" height="178">
+      <img src="/logos/indwe.png" alt="Indwe Risk Services" width="191" height="81" style="background:rgba(245,240,225,.9); padding:6px 10px; border-radius:8px">
+      <p>Get Lucky's prizes are underwritten by Santam (Authorised FSP 3416), placed by Indwe Risk Services. Santam is also the platform's naming-rights sponsor: the same balance sheet that insures the prize backs the brand.</p>
+    </div>
+    <div class="teaser" style="margin-top:2.4rem">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V3l14 5-14 5"/></svg></div>
+      <div><h3>And one more thing, for the room.</h3><p>Get Lucky sells golf's most exciting moment, insured. Your simulators measure that moment better than any camera on a tee. There is a second conversation we would like to have when we meet.</p></div>
+      <a class="btn ghost" href="#meet">Ask us in Fairfax</a>
+    </div>
+  </div>
+</section>
+
+<section class="cream" id="timeline">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <p class="eyebrow g">Timeline</p>
+        <h2>From this brief to bays on the floor.</h2>
+        <p class="lede" style="margin-top:1.4rem">We move at the speed of the Virgin Active proposal. The platform partner is decided before we walk in; phase one is on the floor in 2027.</p>
+        <div class="btns"><a class="btn gold" href="#meet">Book the meeting</a><a class="btn ghost dark" href="mailto:johannes@getluckygolfclub.com?subject=Virgin%20Golf%20by%20Ernie%20Els%20%C3%97%20Golfzon">Email the brief back</a></div>
+      </div>
+      <ul class="tl">
+        <li><time>September–October 2026</time><b>This brief to Golfzon</b><span>Pricing for 200 units, reference designs, the Southern African service model, a named Golfzon lead.</span></li>
+        <li class="key"><time>November 2026</time><b>Fairfax, Virginia</b><span>Johannes le Roux at Golfzon America. Platform decision and a joint proposal document.</span></li>
+        <li class="key"><time>Q4 2026</time><b>Virgin Active, Cape Town</b><span>The Virgin Golf by Ernie Els proposal, with Golfzon as the platform and a Collection-club reference design.</span></li>
+        <li><time>26–29 January 2027</time><b>PGA Show, Orlando</b><span>Golfzon Tour finals on the floor. A private dinner with Ernie for the Golfzon team.</span></li>
+        <li><time>2027</time><b>Phase one</b><span>40 bays in the Collection and flagship clubs, starting at Point in Cape Town.</span></li>
+        <li><time>2028–2029</time><b>Phases two and three</b><span>160 bays across the metro clubs and the rest of the chain.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="meet">
+  <div class="bg" aria-hidden="true">
+    <img src="/images/ernie-cta.jpg" alt="" width="2000" height="1333">
+    <div class="tint"></div><div class="halftone" style="opacity:.4"></div>
+  </div>
+  <div class="wrap rel" style="max-width:52rem">
+    <svg class="flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V3l14 5-14 5"/></svg>
+    <h2>Two hundred simulators. One country. <span>Let's meet in Fairfax.</span></h2>
+    <p class="lede" style="margin:1.6rem auto 0; color:rgba(245,240,225,.8)">Johannes will be in the United States in November 2026 and in Orlando for the PGA Show in January. An hour with Golfzon America is the first thing on the itinerary.</p>
+    <div class="btns">
+      <a class="btn gold" href="mailto:johannes@getluckygolfclub.com?subject=Virgin%20Golf%20by%20Ernie%20Els%20%C3%97%20Golfzon">Start the conversation</a>
+      <a class="btn ghost" href="https://wa.me/27609615091?text=Hi%20Johannes%2C%20I%27d%20like%20to%20talk%20about%20Virgin%20Golf%20and%20Golfzon." target="_blank" rel="noopener noreferrer">+27 60 961 5091</a>
+    </div>
+    <p style="margin-top:2rem; font-size:.9rem; color:rgba(245,240,225,.55)">Johannes le Roux · johannes@getluckygolfclub.com · Cape Town</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="/logos/logo-dark-bg.png" alt="Get Lucky Golf Club" width="600" height="449">
+    <p>Virgin Golf by Ernie Els is a concept in development by Get Lucky Golf Club (Pty) Ltd with Ernie Els. It is not yet an agreement with Virgin Active or Virgin Group; use of the Virgin name is theirs to decide. Unit counts and phasing are the basis for a quotation, not a purchase order. Virgin Active figures from Brait PLC's results for the year to March 2026. Private and confidential, prepared for Golfzon, September 2026.</p>
+  </div>
+</footer>
+</body>
+</html>
