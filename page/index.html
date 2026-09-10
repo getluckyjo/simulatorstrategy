@@ -1,0 +1,491 @@
+<title>Get Lucky Simulator Playbook</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+  :root {
+    --ground: #F1F4F0;
+    --surface: #FFFFFF;
+    --surface-2: #E6ECE7;
+    --ink: #15221B;
+    --muted: #5B6B62;
+    --line: #CFD8D1;
+    --flag: #C4382D;
+    --flag-soft: #F6E0DD;
+    --green: #1F6B45;
+    --green-soft: #DCEBE1;
+    --screen: #1A5C6B;
+    --shadow: 0 1px 2px rgba(21,34,27,.06), 0 8px 24px rgba(21,34,27,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0F1713;
+      --surface: #172119;
+      --surface-2: #1F2C23;
+      --ink: #E9EFE9;
+      --muted: #9BAAA0;
+      --line: #2C3B32;
+      --flag: #E4574B;
+      --flag-soft: #3A1E1B;
+      --green: #4DB57F;
+      --green-soft: #1B3527;
+      --screen: #5FB7C9;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0F1713;
+    --surface: #172119;
+    --surface-2: #1F2C23;
+    --ink: #E9EFE9;
+    --muted: #9BAAA0;
+    --line: #2C3B32;
+    --flag: #E4574B;
+    --flag-soft: #3A1E1B;
+    --green: #4DB57F;
+    --green-soft: #1B3527;
+    --screen: #5FB7C9;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    padding-inline: 20px;
+    padding-block: 0 72px;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; }
+  h1, h2, h3, .display { font-family: "Barlow Condensed", "Arial Narrow", Arial, sans-serif; text-wrap: balance; }
+  h1 { font-size: clamp(2.6rem, 7vw, 4.6rem); font-weight: 700; line-height: .95; letter-spacing: -.01em; margin: 0 0 .5rem; }
+  h2 { font-size: clamp(1.7rem, 3.4vw, 2.3rem); font-weight: 600; line-height: 1.05; margin: 0 0 .6rem; }
+  h3 { font-size: 1.25rem; font-weight: 600; margin: 0 0 .35rem; line-height: 1.15; }
+  p { margin: 0 0 1rem; max-width: 68ch; }
+  a { color: var(--green); }
+  strong { font-weight: 600; }
+  .eyebrow { font-family: "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; font-weight: 600; color: var(--flag); margin: 0 0 .5rem; }
+  .muted { color: var(--muted); }
+  .small { font-size: .9rem; }
+
+  /* masthead */
+  .mast { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; padding-block: 18px 12px; border-bottom: 1px solid var(--line); font-size: .85rem; color: var(--muted); }
+  .mast b { color: var(--ink); font-family: "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .1em; font-weight: 600; }
+
+  /* hero */
+  .hero { padding-block: 40px 28px; }
+  .hero .lede { font-size: 1.25rem; max-width: 60ch; margin-top: 1rem; }
+  .hero .lede em { color: var(--green); font-style: normal; font-weight: 600; }
+
+  /* scoreboard */
+  .board { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; margin-block: 8px 44px; }
+  .board > div { background: var(--surface); padding: 16px 18px; }
+  .board .n { font-family: "Barlow Condensed", Arial, sans-serif; font-size: 2.4rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; color: var(--ink); }
+  .board .n.flag { color: var(--flag); }
+  .board .l { font-size: .85rem; color: var(--muted); margin-top: 6px; line-height: 1.3; }
+  @media (max-width: 720px) { .board { grid-template-columns: repeat(2, 1fr); } }
+
+  section { padding-block: 32px; border-top: 1px solid var(--line); }
+  section > .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  @media (max-width: 760px) { section > .grid2 { grid-template-columns: 1fr; } }
+
+  /* status list */
+  .status { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; max-width: 68ch; }
+  .status li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: start; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; margin-top: 7px; background: var(--muted); }
+  .dot.red { background: var(--flag); } .dot.green { background: var(--green); } .dot.amber { background: #C9962B; }
+
+  /* timeline (real sequence: dates carry information) */
+  .tl { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--line); }
+  .tl li { position: relative; padding: 0 0 18px 22px; }
+  .tl li::before { content: ""; position: absolute; left: -7px; top: 8px; width: 12px; height: 12px; border-radius: 50%; background: var(--green); border: 2px solid var(--ground); }
+  .tl li.key::before { background: var(--flag); }
+  .tl time { font-family: "Barlow Condensed", Arial, sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; font-size: .9rem; color: var(--muted); display: block; }
+  .tl b { display: block; font-weight: 600; }
+  .tl span { color: var(--muted); font-size: .95rem; }
+
+  /* tables */
+  .tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-family: "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; color: var(--muted); font-weight: 600; background: var(--surface-2); }
+  tr:last-child td { border-bottom: 0; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td.ok { color: var(--green); font-weight: 600; } td.bad { color: var(--flag); font-weight: 600; }
+
+  /* cards */
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 760px) { .cards { grid-template-columns: 1fr; } }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px; display: grid; gap: 8px; align-content: start; }
+  .card.lead { border-color: var(--flag); box-shadow: var(--shadow); }
+  .card .tag { font-family: "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .1em; font-size: .75rem; font-weight: 600; color: var(--flag); }
+  .card .tag.g { color: var(--green); }
+  .card p { margin: 0; font-size: .97rem; max-width: none; }
+  .card dl { margin: 6px 0 0; display: grid; grid-template-columns: 92px 1fr; gap: 4px 10px; font-size: .93rem; }
+  .card dt { color: var(--muted); font-family: "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .06em; font-size: .78rem; padding-top: 3px; }
+  .card dd { margin: 0; }
+
+  /* callout */
+  .callout { background: var(--green-soft); border-left: 4px solid var(--green); padding: 14px 18px; border-radius: 0 6px 6px 0; margin: 12px 0 18px; max-width: 72ch; }
+  .callout.flag { background: var(--flag-soft); border-left-color: var(--flag); }
+  .callout p:last-child { margin: 0; }
+
+  /* calculator */
+  .calc { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px; display: grid; gap: 14px; }
+  .calc .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  @media (max-width: 720px) { .calc .row { grid-template-columns: 1fr 1fr; } }
+  .calc label { display: grid; gap: 4px; font-size: .8rem; color: var(--muted); font-family: "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .08em; }
+  .calc input { font: 600 1.05rem "Source Sans 3", Arial, sans-serif; color: var(--ink); background: var(--ground); border: 1px solid var(--line); border-radius: 4px; padding: 8px 10px; width: 100%; font-variant-numeric: tabular-nums; }
+  .calc input:focus { outline: 2px solid var(--green); outline-offset: 1px; }
+  .calc .out { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  @media (max-width: 720px) { .calc .out { grid-template-columns: 1fr; } }
+  .calc .out div { border-top: 2px solid var(--line); padding-top: 8px; }
+  .calc .out .n { font-family: "Barlow Condensed", Arial, sans-serif; font-size: 1.9rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1; }
+  .calc .out .n.ok { color: var(--green); } .calc .out .n.bad { color: var(--flag); }
+  .calc .out .l { font-size: .85rem; color: var(--muted); }
+
+  /* actions */
+  .actions { list-style: none; padding: 0; margin: 0; counter-reset: a; display: grid; gap: 8px; }
+  .actions li { display: grid; grid-template-columns: 36px 1fr auto; gap: 10px; align-items: baseline; padding: 10px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+  .actions li::before { counter-increment: a; content: counter(a, decimal-leading-zero); font-family: "Barlow Condensed", Arial, sans-serif; font-weight: 700; font-size: 1.3rem; color: var(--flag); }
+  .actions .by { font-family: "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .06em; font-size: .8rem; color: var(--muted); white-space: nowrap; }
+  @media (max-width: 560px) { .actions li { grid-template-columns: 36px 1fr; } .actions .by { grid-column: 2; } }
+
+  .beats { counter-reset: b; list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; max-width: 68ch; }
+  .beats li { display: grid; grid-template-columns: 34px 1fr; gap: 10px; }
+  .beats li::before { counter-increment: b; content: counter(b); font-family: "Barlow Condensed", Arial, sans-serif; font-weight: 700; font-size: 1.4rem; color: var(--green); line-height: 1.1; }
+  .beats b { display: block; }
+
+  footer { border-top: 1px solid var(--line); padding-top: 18px; font-size: .85rem; color: var(--muted); max-width: 80ch; }
+  :focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+  @media (prefers-reduced-motion: no-preference) { .card.lead { transition: transform .2s ease; } .card.lead:hover { transform: translateY(-2px); } }
+</style>
+
+<div class="wrap">
+  <div class="mast">
+    <span><b>Get Lucky Golf Club</b> · Simulator playbook</span>
+    <span>Johannes le Roux · 10 September 2026 · Confidential</span>
+  </div>
+
+  <header class="hero">
+    <p class="eyebrow">Operator strategy</p>
+    <h1>The simulator measures the shot.<br>We insure the moment.</h1>
+    <p class="lede">Get Lucky becomes the insured jackpot layer inside the world's simulator platforms — a <em>$1 swing at a real, underwritten prize</em>, verified by the machine, paid by the insurer — with Santam's paper behind it and Ernie Els's name on the door. The on-course business is the proof; the simulator is the business.</p>
+  </header>
+
+  <div class="board" aria-label="Key numbers">
+    <div><div class="n flag">$1</div><div class="l">the slip — the ₩1,000-a-round price point Korea already pays for ace cover</div></div>
+    <div><div class="n">250×</div><div class="l">pilot prize multiple that holds a 24% premium at the simulator ace rate</div></div>
+    <div><div class="n">30%</div><div class="l">of every entry to the operator — three times what a golf course gets</div></div>
+    <div><div class="n">1 in 2,500</div><div class="l">working simulator ace rate per qualifying par-3 (course: 1 in 12,500)</div></div>
+  </div>
+
+  <section id="status">
+    <p class="eyebrow">Where we honestly are</p>
+    <h2>Nothing is signed. Here is exactly what is and isn't in hand.</h2>
+    <ul class="status">
+      <li><span class="dot red"></span><span><strong>No operator has been approached.</strong> Not Golfzon, not anyone. The channel is a modelled scenario resting on Ernie's standing, not a conversation.</span></li>
+      <li><span class="dot amber"></span><span><strong>Santam has been asked to price the simulator product.</strong> No written indication yet. Until it arrives, no operator sees a number — only the mechanic.</span></li>
+      <li><span class="dot green"></span><span><strong>Ernie's name and likeness can be used to make the deal.</strong> Intros and appearances stay opt-in; his counsel signs off brand use.</span></li>
+      <li><span class="dot red"></span><span><strong>The August investor PDF is stale on three facts</strong> (20% → 15% of the round; EBITDA margins; an adoption table that fails its own test) and never states a simulator ace rate.</span></li>
+      <li><span class="dot green"></span><span><strong>In hand:</strong> Santam (FSP 3416) via Indwe, a signed R9m sponsorship on the same balance sheet, a written skill-based opinion in SA, 25 rigged courses, 10,000 paid entries, a verifier already designed for "machine truth", and cloudandthings for the SDK.</span></li>
+    </ul>
+  </section>
+
+  <section id="why-now">
+    <p class="eyebrow">The market, and why now</p>
+    <h2>Everything moved in our direction in the last twelve months.</h2>
+    <div class="grid2">
+      <div>
+        <p>Global simulator hardware and software is a <strong>$2.1–2.4bn</strong> market, doubling by the mid-2030s; North America is ~41% of it. Korea proves people pay to hit shots indoors at scale: <strong>$1.6bn, 8,700+ venues, ~94M rounds a year</strong> — nearly twice the rounds on grass. Golfzon ~60%, Kakao VX ~25%.</p>
+        <p>America is where it happens next: <strong>19M Americans played only off-course in 2025</strong>; simulator users went from 3.8M to 8M+ in a decade; commercial sim businesses passed <strong>1,500 by late 2025, nearly tripled since 2022</strong>, most with 3–4 bays and three-quarters selling memberships.</p>
+        <div class="callout"><p><strong>Golfzon's chairman has been named Asia's most powerful golf executive three years running — and in March 2026 his company moved its Global Business Division to Virginia.</strong> Every market outside Korea is now decided in the US. That is the door.</p></div>
+      </div>
+      <ul class="tl">
+        <li><time>15 Oct 2025</time><b>Kakao VX sold to IVG for ₩210bn</b><span>Korea's #2 has a new owner</span></li>
+        <li><time>Oct 2025</time><b>Golfzon becomes official simulator of the U.S. Open</b><span>Ernie: two-time U.S. Open champion</span></li>
+        <li><time>1 Jan 2026</time><b>Leonard Green buys 60% of Topgolf + Toptracer</b><span>~$1.1bn; Swing Suites run Full Swing</span></li>
+        <li><time>20 Jan 2026</time><b>Lotte launches CREW screen-golf ace insurance</b><span>the insured screen ace becomes a Korean commodity</span></li>
+        <li class="key"><time>9 Mar 2026</time><b>Golfzon Global Business Division opens in Fairfax County, VA</b><span>headed by Sean Pyun, ex-LPGA CBO Asia</span></li>
+        <li><time>14 May 2026</time><b>Five Iron Tournaments: $1–$10 real-money entries incl. $1 CTP</b><span>20k entries in beta, 65% same-month return</span></li>
+        <li><time>6 Jul 2026</time><b>Versant (Golf Channel, GolfNow) buys Full Swing for $530m</b><span>a media company now owns a sim platform</span></li>
+        <li class="key"><time>26–29 Jan 2027</time><b>PGA Show, Orlando — Golfzon Tour finals on the floor</b><span>every operator on the list exhibits; Ernie is 2.5 hours away</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="competitors">
+    <p class="eyebrow">Competitors</p>
+    <h2>Korea already sells an insured screen ace — as reimbursement. Nobody sells the jackpot.</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Product</th><th>Price</th><th>Pays on an ace</th><th>Where</th><th>Form</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Lotte CREW 스크린골프 보험</strong> (Jan 2026)</td><td>₩1,150 per person per round; ₩4,620 for four; in-app before the round</td><td>up to ₩200,000 of souvenir, round and celebration costs</td><td>Golfzon, SG Golf, Kakao VX</td><td>Insurance (reimbursement)</td></tr>
+          <tr><td>NH 스크린골프장 홀인원보험</td><td>₩1,610 per day; up to 8 companions</td><td>costs within the insured amount</td><td>Screen venues</td><td>Insurance</td></tr>
+          <tr><td><strong>Carrot × Golfzon</strong> (2020)</td><td>bundled in a paid Golfzon membership</td><td>₩150,000 once a month; Golfzon auto-sends the ace video to Carrot</td><td>Golfzon</td><td>Insurance, embedded</td></tr>
+          <tr><td><strong>골프단짝</strong></td><td>₩1,000 ticket</td><td>₩300,000 fixed (300×)</td><td>Screen venues</td><td>Fixed-sum payout</td></tr>
+          <tr><td>Hanwha General golf policy</td><td>—</td><td>screen-golf ace costs inside a golf policy</td><td>Screen + course</td><td>Insurance</td></tr>
+          <tr><td>Golfzon's own promotions</td><td>free with G-Membership</td><td>monthly ace challenge, product prizes; ₩20M ace pools in event windows</td><td>Golfzon</td><td>Marketing</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:10px">Lotte's on-course CREW policy passed 40,000 policies in year one. Korean golfers already buy ace cover at ₩10,000 vending machines paying $2,000–2,500 — because an ace costs a ₩300–500k caddie tip, a >₩1M dinner and a gold trophy.</p>
+    <div class="grid2" style="margin-top:18px">
+      <div>
+        <h3>United States: money games exist, no insured ace jackpot does</h3>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Product</th><th>What</th><th>Money</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Skill Strike</strong> · Full Swing → Versant</td><td>per-shot CTP wagering, skill-adjusted, "approved gaming states"</td><td>$3–$20 a shot; a $3 ace paid $100 (33×)</td></tr>
+              <tr><td><strong>Five Iron Tournaments</strong></td><td>on-demand tournaments, $1 CTP, live leaderboards</td><td>$1–$10 entries</td></tr>
+              <tr><td>Golfzon Tour · NEXT Golf Tour</td><td>stroke-play tours on Golfzon / Trackman</td><td>$300k purse · $130 entry, $1M+ season</td></tr>
+              <tr><td>Event ace contests (Odds On, Hole-in-Won…)</td><td>insured $5k–$25k ace prize for an outing</td><td>sold to organisers, not golfers</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h3>What the tables tell us</h3>
+        <ul class="status">
+          <li><span class="dot green"></span><span>The ₩1,000-a-round price point for an ace product is proven and familiar. That is our $1 slip.</span></li>
+          <li><span class="dot green"></span><span>Every Korean product is capped reimbursement of ₩150–300k. <strong>Nobody sells a jackpot.</strong></span></li>
+          <li><span class="dot green"></span><span>Golfzon already built the ace → video → insurer pipe we need. It exists for Carrot.</span></li>
+          <li><span class="dot amber"></span><span>The legal wrapper that works in Korea is a short-term policy where the golfer is the policyholder — not a prize contest.</span></li>
+          <li><span class="dot green"></span><span><strong>On Golfzon and Trackman there is no per-shot money game at all.</strong> That is the white space.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="market-first">
+    <p class="eyebrow">Which market first</p>
+    <h2>America first. Korea second, through Golfzon HQ, as an insurance-wrapped product.</h2>
+    <div class="grid2">
+      <div>
+        <p>Korea isn't saturated for a jackpot; it is saturated for the reimbursement form, priced to the bone by five carriers, on a platform that already has an embedded insurer, in a legal regime where the prize-contest form hits the Criminal Act. We can win there as phase two. We should not lead with it.</p>
+        <p>The US has the untapped demand, live paid-entry precedents (Golfzon Tour, Five Iron, NEXT, Skill Strike), a mature prize-indemnity market for Santam to lead or co-insure with, every operator's decision-maker on US soil, and Ernie's strongest brand equity.</p>
+      </div>
+      <div class="callout flag"><p><strong>So:</strong> Golfzon stays the lead target, pitched in the US through Golfzon America. Five Iron is the fast pilot. Versant/Full Swing and Trackman run in parallel. Korea is phase two. The investor model's Korea-only volume base gets rebuilt on a US base — flagged, not done here.</p></div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <p class="eyebrow">Product and pricing that underwrites</p>
+    <h2>$1 → $1,000 at 24% prices only on grass. On a simulator it fails at every plausible ace rate.</h2>
+    <div class="grid2">
+      <div>
+        <p>No one publishes a simulator ace rate, so three signals are triangulated: a Korean screen-golf company's <strong>300+ aces a day</strong> (≈1 in 3,400 attempts against 94M rounds); <strong>insurer pricing</strong> (₩1,150 for ₩200k only makes sense at 1-in-1,000 to 1-in-4,000 per attempt); and 골프단짝's 300× multiple with "golfers with two aces in six months". Simulators produce aces <strong>4–12× more often</strong> than grass — and the rate varies tenfold by hole (Korea's "명당" lucky holes).</p>
+        <p><strong>Working assumption:</strong> base 1 in 2,500 per qualifying attempt, stress 1 in 1,000. Santam's measured number replaces it.</p>
+        <h3>Pilot ladder (250×)</h3>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Entry</th><th class="num">Prize</th><th>Stretch (500×) if rate ≤ 1 in 3,400</th></tr></thead>
+          <tbody>
+            <tr><td>$1</td><td class="num">$250</td><td>$500</td></tr>
+            <tr><td>$2</td><td class="num">$500</td><td>$1,000</td></tr>
+            <tr><td>$5</td><td class="num">$1,250</td><td>$2,500</td></tr>
+          </tbody></table></div>
+        <p class="small muted" style="margin-top:8px">Same 46 / 30 / 24 split. Qualifying-hole whitelist by measured per-hole rate; one entry per hole per round; settings locked; verification is the simulator's telemetry; insurer pays the winner directly.</p>
+      </div>
+      <div>
+        <h3>Premium the insurer needs at a 60% loss ratio</h3>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Ace rate</th><th class="num">$1 → $250</th><th class="num">$1 → $500</th><th class="num">$1 → $1,000</th></tr></thead>
+          <tbody>
+            <tr><td>1 in 12,500 · course</td><td class="num ok">3%</td><td class="num ok">7%</td><td class="num ok">13%</td></tr>
+            <tr><td>1 in 3,434 · optimistic sim</td><td class="num ok">12%</td><td class="num ok">24%</td><td class="num bad">49%</td></tr>
+            <tr><td>1 in 2,500 · base sim</td><td class="num ok">17%</td><td class="num bad">33%</td><td class="num bad">67%</td></tr>
+            <tr><td>1 in 1,000 · stress sim</td><td class="num bad">42%</td><td class="num bad">83%</td><td class="num bad">167%</td></tr>
+          </tbody></table></div>
+        <p class="small muted" style="margin:8px 0 14px">Green = fits inside the 24% cession. Rule of thumb: supportable prize ≈ entry × premium% × 0.6 × attempts-per-ace.</p>
+        <div class="calc" aria-label="Pricing calculator">
+          <div class="row">
+            <label for="c-entry">Entry ($)<input id="c-entry" type="number" step="0.5" min="0.5" value="1"></label>
+            <label for="c-prize">Prize ($)<input id="c-prize" type="number" step="50" min="50" value="250"></label>
+            <label for="c-rate">Attempts per ace<input id="c-rate" type="number" step="100" min="100" value="2500"></label>
+            <label for="c-prem">Premium (% of entry)<input id="c-prem" type="number" step="1" min="1" max="100" value="24"></label>
+          </div>
+          <div class="out">
+            <div><div class="n" id="o-claim">$0.10</div><div class="l">expected claim per entry</div></div>
+            <div><div class="n ok" id="o-lr">42%</div><div class="l">insurer loss ratio at this premium</div></div>
+            <div><div class="n" id="o-need">17%</div><div class="l">premium needed at a 60% loss ratio</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:22px"><p><strong>Santam deliverables before any operator sees a number:</strong> written indication for the 250× and 500× ladders with a per-hole rate card · aggregate cap and largest-single-event limit for a 100-venue, 90-day pilot · territory (SA only, or global via Santam Re / a US fronting carrier such as Everest through Odds On or a Lloyd's coverholder) · a telemetry-based claims protocol with a fraud clause.</p></div>
+  </section>
+
+  <section id="targets">
+    <p class="eyebrow">Targets</p>
+    <h2>Golfzon is the prize. Five Iron is the fastest pilot. Two more run in parallel.</h2>
+    <div class="cards">
+      <article class="card lead">
+        <span class="tag">Lead target</span>
+        <h3>Golfzon — via Golfzon America, Virginia</h3>
+        <p>KOSDAQ 215000; 2025 revenue ₩483bn. 9,400+ locations, 47,000+ sims, 41 countries, 5.5M members. Chairman Kim Young-chan; co-CEOs Park Kang-soo, Choi Deok-hyung. <strong>Global Business Division under Sean Pyun</strong> (President & CEO Golfzon America; ex-LPGA CBO Asia under Mike Whan, now USGA CEO).</p>
+        <dl>
+          <dt>They have</dt><dd>the ace-video pipe (built for Carrot), G-Membership ace challenges, Golfzon Tour real-money framework, USGA, Pebble Beach, Troon (Golfzon Social), Leadbetter, CityGolf Nashville</dd>
+          <dt>They want</dt><dd>a US growth story, in-bay engagement that beats Trackman, member monetisation, content for Network Play</dd>
+          <dt>We offer</dt><dd>the jackpot layer they don't have; 30% of every entry; Ernie Els on the U.S. Open's official simulator; no hardware, no site cost</dd>
+          <dt>Paths in</dt><dd>1. Sean Pyun direct · 2. Troon (manages The Els Club Dubai; Golfzon Social JV partner) · 3. Golfzon Leadbetter · 4. USGA / Mike Whan · 5. Korea later via XXIO (Ernie is global ambassador) then Chairman Kim</dd>
+          <dt>The ask</dt><dd>90-day US pilot in 50–100 venues, launched around the Golfzon Tour finals at the PGA Show; then Korea with HQ as an insurance-wrapped product</dd>
+        </dl>
+      </article>
+      <article class="card">
+        <span class="tag g">Fast pilot</span>
+        <h3>Five Iron Golf</h3>
+        <p>CEO Jared Solomon. 50+ venues, 7 countries, 500+ Trackman bays; $44.9m Series E (Mar 2026). Five Iron Tournaments already runs a <strong>$1 real-money closest-to-pin</strong> with wallets, accounts and compliance solved.</p>
+        <dl>
+          <dt>Why</dt><dd>"…and an insured $250 if you hole it" is a one-line change for them and a live pilot for us in weeks</dd>
+          <dt>Ask</dt><dd>60-day pilot in NYC + one city, then London; ace-rate data by hole</dd>
+          <dt>Shape</dt><dd>white-label "Ace Jackpot powered by Get Lucky × Ernie Els"; 46/30/24; non-exclusive</dd>
+        </dl>
+      </article>
+      <article class="card">
+        <span class="tag g">Parallel · media route</span>
+        <h3>Versant / Full Swing</h3>
+        <p>Versant (CEO Mark Lazarus; Golf Channel, GolfNow, GolfPass) is buying Full Swing (CEO Ryan Dotters; Tiger-backed; inside Topgolf Swing Suites) for $530m, closing H2 2026. Full Swing already runs Skill Strike wagering.</p>
+        <dl>
+          <dt>Why</dt><dd>a media owner wants moments — an insured ace with a champion's name is a broadcastable moment and a GolfNow upsell</dd>
+          <dt>Risk</dt><dd>Skill Strike may see us as competition; pitch as the prize layer they can't carry ($250–$1,250 vs their $100)</dd>
+          <dt>Entry</dt><dd>Versant corp dev after close; Dotters; Ernie's Golf Channel relationships</dd>
+        </dl>
+      </article>
+      <article class="card">
+        <span class="tag g">Parallel · platform</span>
+        <h3>Trackman</h3>
+        <p>Private, Denmark; CEO Klaus Eldrup-Jørgensen; VP US Sales AJ Broderick. NEXT Golf Tour, Trackman Golf app, Booking & Payments, GolfNow integration. <strong>No per-shot money game.</strong></p>
+        <dl>
+          <dt>Why</dt><dd>largest premium install base in US/EU venues; a Trackman-native slip reaches Five Iron and every independent at once</dd>
+          <dt>Entry</dt><dd>Broderick in the US; Danish HQ once Five Iron data exists</dd>
+          <dt>Also</dt><dd>Topgolf/Toptracer (Leonard Green), X-Golf (130+ franchises), Kakao VX/IVG — worked opportunistically</dd>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <section id="roles">
+    <p class="eyebrow">Santam and Ernie</p>
+    <h2>The underwriter is the template. The champion is the door.</h2>
+    <div class="grid2">
+      <div>
+        <h3>Santam</h3>
+        <p>The proof underwriter and the story: the balance sheet that underwrites every prize also sponsors the platform. For simulators Santam (via Indwe) does three things — prices the repriced ladder at simulator frequency and issues the written indication that unlocks every operator conversation; sets the international structure (lead in SA, Santam Re behind a US fronting carrier, later a Korean carrier); and becomes the case study for a territory sponsor in each new market. A second-carrier conversation (Lloyd's coverholder) starts in parallel, not after.</p>
+      </div>
+      <div>
+        <h3>Ernie Els</h3>
+        <p>Founding partner and the face of the moment — one swing that changes everything, 24 career aces, two U.S. Opens on the U.S. Open's official simulator. What we need, in order: counsel's sign-off on brand use in operator materials; a short letter over his name to Golfzon America, Five Iron and Versant (we draft, he approves); a 60-second video; and, if he opts in, a private dinner in Orlando during the PGA Show. Nothing beyond the one-to-two days a year he agreed to. No fabricated quotes, ever.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="calendar">
+    <p class="eyebrow">Reach-out sequencing</p>
+    <h2>September to next September — two US trips, one Korea trip, one dinner that matters.</h2>
+    <ul class="tl">
+      <li class="key"><time>Now → 30 Sep 2026</time><b>Gates first</b><span>Santam written indication · Ernie counsel sign-off + letters · operator one-pager and 8-slide deck (mechanic, no rates) · 90-second bay demo · US gaming-law opinion commissioned</span></li>
+      <li><time>29 Sep – 1 Oct</time><b>Golf Inc. Strategies Summit, Hilton Head</b><span>only if Golfzon or Troon are confirmed there</span></li>
+      <li><time>Oct 2026</time><b>Outreach wave 1</b><span>Troon (via The Els Club Dubai) → Golfzon Leadbetter → Sean Pyun direct with the Ernie letter · Jared Solomon direct · Versant / Dotters · Broderick at Trackman</span></li>
+      <li class="key"><time>Nov 2026</time><b>US trip 1 — DC → New York → Florida</b><span>Golfzon America (Fairfax County) · Five Iron bay walk-through and pilot scoping · Golfzon Social · Versant · Jupiter if Ernie is available</span></li>
+      <li><time>Dec 2026</time><b>Term sheets out</b><span>Golfzon and Five Iron pilots · second-carrier indication · Korean counsel scoping memo</span></li>
+      <li class="key"><time>26–29 Jan 2027</time><b>PGA Show, Orlando — the anchor</b><span>Golfzon Tour finals on the floor; Golfzon media breakfast; every target exhibiting. Private "Get Lucky × Ernie Els" dinner for Golfzon America, Five Iron, Versant/Full Swing, Trackman, Troon</span></li>
+      <li><time>Feb–Mar 2027</time><b>Pilot contracts signed; SDK build starts</b><span>cloudandthings against the winning platform's API; state geo-gating live</span></li>
+      <li class="key"><time>Q2 2027</time><b>First US pilot live</b><span>measure ace rate by hole, attach rate per round, repeat rate</span></li>
+      <li><time>H2 2027</time><b>Korea trip — Daejeon / Seoul</b><span>only once a US pilot is live or Golfzon America sponsors the introduction: Golfzon HQ, a Korean carrier, Korean counsel</span></li>
+    </ul>
+  </section>
+
+  <section id="pitch">
+    <p class="eyebrow">The pitch</p>
+    <h2>Seven beats. Then a term sheet.</h2>
+    <div class="grid2">
+      <ol class="beats">
+        <li><b>The moment.</b> Golf's most exciting moment has never been sold to the golfer. We've sold it 10,000 times, on the tee, insured.</li>
+        <li><b>Your machine already measures the shot.</b> No cameras, no hardware, no install.</li>
+        <li><b>We insure the moment.</b> A $1 swing at a real prize; the insurer pays the winner; nobody carries the prize.</li>
+        <li><b>You keep 30%.</b> Three times what a golf course gets.</li>
+        <li><b>Ernie Els is our founding partner.</b> Two U.S. Opens, 24 career aces, his name on the prize moment.</li>
+        <li><b>It already works at ₩1,000 a round.</b> Korea sells ace cover; nobody sells the jackpot. We are the jackpot.</li>
+        <li><b>A 90-day pilot, your venues, our paper.</b> Here is the term sheet.</li>
+      </ol>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Deal shape</th><th>What</th><th>Use with</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Platform integration</strong></td><td>Get Lucky slip in the operator's bay UI and app; 46/30/24; operator-wide</td><td>Golfzon, Trackman</td></tr>
+          <tr><td><strong>White-label</strong></td><td>"Ace Jackpot powered by Get Lucky × Ernie Els" inside their own real-money product</td><td>Five Iron Tournaments, Skill Strike</td></tr>
+          <tr><td><strong>90-day pilot</strong></td><td>50–100 venues, one country, repriced ladder, full telemetry share; 12-month category exclusivity against a minimum venue commitment</td><td>Every first conversation</td></tr>
+        </tbody></table></div>
+    </div>
+  </section>
+
+  <section id="risks">
+    <p class="eyebrow">Risks, said plainly</p>
+    <h2>What could stop this, and what we do about each.</h2>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Risk</th><th>What it is</th><th>What we do</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Ace rate</strong></td><td>4–12× grass, 10× variance by hole; the August product doesn't price</td><td>250× ladder; hole whitelist; Santam prices on measured data; pilots share telemetry</td></tr>
+        <tr><td><strong>Carrot at Golfzon Korea</strong></td><td>an embedded insurer already owns the reimbursement product</td><td>lead in the US; in Korea be the jackpot on top, carrier-agnostic</td></tr>
+        <tr><td><strong>Korean law</strong></td><td>prize-contest form may be "현상업" / gambling</td><td>insurance-wrapped only; Korean counsel first; Korea is phase two</td></tr>
+        <tr><td><strong>US state law</strong></td><td>five states bar paid skill contests; others differ</td><td>state map and geo-gating before pilot; facility-level compliance as Golfzon Tour does</td></tr>
+        <tr><td><strong>Concentration</strong></td><td>one underwriter, one lead operator</td><td>second carrier now; Five Iron pilot regardless of Golfzon's timing</td></tr>
+        <tr><td><strong>Ernie's usage rights</strong></td><td>counsel sign-off still a milestone; site photo rights unconfirmed</td><td>bring the sign-off forward; approved assets only</td></tr>
+        <tr><td><strong>Skill Strike</strong></td><td>Full Swing/Evenplay could add an ace jackpot themselves</td><td>move first on Golfzon and Trackman; pitch Versant as complementary</td></tr>
+        <tr><td><strong>Investor model</strong></td><td>simulator line is Korea-only, hardcoded; PDF stale on three facts</td><td>follow-up in the investor repo: fix the PDF, add a US volume base and the repriced ladder</td></tr>
+      </tbody></table></div>
+  </section>
+
+  <section id="actions">
+    <p class="eyebrow">Next ten actions</p>
+    <h2>Gates first, then the letters, then the flights.</h2>
+    <ol class="actions">
+      <li><span>Send Indwe/Santam the 250× / 500× ladders, the ace-rate evidence and the pilot shape; ask for a written indication and a territory view</span><span class="by">JLR · 18 Sep</span></li>
+      <li><span>Ask Ernie's counsel for sign-off on operator brand use; draft the three operator letters for his approval</span><span class="by">JLR · 18 Sep</span></li>
+      <li><span>Operator one-pager and 8-slide deck — mechanic, split, Ernie, no rates</span><span class="by">JLR + AD · 25 Sep</span></li>
+      <li><span>Cut a 90-second bay demo from the existing demo flow</span><span class="by">AD + cloudandthings · 30 Sep</span></li>
+      <li><span>Commission the US gaming-law opinion with a state map</span><span class="by">JLR · 30 Sep</span></li>
+      <li><span>Warm intro to Troon via The Els Club Dubai; ask Troon to vouch to Golfzon America</span><span class="by">JLR · 10 Oct</span></li>
+      <li><span>Write to Sean Pyun and Jared Solomon with the Ernie letter and the one-pager</span><span class="by">JLR · 15 Oct</span></li>
+      <li><span>Open Versant/Full Swing and Trackman in parallel</span><span class="by">JLR · 20 Oct</span></li>
+      <li><span>Book US trip 1 (DC → NYC → FL); lock the PGA Show dinner venue and date</span><span class="by">JLR · 31 Oct</span></li>
+      <li><span>Open a Lloyd's coverholder as the second-carrier conversation</span><span class="by">Indwe · 30 Nov</span></li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>Sources for every figure: <code>research/market-research.md</code> in the simulatorstrategy repo. Confidential. Forward-looking statements are plans, not promises. No simulator operator agreement exists as at 10 September 2026 and there is no assurance one will be concluded. Get Lucky Golf Club (Pty) Ltd · Registration 2025/047585/07 · johannes@getluckygolfclub.com</p>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var ids = ['c-entry', 'c-prize', 'c-rate', 'c-prem'];
+    var el = {};
+    ids.forEach(function (id) { el[id] = document.getElementById(id); });
+    var oClaim = document.getElementById('o-claim');
+    var oLr = document.getElementById('o-lr');
+    var oNeed = document.getElementById('o-need');
+    function fmtMoney(v) { return '$' + (v < 1 ? v.toFixed(3) : v.toFixed(2)); }
+    function fmtPct(v) { return (v >= 1000 ? '>999' : Math.round(v)) + '%'; }
+    function calc() {
+      var entry = parseFloat(el['c-entry'].value) || 0;
+      var prize = parseFloat(el['c-prize'].value) || 0;
+      var rate = parseFloat(el['c-rate'].value) || 0;
+      var prem = parseFloat(el['c-prem'].value) || 0;
+      if (entry <= 0 || rate <= 0) { return; }
+      var claim = prize / rate;
+      var premium = entry * prem / 100;
+      var lr = premium > 0 ? claim / premium * 100 : Infinity;
+      var need = claim / 0.6 / entry * 100;
+      oClaim.textContent = fmtMoney(claim);
+      oLr.textContent = isFinite(lr) ? fmtPct(lr) : '—';
+      oLr.className = 'n ' + (lr <= 60 ? 'ok' : 'bad');
+      oNeed.textContent = fmtPct(need);
+    }
+    ids.forEach(function (id) { el[id].addEventListener('input', calc); });
+    calc();
+  })();
+</script>

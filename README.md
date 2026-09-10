@@ -1,0 +1,17 @@
+# Get Lucky × Simulators
+
+The working repo for Get Lucky Golf Club's simulator strategy: how we sign a major global
+simulator operator, with Santam as the underwriter and Ernie Els's name on the door.
+
+| File | What it is |
+|---|---|
+| `STRATEGY.md` | The decision document. Thesis, honest starting point, market and why now, competitors (CREW and friends), which market first, product and pricing that underwrites, legal by market, target dossiers, Santam and Ernie's roles, the reach-out calendar, the pitch, deal shapes, risks, gates and next actions. |
+| `research/market-research.md` | The evidence file. Every number in the strategy with its source URL and date, the simulator ace-rate derivation, legal notes by market, people and calendar anchors. |
+| `page/index.html` | The shareable playbook page (published privately as an artifact). A phone-readable version of the strategy for Ernie's camp, Santam/Indwe and advisors. |
+| `get-lucky-simulator-channel (1).pdf` | The August 2026 investor document the strategy starts from. Kept for reference; it is stale on three facts (see `STRATEGY.md` §2). |
+
+## How to update
+
+- Change a number → change it in `research/market-research.md` first (with the source), then in `STRATEGY.md`, then in `page/index.html`.
+- The investor-facing simulator document lives in the `investgetlucky` repo (`scripts/docs/doc-simulator.html` → `assets/docs/get-lucky-simulator-channel.pdf`). The fixes it needs are listed in `STRATEGY.md` §11; they are not made here.
+- Dates in the calendar were verified on 10 September 2026.
