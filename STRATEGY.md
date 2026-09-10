@@ -409,7 +409,7 @@ year he agreed to. No fabricated quotes, ever: the pull-quote stays empty until 
 | **Now → 30 Sep 2026** | Santam written indication (500× and 1,000× ladders, caps, territory). Ernie counsel sign-off on operator brand use. Operator one-pager and 8-slide deck (mechanic only, no rates yet). 90-second bay demo video using the existing demo flow. US gaming-law opinion commissioned | Cape Town | JLR, Indwe/Santam, Ernie's counsel, AD (creative), cloudandthings (demo) |
 | 29 Sep – 1 Oct 2026 | Golf Inc. Strategies Summit — attend only if Golfzon/Troon are confirmed there; otherwise skip | Hilton Head, SC | JLR (optional) |
 | **Oct 2026** | Outreach wave 1: Troon (via The Els Club Dubai GM → Troon International → Tim Schantz), Golfzon Leadbetter, then **Sean Pyun** direct with the Ernie letter. Jared Solomon direct. Versant corp dev + Ryan Dotters. AJ Broderick at Trackman | Email / calls | JLR |
-| **Nov 2026 — US trip 1 (7–10 days)** | Fairfax County, VA: Golfzon America. New York: Five Iron (bay walk-through + pilot scoping), Golfzon Social Scarsdale/Palisades, Versant. Stamford CT: Golf Channel if Versant bites. Fly via Jupiter, FL if Ernie is available | Washington DC → New York → Florida | JLR (+ AD for the venue visits) |
+| **Oct 2026 — US trip 1 (7–10 days)** | Chantilly, VA (Fairfax County): Golfzon America, the founders. New York: Five Iron (bay walk-through + pilot scoping), Golfzon Social Scarsdale/Palisades, Versant. Stamford CT: Golf Channel if Versant bites. Fly via Jupiter, FL if Ernie is available | Washington DC → New York → Florida | JLR (+ AD for the venue visits) |
 | Dec 2026 | Pilot term sheets out (Golfzon, Five Iron). Second-carrier indication (Lloyd's coverholder). Korean counsel scoping memo | Cape Town | JLR, Indwe |
 | **26–29 Jan 2027 — PGA Show (anchor)** | Golfzon Tour finals on the floor; Golfzon media breakfast; Full Swing, Trackman, Foresight, X-Golf all exhibiting. **Private "Get Lucky × Ernie Els" dinner** for Golfzon America, Five Iron, Versant/Full Swing, Trackman, Troon — Ernie hosts if he opts in | Orlando, FL | JLR, AD, Ernie (opt-in) |
 | Dec 2026–Jan 2027 | Pilot contracts signed; SDK build starts (cloudandthings) against the winning platform's API; state geo-gating map live | Cape Town / remote | JLR, cloudandthings |
@@ -552,9 +552,9 @@ the site says so in the footer. Who signs the purchase order (Virgin Active, Get
 an open question for the Virgin Active conversation. Virgin Active South Africa's current
 managing director is not confirmed in our research (Jessica Spira left in 2023).
 
-**Sequence.** Send the site to Sean Pyun in September–October with the Ernie letter; ask for
-pricing, reference designs and a named lead; Fairfax in November; Virgin Active in Q4 2026 with
-Golfzon's name on the cover; stage two in the room.
+**Sequence.** Send the site to Sean Pyun in September with the Ernie letter; ask for pricing,
+reference designs and a named lead; **the founders at Golfzon HQ in Virginia in October 2026**;
+Virgin Active in Q4 2026 with Golfzon's name on the cover; stage two in the room.
 
 **Adds to the next-10 list:** (11) Virgin Active discovery — who owns club product and the
 Collection roll-out, and the Vitality relationship — by 30 September 2026 (JLR). (12) Golfzon
