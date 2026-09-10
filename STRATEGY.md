@@ -206,10 +206,47 @@ all on the same 46 / 30 / 24 split (Get Lucky / operator / insurer). The operato
 non-negotiable in the pitch: they bring the venues, the software surface and the customer, and we
 install nothing.
 
+### 6d. The Million Dollar Shot — $1,000 → $1,000,000 on the slip
+
+A 1,000× multiple prices exactly like $1 → $1,000: at 1 in 7,000 the insurer's expected claim is
+$143 a swing and a 24% cession ($240) gives a 60% loss ratio with no margin. The difference is who
+buys it. Nobody paying $1,000 a swing is an average golfer, and a grinder who finds a soft hole has
+positive expected value:
+
+| Who buys a $1,000 swing | Ace rate | Premium at 60% LR | % of entry |
+|---|---|---|---|
+| Network average | 1 in 7,000 | $238 | 24% |
+| Low handicapper | 1 in 5,000 | $333 | 33% |
+| Tour-level player | 1 in 3,000 | $556 | 56% |
+| A "명당" hole with soft settings | 1 in 2,000 | $833 | 83% |
+
+**Rules that make it bindable:** (1) verified-handicap gate — exclude professionals and scratch
+players, or tier the prize by verified handicap (15+ → $1M; 8–14 → $600k; 0–7 → $300k) so expected
+loss is flat at ~$140 a swing and the 24% cession holds; the flat-$1M version needs ~45%;
+(2) the Get Lucky hole for this tier is a designated 170-yard-plus par-3 per course, built into the software, standard settings locked; (3) one attempt per player
+per round, three a day; (4) KYC at purchase, 1099 on the win, paid entry in Green states only —
+never free-to-play, which would trip sweepstakes registration and bonding at $1M; (5) an aggregate
+cap and a layer above Santam's $100,000 largest-single-event limit (Santam Re, Lloyd's or Everest).
+
+**What it earns.** Flat $1M at a 45% cession: Get Lucky $250 a swing, operator $300, insurer $450
+against ~$200 expected claims. If 0.1% of the 2029 model's 1.41M entrants take one shot a year
+(1,410 swings): $353k to Get Lucky, $423k to the operator, ~25% chance of a $1M winner in the year.
+The handicap-tiered version keeps 46/30/24 and pays us $460 a swing. Because we designate the hole and the software records every attempt on it, the tier's realised ace rate is measured from day one — Santam prices the $1M tier on our own telemetry within a quarter.
+
+**Eyes open.** Demand is unproven — Skill Strike caps at $20, Five Iron at $10, NEXT at $130 a
+tournament — so it launches as a flagship-venue test (Golfzon Social, CityGolf Nashville, the PGA
+Show floor) branded *The Million Dollar Shot — verified players only*, and "$1,000 a swing" in a
+family venue is a conversation to have with Golfzon before it is in a deck. The $1 slip stays the
+door; the $1,000 tier is the story and the barrier — a continuously bound seven-figure per-shot
+programme with handicap-adjusted pricing is not something a promoter can copy with an event policy.
+
 Rule of thumb for any conversation: **supportable prize ≈ entry × premium% × 0.6 × attempts-per-ace.**
 
 **Product rules that are really pricing tools:**
-- Qualifying-hole whitelist, set per platform from measured per-hole ace rates. No 명당.
+- **The Get Lucky hole.** One designated par-3 per course, chosen by us and built into the operator's
+  software — the player never picks the hole. That removes the 명당 adverse-selection problem at the
+  root, gives Santam a measured ace rate per designated hole (a real per-hole rate card, not a
+  whitelist), and lets us designate a longer hole for higher tiers.
 - One insured entry per hole per round; standard difficulty, green speed and wind settings locked
   for insured shots; no mulligans, no practice-mode entries.
 - Verification is the simulator's own telemetry (ball in hole, launch data, session ID, member ID)
@@ -218,7 +255,7 @@ Rule of thumb for any conversation: **supportable prize ≈ entry × premium% ×
 - Insurer → winner, directly. Get Lucky is never in the funds flow, exactly as on course.
 
 **Santam deliverables before any operator sees a number:**
-1. Written indication at simulator frequency for a 500× and a 1,000× ladder, per-hole rate card.
+1. Written indication at simulator frequency for a 500× and a 1,000× ladder, per-hole rate card — and a separate indication for the $1,000 → $1M tier (flat and handicap-tiered), with the layer above the $100,000 single-event limit.
 2. Aggregate cap and largest-single-event limit for a pilot (assume 100 venues × 90 days).
 3. Territory: South Africa only, or global via Santam Re / fronting / co-insurance with a US
    carrier (Everest via Odds On, or a Lloyd's coverholder) and, later, a Korean carrier.
@@ -402,6 +439,7 @@ Three deal shapes, in the order we offer them:
 | Risk | What it is | What we do |
 |---|---|---|
 | **Ace rate** | Golfzon's measured rate is 1 in 7,000 — ~1.8× grass on average and far hotter on selected holes. The August product prices with zero margin | 500× pilot ladder; hole whitelist; Santam prices on measured data; pilots share telemetry |
+| **The $1,000 tier** | Adverse selection: the golfers who buy a $1,000 swing ace 2–3× more often than average; demand unproven; optics in family venues | Verified-handicap gate or handicap-tiered prize; a designated long Get Lucky hole per course; attempt caps; ~45% cession if flat; flagship-venue test first; raise it with Golfzon before it is in a deck |
 | **Carrot incumbency at Golfzon Korea** | Golfzon already has an embedded insurer for the reimbursement product | Lead in the US where no such product exists; in Korea position as the jackpot on top, not a replacement, and be carrier-agnostic |
 | **Korean law** | Prize-contest form may be "현상업"/gambling | Insurance-wrapped product only; Korean counsel before launch; Korea is phase two |
 | **US state law** | Five states bar paid skill contests; others differ | State map and geo-gating before pilot; facility-level compliance, as Golfzon Tour does |

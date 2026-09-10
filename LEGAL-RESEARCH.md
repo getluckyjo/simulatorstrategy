@@ -45,7 +45,8 @@ we need answered. Every conclusion here is a working position for counsel to con
 8. **South Korea (phase two).** Whether an insurance-wrapped product (golfer as policyholder, a
    Korean carrier, Golfzon as distributor, Santam Re behind) avoids Criminal Act §246 and the
    Speculative Acts law, and what distribution licence the operator needs.
-9. **UK / EU.** Whether the product is a prize competition with a genuine skill element outside
+9. **The $1,000 → $1,000,000 tier.** Does a four-figure entry change the characterisation in any Green state (consumer-protection, responsible-play or licensing thresholds keyed to stake size); what KYC/AML, tax withholding and reporting attach to a $1M skill-contest prize; and whether a handicap-tiered prize (different prize for the same entry by verified ability) raises any fairness or disclosure issue.
+10. **UK / EU.** Whether the product is a prize competition with a genuine skill element outside
    the Gambling Act 2005 (s.14), and the equivalent per EU country of launch.
 
 Documents we will provide counsel: the official rules draft; the prize-indemnity policy schedule
@@ -219,7 +220,10 @@ Topgolf or a Golfzon Social will want for its own promotions anyway.
    version; sim data will be sharper because the target is fixed.
 2. **Repeated attempts at a fixed target.** GOLF.com's own point: hitting shot after shot at the
    same familiar target in simulated conditions is a very different thing from a par-3 you have
-   never seen — the repeatability is what makes it skill. Our hole whitelist supports this.
+   never seen — the repeatability is what makes it skill. The **designated Get Lucky hole** — one
+   fixed par-3 per course, chosen by Get Lucky and built into the operator's software, never by
+   the player — makes the target fixed and the per-hole ace rate measurable, which is the evidence
+   base for the skill argument and for the insurer's rate card.
 3. **The prize is not the pool.** Insurance certificate, policy schedule and the fund flow diagram
    (entry → Get Lucky/operator; claim → insurer → winner). This is the Florida AGO 90-58 structure.
 4. **No house edge, no counterparty.** Get Lucky's economics do not improve when the golfer misses
