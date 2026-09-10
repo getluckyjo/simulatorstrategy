@@ -189,10 +189,10 @@
   .team { display: grid; gap: 18px; margin-top: 2.6rem; }
   @media (min-width: 700px) { .team { grid-template-columns: 1fr 1fr; } }
   @media (min-width: 1000px) { .team { grid-template-columns: repeat(3, 1fr); } .person { grid-template-columns: 72px 1fr; gap: 14px; padding: 18px; } .person img { width: 72px; height: 72px; } .person b { font-size: 1.15rem; } .person p { font-size: .86rem; } }
-  .person { display: grid; grid-template-columns: 84px 1fr; gap: 18px; align-items: center; border-radius: var(--r); border: 1px solid rgba(245,240,225,.1); background: rgba(30,49,32,.55); padding: 20px; }
+  .person { display: grid; grid-template-columns: 84px 1fr; gap: 18px; align-items: start; border-radius: var(--r); border: 1px solid rgba(245,240,225,.1); background: rgba(30,49,32,.55); padding: 20px; }
   .person img { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(201,169,78,.5); }
   .person b { display: block; font-family: var(--display); font-size: 1.25rem; text-transform: uppercase; }
-  .person .role { font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+  .person .role { display: block; white-space: nowrap; font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
   .person p { font-size: .9rem; color: rgba(245,240,225,.65); margin-top: .4rem; }
   .partners { margin-top: 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: 22px 36px; border-radius: var(--r); border: 1px solid rgba(245,240,225,.1); background: rgba(30,49,32,.4); padding: 22px 26px; }
   .partners img { height: 48px; width: auto; }
@@ -423,9 +423,9 @@
     <p class="eyebrow">The people you would deal with</p>
     <h2>Operators, not a procurement desk.</h2>
     <div class="team">
-      <div class="person"><img src="/images/johannes.webp" alt="Johannes le Roux" width="320" height="320" loading="lazy" decoding="async"><div><b>Johannes le Roux</b><span class="role">Founder &amp; Managing Director</span><p>Built The Duchess with AB InBev and RMB behind it. Leads Get Lucky and Virgin Golf. Will be in Fairfax.</p></div></div>
-      <div class="person"><img src="/images/willie.webp" alt="Willie Ross" width="320" height="320" loading="lazy" decoding="async"><div><b>Willie Ross</b><span class="role">Chief Financial Officer</span><p>Partner at Bellair Road Investment Partners, the Cape Town private-equity firm with R5 billion under management. Harvard MBA. Owns the numbers, the financing and the order.</p></div></div>
-      <div class="person"><img src="/images/andrew.webp" alt="Andrew Davenport" width="320" height="149" loading="lazy" decoding="async"><div><b>Andrew Davenport</b><span class="role">Founder &amp; Marketing Director</span><p>Fifteen years in beverage and entertainment brands. Runs partnerships and the Virgin Active relationship.</p></div></div>
+      <div class="person"><img src="/images/johannes.webp" alt="Johannes le Roux" width="320" height="320" loading="lazy" decoding="async"><div><b>Johannes le Roux</b><span class="role">Founder &amp; MD</span><p>Built The Duchess with AB InBev and RMB behind it. Leads Get Lucky and Virgin Golf.</p></div></div>
+      <div class="person"><img src="/images/willie.webp" alt="Willie Ross" width="320" height="320" loading="lazy" decoding="async"><div><b>Willie Ross</b><span class="role">Chief Financial Officer</span><p>Partner at Bellair Road, R5 billion under management. Harvard MBA. Owns the numbers and the financing.</p></div></div>
+      <div class="person"><img src="/images/andrew.webp" alt="Andrew Davenport" width="320" height="149" loading="lazy" decoding="async"><div><b>Andrew Davenport</b><span class="role">Founder &amp; Marketing</span><p>Fifteen years in beverage and entertainment brands. Runs partnerships and Virgin Active.</p></div></div>
     </div>
     <div class="partners">
       <img src="/logos/santam-white.png" alt="Santam" width="320" height="178" loading="lazy" decoding="async">
