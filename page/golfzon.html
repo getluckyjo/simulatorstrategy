@@ -1,0 +1,361 @@
+<title>Get Lucky × Golfzon</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+  :root {
+    --ground: #F4F6F1;
+    --surface: #FFFFFF;
+    --surface-2: #E7EDE6;
+    --ink: #121C15;
+    --muted: #5A6A5E;
+    --line: #D2DAD3;
+    --flag: #C4382D;
+    --flag-soft: #F7E1DD;
+    --green: #1F6B45;
+    --green-soft: #DDEBE1;
+    --screen: #0E3A44;
+    --screen-2: #10505C;
+    --glow: #5FE3B0;
+    --gold: #A97C1F;
+    --gold-soft: #F4EBD3;
+    --shadow: 0 1px 2px rgba(18,28,21,.06), 0 10px 28px rgba(18,28,21,.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0D1411; --surface: #151E18; --surface-2: #1D2A21; --ink: #E8EEE8; --muted: #9AA99F; --line: #2B3A31;
+      --flag: #E4574B; --flag-soft: #3B1F1B; --green: #4DB57F; --green-soft: #1A3326;
+      --screen: #0A2A31; --screen-2: #0E3F49; --glow: #5FE3B0; --gold: #D9A93E; --gold-soft: #3A2E12;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0D1411; --surface: #151E18; --surface-2: #1D2A21; --ink: #E8EEE8; --muted: #9AA99F; --line: #2B3A31;
+    --flag: #E4574B; --flag-soft: #3B1F1B; --green: #4DB57F; --green-soft: #1A3326;
+    --screen: #0A2A31; --screen-2: #0E3F49; --glow: #5FE3B0; --gold: #D9A93E; --gold-soft: #3A2E12;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.4);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink); font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif; font-size: 17px; line-height: 1.55; padding-inline: 20px; padding-block: 0 72px; }
+  .wrap { max-width: 1040px; margin: 0 auto; }
+  h1, h2, h3, .display { font-family: "Barlow Condensed", "Arial Narrow", Arial, sans-serif; text-wrap: balance; }
+  h1 { font-size: clamp(2.5rem, 6.4vw, 4.4rem); font-weight: 700; line-height: .95; letter-spacing: -.01em; margin: 0 0 .6rem; }
+  h2 { font-size: clamp(1.7rem, 3.4vw, 2.3rem); font-weight: 600; line-height: 1.05; margin: 0 0 .6rem; }
+  h3 { font-size: 1.25rem; font-weight: 600; margin: 0 0 .35rem; line-height: 1.15; }
+  p { margin: 0 0 1rem; max-width: 66ch; }
+  a { color: var(--green); }
+  strong { font-weight: 600; }
+  .eyebrow { font-family: "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; font-weight: 600; color: var(--flag); margin: 0 0 .5rem; }
+  .muted { color: var(--muted); } .small { font-size: .9rem; }
+  .num, .tnum { font-variant-numeric: tabular-nums; }
+
+  .mast { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; padding-block: 18px 12px; border-bottom: 1px solid var(--line); font-size: .85rem; color: var(--muted); }
+  .mast b { color: var(--ink); font-family: "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .1em; font-weight: 600; }
+
+  /* hero: statement + the bay screen */
+  .hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 36px; align-items: center; padding-block: 44px 28px; }
+  @media (max-width: 800px) { .hero { grid-template-columns: 1fr; gap: 24px; } }
+  .hero .lede { font-size: 1.2rem; max-width: 58ch; margin-top: .8rem; }
+  .hero .lede em { color: var(--green); font-style: normal; font-weight: 600; }
+
+  .bay { background: var(--screen); color: #E6F4EF; border-radius: 10px; padding: 18px 20px 16px; box-shadow: var(--shadow); position: relative; overflow: hidden; font-size: .95rem; }
+  .bay::before { content: ""; position: absolute; inset: 0; background: radial-gradient(120% 70% at 50% 0%, var(--screen-2) 0%, transparent 60%); pointer-events: none; }
+  .bay > * { position: relative; }
+  .bay .top { display: flex; justify-content: space-between; align-items: baseline; font-family: "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .1em; font-size: .78rem; color: #9FD3C1; }
+  .bay .hole { margin-top: 10px; display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: end; border-bottom: 1px solid rgba(255,255,255,.15); padding-bottom: 12px; }
+  .bay .hole b { font-family: "Barlow Condensed", Arial, sans-serif; font-size: 1.6rem; font-weight: 700; line-height: 1; display: block; color: #FFFFFF; }
+  .bay .hole span { color: #9FD3C1; font-size: .85rem; }
+  .bay .yds { font-family: "Barlow Condensed", Arial, sans-serif; font-size: 1.6rem; font-weight: 700; color: var(--glow); line-height: 1; }
+  .bay .yds small { display: block; font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: #9FD3C1; font-weight: 600; }
+  .bay .opts { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+  .bay .opt { border: 1px solid rgba(255,255,255,.22); border-radius: 6px; padding: 10px 12px; display: grid; gap: 2px; }
+  .bay .opt.hi { border-color: var(--glow); background: rgba(95,227,176,.08); }
+  .bay .opt .e { font-family: "Barlow Condensed", Arial, sans-serif; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: #9FD3C1; }
+  .bay .opt .p { font-family: "Barlow Condensed", Arial, sans-serif; font-size: 1.7rem; font-weight: 700; line-height: 1; color: #FFFFFF; }
+  .bay .opt.hi .p { color: var(--glow); }
+  .bay .opt .r { font-size: .8rem; color: #C9E6DB; }
+  .bay .foot { margin-top: 12px; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; font-size: .8rem; color: #9FD3C1; }
+  .bay .foot b { color: #FFFFFF; font-weight: 600; }
+  .bay .cap { margin-top: 8px; font-size: .75rem; color: #7FB8A6; font-style: italic; }
+
+  .board { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; margin-block: 10px 44px; }
+  .board > div { background: var(--surface); padding: 16px 18px; }
+  .board .n { font-family: "Barlow Condensed", Arial, sans-serif; font-size: 2.3rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+  .board .n.flag { color: var(--flag); } .board .n.gold { color: var(--gold); }
+  .board .l { font-size: .85rem; color: var(--muted); margin-top: 6px; line-height: 1.3; }
+  @media (max-width: 720px) { .board { grid-template-columns: repeat(2, 1fr); } }
+
+  section { padding-block: 34px; border-top: 1px solid var(--line); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+  @media (max-width: 760px) { .grid2 { grid-template-columns: 1fr; } }
+
+  /* the two parts of the pitch */
+  .part { display: grid; grid-template-columns: 120px 1fr; gap: 24px; align-items: start; padding-block: 44px 10px; border-top: 3px solid var(--ink); }
+  @media (max-width: 640px) { .part { grid-template-columns: 1fr; gap: 8px; } }
+  .part .k { font-family: "Barlow Condensed", Arial, sans-serif; font-weight: 700; font-size: 3.2rem; line-height: .9; color: var(--flag); }
+  .part .k small { display: block; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 6px; }
+  .part h2 { font-size: clamp(1.9rem, 4vw, 2.7rem); }
+  .part p.lede { font-size: 1.1rem; }
+
+  .tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-family: "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; color: var(--muted); font-weight: 600; background: var(--surface-2); }
+  tr:last-child td { border-bottom: 0; }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  td.ok { color: var(--green); font-weight: 600; } td.bad { color: var(--flag); font-weight: 600; }
+
+  .facts { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .facts li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: start; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; margin-top: 7px; background: var(--green); }
+  .dot.flag { background: var(--flag); } .dot.gold { background: var(--gold); } .dot.mute { background: var(--muted); }
+
+  .callout { background: var(--green-soft); border-left: 4px solid var(--green); padding: 14px 18px; border-radius: 0 6px 6px 0; margin: 12px 0 18px; max-width: 72ch; }
+  .callout.flag { background: var(--flag-soft); border-left-color: var(--flag); }
+  .callout.gold { background: var(--gold-soft); border-left-color: var(--gold); }
+  .callout p:last-child { margin: 0; }
+
+  /* three-way value */
+  .three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  @media (max-width: 760px) { .three { grid-template-columns: 1fr; } }
+  .who { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; border-top: 4px solid var(--green); }
+  .who.g { border-top-color: var(--screen-2); } .who.v { border-top-color: var(--flag); } .who.l { border-top-color: var(--gold); }
+  .who h3 { margin-bottom: 8px; }
+  .who ul { margin: 0; padding-left: 18px; font-size: .95rem; display: grid; gap: 5px; }
+
+  /* phases */
+  .phases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+  @media (max-width: 760px) { .phases { grid-template-columns: 1fr; } }
+  .phases > div { background: var(--surface); padding: 14px 16px; }
+  .phases .t { font-family: "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .1em; font-size: .78rem; color: var(--muted); font-weight: 600; }
+  .phases .b { font-family: "Barlow Condensed", Arial, sans-serif; font-size: 1.5rem; font-weight: 700; line-height: 1.05; margin: 4px 0 6px; }
+  .phases p { font-size: .92rem; margin: 0; max-width: none; color: var(--muted); }
+
+  /* proof strip */
+  .proof { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 760px) { .proof { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 460px) { .proof { grid-template-columns: 1fr; } }
+  .proof div { border-top: 2px solid var(--ink); padding-top: 10px; }
+  .proof b { font-family: "Barlow Condensed", Arial, sans-serif; font-size: 1.35rem; font-weight: 700; display: block; line-height: 1.1; }
+  .proof span { font-size: .9rem; color: var(--muted); }
+
+  /* timeline */
+  .tl { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--line); }
+  .tl li { position: relative; padding: 0 0 16px 22px; }
+  .tl li::before { content: ""; position: absolute; left: -7px; top: 8px; width: 12px; height: 12px; border-radius: 50%; background: var(--green); border: 2px solid var(--ground); }
+  .tl li.key::before { background: var(--flag); }
+  .tl time { font-family: "Barlow Condensed", Arial, sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; font-size: .9rem; color: var(--muted); display: block; }
+  .tl b { display: block; font-weight: 600; }
+  .tl span { color: var(--muted); font-size: .95rem; }
+
+  /* asks */
+  .asks { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .asks li { display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: start; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+  .asks .k { font-family: "Barlow Condensed", Arial, sans-serif; font-weight: 700; font-size: 1.6rem; color: var(--flag); line-height: 1; padding-top: 2px; }
+  .asks b { display: block; font-weight: 600; }
+  .asks span { color: var(--muted); font-size: .95rem; }
+
+  footer { border-top: 1px solid var(--line); padding-top: 18px; font-size: .85rem; color: var(--muted); max-width: 80ch; }
+  :focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+</style>
+
+<div class="wrap">
+  <div class="mast">
+    <span><b>Get Lucky Golf Club</b> · For Golfzon</span>
+    <span>Prepared for Golfzon America and Golfzon Co. · September 2026 · Confidential</span>
+  </div>
+
+  <header class="hero">
+    <div>
+      <p class="eyebrow">A customer first · Virgin Golf · The Million Dollar Shot</p>
+      <h1>Golfzon in every Virgin Active club in Africa.<br>Then a game that makes every bay pay.</h1>
+      <p class="lede">Get Lucky is taking <em>Virgin Golf</em> — a Golfzon golf zone inside all 136 Virgin Active health clubs, 623,000 members — to Virgin Active this quarter. We would rather walk in with Golfzon. And on every bay Golfzon has ever sold, we want to switch on the insured hole-in-one challenge: a $1 slip for everyone, and a <em>$1,000 swing at $1,000,000</em>. The simulator measures it. Santam pays it. Ernie Els's name is on it. Golfzon keeps 30% of every entry and never carries a cent of prize risk.</p>
+    </div>
+    <div class="bay" role="img" aria-label="Illustration of the Get Lucky slip on a Golfzon bay screen">
+      <div class="top"><span>Get Lucky · insured by Santam</span><span>Bay 4</span></div>
+      <div class="hole">
+        <div><b>Pebble Beach · 17th</b><span>The designated Get Lucky hole on this course · par 3 · settings locked</span></div>
+        <div class="yds">178<small>yards</small></div>
+      </div>
+      <div class="opts">
+        <div class="opt"><span class="e">The slip</span><span class="p">$1 → $500</span><span class="r">also $2 → $1,000 · $5 → $2,500</span></div>
+        <div class="opt hi"><span class="e">Million Dollar Shot</span><span class="p">$1,000 → $1,000,000</span><span class="r">one flat prize · amateurs only · 1 attempt this round</span></div>
+      </div>
+      <div class="foot"><span>Verified by <b>your telemetry</b></span><span>Paid by <b>the insurer</b>, direct</span><span>Founding partner <b>Ernie Els</b></span></div>
+      <div class="cap">Illustration of the slip in the bay UI. The hole, yardage and settings are set per course by Get Lucky inside Golfzon's software.</div>
+    </div>
+  </header>
+
+  <div class="board" aria-label="Key numbers">
+    <div><div class="n">136</div><div class="l">Virgin Active clubs across South Africa, Botswana and Namibia — Virgin Active's largest territory, 35% of group revenue</div></div>
+    <div><div class="n">623,000</div><div class="l">active members at March 2026; the first Collection Country Club opened in Cape Town in February with a golf simulator already in it</div></div>
+    <div><div class="n flag">~250 bays</div><div class="l">what "Virgin Golf" is at two bays a club — a $6–10m platform order at Golfzon's published commercial pricing (our estimate)</div></div>
+    <div><div class="n gold">$1,000,000</div><div class="l">the insured Million Dollar Shot on the designated Get Lucky hole, in your software, the prize risk carried by Santam</div></div>
+  </div>
+
+  <section id="who">
+    <div class="grid2">
+      <div>
+        <p class="eyebrow">Who is asking</p>
+        <h2>Get Lucky sells golf's most exciting moment, insured.</h2>
+        <p>Get Lucky Golf Club is a South African company that lets a golfer pay a small entry for a real prize on a hole-in-one. The insurer carries the prize and pays the winner directly. We have done it <strong>10,000 times on 25 rigged courses in South Africa</strong>, underwritten by <strong>Santam</strong>, the country's largest short-term insurer, which also sponsors the platform. <strong>Ernie Els</strong> — four majors, two U.S. Opens, 24 career aces, South African — is our founding partner.</p>
+        <p>Our verifier was designed as "machine truth" from day one: on the course that is a tee camera and shot tracer; on a simulator it is the machine itself. Which is why the simulator is not a sideline for us. It is the business.</p>
+      </div>
+      <div class="proof">
+        <div><b>10,000</b><span>paid entries on the tee, insured, since launch</span></div>
+        <div><b>25 courses</b><span>rigged in South Africa with cameras and tracers</span></div>
+        <div><b>Santam</b><span>underwriter (FSP 3416, via Indwe) and a signed $486k sponsor on the same balance sheet</span></div>
+        <div><b>Ernie Els</b><span>founding partner; name and likeness in every market</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="part" id="order">
+    <div class="k"><small>Part</small>One</div>
+    <div>
+      <h2>The order: Virgin Golf.</h2>
+      <p class="lede">Golfzon already sells to gyms and fitness centres. Nobody has sold a whole national chain. We think the first one is in South Africa, and we think we can open the door.</p>
+    </div>
+  </div>
+
+  <section id="virgin" style="border-top:0; padding-top:10px">
+    <div class="grid2">
+      <div>
+        <h3>Why Virgin Active, and why now</h3>
+        <ul class="facts">
+          <li><span class="dot"></span><span><strong>It is the biggest health-club operator in Africa</strong> — 136 clubs, 623,000 active members, and the largest of Virgin Active's nine territories by revenue (35%, ahead of Italy and the UK).</span></li>
+          <li><span class="dot"></span><span><strong>It has already put a golf simulator in its flagship.</strong> Sir Richard Branson opened the first Collection Country Club at Point, Green Point, Cape Town, in February 2026: 5,500 m², a $5m-plus refit, padel, a recovery suite and a golf simulator — with more Collection upgrades planned across South Africa in 2026.</span></li>
+          <li><span class="dot"></span><span><strong>Its owner needs a yield story.</strong> Brait (80%, Christo Wiese; Virgin Group 20%) told the market in June 2026 it will list or sell Virgin Active within two years, raising $147m to get there. Southern African revenue grew 6% on yield as clubs were refurbished. A golf zone in every club is exactly the premium-yield product that story needs.</span></li>
+          <li><span class="dot flag"></span><span><strong>Trackman is already in Virgin Active's UK clubs.</strong> Two Trackman iO bays open at Chiswick Riverside this year. If the group standard is set in London, it will be Trackman. We would like it set in Cape Town, on Golfzon.</span></li>
+          <li><span class="dot"></span><span><strong>Golf is South Africa's club sport.</strong> 460-plus golf clubs and 139,000 handicapped club members; the Vitality wellness programme already gives its members Virgin Active access; and the country's most famous golfer is our founding partner.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>What Virgin Golf is</h3>
+        <p>A branded golf zone in every Virgin Active club, built on Golfzon: <strong>two bays in a standard club, three to four in a Collection club</strong>, with Golfzon's course library, Network Play across the chain, coaching through Golfzon Leadbetter content, a member ladder, and the Get Lucky challenge on the designated hole of every course. Members book it the way they book a padel court. Non-members buy it the way they buy a day pass.</p>
+        <div class="phases">
+          <div><div class="t">Phase 1 · 2027</div><div class="b">Collection and flagship clubs</div><p>10–12 clubs, 3–4 bays each: Point, Sandton, Umhlanga and the other refurbished premium sites. ~40 bays. The proof and the press.</p></div>
+          <div><div class="t">Phase 2 · 2027–28</div><div class="b">Metro clubs</div><p>50 clubs in Johannesburg, Pretoria, Cape Town and Durban at two bays. ~100 bays. The member ladder and Network Play across cities.</p></div>
+          <div><div class="t">Phase 3 · 2028–29</div><div class="b">Every club</div><p>The remaining 70-plus clubs, including Botswana and Namibia, at one to two bays. ~110 bays. About 250 in all.</p></div>
+        </div>
+        <p class="small muted" style="margin-top:10px">"Virgin Golf" is our working name for the concept. Use of the Virgin brand is Virgin Active's and Virgin Group's decision. Bay counts are our proposal, not Virgin Active's plan.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:26px">What each party gets</h3>
+    <div class="three">
+      <div class="who g"><h3>Golfzon</h3><ul>
+        <li>An anchor customer in a new territory: ~250 bays over three years, worth $6–10m at published commercial pricing.</li>
+        <li>The gym-and-fitness case study Golfzon's own sales pages ask for — a national chain, not a single club.</li>
+        <li>Network Play and Golfzon Global membership across a 623,000-member base; a Southern African leg for the Golfzon Tour.</li>
+        <li>The Get Lucky challenge running on Golfzon bays from day one, with Santam's paper and Ernie's name — the reference deployment for the US.</li>
+      </ul></div>
+      <div class="who v"><h3>Virgin Active</h3><ul>
+        <li>A premium-yield product in every club that fits the "social wellness club" strategy and the Collection tier.</li>
+        <li>New revenue per club: bay bookings, golf memberships, coaching, corporate events, and 30% of every Get Lucky entry.</li>
+        <li>A national talking point with Ernie Els and a Million Dollar Shot — and the video every ace produces.</li>
+        <li>A growth line for the listing story, on a balance sheet that already spends on refits.</li>
+      </ul></div>
+      <div class="who l"><h3>Get Lucky</h3><ul>
+        <li>The challenge inside 250 bays in the one market where we already hold a written skill-based legal opinion and a bound underwriter.</li>
+        <li>A measured ace rate by designated hole, from Golfzon telemetry, which prices the US rate card.</li>
+        <li>A member base that walks past the bay every day, not only on golf days.</li>
+        <li>The reference deployment we bring to Golfzon America, Five Iron and the PGA Show.</li>
+      </ul></div>
+    </div>
+
+    <div class="callout flag" style="margin-top:22px"><p><strong>Where this stands.</strong> We have not yet put this to Virgin Active; we intend to in the fourth quarter of 2026. What we are asking Golfzon for in Part One is to go in together: Southern African pricing and a reference design for a two-bay and a four-bay club, a joint proposal, and a named Golfzon lead. Ernie's name opens the room. Golfzon's platform and Santam's paper are what make it a decision rather than a conversation.</p></div>
+  </section>
+
+  <div class="part" id="game">
+    <div class="k"><small>Part</small>Two</div>
+    <div>
+      <h2>The game: the insured hole-in-one, in your software, everywhere.</h2>
+      <p class="lede">Golfzon's own data says a simulator ace happens once every 6,992 par-3 swings. That is the number that makes this insurable, and it is why the moment should be sold, not given away.</p>
+    </div>
+  </div>
+
+  <section id="product" style="border-top:0; padding-top:10px">
+    <div class="grid2">
+      <div>
+        <h3>How it works in the bay</h3>
+        <ul class="facts">
+          <li><span class="dot"></span><span><strong>One designated Get Lucky hole per course</strong>, chosen by us and built into Golfzon's software. The player never picks the hole, so the "lucky hole" problem Korea knows well goes away, and the insurer gets a measured rate per hole.</span></li>
+          <li><span class="dot"></span><span><strong>The slip:</strong> $1 → $500, $2 → $1,000, $5 → $2,500. One entry per round. Bought at booking, at the bay screen, or in the league.</span></li>
+          <li><span class="dot gold"></span><span><strong>The Million Dollar Shot:</strong> $1,000 → one flat $1,000,000 on a designated 170-yard-plus hole. Amateurs only — PGA members, tour players and anyone who has earned professional prize money are excluded, declared against ID. One attempt a round, three a day. Flagship venues and events first.</span></li>
+          <li><span class="dot"></span><span><strong>Your telemetry is the verifier.</strong> Ball-in-hole event, launch data, session and member ID, timestamp; bay video where it exists. Golfzon already auto-captures the ace video for Carrot Insurance in Korea. Settings locked for insured attempts; no practice-mode entries.</span></li>
+          <li><span class="dot"></span><span><strong>The insurer pays the winner directly.</strong> Get Lucky and Golfzon are never in the prize funds flow. Ladder claims confirmed in 24 hours; the Million Dollar Shot on a documented protocol.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>What a swing is worth, and who carries it</h3>
+        <div class="tablewrap"><table>
+          <thead><tr><th>Tier</th><th class="num">Entry</th><th class="num">Prize</th><th class="num">Golfzon</th><th class="num">Insurer</th><th class="num">Get Lucky</th></tr></thead>
+          <tbody>
+            <tr><td>The slip</td><td class="num">$1</td><td class="num">$500</td><td class="num ok">$0.30</td><td class="num">$0.24</td><td class="num">$0.46</td></tr>
+            <tr><td>The slip</td><td class="num">$5</td><td class="num">$2,500</td><td class="num ok">$1.50</td><td class="num">$1.20</td><td class="num">$2.30</td></tr>
+            <tr><td><strong>Million Dollar Shot</strong></td><td class="num">$1,000</td><td class="num">$1,000,000</td><td class="num ok">$300</td><td class="num">$450</td><td class="num">$250</td></tr>
+          </tbody></table></div>
+        <p class="small muted" style="margin-top:8px">Split on the slip is 46 / 30 / 24 (Get Lucky / Golfzon / insurer). The $1,000 tier plans a 45% cession so it binds on day one; against Golfzon's 1 in 7,000 the insurer's expected claim is $143 a swing, and 1 in 5,000 with professionals out is the planning rate. Rates are Santam's to confirm; a written indication is in progress.</p>
+        <div class="callout gold"><p><strong>Why the number is safe to say out loud.</strong> GOLF.com mined Golfzon's 2022 network: 7.63 billion shots, about a billion par-3 tee shots, 143,020 holes-in-one in completed rounds — one every 6,992 swings, 392 a day. The National Hole-in-One Registry puts the average golfer at 1 in 12,000 outdoors. An insurer can price that. Nobody in the world sells the jackpot on it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-golfzon">
+    <p class="eyebrow">Why Golfzon, and why not somebody else</p>
+    <h2>You own the platform, the U.S. Open, the Tour and the ace video pipe. You do not own the moment yet.</h2>
+    <div class="grid2">
+      <div>
+        <ul class="facts">
+          <li><span class="dot"></span><span><strong>Scale nobody matches:</strong> 9,400-plus locations, 47,000-plus simulators, 41 countries, 5.5 million members, 100 million rounds a year.</span></li>
+          <li><span class="dot"></span><span><strong>The U.S. Open's official simulator</strong> — and our founding partner won it twice. That sentence sells itself in every bay.</span></li>
+          <li><span class="dot"></span><span><strong>The Global Business Division moved to Virginia in March 2026.</strong> Every market outside Korea is now decided in the US, where 19 million people played only off-course last year and there are 1,500-plus commercial simulator venues.</span></li>
+          <li><span class="dot"></span><span><strong>Korea proves the demand.</strong> Five insurers and Golfzon itself sell screen-golf ace cover at $0.75–$1.20 a round, and the ace-to-insurer video pipe exists because Golfzon built it for Carrot. Every one of those products pays $112–$224 of celebration costs. None of them pays a jackpot.</span></li>
+          <li><span class="dot flag"></span><span><strong>The white space is closing.</strong> Full Swing's Skill Strike pays $100 for a $3 ace and Full Swing now belongs to Golf Channel's owner. Five Iron sells $1 closest-to-pin entries on Trackman. On Golfzon there is no per-shot money game at all. We would like to be it, first and exclusively.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>What the challenge does for Golfzon</h3>
+        <p>It is not a revenue line by itself — at a 10% attach the slip earns a bay a few hundred dollars a year. It is the reason to walk into the bay, the video every ace produces, and a story the Tour and Network Play can carry: <strong>a live Million Dollar Shot with Ernie Els, monthly, on a Golfzon screen.</strong> The revenue is in the bays it fills and the chains it helps sell — Virgin Active first.</p>
+        <p>In the US, our base case has the challenge on ~1,500 paid bays by the 2027–28 winter across Golfzon, Five Iron and X-Golf, with operators sharing about $340k in year one and $680k in year two, plus the Million Dollar Shot at flagship venues. Golfzon's share scales with Golfzon's bays; category exclusivity on the platform is on the table for a minimum venue count.</p>
+        <div class="callout"><p><strong>Legal, in one paragraph.</strong> In South Africa we hold a written skill-based opinion and a bound underwriter. In the US, hole-in-one contests for an entry fee have been held to be skill contests since Nevada in 1961; we have mapped all fifty states, will run paid entry in the 18 states where the answer is clear (New York, Illinois, Texas, Florida, California and Georgia among them) and a free-to-play, operator-funded version everywhere else, with counsel's opinion before any term sheet. Korea, later, as an insurance-wrapped product with a Korean carrier and Santam Re behind it — the structure Carrot × Golfzon already uses.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ask">
+    <p class="eyebrow">The ask</p>
+    <h2>Three things, in this order.</h2>
+    <ul class="asks">
+      <li><span class="k">1</span><div><b>Go into Virgin Active together.</b><span>Southern African pricing for a two-bay and a four-bay club, a reference design, a joint proposal and a named Golfzon lead for the pitch. We take it in during the fourth quarter of 2026 with Ernie's name on the cover.</span></div></li>
+      <li><span class="k">2</span><div><b>A 90-day paid pilot of the challenge in the United States, January to April 2027.</b><span>Golfzon Social Brooklyn, Scarsdale and Chicago, Golfzon Range Westbury and selected commercial partners in New York and Illinois: the slip in the bay UI, the Million Dollar Shot at two flagship venues, full telemetry shared. Launched on the floor at the PGA Show with the Golfzon Tour finals.</span></div></li>
+      <li><span class="k">3</span><div><b>An hour in Fairfax in November, and dinner in Orlando in January.</b><span>Johannes le Roux will come to Virginia in November 2026 with the Santam indication and the Virgin Active proposal. At the PGA Show, a private Get Lucky × Ernie Els dinner for Golfzon America — Ernie lives two and a half hours away.</span></div></li>
+    </ul>
+    <div class="grid2" style="margin-top:22px">
+      <div>
+        <h3>What we bring to the table</h3>
+        <ul class="facts">
+          <li><span class="dot"></span><span>Santam's written indication on all three tiers, with caps and territory, before any rate is in a deck.</span></li>
+          <li><span class="dot"></span><span>Ernie Els's name and likeness, with his counsel's sign-off, in Golfzon and Virgin Active materials.</span></li>
+          <li><span class="dot"></span><span>The verifier specification and the SDK build, at our cost, against Golfzon's API — cloudandthings is our build partner.</span></li>
+          <li><span class="dot"></span><span>The 50-state legal map and the geo-gating so nothing switches on where it shouldn't.</span></li>
+          <li><span class="dot"></span><span>A term sheet: platform integration, 46 / 30 / 24, twelve months of category exclusivity against a minimum venue count.</span></li>
+        </ul>
+      </div>
+      <ul class="tl">
+        <li><time>Sep–Oct 2026</time><b>Santam indication · Ernie sign-off · this proposal to Golfzon</b><span>Golfzon pricing and reference design for Virgin Golf</span></li>
+        <li class="key"><time>Q4 2026</time><b>Virgin Active pitch, Cape Town — together</b><span>Collection and flagship clubs first</span></li>
+        <li class="key"><time>Nov 2026</time><b>Fairfax, Virginia</b><span>Golfzon America; pilot term sheet</span></li>
+        <li class="key"><time>26–29 Jan 2027</time><b>PGA Show, Orlando</b><span>Million Dollar Shot launch; Golfzon Tour finals; Ernie dinner</span></li>
+        <li><time>Jan–Apr 2027</time><b>US paid pilot, New York and Chicago</b><span>ace rate by designated hole; attach; Tier C demand</span></li>
+        <li><time>2027</time><b>Virgin Golf phase one live</b><span>10–12 clubs, ~40 bays, the challenge on every one</span></li>
+        <li><time>Nov 2027</time><b>"Million Dollar Winter" — national US launch</b><span>18 states paid, free-play elsewhere</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Johannes le Roux</strong> · Founder &amp; Managing Director, Get Lucky Golf Club (Pty) Ltd · johannes@getluckygolfclub.com · +27 60 961 5091 · Cape Town</p>
+    <p>All amounts in US dollars (rand at R18.5/$; won at ₩1,337/$). Sources: Brait PLC audited results for the year to 31 March 2026 (18 June 2026) for Virgin Active club, member, revenue and ownership figures; Virgin Active South Africa and Virgin Active UK; GOLF.com's analysis of Golfzon 2022 network data for the ace rate; National Golf Foundation for US participation; Golfzon's published commercial pricing. "Virgin Golf" is Get Lucky's working name for a proposed concept and implies no agreement with Virgin Active or Virgin Group. Forward-looking figures are plans, not commitments. No agreement exists with Golfzon or Virgin Active as at 10 September 2026. Confidential — prepared for Golfzon.</p>
+  </footer>
+</div>

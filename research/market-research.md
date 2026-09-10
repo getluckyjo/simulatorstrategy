@@ -235,3 +235,21 @@ is the stretch if the whitelist holds the rate; 250× is the fallback.
 - `data/model.json` `insuranceModel`: 24% premium, 100% cover, Indwe 20% brokerage, 1-in-12,500, 31.9% loss ratio, "no revised policy is bound on these terms as at August 2026".
 - `INVESTOR-REVIEW.md`: "No contact has been made with any simulator operator"; the evidence needed is "a broker indication for a $1,000 simulator prize at simulator ace frequency".
 - `HANDOFF.md:1125`: the unmodelled "organic route" — any golfer can open the Get Lucky app in any bay without an operator deal.
+
+## 15. Virgin Active South Africa — the "Virgin Golf" order (added 10 September 2026)
+
+| Fact | Source | Date |
+|---|---|---|
+| Virgin Active operates 136 health clubs across South Africa, Botswana and Namibia ("130+ clubs" on the SA membership page) | https://www.virgin.com/virgin-companies/virgin-active-south-africa · https://www.virginactive.co.za/memberships | 2026 |
+| 623,000 active members in Southern Africa at March 2026; Southern Africa = 35% of Virgin Active group revenue (Italy 27%, UK 24%); Southern African revenue +6% YoY on yield; group EBITDA +37% to £110m; Brait's stake valued R9.39bn (~$551m) = 54% of Brait's assets; Brait to list or sell Virgin Active within two years; R2.5bn (~$147m) rights offer | Brait PLC audited results FY to 31 Mar 2026 (SENS, 18 Jun 2026) via https://www.businessofsportsafrica.com/latest-insights/brait-targets-virgin-active-exit-within-two-years-launches-r25-billion-rights-offer-to-get-there · https://www.sharenet.co.za/v3/sens_display.php?tdate=20260618070500&seq=1 | 18 Jun 2026 |
+| Ownership: Brait 80% (Christo Wiese), Virgin Group 20% (since the 2015 £682m deal) | https://en.wikipedia.org/wiki/Virgin_Active · https://www.theguardian.com/business/2015/apr/16/virgin-active-stake-sold-to-south-africas-brait | 2015 / 2025 |
+| Group CEO Dean Kowarski; "social wellness clubs" positioning, moving upmarket | https://fm.co.za/features/2026-03-12-changing-tone-at-the-workout/ | 12 Mar 2026 |
+| First Collection Country Club at Point, Green Point, Cape Town: R100m+ (~$5.4m), 5,500 m², opened by Sir Richard Branson; padel, recovery suite, **a golf simulator**; more Collection developments planned across SA in 2026 | https://www.bizcommunity.com/article/sir-richard-branson-opens-virgin-active-sa-first-collection-country-club-517600a · https://www.2oceansvibe.com/1-lifestyle/richard-branson-unveiled-the-first-virgin-active-country-collection-social-wellness-club-in-green-point/ · https://www.instagram.com/p/DU7oX_ygkij/ | Feb 2026 |
+| Virgin Active UK: two Trackman iO simulators coming to Chiswick Riverside | https://www.virginactive.co.uk/blogs/articles/2026/08/24/what-are-golf-simulators | 24 Aug 2026 |
+| Golfzon sells a gyms-and-fitness vertical; commercial simulators "starting at $21,300"; Golfzon blog claims $150–175k revenue per bay per year (US commercial venues) | https://www.golfzongolf.com/select-your-space/gyms-and-fitness-centers · https://www.golfzongolf.com/start-a-golf-simulator-business · https://www.golfzongolf.com/blog/commercial/the-perfect-indoor-golf-simulator-to-grow-your-business | 2026 |
+| Golfzon in SA: iPlanet Golf distributed Golfzon systems in 2016; Full Swing's SA distributor is That's Golf; Trackman venues (The Tee, Cape Town) exist | https://www.intelligentcio.com/africa/2016/03/06/iplanet-golf-introduces-golf-simulation-theatre-in-south-africa/ · https://thetee.co.za/ | 2016 / 2026 |
+| GolfRSA: 460+ golf clubs, 139,000 club members with handicaps | https://golfrsa.com/what-is-golfrsa/ | 2026 |
+| Former SA MD Jessica Spira (Oct 2022 – Sep 2023); current SA MD not confirmed | https://za.linkedin.com/in/jessica-spira | 2026 |
+
+Bay-count and order-value figures in `STRATEGY.md` §14 and `page/golfzon.html` (~250 bays; $6–10m)
+are Get Lucky's estimates: 136 clubs at roughly two bays each, $25–40k installed per bay.
