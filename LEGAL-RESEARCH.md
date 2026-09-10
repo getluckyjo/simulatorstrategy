@@ -45,7 +45,7 @@ we need answered. Every conclusion here is a working position for counsel to con
 8. **South Korea (phase two).** Whether an insurance-wrapped product (golfer as policyholder, a
    Korean carrier, Golfzon as distributor, Santam Re behind) avoids Criminal Act §246 and the
    Speculative Acts law, and what distribution licence the operator needs.
-9. **The $1,000 → $1,000,000 tier.** Does a four-figure entry change the characterisation in any Green state (consumer-protection, responsible-play or licensing thresholds keyed to stake size); what KYC/AML, tax withholding and reporting attach to a $1M skill-contest prize; and whether a handicap-tiered prize (different prize for the same entry by verified ability) raises any fairness or disclosure issue.
+9. **The $1,000 → $1,000,000 tier.** Does a four-figure entry change the characterisation in any Green state (consumer-protection, responsible-play or licensing thresholds keyed to stake size); what KYC/AML, tax withholding and reporting attach to a $1M skill-contest prize; and whether excluding professional golfers (PGA members, tour status, professional prize money) from a flat $1M prize is a lawful and enforceable eligibility condition, how it should be defined and verified, and the consequence of a false declaration.
 10. **UK / EU.** Whether the product is a prize competition with a genuine skill element outside
    the Gambling Act 2005 (s.14), and the equivalent per EU country of launch.
 
