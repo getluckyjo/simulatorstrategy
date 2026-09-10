@@ -528,8 +528,8 @@ the site.
 Collection/flagship clubs at 3–4 bays), 120 Play (TwoVision / Vision Standard; 60 metro clubs at 2
 bays), 40 Practice (GDR Plus). Phase 1 (2027) 40 units; Phase 2 (2027–28) 100; Phase 3 (2028–29)
 60. Indicative order value at published and third-party pricing: **$8–12m** depending on mix — our
-estimate, not on the site. What we ask Golfzon for: pricing for 200 in three phases, two-bay and
-four-bay reference designs, a Southern African installation/service model, Network Play and a
+estimate, not on the site. Financing for the order is secured with RMB (per Johannes, 10 Sep 2026). What we ask Golfzon
+for: pricing for 200 in three phases, two-bay and four-bay reference designs, a Southern African installation/service model, Network Play and a
 Golfzon Tour leg, and a named lead.
 
 **What it does for the strategy.** (1) The Golfzon conversation opens with an order, not an ask —
