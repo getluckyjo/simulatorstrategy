@@ -249,6 +249,7 @@ is the stretch if the whitelist holds the rate; 250× is the fallback.
 | Golfzon sells a gyms-and-fitness vertical; commercial simulators "starting at $21,300"; Golfzon blog claims $150–175k revenue per bay per year (US commercial venues) | https://www.golfzongolf.com/select-your-space/gyms-and-fitness-centers · https://www.golfzongolf.com/start-a-golf-simulator-business · https://www.golfzongolf.com/blog/commercial/the-perfect-indoor-golf-simulator-to-grow-your-business | 2026 |
 | Golfzon in SA: iPlanet Golf distributed Golfzon systems in 2016; Full Swing's SA distributor is That's Golf; Trackman venues (The Tee, Cape Town) exist | https://www.intelligentcio.com/africa/2016/03/06/iplanet-golf-introduces-golf-simulation-theatre-in-south-africa/ · https://thetee.co.za/ | 2016 / 2026 |
 | GolfRSA: 460+ golf clubs, 139,000 club members with handicaps | https://golfrsa.com/what-is-golfrsa/ | 2026 |
+| Virgin Active group footprint: 226 locations — UK 32, South Africa 136, Italy 33, Australia 11, Singapore 6, Thailand 8, Namibia 2, Botswana 1; LinkedIn: "over 230 clubs in 8 countries and more than 1.2 million members"; UK site: 31 clubs | https://en.wikipedia.org/wiki/Virgin_Active · https://uk.linkedin.com/company/virgin-active · https://www.virginactive.co.uk/memberships/club-access | 2026 |
 | Former SA MD Jessica Spira (Oct 2022 – Sep 2023); current SA MD not confirmed | https://za.linkedin.com/in/jessica-spira | 2026 |
 
 Bay-count and order-value figures in `STRATEGY.md` §14 and `page/golfzon.html` (~250 bays; $6–10m)

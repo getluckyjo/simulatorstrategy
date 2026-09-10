@@ -512,6 +512,18 @@ inlined assets is published privately as the artifact from `page/golfzon.html`.
 | **Virgin Active UK is installing two Trackman iO bays at Chiswick Riverside (2026)** | If the group standard is set in London it will be Trackman. We want it set in Cape Town, on Golfzon — this is the line that makes Golfzon move |
 | Golfzon markets a gyms-and-fitness vertical (commercial bays from $21,300; TwoVision NX quoted by third parties at $55–90k) but has no chain-wide reference customer | We would be the case study their own sales pages ask for |
 
+**The vision, as now on the site: Virgin Active globally, South Africa first.** Virgin Active is
+one group in eight countries — about 230 clubs, 1.2 million members: South Africa 136 (with Namibia
+and Botswana), UK 32, Italy 33, Australia 11, Singapore 6, Thailand 8. Chapter one is the 200-bay
+South African order (2027–29). Chapter two is the rest of the group on the South African numbers:
+UK and Italy (~65 bays each, 2029–30), Australia (~25) and Singapore/Thailand (~30) in 2030–31 —
+roughly 385 bays group-wide, at about two a club, our planning assumption. The argument to Golfzon
+is that the platform decision is a group decision made once, and Trackman is already in Chiswick;
+the argument to Virgin Active is one membership, one leaderboard, Network Play between Sandton and
+Chiswick, and Ernie's name in every territory (two Opens in Britain, three Heineken Classics in
+Australia, a design business across Asia). Each territory is Virgin Active's own decision — said on
+the site.
+
 **The order as briefed:** 200 units in three bay types — 40 Signature (TwoVision NX; 10–12
 Collection/flagship clubs at 3–4 bays), 120 Play (TwoVision / Vision Standard; 60 metro clubs at 2
 bays), 40 Practice (GDR Plus). Phase 1 (2027) 40 units; Phase 2 (2027–28) 100; Phase 3 (2028–29)
