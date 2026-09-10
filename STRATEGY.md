@@ -470,7 +470,7 @@ Three deal shapes, in the order we offer them:
 
 | # | Action | Owner | By |
 |---|---|---|---|
-| 1 | Send Indwe/Santam the 500× and 1,000× ladders, the Golfzon ace-rate data and the pilot shape; ask for a written indication and a territory view (Santam Re / fronting) | JLR | 18 Sep 2026 |
+| 1 | Send Indwe the underwriting brief (`SANTAM-BRIEF.md`): the 500× and 1,000× ladders, the $1,000 → $1M tier, the Golfzon ace-rate data, the pilot shape; ask for written indications, the aggregate, the layer above $100k and a territory view | JLR | 18 Sep 2026 |
 | 2 | Ask Ernie's counsel for sign-off on operator brand use; draft the three operator letters for his approval | JLR | 18 Sep 2026 |
 | 3 | Write the operator one-pager and 8-slide deck — mechanic, split, Ernie, no rates | JLR + AD | 25 Sep 2026 |
 | 4 | Cut a 90-second bay demo from the existing demo flow | AD + cloudandthings | 30 Sep 2026 |
