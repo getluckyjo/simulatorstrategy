@@ -152,10 +152,13 @@
   .actions .by { font-family: "Barlow Condensed", Arial, sans-serif; text-transform: uppercase; letter-spacing: .06em; font-size: .8rem; color: var(--muted); white-space: nowrap; }
   @media (max-width: 560px) { .actions li { grid-template-columns: 36px 1fr; } .actions .by { grid-column: 2; } }
 
-  .beats { counter-reset: b; list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; max-width: 68ch; }
-  .beats li { display: grid; grid-template-columns: 34px 1fr; gap: 10px; }
-  .beats li::before { counter-increment: b; content: counter(b); font-family: "Barlow Condensed", Arial, sans-serif; font-weight: 700; font-size: 1.4rem; color: var(--green); line-height: 1.1; }
-  .beats b { display: block; }
+  .beats { counter-reset: b; list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; max-width: 60ch; }
+  .beats li { display: grid; grid-template-columns: 26px 1fr; gap: 8px; align-items: start; font-size: .95rem; line-height: 1.4; }
+  .beats li::before { counter-increment: b; content: counter(b); font-family: "Barlow Condensed", Arial, sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--green); line-height: 1.1; padding-top: 2px; }
+  .beats b { display: inline; font-weight: 600; }
+  #pitch .grid2 { gap: 20px; align-items: start; }
+  .tablewrap.compact th, .tablewrap.compact td { padding: 7px 10px; font-size: .9rem; }
+  .tablewrap.compact .use { display: block; color: var(--muted); font-size: .85rem; margin-top: 2px; }
 
   footer { border-top: 1px solid var(--line); padding-top: 18px; font-size: .85rem; color: var(--muted); max-width: 80ch; }
   :focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
@@ -405,20 +408,20 @@
     <h2>Seven beats. Then a term sheet.</h2>
     <div class="grid2">
       <ol class="beats">
-        <li><b>The moment.</b> Golf's most exciting moment has never been sold to the golfer. We've sold it 10,000 times, on the tee, insured.</li>
-        <li><b>Your machine already measures the shot.</b> No cameras, no hardware, no install.</li>
-        <li><b>We insure the moment.</b> A $1 swing at a real prize; the insurer pays the winner; nobody carries the prize.</li>
-        <li><b>You keep 30%.</b> Three times what a golf course gets.</li>
-        <li><b>Ernie Els is our founding partner.</b> Two U.S. Opens, 24 career aces, his name on the prize moment.</li>
-        <li><b>It already works at $0.75 a round.</b> Korea sells ace cover; nobody sells the jackpot. We are the jackpot.</li>
-        <li><b>A 90-day pilot, your venues, our paper.</b> Here is the term sheet.</li>
+        <li><span><b>The moment.</b> Golf's most exciting moment has never been sold to the golfer. We've sold it 10,000 times, on the tee, insured.</span></li>
+        <li><span><b>Your machine already measures the shot.</b> No cameras, no hardware, no install.</span></li>
+        <li><span><b>We insure the moment.</b> A $1 swing at a real prize; the insurer pays the winner; nobody carries the prize.</span></li>
+        <li><span><b>You keep 30%.</b> Three times what a golf course gets.</span></li>
+        <li><span><b>Ernie Els is our founding partner.</b> Two U.S. Opens, 24 career aces, his name on the prize moment.</span></li>
+        <li><span><b>It already works at $0.75 a round.</b> Korea sells ace cover; nobody sells the jackpot. We are the jackpot.</span></li>
+        <li><span><b>A 90-day pilot, your venues, our paper.</b> Here is the term sheet.</span></li>
       </ol>
-      <div class="tablewrap"><table>
-        <thead><tr><th>Deal shape</th><th>What</th><th>Use with</th></tr></thead>
+      <div class="tablewrap compact"><table>
+        <thead><tr><th>Deal shape</th><th>What</th></tr></thead>
         <tbody>
-          <tr><td><strong>Platform integration</strong></td><td>Get Lucky slip in the operator's bay UI and app; 46/30/24; operator-wide</td><td>Golfzon, Trackman</td></tr>
-          <tr><td><strong>White-label</strong></td><td>"Ace Jackpot powered by Get Lucky × Ernie Els" inside their own real-money product</td><td>Five Iron Tournaments, Skill Strike</td></tr>
-          <tr><td><strong>90-day pilot</strong></td><td>50–100 venues, one country, repriced ladder, full telemetry share; 12-month category exclusivity against a minimum venue commitment</td><td>Every first conversation</td></tr>
+          <tr><td><strong>Platform integration</strong></td><td>Get Lucky slip in the operator's bay UI and app; 46/30/24; operator-wide<span class="use">Golfzon · Trackman</span></td></tr>
+          <tr><td><strong>White-label</strong></td><td>"Ace Jackpot powered by Get Lucky × Ernie Els" inside their real-money product<span class="use">Five Iron Tournaments · Skill Strike</span></td></tr>
+          <tr><td><strong>90-day pilot</strong></td><td>50–100 venues, one country, repriced ladder, full telemetry share; 12-month exclusivity against a minimum venue commitment<span class="use">Every first conversation</span></td></tr>
         </tbody></table></div>
     </div>
   </section>
