@@ -1,12 +1,65 @@
-# The insured simulator ace — US legal review, state by state
+# Legal research — the insured hole-in-one challenge on simulators
 
-**Get Lucky Golf Club · 10 September 2026 · inputs for counsel, not legal advice.**
-This is the working brief for the US gaming-law opinion (STRATEGY.md action 5). It sets out the
-concept as a lawyer will see it, the precedent that is directly on point, the tests each state
-applies, what the three live real-money simulator products already exclude, and a working tier
-for every state. Every tier is a starting position for counsel to confirm or overturn.
+**Get Lucky Golf Club (Pty) Ltd · Registration 2025/047585/07 · compiled 10 September 2026**
+
+## Purpose and status
+
+This document is the company's own legal research on the simulator product. It is **not legal
+advice and no lawyer has reviewed it.** It exists so that, when we engage counsel, they start
+from an organised brief rather than a blank page: the product as the law will see it, the
+precedent we have found, the tests each jurisdiction applies, what comparable products already
+do, our working state tiers, the structures that change the answer, and the specific questions
+we need answered. Every conclusion here is a working position for counsel to confirm or overturn.
+
+| Item | Status |
+|---|---|
+| Counsel engaged | **Not yet.** To be engaged before any pilot term sheet is signed (STRATEGY.md, gate G3) |
+| South Africa | Written skill-based opinion held (on-course product); simulator variant not yet opined on |
+| United States | Research complete (this document, Parts A–C); opinion outstanding |
+| South Korea | Research notes only (Part D); Korean counsel outstanding; phase-two market |
+| UK / EU | Notes only (Part D); per-country opinion outstanding |
+
+## Brief for counsel — the questions we need answered
+
+1. **Characterisation.** Is a $1-per-attempt, insurer-funded, fixed-prize hole-in-one challenge
+   on a simulator a contest of skill rather than gambling, under (a) the predominant-factor test,
+   (b) a material-element statute (NY PL 225.00, NJ 2C:37-1, RCW 9.46.0225), and (c) a
+   wager-focused statute? What weight do *Las Vegas Hacienda*, *Cobaugh*, *Chenard*, *Grove* and
+   Florida AGO 90-58 carry today?
+2. **The 18 Green states.** Confirm paid entry with our official rules, 18+ age gate, venue
+   geolocation and 1099 reporting is lawful in each, and list any state-specific disclosure or
+   rules requirements (e.g. California B&P §§ 17539.1–17539.3).
+3. **The comparables' exclusions.** Why do Skill Strike and Five Iron exclude NV, PA, WA, NH and
+   VA, and does the reason apply to a fixed, insurer-funded prize?
+4. **Structure B.** Confirm that operator- or sponsor-funded free play (no consideration from the
+   golfer) carries no gambling exposure in any state, and identify any prize-promotion
+   registration, bonding or disclosure it triggers (FL, NY, RI thresholds; AZ; others).
+5. **Structure E.** Whether bundling the insured swing into the bay rate at no increment removes
+   consideration in Arizona-type states.
+6. **Funds flow and licensing.** Any state requiring a licence or registration for the entry-fee
+   collector, the prize-indemnity insurer (admitted carrier / surplus lines / Lloyd's coverholder)
+   or the payment processor; merchant-category and UIGEA considerations for the acquiring bank.
+7. **Operator contract.** Allocation of compliance responsibility between Get Lucky and the
+   operator (Golfzon Tour puts it on the host facility); indemnities; the data-sharing clause for
+   ace rate by handicap band.
+8. **South Korea (phase two).** Whether an insurance-wrapped product (golfer as policyholder, a
+   Korean carrier, Golfzon as distributor, Santam Re behind) avoids Criminal Act §246 and the
+   Speculative Acts law, and what distribution licence the operator needs.
+9. **UK / EU.** Whether the product is a prize competition with a genuine skill element outside
+   the Gambling Act 2005 (s.14), and the equivalent per EU country of launch.
+
+Documents we will provide counsel: the official rules draft; the prize-indemnity policy schedule
+(Santam via Indwe) and the fund-flow diagram; the app spec's verification and geo-gating sections
+(`GetLucky_App_Requirements.md` §24, P-12); the existing South African opinion; pilot telemetry
+(ace rate by handicap band, by hole) as soon as a pilot is live.
 
 ---
+
+# Part A — United States: the concept, the precedent, the tests
+
+The working brief for the US gaming-law opinion (STRATEGY.md action 5): the concept as a lawyer
+will see it, the precedent directly on point, the tests each state applies, what the three live
+real-money simulator products already exclude, and a working tier for every state.
 
 ## 1. The concept, as the law sees it
 
@@ -68,7 +121,9 @@ Players' Lounge excludes it because pooled entries fund the prize (s. 849.14); A
 fixed sponsor-funded prize is fine — which is exactly why our insured prize is better placed in
 Florida than Five Iron's.
 
-## 5. State-by-state working tiers
+# Part B — State-by-state working tiers
+
+## 5. The tiers
 
 **Tier key.** 🟢 **Green** — paid $1 entry with standard official rules, age 18+, venue geolocation
 and 1099 reporting; counsel confirms, no structural change expected. 🟡 **Amber** — counsel opinion
@@ -139,6 +194,8 @@ Las Vegas — plus **California and Texas**, where Golfzon reports its fastest U
 being Red is awkward only symbolically: Golfzon America's office is in Fairfax County, but no
 venue there needs to run paid entry for the deal to work.
 
+# Part C — Structures, evidence and the federal overlay
+
 ## 6. Structures that change the answer
 
 | Structure | Consideration? | Where it unlocks | Cost |
@@ -183,7 +240,7 @@ Topgolf or a Golfzon Social will want for its own promotions anyway.
 - **Prize indemnity**: a regulated insurance line. The insured is Get Lucky (or the operator); a
   US-admitted carrier or a Lloyd's coverholder is needed for US risks if Santam does not front.
 
-## 9. What this changes in the strategy
+## 9. What this changes in the strategy (US)
 
 - The **US pilot is Green-state only** for paid entry: New York and Florida first (Five Iron NYC;
   Golfzon Social NY; Ernie's Florida), then Illinois, Georgia, Massachusetts, Ohio, Texas, California.
@@ -195,6 +252,53 @@ Topgolf or a Golfzon Social will want for its own promotions anyway.
   exposure anywhere and identify any prize-promotion registration it triggers.
 - **Ask both pilot partners for ace rate by handicap band** in the data-sharing clause — it is
   the single most persuasive piece of evidence on the skill question.
+
+# Part D — Other markets (research notes, no counsel yet)
+
+## 10. South Africa
+
+The on-course product operates as a competition with an operator-funded, insured prize: an entry
+fee to Get Lucky, a prize paid by the insurer, no pot and no counterparty. The company holds a
+written legal opinion that this is skill-based and requires no gaming licence. The simulator
+variant changes the verifier (machine telemetry instead of a camera) and the venue (a bay, not a
+tee); it does not change the fund flow. **Ask:** a short supplementary opinion covering the
+simulator variant, the free side games (modelled at zero revenue precisely because South Africa's
+informal-bet exemption dies the moment a third party takes a gain) and the membership-included
+swing. Underwriter: Santam, Authorised FSP 3416; broker of record: Indwe.
+
+## 11. South Korea (phase two)
+
+- **Criminal Act Article 246** prohibits gambling; the Supreme Court has held that golf betting
+  games are gambling even though skill affects the outcome (Korea Times, 27 Oct 2008;
+  Chambers Gaming Law 2025, South Korea).
+- **Act on Special Cases concerning Regulation and Punishment of Speculative Acts**
+  (사행행위 등 규제 및 처벌 특례법) defines a speculative act as collecting money from many people and
+  deciding gain or loss by chance, and lists "현상업" — awarding property to those who achieve a
+  specified thing — among permit-only businesses. A paid-entry ace prize could be read as 현상업.
+- **Game Industry Promotion Act** bans cash prizes in game venues, but screen-golf centres have
+  been ruled athletic facilities, not game venues (Golf Digest; PMC review).
+- **What demonstrably works:** insurance. Carrot × Golfzon (2020), Lotte CREW (Jan 2026) and NH
+  all sell the golfer a short-term hole-in-one policy at the bay, with Golfzon transmitting the
+  ace video to the insurer. **Working structure for Korea:** the golfer is the policyholder, a
+  Korean carrier underwrites, Golfzon distributes as an insurance agent, Santam Re sits behind
+  the carrier. Fraud is a known problem in Korean ace insurance (staged aces; an agent's licence
+  revoked) — telemetry verification is a selling point to a Korean carrier.
+- **Ask Korean counsel:** whether the insurance wrapper avoids §246 and 현상업; the distribution
+  licence Golfzon needs; whether a fixed "congratulation money" sum (as 골프단짝 pays) is treated as
+  insurance or as a prize; advertising rules for insurance sold at a sports facility.
+
+## 12. United Kingdom and EU
+
+- **UK:** a prize competition sits outside the Gambling Act 2005 where success depends on the
+  exercise of skill, judgement or knowledge that would deter a significant proportion of entrants
+  or prevent a significant proportion from winning (s.14). A single-shot ace will be argued both
+  ways; the same skill-differential evidence applies. Five Iron operates in London; NEXT Golf
+  Tour runs paid entries from Denmark. UK prize-indemnity brokers (Lloyd's coverholders) serve
+  events, so capacity exists.
+- **EU:** gambling is regulated nationally; each launch country needs its own opinion. Denmark
+  (NEXT's home) and the Netherlands (Solheim Cup 2026, Trackman) are the natural first questions.
+- **Ask:** a UK opinion on s.14 for the paid product and on the free-play structure; a
+  short per-country memo for any EU pilot market before launch.
 
 ## Sources
 
