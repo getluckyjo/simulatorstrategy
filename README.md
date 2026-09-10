@@ -7,6 +7,7 @@ simulator operator, with Santam as the underwriter and Ernie Els's name on the d
 |---|---|
 | `STRATEGY.md` | The decision document. Thesis, honest starting point, market and why now, competitors (CREW and friends), which market first, product and pricing that underwrites, legal by market, target dossiers, Santam and Ernie's roles, the reach-out calendar, the pitch, deal shapes, risks, gates and next actions. |
 | `research/market-research.md` | The evidence file. Every number in the strategy with its source URL and date, the simulator ace-rate derivation, legal notes by market, people and calendar anchors. |
+| `research/us-state-legal-review.md` | The US legal review: the concept as the law sees it, the hole-in-one precedent (Nevada 1961, Florida AGO 90-58, Pennsylvania, Maine, North Dakota), the four state tests, what Skill Strike / Five Iron / Skillz exclude, a 50-state working tier table, the structures that change the answer, and the evidence package for counsel. |
 | `page/index.html` | The shareable playbook page (published privately as an artifact). A phone-readable version of the strategy for Ernie's camp, Santam/Indwe and advisors. |
 | `get-lucky-simulator-channel (1).pdf` | The August 2026 investor document the strategy starts from. Kept for reference; it is stale on three facts (see `STRATEGY.md` §2). |
 

@@ -160,6 +160,14 @@
   .tablewrap.compact th, .tablewrap.compact td { padding: 7px 10px; font-size: .9rem; }
   .tablewrap.compact .use { display: block; color: var(--muted); font-size: .85rem; margin-top: 2px; }
 
+  .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 6px; }
+  @media (max-width: 760px) { .tiers { grid-template-columns: 1fr; } }
+  .tier { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; border-top-width: 4px; }
+  .tier.g { border-top-color: var(--green); } .tier.a { border-top-color: #C9962B; } .tier.r { border-top-color: var(--flag); }
+  .tier .h { font-family: "Barlow Condensed", Arial, sans-serif; font-weight: 700; font-size: 1.3rem; line-height: 1; }
+  .tier .h small { font-weight: 600; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-left: 8px; }
+  .tier .states { font-family: "Barlow Condensed", Arial, sans-serif; font-weight: 600; letter-spacing: .04em; font-size: 1rem; margin: 8px 0 6px; line-height: 1.5; }
+  .tier p { font-size: .9rem; max-width: none; margin: 0; color: var(--muted); }
   footer { border-top: 1px solid var(--line); padding-top: 18px; font-size: .85rem; color: var(--muted); max-width: 80ch; }
   :focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
   @media (prefers-reduced-motion: no-preference) { .card.lead { transition: transform .2s ease; } .card.lead:hover { transform: translateY(-2px); } }
@@ -323,6 +331,24 @@
     <div class="callout" style="margin-top:22px"><p><strong>Santam deliverables before any operator sees a number:</strong> written indication for the 500× and 1,000× ladders at 1 in 7,000 and on our whitelist, with a per-hole rate card · aggregate cap and largest-single-event limit for a 100-venue, 90-day pilot · territory (SA only, or global via Santam Re / a US fronting carrier such as Everest through Odds On or a Lloyd's coverholder) · a telemetry-based claims protocol with a fraud clause.</p></div>
   </section>
 
+  <section id="legal">
+    <p class="eyebrow">Legal review — United States</p>
+    <h2>The case law is ours. The risk is a dozen states that never ask the skill question.</h2>
+    <div class="grid2">
+      <div>
+        <p><strong>Precedent on point.</strong> <em>Las Vegas Hacienda v. Gibson</em> (Nev. 1961): a 50-cent entry for a $5,000 hole-in-one prize was held a feat of skill, not a gaming transaction. <em>Cobaugh v. Klick-Lewis</em> (Pa. 1989), <em>Chenard v. Marcel Motors</em> (Me. 1978) and <em>Grove v. Charbonneau</em> (N.D. 1976) all enforced ace prizes. <strong>Florida AGO 90-58</strong>: an entry fee that does not make up the prize is not a "stake, bet or wager" — which is exactly our insurer-funded structure, and why we are better placed in Florida than pooled-entry products.</p>
+        <p><strong>The counter-argument</strong> is Judge Popovich's <em>Cobaugh</em> dissent — an ace is "such a fortuitous event that skill is almost an irrelevant factor". The answer is data: Tour players ace at 3,000:1, average golfers at 12,000:1 — a 4× skill differential — and pilot telemetry by handicap band will sharpen it.</p>
+        <p><strong>Live comparables</strong> already map the terrain: Skill Strike runs in 44 states (out: AK, HI, MD, NV, NH, VA); Five Iron Tournaments excludes CT, DE, NV, PA, WA; Skillz excludes AR, CT, DE, LA, SD.</p>
+      </div>
+      <div class="callout"><p><strong>Two structures, one slip.</strong> <strong>A — paid $1 entry, insurer-funded prize</strong> in Green states. <strong>B — operator- or sponsor-funded free play</strong> everywhere else: the golfer pays nothing extra, consideration falls away, and only prize-promotion rules apply. Ship both in the same release so Golfzon can switch the slip on nationally and no state is a launch blocker. Full 50-state table, statutes and the counsel brief: <code>research/us-state-legal-review.md</code>.</p></div>
+    </div>
+    <div class="tiers">
+      <div class="tier g"><div class="h">18 Green<small>paid entry, standard rules</small></div><div class="states">CA · DC · FL · GA · IL · KS · KY · ME · MA · NM · NY · NC · OH · RI · TX · VT · WI · WY</div><p>Predominant-factor states, bona-fide-contest carve-outs (IL, TX, GA) or a direct AG opinion (FL). The pilot geography — NY, FL, IL, GA, MA, OH, KY, DC — sits here.</p></div>
+      <div class="tier a"><div class="h">21 Amber<small>opinion before paid launch</small></div><div class="states">AL · AK · CO · ID · IN · IA · MI · MN · MS · MO · NE · NV · NH · NJ · ND · OK · OR · PA · UT · WA · WV</div><p>Material-element wording (NJ, WA, MO, OR, OK), consideration rules for promotions (CO, NE, ND), regulator reach (NV — despite <em>Hacienda</em>), a hostile 2026 "skill games" ruling (PA), or a comparable's exclusion without a clear reason (NH). Launch free-to-play first.</p></div>
+      <div class="tier r"><div class="h">12 Red<small>free-to-play only</small></div><div class="states">AR · AZ · CT · DE · HI · LA · MD · MT · SC · SD · TN · VA</div><p>Statutes that reach any wager on any game (LA, SC, MD, MT, SD, VA), "to any degree contingent on chance" (TN), cash prizes barred for skill games (AZ), or a blanket ban (HI). Structure B only.</p></div>
+    </div>
+  </section>
+
   <section id="targets">
     <p class="eyebrow">Targets</p>
     <h2>Golfzon is the prize. Five Iron is the fastest pilot. Two more run in parallel.</h2>
@@ -435,7 +461,7 @@
         <tr><td><strong>Ace rate</strong></td><td>Golfzon's measured 1 in 7,000 is ~1.8× grass on average and far hotter on selected holes; the August product prices with zero margin</td><td>500× ladder; hole whitelist; Santam prices on measured data; pilots share telemetry</td></tr>
         <tr><td><strong>Carrot at Golfzon Korea</strong></td><td>an embedded insurer already owns the reimbursement product</td><td>lead in the US; in Korea be the jackpot on top, carrier-agnostic</td></tr>
         <tr><td><strong>Korean law</strong></td><td>prize-contest form may be "현상업" / gambling</td><td>insurance-wrapped only; Korean counsel first; Korea is phase two</td></tr>
-        <tr><td><strong>US state law</strong></td><td>five states bar paid skill contests; others differ</td><td>state map and geo-gating before pilot; facility-level compliance as Golfzon Tour does</td></tr>
+        <tr><td><strong>US state law</strong></td><td>12 states never ask the skill question; 21 need an opinion first</td><td>paid entry in the 18 Green states; operator-funded free play everywhere else from day one; counsel brief and evidence package in the legal review</td></tr>
         <tr><td><strong>Concentration</strong></td><td>one underwriter, one lead operator</td><td>second carrier now; Five Iron pilot regardless of Golfzon's timing</td></tr>
         <tr><td><strong>Ernie's usage rights</strong></td><td>counsel sign-off still a milestone; site photo rights unconfirmed</td><td>bring the sign-off forward; approved assets only</td></tr>
         <tr><td><strong>Skill Strike</strong></td><td>Full Swing/Evenplay could add an ace jackpot themselves</td><td>move first on Golfzon and Trackman; pitch Versant as complementary</td></tr>
