@@ -118,6 +118,9 @@
   .chapter { display: inline-flex; align-items: center; gap: .6rem; }
   .chapter::before { content: ""; width: 28px; height: 4px; background: var(--virgin); border-radius: 2px; }
 
+  .gzlogo { height: 46px; width: auto; margin-bottom: 1.6rem; opacity: .95; }
+  @media (max-width: 640px) { .gzlogo { height: 36px; } }
+
   /* stat strips */
   .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
   @media (min-width: 760px) { .stats { grid-template-columns: repeat(4, 1fr); } }
@@ -414,6 +417,7 @@
     <div class="halftone" style="opacity:.4"></div>
   </div>
   <div class="wrap rel">
+    <img class="gzlogo" src="/logos/golfzon-white.webp" alt="Golfzon" width="779" height="256" loading="lazy" decoding="async">
     <p class="eyebrow">Why Golfzon</p>
     <h2>The platform we want <span class="gold">next to Ernie's name.</span></h2>
     <p class="lede" style="margin-top:1.4rem; color:rgba(245,240,225,.78)">The world's largest simulator platform, the official simulator of the U.S. Open, already selling to gyms. What Golfzon does not yet have is a global health-club group as a reference customer.</p>
