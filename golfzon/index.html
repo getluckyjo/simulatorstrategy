@@ -182,8 +182,29 @@
   .resume b { display: block; color: var(--cream); } .resume span { font-size: .92rem; color: rgba(245,240,225,.65); line-height: 1.5; }
 
   .cardimg { position: relative; margin: 22px -30px -30px; }
-  .cardimg img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 30%; display: block; }
+  .cardimg img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 28%; display: block; }
   .cardimg figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 30px 12px; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(245,240,225,.85); background: linear-gradient(180deg, transparent, rgba(22,38,26,.75)); }
+
+
+  /* matched rows, columns that fill, the step row */
+  .two.rows { align-items: start; row-gap: 32px; }
+  .col { display: flex; flex-direction: column; }
+  .col .stats { margin-top: auto !important; padding-top: 2rem; }
+  .stats.mini { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .stats.mini .n { font-size: clamp(2rem, 4vw, 2.8rem); }
+  .head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 18px 32px; }
+  .head .btn { margin-bottom: .4rem; }
+  .steps { list-style: none; padding: 0; margin: 2.4rem 0 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; counter-reset: step; }
+  @media (max-width: 1000px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 600px) { .steps { grid-template-columns: 1fr 1fr; } }
+  .steps li { position: relative; border-top: 3px solid var(--green); padding-top: 14px; }
+  .steps li::before { content: ""; position: absolute; top: -8px; left: 0; width: 13px; height: 13px; border-radius: 50%; background: var(--green); }
+  .steps li.key { border-top-color: var(--gold); } .steps li.key::before { background: var(--gold); }
+  .steps li.v { border-top-color: var(--virgin); } .steps li.v::before { background: var(--virgin); }
+  .steps time { display: block; font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-text); }
+  .steps li.v time { color: var(--virgin); }
+  .steps b { display: block; margin-top: .3rem; color: var(--green-dark); font-size: 1rem; line-height: 1.25; }
+  .steps span { display: block; margin-top: .3rem; font-size: .86rem; line-height: 1.45; color: rgba(42,42,42,.65); }
 
   /* team */
   .team { display: grid; gap: 18px; margin-top: 2.6rem; }
@@ -307,12 +328,19 @@
 
 <section class="cream" id="order">
   <div class="wrap">
-    <div class="two">
+    <div class="two rows">
       <div>
         <p class="eyebrow g">The order</p>
         <h2>200 simulators. Three kinds of bay.</h2>
         <p class="lede" style="margin-top:1.4rem">One platform across the chain, so a member in Sandton plays a member in Umhlanga on the same course on the same night.</p>
-        <div class="tablewrap">
+      </div>
+      <div class="phases" style="margin-top:0; align-self:end">
+        <div class="phase"><div class="k">Phase 1 · 2027</div><div class="n">40<small>units</small></div><p>Collection and flagship clubs. Point, Cape Town, first.</p></div>
+        <div class="phase"><div class="k">Phase 2 · 2027–28</div><div class="n">100<small>units</small></div><p>The metro clubs. Network Play across cities.</p></div>
+        <div class="phase top"><div class="k">Phase 3 · 2028–29</div><div class="n">60<small>units</small></div><p>The rest of the chain, Botswana and Namibia included.</p></div>
+      </div>
+      <div>
+        <div class="tablewrap" style="margin-top:0">
           <table>
             <thead><tr><th>Bay</th><th>Where</th><th class="n">Units</th></tr></thead>
             <tbody>
@@ -325,13 +353,8 @@
         </div>
         <p style="margin-top:1rem; font-size:.82rem; color:rgba(42,42,42,.55)">Mix and phasing are the basis for a quote, not a purchase order. Open to Golfzon's recommendation.</p>
       </div>
-      <div>
-        <div class="phases" style="margin-top:0">
-          <div class="phase"><div class="k">Phase 1 · 2027</div><div class="n">40<small>units</small></div><p>Collection and flagship clubs. Point, Cape Town, first.</p></div>
-          <div class="phase"><div class="k">Phase 2 · 2027–28</div><div class="n">100<small>units</small></div><p>The metro clubs. Network Play across cities.</p></div>
-          <div class="phase top"><div class="k">Phase 3 · 2028–29</div><div class="n">60<small>units</small></div><p>The rest of the chain, Botswana and Namibia included.</p></div>
-        </div>
-        <h3 style="margin-top:2rem; color:var(--green)">What we need from Golfzon</h3>
+      <div class="panel">
+        <h3 style="color:var(--green)">What we need from Golfzon</h3>
         <ul class="ticks" style="margin-top:1rem">
           <li><div><b>Pricing for 200 units</b><span>By bay type, in three phases. Financing is secured with RMB.</span></div></li>
           <li><div><b>Two reference designs</b><span>A two-bay zone and a four-bay zone: footprint, ceiling, power, acoustics.</span></div></li>
@@ -351,6 +374,11 @@
         <h2>The world.</h2>
         <p class="lede" style="margin-top:1.4rem">One brand, eight countries, one membership that already crosses borders. The same golf zone, on the same platform, goes from Cape Town to London, Milan, Sydney, Singapore and Bangkok. A member at Sandton plays a member at Chiswick.</p>
         <p class="lede" style="margin-top:1.2rem">The platform decision is a group decision, made once. Golfzon gets the South African numbers first, from its own telemetry, and they carry the group.</p>
+        <div class="stats mini" style="margin-top:2rem">
+          <div class="stat"><div class="n tab">230</div><div class="l">Clubs</div></div>
+          <div class="stat"><div class="n tab">8</div><div class="l">Countries</div></div>
+          <div class="stat"><div class="n tab">1.2M</div><div class="l">Members</div></div>
+        </div>
       </div>
       <div>
         <div class="tablewrap" style="margin-top:0">
@@ -393,8 +421,8 @@
 
 <section class="cream" id="who">
   <div class="wrap">
-    <div class="two">
-      <div>
+    <div class="two" style="align-items:stretch">
+      <div class="col">
         <p class="eyebrow g">Who we are</p>
         <h2>Get Lucky Golf Club.</h2>
         <p class="lede" style="margin-top:1.4rem">South Africa's insured hole-in-one challenge: a swing at a signature par-3 for up to R1,000,000, live at 25 courses, 10,000 paid entries, underwritten and sponsored by Santam. Ernie Els is our founding partner. Virgin Golf by Ernie Els is what we are building together next, with financing for the order secured with RMB.</p>
@@ -441,21 +469,21 @@
 
 <section class="cream" id="timeline">
   <div class="wrap">
-    <div class="two">
+    <div class="head">
       <div>
         <p class="eyebrow g">Timeline</p>
         <h2>Brief to bays in twelve months.</h2>
-        <div class="btns"><a class="btn gold" href="#meet">Book the meeting</a></div>
       </div>
-      <ul class="tl" style="margin-top:0">
-        <li><time>October 2026</time><b>Pricing, reference designs, a named Golfzon lead</b></li>
-        <li class="key"><time>November 2026</time><b>Fairfax, Virginia</b><span>Platform decision. Joint proposal.</span></li>
-        <li class="v"><time>Q4 2026</time><b>Virgin Active, Cape Town</b><span>Virgin Golf by Ernie Els, with Golfzon on the cover.</span></li>
-        <li><time>26–29 January 2027</time><b>PGA Show, Orlando</b><span>Dinner with Ernie for the Golfzon team.</span></li>
-        <li><time>2027</time><b>Phase one on the floor</b><span>40 bays, Point in Cape Town first.</span></li>
-        <li class="v"><time>2028–2031</time><b>The chain, then the group</b><span>160 more bays in Southern Africa; the UK, Italy, Australia and Asia on the South African numbers.</span></li>
-      </ul>
+      <a class="btn gold" href="#meet">Book the meeting</a>
     </div>
+    <ol class="steps">
+      <li><time>Oct 2026</time><b>This brief</b><span>Pricing, reference designs, a named Golfzon lead.</span></li>
+      <li class="key"><time>Nov 2026</time><b>Fairfax, Virginia</b><span>The founders meet Golfzon America. Platform decision, joint proposal.</span></li>
+      <li class="v"><time>Q4 2026</time><b>Virgin Active, Cape Town</b><span>Virgin Golf by Ernie Els, with Golfzon on the cover.</span></li>
+      <li class="key"><time>26–29 Jan 2027</time><b>PGA Show, Orlando</b><span>Dinner with Ernie for the Golfzon team.</span></li>
+      <li><time>2027</time><b>Phase one on the floor</b><span>40 bays, Point in Cape Town first.</span></li>
+      <li class="v"><time>2028–2031</time><b>The chain, then the group</b><span>160 more bays in Southern Africa; then the UK, Italy, Australia and Asia.</span></li>
+    </ol>
   </div>
 </section>
 
@@ -467,7 +495,7 @@
   <div class="wrap rel" style="max-width:52rem">
     <svg class="flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V3l14 5-14 5"/></svg>
     <h2>200 simulators to start. Eight countries to finish. <span>An hour in Fairfax.</span></h2>
-    <p class="lede" style="margin:1.6rem auto 0; color:rgba(245,240,225,.8)">Johannes is in the United States in November and at the PGA Show in January. Golfzon America is the first meeting on the list.</p>
+    <p class="lede" style="margin:1.6rem auto 0; color:rgba(245,240,225,.8)">The founders are in the United States in November and at the PGA Show in January. Golfzon America is the first meeting on the list.</p>
     <div class="btns">
       <a class="btn gold" href="mailto:johannes@getluckygolfclub.com?subject=Virgin%20Golf%20by%20Ernie%20Els%20%C3%97%20Golfzon">Start the conversation</a>
       <a class="btn ghost" href="https://wa.me/27609615091?text=Hi%20Johannes%2C%20I%27d%20like%20to%20talk%20about%20Virgin%20Golf%20and%20Golfzon." target="_blank" rel="noopener noreferrer">+27 60 961 5091</a>
