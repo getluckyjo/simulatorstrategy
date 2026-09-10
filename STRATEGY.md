@@ -539,6 +539,12 @@ opinion and a bound underwriter, so the SA deployment becomes the reference for 
 telemetry that prices Santam's rate card. (3) It gives Virgin Active a listing-story product and
 Ernie a home-market moment.
 
+**Ernie's conflicts.** No affiliation with any simulator or launch-monitor company was found
+(checked 10 Sep 2026, see research §11); his partners are XXIO, SAP, Boeing, Stanley Black &
+Decker, JONDO, Bloodline, 18Birdies and Peninsula Papagayo. Before "Virgin Golf by Ernie Els"
+goes to Golfzon, his counsel should confirm no technology- or software-category exclusivity in
+the SAP agreement and no conflict in the XXIO/Dunlop deal, which is Korean-market-sensitive.
+
 **Honesty.** Virgin Active has not been approached, and neither has Golfzon. "Virgin Golf by Ernie
 Els" is our working name; use of the Virgin brand is Virgin Active's and Virgin Group's call (the
 brand is licensed from Virgin Group). Unit counts are a basis for a quote, not a purchase order —

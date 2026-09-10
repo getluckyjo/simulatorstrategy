@@ -198,6 +198,26 @@ is the stretch if the whitelist holds the rate; 250× is the fallback.
 | Ernie Els Driven training app | Shows he backs golf-tech products | Golf Business News — https://golfbusinessnews.com/news/people/champion-golfer-ernie-els-launches-new-training-app/ |
 | Home base: Jupiter, Florida | PGA Show Orlando is a 2.5-hour drive | public record |
 
+
+### Ernie Els — simulator affiliations check (10 September 2026)
+
+Searched (Firecrawl, English and Korean) for any Ernie Els affiliation with a simulator or launch-monitor company: Golfzon, Trackman, Full Swing, Foresight, TruGolf, X-Golf, Toptracer, aboutGolf, Rapsodo. **None found.** His public commercial partners are equipment and lifestyle, not simulation:
+
+| Partner | Relationship | Source |
+|---|---|---|
+| XXIO (Dunlop / Sumitomo Rubber) | Global ambassador; plays Srixon / Cleveland | https://www.youtube.com/watch?v=dw2A6gFErio · https://www.facebook.com/OfficialXXIO/posts/884915265349780 |
+| SAP | Long-time sponsor (three-year deals, renewed; SAP cap in the hero photo) | https://www.sportcal.com/pressreleases/sap-in-three-year-sponsorship-deal-with-ernie-els/ |
+| Boeing | First individual athlete endorsement (2012) | https://www.sportsbusinessjournal.com/Daily/Issues/2012/06/20/Marketing-and-Sponsorship/Els-Boeing/ |
+| Stanley Black & Decker | Brand partner | https://www.stanleyblackanddecker.com/about/brand-partners/ernie-els |
+| JONDO eyewear | Ambassador (PGA Show 2025), then investor (Apr 2025) | https://thegolfwire.com/ernie-els-jondo/ |
+| Bloodline Golf (putters) | Investor and brand ambassador | https://ernieels.com/bloodline-golf-announces-ernie-els-as-an-investor-brand-ambassador/ |
+| 18Birdies (app) | First company investor (2017) | https://18birdies.com/clubhouse/news-entertainment/18birdies-partners-ernie-els-first-company-investor/ |
+| Peninsula Papagayo | Global brand ambassador | https://www.travelagentcentral.com/destinations/golf-star-ernie-els-partners-peninsula-papagayo |
+| EY, Invesco | Visible on cap / SA Open (Invesco is the SA Open title sponsor) | photos in `golfzon/images` |
+| Own: Ernie Els Design, The Els Club (Dubai, Desaru, Vilamoura…), Ernie Els Wines, Els for Autism | — | https://ernieels.com/ |
+
+Adjacent link: David Leadbetter, whose academies are inside Golfzon Group, coached Els. Not an affiliation, but a warm path.
+
 ## 12. Calendar anchors (verified dates)
 
 | Event | Date | Where | Why it matters | Source |
