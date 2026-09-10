@@ -93,12 +93,12 @@
   .hero .tag { margin-top: 2rem; font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: rgba(245,240,225,.68); }
 
 
-  /* Virgin Golf lockup */
-  .lockup { display: flex; flex-direction: column; align-items: center; gap: .55rem; margin: 1.3rem 0 1.7rem; }
-  .lockup .row { display: flex; align-items: center; gap: .06em; font-size: clamp(3rem, 8.6vw, 6.2rem); }
-  .lockup img { height: 1.9em; width: auto; margin-top: -.3em; margin-bottom: 0; }
-  .lockup .golf { font-family: var(--display); font-weight: 800; text-transform: uppercase; color: var(--cream); line-height: .9; letter-spacing: .01em; text-shadow: 0 4px 18px rgba(0,0,0,.35); }
-  .lockup .by { font-family: var(--display); font-weight: 800; text-transform: uppercase; color: var(--gold); letter-spacing: .2em; font-size: clamp(1rem, 2.6vw, 1.6rem); line-height: 1; }
+  /* Virgin Golf lockup: script spans two rows; GOLF above, BY ERNIE ELS tucked beneath it */
+  .lockup { display: grid; grid-template-columns: auto auto; justify-content: center; align-items: center; column-gap: .1em; row-gap: 0; font-size: clamp(3rem, 8.6vw, 6.2rem); margin: .9rem 0 1.6rem; }
+  .lockup img { grid-row: 1 / span 2; grid-column: 1; height: 1.9em; width: auto; align-self: center; margin-top: .05em; }
+  .lockup .golf { grid-column: 2; grid-row: 1; align-self: end; font-family: var(--display); font-weight: 800; text-transform: uppercase; color: var(--cream); line-height: .82; letter-spacing: .01em; text-shadow: 0 4px 18px rgba(0,0,0,.35); }
+  .lockup .by { grid-column: 2; grid-row: 2; align-self: start; justify-self: center; margin-top: .16em; font-family: var(--display); font-weight: 800; text-transform: uppercase; color: var(--gold); letter-spacing: .3em; font-size: .21em; line-height: 1; padding-left: .3em; }
+  .hero .eyebrow { margin-bottom: 1.4rem; }
   .hero h1 { font-size: clamp(1.6rem, 4.6vw, 3rem); }
 
 
@@ -249,7 +249,8 @@
   <div class="wrap rel">
     <p class="eyebrow">A brief for Golfzon · from Get Lucky Golf Club and Ernie Els</p>
     <div class="lockup" role="img" aria-label="Virgin Golf by Ernie Els">
-      <div class="row"><img src="/logos/virgin.webp" alt="" width="900" height="805" fetchpriority="high" decoding="sync"><span class="golf">Golf</span></div>
+      <img src="/logos/virgin.webp" alt="" width="900" height="805" fetchpriority="high" decoding="sync">
+      <span class="golf">Golf</span>
       <span class="by">by Ernie Els</span>
     </div>
     <h1>Every Virgin Active club in the world. <span>Starting in South Africa.</span></h1>
