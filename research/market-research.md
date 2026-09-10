@@ -218,6 +218,10 @@ Searched (Firecrawl, English and Korean) for any Ernie Els affiliation with a si
 
 Adjacent link: David Leadbetter, whose academies are inside Golfzon Group, coached Els. Not an affiliation, but a warm path.
 
+### Golfzon America — where the office is (checked 10 September 2026)
+
+Golfzon America's headquarters is **3863 Centerview Drive, Suite 300, Chantilly, Virginia 20151**, in the Washington DC suburbs (LinkedIn company page; ZoomInfo; Golf Wire on the renovated Chantilly HQ showroom; Fairfax County EDA). Chantilly is an unincorporated community in **Fairfax County**, so "Fairfax County" is right and "Fairfax" (the city) is not. Golfzon's March 2026 release places the new Global Business Division in Virginia under Sean Pyun. One caution: Pyun's LinkedIn tags the Global Business role (Mar 2026–) with the region "EMEA" while his Golfzon America CEO role (Jan 2024–) is tagged Chantilly — confirm where he will physically be in November before booking flights. Sources: https://www.linkedin.com/company/golfzon · https://www.zoominfo.com/pic/golfzon-america-inc/1211459775 · https://thegolfwire.com/golfzon-showrooms-coasts/ · https://fairfaxcountyeda.org/fairfax-county-based-golfzon-america-tees-up-innovative-golf-simulator/ · https://www.golfzongolf.com/news/golfzon-establishes-us-as-new-global-business-hub · https://www.linkedin.com/in/seanpyun
+
 ## 12. Calendar anchors (verified dates)
 
 | Event | Date | Where | Why it matters | Source |
