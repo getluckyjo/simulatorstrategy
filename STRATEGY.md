@@ -28,12 +28,13 @@ Golfzon has heard of us yet.
   "Get Lucky × Ernie Els". Personal introductions and appearances remain opt-in, one to two days
   a year, and his counsel signs off on brand use.
 - **The August document is stale on three facts** and the PDF in this repo is the one investors
-  hold: it says 20% of the round builds the channel (current plan: 15%, R1.2m); it carries EBITDA
+  hold: it says 20% of the round builds the channel (current plan: 15%, $65k); it carries EBITDA
   margins of −11.2% / 24.2% / 38.9% against the current −19.3% / 20.7% / 33.0%; and the adoption
-  table's 3.0% row adds R12m of simulator revenue but only R2m of total revenue.
-- **The ace rate has never been stated.** The model applies the course rate (1 in 12,500) to a
-  simulator, holds the premium at 24% and pays $1,000 on $1. Section 5 shows why that cannot bind.
-- What we do have: a live underwriting relationship (Santam, FSP 3416, via Indwe), a signed R9m
+  table's 3.0% row adds $649k of simulator revenue but only $108k of total revenue.
+- **The ace rate was never stated.** The model applies the course rate (1 in 12,500) to a
+  simulator, holds the premium at 24% and pays $1,000 on $1. Golfzon's own data puts the simulator
+  rate at 1 in 7,000 — Section 6 shows the August product prices with zero margin, and what to do.
+- What we do have: a live underwriting relationship (Santam, FSP 3416, via Indwe), a signed $486k
   sponsorship with the same balance sheet, a written skill-based legal opinion in South Africa,
   25 camera-rigged courses, 10,000 paid entries, a verification architecture already designed to
   accept "machine truth" from a bay (App Requirements §24), and a build partner (cloudandthings)
@@ -59,7 +60,7 @@ with 500+ Trackman bays, Topgolf 103 venues of ~100 bays each.
 
 | When | What | Why it matters to us |
 |---|---|---|
-| 15 Oct 2025 | Kakao Games sells Kakao VX to IVG (Kakao Investment) for ₩210bn | Korea's #2 has a new owner looking for growth lines |
+| 15 Oct 2025 | Kakao Games sells Kakao VX to IVG (Kakao Investment) for $157m | Korea's #2 has a new owner looking for growth lines |
 | Oct 2025 | Golfzon becomes official simulator of the U.S. Open and U.S. Women's Open | Ernie is a two-time U.S. Open champion |
 | 1 Jan 2026 | Leonard Green buys 60% of Topgolf + Toptracer (~$1.1bn) | PE owner, new P&L, Swing Suites run Full Swing |
 | 20 Jan 2026 | Lotte launches CREW screen-golf ace insurance in Korea | The insured screen ace is now a commodity in Korea (§4) |
@@ -79,25 +80,26 @@ has just told the world its growth axis is the United States. That is the door.
 
 | Product | Price | Pays on an ace | Where | Form |
 |---|---|---|---|---|
-| **Lotte CREW 스크린골프 보험** (Jan 2026) | ₩1,150 per person per round; ₩4,620 for a four-ball; bought in-app before the round | up to **₩200,000** of souvenir, round and celebration costs | Golfzon, SG Golf, Kakao VX | Insurance (expense reimbursement) |
-| NH 스크린골프장 홀인원보험 | ₩1,610 per day; up to 8 companions | costs within the insured amount | Screen venues | Insurance |
-| **Carrot × Golfzon** (Jul 2020) | bundled in Golfzon's paid "골프대디 더블홀인원" membership | **₩150,000** once a month against evidenced costs | Golfzon | Insurance, embedded; **Golfzon auto-sends the ace video to Carrot; claim via KakaoTalk** |
-| Carrot 투게더 홀인원 | ₩2,500 per person per day (covers four) | up to ₩1,351,000 (on-course) | Courses | Insurance |
-| **골프단짝** | ₩1,000 ticket | **₩300,000** fixed "congratulation money" (300×) | Screen venues | Fixed-sum payout — the closest thing to a jackpot |
+| **Lotte CREW 스크린골프 보험** (Jan 2026) | $0.86 per person per round; $3.46 for a four-ball; bought in-app before the round | up to **$150** of souvenir, round and celebration costs | Golfzon, SG Golf, Kakao VX | Insurance (expense reimbursement) |
+| NH 스크린골프장 홀인원보험 | $1.20 per day; up to 8 companions | costs within the insured amount | Screen venues | Insurance |
+| **Carrot × Golfzon** (Jul 2020) | bundled in Golfzon's paid "골프대디 더블홀인원" membership | **$112** once a month against evidenced costs | Golfzon | Insurance, embedded; **Golfzon auto-sends the ace video to Carrot; claim via KakaoTalk** |
+| Carrot 투게더 홀인원 | $1.87 per person per day (covers four) | up to $1,010 (on-course) | Courses | Insurance |
+| **골프단짝** | $0.75 ticket | **$224** fixed "congratulation money" (300×) | Screen venues | Fixed-sum payout — the closest thing to a jackpot |
 | Hanwha General golf policy | — | screen-golf ace costs inside a golf policy | Screen + course | Insurance |
-| Golfzon's own promotions | free with G-Membership | monthly hole-in-one challenge with product prizes; ₩20M ace pools split among aces in event windows; Golfzon Park "파3 싹쓰" events | Golfzon | Marketing |
+| Golfzon's own promotions | free with G-Membership | monthly hole-in-one challenge with product prizes; $15,000 ace pools split among aces in event windows; Golfzon Park "파3 싹쓰" events | Golfzon | Marketing |
 
 Lotte's on-course CREW policy passed 40,000 policies in its first year. Korean golfers already buy
-ace cover at the tee from ₩10,000 vending machines that pay $2,000–2,500, and monthly policies at
-$30 for $3,000 or $50 for $5,000 — because an ace costs the golfer a ₩300–500k caddie tip, a >₩1M
+ace cover at the tee from $7.50 vending machines that pay $2,000–2,500, and monthly policies at
+$30 for $3,000 or $50 for $5,000 — because an ace costs the golfer a $224–374 caddie tip, a >$748
 dinner and a gold-plated trophy.
 
-**What this tells us.** (1) The ₩1,000-a-round price point for an ace product is proven and
+**What this tells us.** (1) The $0.75-a-round price point for an ace product is proven and
 familiar — that is our $1 slip. (2) Every product on the list is capped reimbursement of
-₩150–300k. **Nobody in Korea sells a jackpot.** (3) Golfzon has already built the ace → video →
+$112–224. **Nobody in Korea sells a jackpot.** (3) Golfzon has already built the ace → video →
 insurer pipe we need; it exists for Carrot. (4) The legal wrapper that demonstrably works in Korea
 is a short-term insurance policy where the golfer is the policyholder — not a prize contest.
-(5) Five carriers pricing ₩1,150 for ₩200k tells us the simulator ace rate is high (§5).
+(5) Small-ticket policies like CREW are priced for expense loading, not frequency — for the rate
+itself we now have Golfzon's own data (§6).
 
 ### 4b. United States: real-money simulator games exist — no insured ace jackpot does
 
@@ -154,21 +156,24 @@ has to be rebuilt on a US base — flagged for the investor site, not done here.
 
 ### 6a. The ace rate
 
-Nobody publishes a simulator ace rate, so I triangulated three signals (detail in the research file):
+Golfzon's own network data, mined by GOLF.com, gives us the number the August document never had.
+In 2022 Golfzon users recorded 7.63 billion shots, roughly 1 billion of them tee shots on par-3s,
+and **143,020 holes-in-one** in completed 18-hole rounds — **one ace every 6,992 par-3 swings**.
+That is 392 aces a day, which squares with the "300+ a day" a Korean screen-golf company reported
+separately. GOLF.com's framing: a simulator ace is about 28% more likely than one outdoors (the
+National Hole-in-One Registry puts the average player at 12,000:1 per shot, a low handicapper at
+5,000:1, a Tour player at 3,000:1). For colour: a content creator needed 1,736 swings at Pebble's
+7th for an ace; a streamer needed 2,627.
 
-- A Korean screen-golf company's own data: **300+ aces a day**. Against ~94M rounds a year that is
-  one ace per ~860 rounds, or **~1 in 3,400 par-3 attempts**.
-- **Insurer pricing.** CREW charges ₩1,150 a round for up to ₩200,000. Even with heavy expense loads
-  on a small ticket, that only makes sense at a per-round ace rate of 1-in-250 to 1-in-1,000 —
-  **1 in 1,000 to 1 in 4,000 per attempt**.
-- 골프단짝 pays 300× and reports golfers with "two or more aces in six months".
+Two cautions. First, 1 in 7,000 is a network average across every hole and every player. Korea's
+"명당" — short, funnel-green par-3s that produce most of the aces — run far hotter, and a golfer who
+chooses the hole chooses the odds. Second, small-ticket ace policies like CREW ($0.86 a round for up
+to $150) are priced for expense loading on a tiny premium, not for frequency, so they don't tell us
+the rate. Golfzon's data does.
 
-Against the course rate of ~1 in 12,500, simulators produce aces **4–12× more often**. And the rate
-varies by an order of magnitude by hole: Korea has "명당" — short, funnel-green par-3s that produce
-most of the aces — and players choose them if you let them.
-
-**Working assumption:** base **1 in 2,500** per qualifying attempt; stress **1 in 1,000**;
-optimistic 1 in 3,400. Santam's measured number replaces mine.
+**Working assumption:** base **1 in 7,000** per qualifying attempt (Golfzon 2022); stress
+**1 in 2,500** (a player-selected hole set); course 1 in 12,500. Santam's measured number on our
+whitelist replaces it.
 
 ### 6b. What that does to $1 → $1,000 at 24%
 
@@ -177,26 +182,29 @@ Premium the insurer needs at a 60% target loss ratio = prize ÷ attempts-per-ace
 | Ace rate | $1 → $250 | $1 → $500 | $1 → $1,000 |
 |---|---|---|---|
 | 1 in 12,500 (course) | 3% | 7% | 13% |
-| 1 in 3,434 (optimistic) | 12% | **24%** | 49% |
-| 1 in 2,500 (base) | **17%** | 33% | 67% |
-| 1 in 1,000 (stress) | 42% | 83% | 167% |
+| **1 in 6,992 (Golfzon 2022 — base)** | 6% | **12%** | **24%** |
+| 1 in 3,434 (conservative reading of "300 a day") | 12% | 24% | 49% |
+| 1 in 2,500 (stress — selected holes) | 17% | 33% | 67% |
+| 1 in 1,000 (extreme) | 42% | 83% | 167% |
 
-The August product ($1 → $1,000 at a 24% premium) prices only at course frequency. On a simulator
-it fails at every plausible rate. A 500× ladder holds 24% only at the optimistic rate; **a 250×
-ladder holds the 24% cession at the base rate with room to spare.**
+The August product ($1 → $1,000 at 24%) prices at exactly the network average — with no margin for
+hole selection, none for a hot month, and none for the fact that a jackpot attracts the golfers
+most likely to hit it. **A 500× ladder holds the 24% cession with a 2× safety margin at the
+measured rate.** 250× is the fallback if a whitelist can't hold the rate.
 
 ### 6c. The pilot product
 
 | Entry | Prize | Multiple |
 |---|---|---|
-| $1 | $250 | 250× |
-| $2 | $500 | 250× |
-| $5 | $1,250 | 250× |
+| $1 | $500 | 500× |
+| $2 | $1,000 | 500× |
+| $5 | $2,500 | 500× |
 
-with a **500× stretch ladder** ($1 → $500, $2 → $1,000, $5 → $2,500) if Santam's measured rate lands
-at or below 1 in 3,400 — and the same 46 / 30 / 24 split (Get Lucky / operator / insurer). The
-operator's 30% is non-negotiable in the pitch: they bring the venues, the software surface and the
-customer, and we install nothing.
+with the original **1,000× ladder as the stretch** ($1 → $1,000, $2 → $2,000, $5 → $5,000) if
+Santam's measured rate on our whitelist holds at or near 1 in 7,000, and **250× as the fallback** —
+all on the same 46 / 30 / 24 split (Get Lucky / operator / insurer). The operator's 30% is
+non-negotiable in the pitch: they bring the venues, the software surface and the customer, and we
+install nothing.
 
 Rule of thumb for any conversation: **supportable prize ≈ entry × premium% × 0.6 × attempts-per-ace.**
 
@@ -210,7 +218,7 @@ Rule of thumb for any conversation: **supportable prize ≈ entry × premium% ×
 - Insurer → winner, directly. Get Lucky is never in the funds flow, exactly as on course.
 
 **Santam deliverables before any operator sees a number:**
-1. Written indication at simulator frequency for a 250× and a 500× ladder, per-hole rate card.
+1. Written indication at simulator frequency for a 500× and a 1,000× ladder, per-hole rate card.
 2. Aggregate cap and largest-single-event limit for a pilot (assume 100 venues × 90 days).
 3. Territory: South Africa only, or global via Santam Re / fronting / co-insurance with a US
    carrier (Everest via Odds On, or a Lloyd's coverholder) and, later, a Korean carrier.
@@ -229,7 +237,7 @@ Rule of thumb for any conversation: **supportable prize ≈ entry × premium% ×
 
 ### 8.1 Golfzon — the prize
 
-**Who.** Golfzon Co., Ltd (KOSDAQ 215000; 2025 revenue ₩483bn, operating income ₩68bn) under
+**Who.** Golfzon Co., Ltd (KOSDAQ 215000; 2025 revenue $361m, operating income $51m) under
 Golfzon Holdings (121440). Chairman **Kim Young-chan** (founder). Co-CEOs **Park Kang-soo** and
 **Choi Deok-hyung**. Global: 9,400+ locations, 47,000+ simulators, 41 countries, 5.5M registered
 members (NGF); Golf Inc says 13,000+ commercial locations and 100M rounds in 2024. **Global
@@ -238,7 +246,7 @@ America, ex-LPGA Chief Business Officer for Asia, who worked under Mike Whan (no
 brought Golfzon in as an LPGA sponsor.
 
 **What they already have.** The ace video pipe (built for Carrot), G-Membership with a monthly ace
-challenge, ₩20M ace prize pools, the Golfzon Tour real-money framework ($300k purse; finals at the
+challenge, $15,000 ace prize pools, the Golfzon Tour real-money framework ($300k purse; finals at the
 2027 PGA Show), the USGA, Pebble Beach, Troon (Golfzon Social), Leadbetter, NorCal/SoCal PGA,
 CityGolf Nashville.
 
@@ -301,7 +309,7 @@ broadcastable moment ("tonight's Ace Cam"), a GolfNow upsell and a Golf Channel 
 Golf Channel regular.
 
 **Risk.** Skill Strike is a house-edge product; we may be seen as either complementary (the
-jackpot on top) or competitive. Pitch as the prize layer that Skill Strike can't carry (a $250–$1,250
+jackpot on top) or competitive. Pitch as the prize layer that Skill Strike can't carry (a $500–$2,500
 insured ace vs their $100).
 
 **Entry.** Versant corporate development after close, and Dotters at Full Swing; Ernie's NBC/Golf
@@ -330,7 +338,7 @@ reaches Five Iron and every independent Trackman venue at once.
 ## 9. Santam's role, and Ernie's
 
 **Santam** is the proof underwriter and the template. On the pitch page it is "the same balance
-sheet that underwrites every prize also sponsors the platform" — that line is why the R9m deal was
+sheet that underwrites every prize also sponsors the platform" — that line is why the $486k deal was
 signable and why it repeats. For the simulator channel Santam does three things: (1) prices the
 repriced ladder at simulator frequency and issues the written indication that unlocks every
 operator conversation; (2) sets the international structure — lead on the South African book,
@@ -352,7 +360,7 @@ year he agreed to. No fabricated quotes, ever: the pull-quote stays empty until 
 
 | When | What | Where | Owner |
 |---|---|---|---|
-| **Now → 30 Sep 2026** | Santam written indication (250× and 500× ladders, caps, territory). Ernie counsel sign-off on operator brand use. Operator one-pager and 8-slide deck (mechanic only, no rates yet). 90-second bay demo video using the existing demo flow. US gaming-law opinion commissioned | Cape Town | JLR, Indwe/Santam, Ernie's counsel, AD (creative), cloudandthings (demo) |
+| **Now → 30 Sep 2026** | Santam written indication (500× and 1,000× ladders, caps, territory). Ernie counsel sign-off on operator brand use. Operator one-pager and 8-slide deck (mechanic only, no rates yet). 90-second bay demo video using the existing demo flow. US gaming-law opinion commissioned | Cape Town | JLR, Indwe/Santam, Ernie's counsel, AD (creative), cloudandthings (demo) |
 | 29 Sep – 1 Oct 2026 | Golf Inc. Strategies Summit — attend only if Golfzon/Troon are confirmed there; otherwise skip | Hilton Head, SC | JLR (optional) |
 | **Oct 2026** | Outreach wave 1: Troon (via The Els Club Dubai GM → Troon International → Tim Schantz), Golfzon Leadbetter, then **Sean Pyun** direct with the Ernie letter. Jared Solomon direct. Versant corp dev + Ryan Dotters. AJ Broderick at Trackman | Email / calls | JLR |
 | **Nov 2026 — US trip 1 (7–10 days)** | Fairfax County, VA: Golfzon America. New York: Five Iron (bay walk-through + pilot scoping), Golfzon Social Scarsdale/Palisades, Versant. Stamford CT: Golf Channel if Versant bites. Fly via Jupiter, FL if Ernie is available | Washington DC → New York → Florida | JLR (+ AD for the venue visits) |
@@ -377,7 +385,7 @@ Travel budget assumption: two US trips and one Korea trip in the next 12 months.
    software and the customer.
 5. **Ernie Els is our founding partner.** Two U.S. Opens, 24 career aces, and his name on the
    prize moment.
-6. **It already works at ₩1,000 a round** — in Korea five insurers and Golfzon itself sell ace
+6. **It already works at $0.75 a round** — in Korea five insurers and Golfzon itself sell ace
    cover; nobody sells the jackpot. We are the jackpot.
 7. **A 90-day pilot, your venues, our paper.** Here is the term sheet.
 
@@ -393,7 +401,7 @@ Three deal shapes, in the order we offer them:
 
 | Risk | What it is | What we do |
 |---|---|---|
-| **Ace rate** | Simulator aces are 4–12× more frequent than on grass and vary 10× by hole. The August product doesn't price | 250× pilot ladder; hole whitelist; Santam prices on measured data; pilots share telemetry |
+| **Ace rate** | Golfzon's measured rate is 1 in 7,000 — ~1.8× grass on average and far hotter on selected holes. The August product prices with zero margin | 500× pilot ladder; hole whitelist; Santam prices on measured data; pilots share telemetry |
 | **Carrot incumbency at Golfzon Korea** | Golfzon already has an embedded insurer for the reimbursement product | Lead in the US where no such product exists; in Korea position as the jackpot on top, not a replacement, and be carrier-agnostic |
 | **Korean law** | Prize-contest form may be "현상업"/gambling | Insurance-wrapped product only; Korean counsel before launch; Korea is phase two |
 | **US state law** | Five states bar paid skill contests; others differ | State map and geo-gating before pilot; facility-level compliance, as Golfzon Tour does |
@@ -409,7 +417,7 @@ Three deal shapes, in the order we offer them:
 
 | Gate | Evidence | Unlocks |
 |---|---|---|
-| G1 | Santam written indication at simulator frequency, with caps and territory | Any number in front of an operator |
+| G1 | Santam written indication at 1 in 7,000 (and on our whitelist), with caps and territory | Any number in front of an operator |
 | G2 | Ernie counsel sign-off on operator brand use + the letter | Outreach wave 1 |
 | G3 | US gaming-law opinion with a state map | Pilot term sheets |
 | G4 | Signed pilot (Five Iron or Golfzon America) | SDK build; Korea conversation |
@@ -419,7 +427,7 @@ Three deal shapes, in the order we offer them:
 
 | # | Action | Owner | By |
 |---|---|---|---|
-| 1 | Send Indwe/Santam the repriced ladders (250× / 500×), the ace-rate evidence and the pilot shape; ask for a written indication and a territory view (Santam Re / fronting) | JLR | 18 Sep 2026 |
+| 1 | Send Indwe/Santam the 500× and 1,000× ladders, the Golfzon ace-rate data and the pilot shape; ask for a written indication and a territory view (Santam Re / fronting) | JLR | 18 Sep 2026 |
 | 2 | Ask Ernie's counsel for sign-off on operator brand use; draft the three operator letters for his approval | JLR | 18 Sep 2026 |
 | 3 | Write the operator one-pager and 8-slide deck — mechanic, split, Ernie, no rates | JLR + AD | 25 Sep 2026 |
 | 4 | Cut a 90-second bay demo from the existing demo flow | AD + cloudandthings | 30 Sep 2026 |
@@ -432,6 +440,7 @@ Three deal shapes, in the order we offer them:
 
 ---
 
-*Confidential. Forward-looking statements are plans, not promises. No simulator operator agreement
+*All amounts in US dollars. Korean won converted at ₩1,337/$ (9 September 2026) and rand at R18.5/$
+(the model's rate). Confidential. Forward-looking statements are plans, not promises. No simulator operator agreement
 exists as at 10 September 2026 and there is no assurance one will be concluded. Get Lucky Golf Club
 (Pty) Ltd · Registration 2025/047585/07 · johannes@getluckygolfclub.com*

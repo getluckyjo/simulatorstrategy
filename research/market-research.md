@@ -1,6 +1,6 @@
 # Simulator channel — market research and evidence file
 
-Compiled 10 September 2026. Every figure used in `STRATEGY.md` is listed here with its source and
+Compiled 10 September 2026. Won amounts carry a dollar equivalent at ₩1,337/$ (Trading Economics, 9 Sep 2026 — https://tradingeconomics.com/south-korea/currency); rand at R18.5/$ (the model's rate). Every figure used in `STRATEGY.md` is listed here with its source and
 the date of that source. Where two sources disagree, both are shown. Figures marked **(derived)**
 are our own arithmetic from the cited inputs and should be treated as estimates until an operator
 or insurer hands us real telemetry.
@@ -30,7 +30,7 @@ Note: the investgetlucky dataroom cites "~$2.4bn (2025) → ~$4.8bn by 2035". Th
 | Kakao VX venues | 2,100+ Friends Screen lounges | Seoulz (2026) |
 | Screen-golf population | ~4 million (Carrot/Golfzon 2020 release); 2M+ play at least monthly (Seoulz) | ZDNet Korea 13 Jul 2020 — https://zdnet.co.kr/view/?no=20200713105605 ; Seoulz |
 | Density | Korea has ~6× the simulator density of the US on ~1/6 the population | Seoulz (2026) |
-| Kakao VX ownership | Kakao Games sold 100% of Kakao VX to IVG (Kakao Investment subsidiary) for ₩210bn (~$149m); closed 15 Oct 2025 | Mobidictum — https://mobidictum.com/kakao-games-secures-111-million/ ; PitchBook — https://pitchbook.com/profiles/company/459954-91 |
+| Kakao VX ownership | Kakao Games sold 100% of Kakao VX to IVG (Kakao Investment subsidiary) for ₩210bn (~$157m at today's rate; ~$149m reported at the time); closed 15 Oct 2025 | Mobidictum — https://mobidictum.com/kakao-games-secures-111-million/ ; PitchBook — https://pitchbook.com/profiles/company/459954-91 |
 | Screen-golf venue legal classification | Court ruled screen golf centres are athletic facilities, not gaming facilities | Golf Digest, "Field + Screen" — https://www.golfdigest.com/story/field-and-screen-indoor-golf-south-korea-we-give-it-a-try ; PMC, "Popularity of Screen Golf in Korea" — https://pmc.ncbi.nlm.nih.gov/articles/PMC8702078/ |
 
 ## 3. United States (off-course and indoor)
@@ -59,7 +59,7 @@ Note: the investgetlucky dataroom cites "~$2.4bn (2025) → ~$4.8bn by 2035". Th
 | Item | Detail | Source (date) |
 |---|---|---|
 | Listed entities | Golfzon Co., Ltd (KOSDAQ 215000) — operating co; Golfzon Holdings (KOSDAQ 121440) — holding co (formerly Golfzon Newdin Holdings) | Stock Analysis / PitchBook — https://stockanalysis.com/quote/kosdaq/215000/revenue/ ; https://pitchbook.com/profiles/company/232362-55 |
-| 2025 results (Golfzon Co) | Revenue ₩483.3bn (−22% YoY); operating income ₩68.1bn | Stock Analysis (2026) |
+| 2025 results (Golfzon Co) | Revenue ₩483.3bn (~$361m) (−22% YoY); operating income ₩68.1bn (~$51m) | Stock Analysis (2026) |
 | Revenue model | Simulator hardware sales; franchise fees/royalties (Golfzon Park); online service fees paid by users for network features (national tournaments, saved data); ~$50/hour typical bay rate in the US | KoalaGains business analysis — https://koalagains.com/stocks/KOSDAQ/121440/business-and-moat ; Golfzon blog |
 | Overseas sales share | 14.1% forecast for 2023 (+1.8pp YoY) | Businesskorea — https://www.businesskorea.co.kr/news/articleView.html?idxno=115484 |
 | Chairman | Kim Young-chan, founder, Golfzon Holdings — Golf Inc "Most Powerful Person in Asia" three years running | Golfzon news (2025) |
@@ -70,7 +70,7 @@ Note: the investgetlucky dataroom cites "~$2.4bn (2025) → ~$4.8bn by 2035". Th
 | Golfzon Tour (US/UK/CA/MX) | Season 3: $300,000 purse ($200k/$60k/$20k); individual qualifying from 1 Sep with $20k purse; team qualifying Oct; **top-4 bracket finals at the 2027 PGA Show**; top 3 qualifiers get exemptions into the ~$3m Golfzon China Open (Dec 2026). Rules: legal residents of US, UK, Canada, Mexico; void where prohibited; host facilities responsible for compliance with real-money skill-game and gambling law | Golf Wire — https://thegolfwire.com/golfzon-tour-season-3 ; Golfzon Tour rules — https://www.golfzontour.com/rules-and-regulations ; schedule — https://www.golfzontour.com/schedule |
 | Korea tours | GTOUR and WGTOUR have paid $12M+ across 200+ tournaments | Golf Wire (2026) |
 | Membership products | G-Membership (paid subscription: unlimited items, course manager, shot analysis, coupons, **monthly hole-in-one challenge event**); "골프대디 더블홀인원" membership carrying Carrot ace cover | Golfzon CS notice — https://cs.golfzon.com/notice/view/GNT18/151270 ; ZDNet Korea 2020 |
-| In-house ace promotions | ₩20M hole-in-one prize pool split by number of aces during a tournament window; Golfzon Park "파3 싹쓰 대회" with hole-in-one benefits; per-hole product prizes (Titleist GT3, Samsung TV, iMac…) | Golf Economy News — http://www.golfbiz.co.kr/news/articleView.html?idxno=21301 ; Golfzon events — https://event.golfzon.com/ |
+| In-house ace promotions | ₩20M (~$15,000) hole-in-one prize pool split by number of aces during a tournament window; Golfzon Park "파3 싹쓰 대회" with hole-in-one benefits; per-hole product prizes (Titleist GT3, Samsung TV, iMac…) | Golf Economy News — http://www.golfbiz.co.kr/news/articleView.html?idxno=21301 ; Golfzon events — https://event.golfzon.com/ |
 
 ## 6. Other operators and platforms
 
@@ -91,17 +91,17 @@ Note: the investgetlucky dataroom cites "~$2.4bn (2025) → ~$4.8bn by 2035". Th
 
 | Product | Who | Price | Pays | Where | Structure | Source (date) |
 |---|---|---|---|---|---|---|
-| **CREW 스크린골프 보험** | Lotte Insurance | ₩1,150 per person per round; ₩4,620 for a four-ball; up to 4 people per purchase; bought in the ALICE app before the round | Up to **₩200,000** of souvenir, round and celebration costs incurred within 30 days of an ace in an 18-hole round | **Golfzon, SG Golf, Kakao VX** venues | Short-term non-life policy (expense reimbursement) | Money Today 20 Jan 2026 — https://www.mt.co.kr/finance/2026/01/20/2026012015282183968 ; Asia Economy (EN) — https://cm.asiae.co.kr/en/article/2026012009084194337 ; ET News — https://www.etnews.com/20260120000041 |
+| **CREW 스크린골프 보험** | Lotte Insurance | ₩1,150 (~$0.86) per person per round; ₩4,620 (~$3.46) for a four-ball; up to 4 people per purchase; bought in the ALICE app before the round | Up to **₩200,000 (~$150)** of souvenir, round and celebration costs incurred within 30 days of an ace in an 18-hole round | **Golfzon, SG Golf, Kakao VX** venues | Short-term non-life policy (expense reimbursement) | Money Today 20 Jan 2026 — https://www.mt.co.kr/finance/2026/01/20/2026012015282183968 ; Asia Economy (EN) — https://cm.asiae.co.kr/en/article/2026012009084194337 ; ET News — https://www.etnews.com/20260120000041 |
 | CREW 골프보험 (on-course sibling) | Lotte Insurance | — | — | Courses | Launched Aug 2023; **40,000+ policies in year one** | Banron Bodo — https://www.banronbodo.com/news/articleView.html?idxno=30251 |
-| 스크린골프장 홀인원보험 | NH Nonghyup Insurance | ₩1,610 per day; up to 8 companions | Souvenir, dinner and screen-golf costs within the insured amount | Screen venues | Expense reimbursement | 1conomy News — https://www.1conomynews.co.kr/news/articleView.html?idxno=48817 ; NH product page — https://www.nhfire.co.kr/product/retrieveProduct.nhfire?pdtCd=E950211 |
-| Carrot × Golfzon screen hole-in-one | Carrot Insurance (Hanwha) embedded in Golfzon's paid "골프대디 더블홀인원" membership | Bundled in membership | **₩150,000 once a month** against evidenced round and meal costs | Golfzon | **Golfzon → Carrot automatic swing-video transmission on an ace; KakaoTalk claim notification** (Jul 2020) | ZDNet Korea 13 Jul 2020 — https://zdnet.co.kr/view/?no=20200713105605 ; FN Times — https://www.fntimes.com/html/view.php?ud=202007131043274550b967494985_18 |
-| 캐롯 투게더 홀인원 | Carrot | ₩2,500 per person per day; one purchase covers 4 companions | Up to ₩1,351,000 per person (on-course) | Courses | Expense reimbursement | Newstomato — https://www.newstomato.com/ReadNews.aspx?no=1074143 |
-| **골프단짝 (GolfDanzzak)** | Independent service | ₩1,000 ticket (buy, gift or win) | **₩300,000 congratulation money** on a screen-golf ace; apply within 30 days with the ace certificate or scorecard | Screen venues | Fixed-sum "축하금" — closest thing to a jackpot; **300×** | Golfdanzzak — https://www.golfdanzzak.co.kr/introduce ; Sports Seoul 2023 — https://www.sportsseoul.com/news/read/1316002 |
+| 스크린골프장 홀인원보험 | NH Nonghyup Insurance | ₩1,610 (~$1.20) per day; up to 8 companions | Souvenir, dinner and screen-golf costs within the insured amount | Screen venues | Expense reimbursement | 1conomy News — https://www.1conomynews.co.kr/news/articleView.html?idxno=48817 ; NH product page — https://www.nhfire.co.kr/product/retrieveProduct.nhfire?pdtCd=E950211 |
+| Carrot × Golfzon screen hole-in-one | Carrot Insurance (Hanwha) embedded in Golfzon's paid "골프대디 더블홀인원" membership | Bundled in membership | **₩150,000 (~$112) once a month** against evidenced round and meal costs | Golfzon | **Golfzon → Carrot automatic swing-video transmission on an ace; KakaoTalk claim notification** (Jul 2020) | ZDNet Korea 13 Jul 2020 — https://zdnet.co.kr/view/?no=20200713105605 ; FN Times — https://www.fntimes.com/html/view.php?ud=202007131043274550b967494985_18 |
+| 캐롯 투게더 홀인원 | Carrot | ₩2,500 (~$1.87) per person per day; one purchase covers 4 companions | Up to ₩1,351,000 (~$1,010) per person (on-course) | Courses | Expense reimbursement | Newstomato — https://www.newstomato.com/ReadNews.aspx?no=1074143 |
+| **골프단짝 (GolfDanzzak)** | Independent service | ₩1,000 (~$0.75) ticket (buy, gift or win) | **₩300,000 (~$224) congratulation money** on a screen-golf ace; apply within 30 days with the ace certificate or scorecard | Screen venues | Fixed-sum "축하금" — closest thing to a jackpot; **300×** | Golfdanzzak — https://www.golfdanzzak.co.kr/introduce ; Sports Seoul 2023 — https://www.sportsseoul.com/news/read/1316002 |
 | Hanwha General golf policy | Hanwha | — | Covers screen-golf hole-in-one costs inside a general golf policy | Screen + course | Expense reimbursement | Banron Bodo (2024) |
-| On-course ace cover (context) | Samsung Fire (원팀골프보험, one policy covers the four-ball), DB, KB, Hana (one-day) | ~$30/month for $3k or $50/month for $5k (GolfWRX); ₩10,000 vending-machine cover at the tee paying $2,000–2,500 | Celebration costs (caddie tip ₩300–500k, dinner >₩1M, gold-plated trophy $1–3k) | Courses | Expense reimbursement | GolfWRX — https://www.golfwrx.com/656294/making-an-ace-in-korea-is-a-whole-new-experience/ ; KB Insurance — https://insight.kbinsure.co.kr/hole-in-one-insurance-260409/ |
+| On-course ace cover (context) | Samsung Fire (원팀골프보험, one policy covers the four-ball), DB, KB, Hana (one-day) | ~$30/month for $3k or $50/month for $5k (GolfWRX); ₩10,000 (~$7.50) vending-machine cover at the tee paying $2,000–2,500 | Celebration costs (caddie tip ₩300–500k (~$224–374), dinner >₩1M (~$748) (~>$748), gold-plated trophy $1–3k) | Courses | Expense reimbursement | GolfWRX — https://www.golfwrx.com/656294/making-an-ace-in-korea-is-a-whole-new-experience/ ; KB Insurance — https://insight.kbinsure.co.kr/hole-in-one-insurance-260409/ |
 | Fraud context | Ace-insurance fraud is a known problem in Korea (agent licence revoked; staged aces) | — | — | — | Verification value | Korea Times 2022 — https://www.koreatimes.co.kr/www/biz/2022/07/175_331899.html ; Korea Herald — https://www.koreaherald.com/article/3465573 |
 
-What the table says: the price point (~₩1,000–1,600 a round) is proven and familiar; every product is capped expense reimbursement of ₩150k–300k; the legal wrapper that works is insurance (the golfer is the policyholder); Golfzon already has the ace → video → insurer pipe; and nobody sells a jackpot.
+What the table says: the price point (~₩1,000 (~$0.75)–1,600 (~$0.75–1.20) a round) is proven and familiar; every product is capped expense reimbursement of ₩150k (~$112)–300k; the legal wrapper that works is insurance (the golfer is the policyholder); Golfzon already has the ace → video → insurer pipe; and nobody sells a jackpot.
 
 ### 7b. United States — real-money simulator games
 
@@ -117,19 +117,37 @@ Gap: no consumer, per-shot, insured ace jackpot exists in the US on any platform
 
 ## 8. Simulator ace frequency — the number the pricing depends on
 
-There is no published simulator ace rate. Three independent signals:
+**Primary source — Golfzon's own network data (GOLF.com, "The odds of making a golf-simulator hole
+in one? We mined the data" — https://golf.com/news/odds-making-golf-simulator-hole-in-one/):**
 
-1. **"A domestic screen-golf company's own data: 300+ holes-in-one per day on average"** (Sports Seoul, 2023, citing an unnamed Korean screen-golf company). Against ~94M rounds a year:
-   - 94,000,000 ÷ 365 = **257,534 rounds/day**
-   - 300 aces/day ÷ 257,534 = **1 ace per 858 rounds**
-   - 4 par-3s per 18 holes → 1,030,137 par-3 attempts/day → **1 in 3,434 attempts** (derived)
-   - Caveats: the company may not be Golfzon; "rounds" may include 9-hole; the 300 may be a lower bound.
-2. **Insurer pricing.** CREW charges ₩1,150 per person per round for up to ₩200,000. At a 30–60% loss ratio and an average claim of ₩150–200k, the implied per-round ace rate is roughly **1 in 250 to 1 in 1,000 rounds**, i.e. **1 in 1,000 to 1 in 4,000 per attempt** (derived). Small-ticket policies carry heavy expense loads, so the true rate sits toward the lower-frequency end of that range, but not below it.
-3. **골프단짝's payout multiple** (300× on ₩1,000) and its report that "golfers with two or more aces in six months keep appearing" confirm aces are common enough that a 1,000× multiple on a $1 entry cannot be carried at a 24% premium.
+| Item | Value |
+|---|---|
+| Total shots recorded on Golfzon simulators, 2022 | 7,625,909,076 |
+| Putts (est. ~40%) | ~3.0bn → ~4.6bn non-putt swings |
+| Par-3 tee shots (est. ~22% of non-putts) | ~1.0bn |
+| **Holes-in-one on par-3s in completed 18-hole rounds, 2022** | **143,020** |
+| **Ace rate per par-3 tee shot** | **1 in 6,992** |
+| GOLF.com's comparison | a simulator ace is ~28% more likely than one outdoors |
+| Reference odds (National Hole-in-One Registry, per shot) | Tour player 3,000:1 · low handicapper 5,000:1 · average player 12,000:1 |
+| Anecdotes | Keffer Rhodes (Random Golf Club): 1,736 swings for an ace on Pebble Beach #7 on a simulator; Jersey Jerry: 2,627 swings over ~37 hours |
 
-Reference points on grass: ~1 in 12,500 for an amateur (Golf Monthly / National Hole-in-One Registry via The Hustle — https://thehustle.co/the-strange-business-of-hole-in-one-insurance); ~1 in 5,000 for a single-figure handicap; ~1 in 3,500 for a professional (Sports Seoul, citing published analysis).
+Consistency check: 143,020 ÷ 365 = **392 aces a day**, in line with the "300+ a day" a domestic
+screen-golf company reported (Sports Seoul 2023 — https://www.sportsseoul.com/news/read/1316002).
+An earlier derivation in this file (300 aces/day against ~94M rounds → 1 in ~3,434) overstated the
+frequency because Golfzon's real par-3 volume is ~1bn swings, not the ~375M implied by 94M rounds;
+it is kept in the table below as a conservative reading.
 
-**Working assumption for pricing:** base case **1 in 2,500 per qualifying attempt**; stress **1 in 1,000**; optimistic **1 in 3,400**. The Korean "명당" (lucky-hole) phenomenon — specific short, funnel-green par-3s that produce most aces (Kimcaddie — https://kimcaddie.com/post/2024-hole-in-one-screen-best-course) — means the rate varies by hole by an order of magnitude and players will self-select if allowed to. Qualifying-hole whitelists and locked settings are pricing tools, not product polish.
+**Secondary signals:** insurer pricing (Lotte CREW ₩1,150 (~$0.86) for up to ₩200,000 (~$150)) is
+driven by expense loading on a tiny ticket and tells us little about frequency; 골프단짝's 300×
+payout and its "two aces in six months" players show aces are common enough to matter; the
+Korean "명당" effect (Kimcaddie — https://kimcaddie.com/post/2024-hole-in-one-screen-best-course)
+shows the per-hole rate varies by an order of magnitude, so a player-selected hole set runs far
+hotter than the network average.
+
+**Working assumption for pricing:** base **1 in 7,000 per qualifying attempt** (Golfzon 2022,
+network average); stress **1 in 2,500** (selected holes); course 1 in 12,500 (Golf Monthly /
+National Hole-in-One Registry via The Hustle — https://thehustle.co/the-strange-business-of-hole-in-one-insurance).
+Qualifying-hole whitelists and locked settings are pricing tools, not product polish.
 
 ### Premium required at a 60% target loss ratio (derived)
 
@@ -138,11 +156,14 @@ premium% = prize ÷ attempts-per-ace ÷ 0.6 ÷ entry
 | Ace rate | $1 → $250 | $1 → $500 | $1 → $1,000 |
 |---|---|---|---|
 | 1 in 12,500 (course) | 3.3% | 6.7% | 13.3% |
-| 1 in 3,434 (optimistic sim) | 12.1% | 24.3% | 48.5% |
-| 1 in 2,500 (base sim) | 16.7% | 33.3% | 66.7% |
-| 1 in 1,000 (stress sim) | 41.7% | 83.3% | 166.7% |
+| **1 in 6,992 (Golfzon 2022 — base)** | 6.0% | 11.9% | 23.8% |
+| 1 in 3,434 (conservative reading of "300 a day") | 12.1% | 24.3% | 48.5% |
+| 1 in 2,500 (stress — selected holes) | 16.7% | 33.3% | 66.7% |
+| 1 in 1,000 (extreme) | 41.7% | 83.3% | 166.7% |
 
-The current dataroom product ($1 → $1,000 at a 24% premium) only prices at course frequency. A 250× ladder holds the 24% cession at the base rate and a 500× ladder holds it only at the optimistic rate.
+The August dataroom product ($1 → $1,000 at a 24% premium) prices at exactly the network average
+with no margin. A 500× ladder holds the 24% cession with a ~2× margin at the measured rate; 1,000×
+is the stretch if the whitelist holds the rate; 250× is the fallback.
 
 ## 9. Legal notes by market (not legal advice — inputs for counsel)
 
