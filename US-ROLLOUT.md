@@ -37,8 +37,8 @@ The three chains publish their footprints. Cross-referenced with the legal tiers
 
 ### Five Iron Golf — 42 US venues, 500+ Trackman bays
 
-| Tier | Venues | Where |
-|---|---|---|
+| Tier | Venues |
+|---|---|
 | 🟢 24 | NY 9 (NYC ×7, Port Chester, Syracuse) · IL 4 (Chicago) · OH 3 (Cleveland ×2, Cincinnati) · MA 2 (Boston) · KY 2 (Louisville) · GA 1 (Atlanta) · FL 1 (Miami) · DC 1 · TX 1 (DFW) |
 | 🟡 15 | PA 5 (Philadelphia ×3, Pittsburgh, Erie) · MI 2 (Detroit) · OK 2 · WA 2 (Seattle) · MN 1 · MO 1 · IN 1 · NV 1 (Las Vegas) |
 | 🔴 3 | CT 1 (Norwalk) · MD 1 (Baltimore) · TN 1 (Nashville) |
@@ -48,8 +48,8 @@ and theirs agree.
 
 ### X-Golf America — 138 locations, franchised, HQ Torrance CA
 
-| Tier | Locations | Where |
-|---|---|---|
+| Tier | Locations |
+|---|---|
 | 🟢 ~65 | **IL 17** · **OH 10** · MA 8 · WI 8 · NY 5 · TX 5 · FL 3 · NC 2 · RI 2 · CA 1 · GA 1 · DC 1 · KS 1 · ME 1 |
 | 🟡 ~55 | **MI 15** · MN 7 · MO 6 · CO 4 · IA 4 · PA 4 · IN 3 · ND 2 · WA 2 · NE, NH, NJ, OR, UT, NV, ID, AL 1 each |
 | 🔴 18 | MD 5 · TN 4 · VA 4 · SC 2 · CT 1 · AZ 1 · SD 1 |
