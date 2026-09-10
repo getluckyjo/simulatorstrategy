@@ -29,3 +29,29 @@ johannes@getluckygolfclub.com · +27 60 961 5091 · Cape Town
 ---
 
 *Before sending: Ernie's counsel signs off "by Ernie Els"; confirm Sean is in Virginia in October (his global role is tagged EMEA on LinkedIn); attach nothing, the link is the brief.*
+
+---
+
+# LinkedIn — Sean Pyun (https://www.linkedin.com/in/seanpyun)
+
+## Connection request note (under 300 characters)
+
+Hi Sean — Johannes le Roux, Get Lucky Golf Club, Cape Town. Ernie Els is our founding partner and we're building Virgin Golf by Ernie Els: a golf zone in every Virgin Active club, 200 simulators in SA first. We'd like Golfzon as the platform. Brief: getluckygolfzon.vercel.app
+
+## Message once connected (or InMail)
+
+Hi Sean,
+
+Congratulations on the Global Business role. Timing is good, because I have a customer for it.
+
+I run Get Lucky Golf Club in Cape Town with Ernie Els as our founding partner. We are building Virgin Golf by Ernie Els: a golf zone in every Virgin Active health club, 230 clubs in eight countries. Chapter one is South Africa, 200 simulators across 136 clubs over three years. We are choosing the platform now and we think it should be Golfzon.
+
+The two-minute brief is here: https://getluckygolfzon.vercel.app
+
+Financing for the order is secured with RMB, Santam underwrites and sponsors us, and Virgin Active already has a simulator in its first Collection club in Cape Town. We take the full proposal to them this quarter and want Golfzon on the cover.
+
+The founders are in the US in October. Could we get an hour with you at Golfzon HQ in Virginia? There is a second conversation, about what your simulators can measure, that I would rather have in the room.
+
+Warm regards,
+Johannes
++27 60 961 5091 · johannes@getluckygolfclub.com
