@@ -118,8 +118,9 @@
   .chapter { display: inline-flex; align-items: center; gap: .6rem; }
   .chapter::before { content: ""; width: 28px; height: 4px; background: var(--virgin); border-radius: 2px; }
 
-  .gzlogo { height: 46px; width: auto; margin-bottom: 1.6rem; opacity: .95; }
-  @media (max-width: 640px) { .gzlogo { height: 36px; } }
+  .whyhead { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 32px 48px; }
+  .gzlogo { height: clamp(64px, 9vw, 118px); width: auto; opacity: .96; justify-self: end; }
+  @media (max-width: 900px) { .whyhead { grid-template-columns: 1fr; } .gzlogo { order: -1; height: 44px; justify-self: start; } }
 
   /* stat strips */
   .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
@@ -417,10 +418,14 @@
     <div class="halftone" style="opacity:.4"></div>
   </div>
   <div class="wrap rel">
-    <img class="gzlogo" src="/logos/golfzon-white.webp" alt="Golfzon" width="779" height="256" loading="lazy" decoding="async">
-    <p class="eyebrow">Why Golfzon</p>
-    <h2>The platform we want <span class="gold">next to Ernie's name.</span></h2>
-    <p class="lede" style="margin-top:1.4rem; color:rgba(245,240,225,.78)">The world's largest simulator platform, the official simulator of the U.S. Open, already selling to gyms. What Golfzon does not yet have is a global health-club group as a reference customer.</p>
+    <div class="whyhead">
+      <div>
+        <p class="eyebrow">Why Golfzon</p>
+        <h2>The platform we want <span class="gold">next to Ernie's name.</span></h2>
+        <p class="lede" style="margin-top:1.4rem; color:rgba(245,240,225,.78)">The world's largest simulator platform, the official simulator of the U.S. Open, already selling to gyms. What Golfzon does not yet have is a global health-club group as a reference customer.</p>
+      </div>
+      <img class="gzlogo" src="/logos/golfzon-white.webp" alt="Golfzon" width="779" height="256" loading="lazy" decoding="async">
+    </div>
     <div class="cards c4">
       <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/><path d="M6 5H3v2a3 3 0 0 0 3 3M18 5h3v2a3 3 0 0 1-3 3"/></svg></div><h3>The U.S. Open's simulator</h3><p>Our founding partner won it twice. That line sells itself in every club.</p></div>
       <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3>13,000 venues</h3><p>Golf Digest's best simulator seven years running. 240-plus courses. The moving swing plate nobody else has at scale.</p></div>
