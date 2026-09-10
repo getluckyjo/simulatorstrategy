@@ -177,6 +177,10 @@
   .resume li svg { width: 20px; height: 20px; color: var(--gold); margin-top: 3px; }
   .resume b { display: block; color: var(--cream); } .resume span { font-size: .92rem; color: rgba(245,240,225,.65); line-height: 1.5; }
 
+  .cardimg { position: relative; margin: 22px -30px -30px; }
+  .cardimg img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 40%; display: block; }
+  .cardimg figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 30px 12px; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(245,240,225,.85); background: linear-gradient(180deg, transparent, rgba(22,38,26,.75)); }
+
   /* team */
   .team { display: grid; gap: 18px; margin-top: 2.6rem; }
   @media (min-width: 700px) { .team { grid-template-columns: 1fr 1fr; } }
@@ -398,13 +402,14 @@
           <div class="stat"><div class="n tab">4</div><div class="l">Majors on the door</div></div>
         </div>
       </div>
-      <div class="card" style="background:var(--green); border-color:var(--green); padding:30px">
+      <div class="card ernie" style="background:var(--green); border-color:var(--green); padding:30px; overflow:hidden">
         <p class="eyebrow" style="margin-bottom:1.2rem; color:var(--gold-light)">Ernie Els</p>
         <ul class="resume">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>Four majors, two U.S. Opens</b><span>Former world number one. Hall of Fame. 70-plus wins on every tour that matters.</span></div></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>A name in every Virgin Active market</b><span>Two Opens in Britain, three Heineken Classics in Australia, a design business across Asia.</span></div></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>South Africa's golfer</b><span>Every Virgin Active member already knows the name on the door.</span></div></li>
         </ul>
+        <figure class="cardimg"><img src="/images/ernie-open.webp" alt="Ernie Els playing from a bunker at the 151st Open, Royal Liverpool" width="1200" height="799" loading="lazy" decoding="async"><figcaption>The 151st Open, Royal Liverpool</figcaption></figure>
       </div>
     </div>
   </div>
