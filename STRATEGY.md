@@ -408,8 +408,10 @@ year he agreed to. No fabricated quotes, ever: the pull-quote stays empty until 
 | **Nov 2026 — US trip 1 (7–10 days)** | Fairfax County, VA: Golfzon America. New York: Five Iron (bay walk-through + pilot scoping), Golfzon Social Scarsdale/Palisades, Versant. Stamford CT: Golf Channel if Versant bites. Fly via Jupiter, FL if Ernie is available | Washington DC → New York → Florida | JLR (+ AD for the venue visits) |
 | Dec 2026 | Pilot term sheets out (Golfzon, Five Iron). Second-carrier indication (Lloyd's coverholder). Korean counsel scoping memo | Cape Town | JLR, Indwe |
 | **26–29 Jan 2027 — PGA Show (anchor)** | Golfzon Tour finals on the floor; Golfzon media breakfast; Full Swing, Trackman, Foresight, X-Golf all exhibiting. **Private "Get Lucky × Ernie Els" dinner** for Golfzon America, Five Iron, Versant/Full Swing, Trackman, Troon — Ernie hosts if he opts in | Orlando, FL | JLR, AD, Ernie (opt-in) |
-| Feb–Mar 2027 | Pilot contracts signed; SDK build starts (cloudandthings) against the winning platform's API; state geo-gating map live | Cape Town / remote | JLR, cloudandthings |
-| **Q2 2027** | First US pilot live (Five Iron and/or Golfzon America). Measure: ace rate by hole, attach rate per round, repeat rate | US | JLR |
+| Dec 2026–Jan 2027 | Pilot contracts signed; SDK build starts (cloudandthings) against the winning platform's API; state geo-gating map live | Cape Town / remote | JLR, cloudandthings |
+| **Jan–Apr 2027** | **Paid pilot in New York and Chicago** (Five Iron's 11 venues, Golfzon Social, Golfzon Range Westbury) — in the peak season, never the summer trough. Measure: ace rate by designated hole, attach by time of day, Tier C demand | NY, IL | JLR |
+| May–Oct 2027 | Summer build: SDK integration, Michigan and Pennsylvania opinions, X-Golf franchisor deal, US territory sponsor | — | JLR, cloudandthings, Indwe |
+| **Nov 2027–Apr 2028** | **"Million Dollar Winter"** — national paid launch across the 18 Green states on Golfzon, Five Iron and X-Golf; free-play everywhere else. Full plan: `US-ROLLOUT.md` | US | JLR |
 | **H2 2027** | Korea trip — Daejeon/Seoul — only once a US pilot is live or Golfzon America sponsors the introduction. Agenda: Golfzon HQ, a Korean carrier (Carrot, Lotte or Samsung Fire), Korean counsel. Japan optional | Seoul, Daejeon | JLR, Santam Re |
 | H2 2027 | Simulator channel live in the model's timeline; first operator agreement (the milestone the plan already carries at Q4 2027) | — | — |
 
