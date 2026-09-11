@@ -11,12 +11,12 @@
 <meta property="og:url" content="https://pitch.virgingolf.co.za/">
 <meta property="og:title" content="Virgin Golf × Virgin Active">
 <meta property="og:description" content="A golf zone in every Virgin Active club, with no capital from Virgin Active. A proposal from Get Lucky Golf.">
-<meta property="og:image" content="https://pitch.virgingolf.co.za/images/golfzon-bays.webp">
+<meta property="og:image" content="https://pitch.virgingolf.co.za/images/course-st-andrews-2000.webp">
 <link rel="icon" type="image/webp" href="/logos/favicon.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" href="/fonts/PosterGothicRoundATF-Heavy.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/images/golfzon-bays.webp" as="image" fetchpriority="high">
+<link rel="preload" href="/images/course-st-andrews-2000.webp" as="image" fetchpriority="high">
 <link rel="preload" href="/logos/virgin.webp" as="image" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -83,7 +83,7 @@
   /* hero */
   .hero { min-height: min(88vh, 900px); display: flex; align-items: flex-end; text-align: center; padding-block: 120px 64px; }
   @media (max-width: 640px) { .hero { padding-top: 230px; } }
-  .hero .bg img { object-position: 50% 42%; }
+  .hero .bg img { object-position: 50% 55%; }
   .hero .tint.a { background: linear-gradient(90deg, rgba(22,38,26,.94), rgba(22,38,26,.62) 55%, rgba(22,38,26,.22)); }
   .hero .tint.b { background: linear-gradient(180deg, rgba(22,38,26,.28), transparent 35%, rgba(22,38,26,.96)); }
   .hero .wrap { max-width: 58rem; }
@@ -185,7 +185,7 @@
   .resume b { display: block; color: var(--cream); } .resume span { font-size: .92rem; color: rgba(245,240,225,.65); line-height: 1.5; }
 
   .cardimg { position: relative; margin: 22px -30px -30px; }
-  .card.ernie .cardimg { margin-top: auto; padding-top: 22px; }
+  .card.ernie { align-self: start; }
   .cardimg img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 28%; display: block; }
   .cardimg figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 30px 12px; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(245,240,225,.85); background: linear-gradient(180deg, transparent, rgba(22,38,26,.75)); }
 
@@ -341,7 +341,7 @@
 
 <header class="hero" id="top">
   <div class="bg" aria-hidden="true">
-    <img src="/images/golfzon-bays.webp" alt="" width="1600" height="901" fetchpriority="high" decoding="async">
+    <img src="/images/course-st-andrews-2000.webp" srcset="/images/course-st-andrews-1200.webp 1200w, /images/course-st-andrews-2000.webp 2000w" sizes="100vw" alt="" width="1920" height="1280" fetchpriority="high" decoding="async">
     <div class="tint a"></div><div class="tint b"></div><div class="halftone" style="opacity:.5"></div>
   </div>
   <div class="wrap rel">
@@ -361,6 +361,10 @@
 </header>
 
 <section class="cream" id="member">
+  <div class="bg" aria-hidden="true">
+    <img src="/images/course-pebble-beach-2000.webp" alt="" width="739" height="415" loading="lazy" decoding="async" style="object-position:50% 50%">
+    <div class="tint" style="background:linear-gradient(180deg, rgba(245,240,225,.93), rgba(245,240,225,.86) 50%, rgba(245,240,225,.95))"></div>
+  </div>
   <div class="wrap rel">
     <div class="two">
       <div>
@@ -581,6 +585,10 @@
 </section>
 
 <section class="deep topo" id="who">
+  <div class="bg" aria-hidden="true">
+    <img src="/images/course-leopard-creek-2000.webp" srcset="/images/course-leopard-creek-1200.webp 1200w, /images/course-leopard-creek-2000.webp 1500w" sizes="100vw" alt="" width="1500" height="793" loading="lazy" decoding="async" style="object-position:50% 60%">
+    <div class="tint" style="background:linear-gradient(90deg, rgba(22,38,26,.95), rgba(22,38,26,.88) 50%, rgba(22,38,26,.8))"></div>
+  </div>
   <div class="wrap rel">
     <p class="eyebrow">Who we are</p>
     <h2>Get Lucky Golf.</h2>
@@ -621,7 +629,9 @@
         <p class="eyebrow" style="margin-bottom:1.2rem; color:var(--gold-light)">Ernie Els</p>
         <ul class="resume">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>Four majors, two U.S. Opens</b><span>Former world number one. Hall of Fame. 70-plus wins.</span></div></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>A name in every Virgin Active market</b><span>Two Opens in Britain, three Heineken Classics in Australia, courses across Asia.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>A name in every Virgin Active market</b><span>Two Opens in Britain, three Heineken Classics in Australia, wins across Asia.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>Captain of the International team</b><span>Led the Presidents Cup side at Royal Melbourne in 2019. A leader, not only a name.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>A brand beyond the fairway</b><span>The Els Club courses in Dubai and Malaysia, Ernie Els Wines, and the Els for Autism Foundation.</span></div></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>South Africa's golfer</b><span>Every member already knows the name on the door.</span></div></li>
         </ul>
         <figure class="cardimg"><img src="/images/ernie-card.webp" alt="Ernie Els" width="1200" height="800" loading="lazy" decoding="async"></figure>
@@ -666,9 +676,10 @@
   </div>
 </section>
 
-<section class="cta deep topo" id="meet">
+<section class="cta" id="meet">
   <div class="bg" aria-hidden="true">
-    <div class="halftone" style="opacity:.35"></div>
+    <img src="/images/course-fancourt-links-2000.webp" alt="" width="1000" height="522" loading="lazy" decoding="async" style="object-position:50% 45%">
+    <div class="tint"></div><div class="halftone" style="opacity:.35"></div>
   </div>
   <div class="wrap rel" style="max-width:52rem">
     <svg class="flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V3l14 5-14 5"/></svg>
@@ -685,7 +696,7 @@
 <footer>
   <div class="wrap">
     <img src="/logos/logo-dark-bg.webp" alt="Get Lucky Golf" width="400" height="299" loading="lazy" decoding="async">
-    <p>Virgin Golf is a concept proposed to Virgin Active by Get Lucky Golf (Pty) Ltd. The Virgin name and marks belong to Virgin Group; their use, and the name of any golf zone, are Virgin Active's to decide. Get Lucky Golf would own and operate the bays. Founding-partner discussions referred to in this proposal are confidential and not yet concluded. Financial figures are forecasts from Get Lucky Golf's model on stated assumptions, ex VAT, and are not a guarantee. Golfzon pricing is indicative until quoted. Virgin Active figures are its published figures to March 2026. Private and confidential, prepared for Virgin Active, September 2026.</p>
+    <p>Virgin Golf is a concept proposed to Virgin Active by Get Lucky Golf (Pty) Ltd. The Virgin name and marks belong to Virgin Group; their use, and the name of any golf zone, are Virgin Active's to decide. Get Lucky Golf would own and operate the bays. Founding-partner discussions referred to in this proposal are confidential and not yet concluded. Financial figures are forecasts from Get Lucky Golf's model on stated assumptions, ex VAT, and are not a guarantee. Golfzon pricing is indicative until quoted. Virgin Active figures are its published figures to March 2026. Private and confidential, prepared for Virgin Active, September 2026. Course photographs: the Old Course at St Andrews, Pebble Beach, Leopard Creek and the Links at Fancourt, reproduced for this private proposal only.</p>
   </div>
 </footer>
 <script>
