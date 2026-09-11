@@ -254,11 +254,27 @@
   footer .wrap { display: flex; flex-wrap: wrap; gap: 18px 32px; align-items: center; justify-content: space-between; }
   footer img { height: 36px; width: auto; }
   footer p { max-width: 54rem; line-height: 1.55; }
+  /* stat strip: hairlines between tiles */
+  @media (min-width: 760px) { .stats:not(.mini) .stat + .stat { border-left: 1px solid rgba(245,240,225,.12); padding-left: 24px; } .cream .stats:not(.mini) .stat + .stat { border-left-color: rgba(51,82,49,.14); } }
+  /* cards lift a touch on hover */
+  .card, .phase, .person { transition: transform .25s ease, border-color .25s ease; }
+  @media (hover: hover) { .card:not(.ernie):hover, .person:hover { transform: translateY(-3px); border-color: rgba(201,169,78,.45); } }
+  /* hero: one orchestrated entrance; sections: a quiet rise on scroll. Resting state is always visible. */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero .rel > * { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
+    .hero .rel > :nth-child(1) { animation-delay: .05s } .hero .rel > :nth-child(2) { animation-delay: .15s } .hero .rel > :nth-child(3) { animation-delay: .3s } .hero .rel > :nth-child(4) { animation-delay: .42s } .hero .rel > :nth-child(5) { animation-delay: .52s } .hero .rel > :nth-child(6) { animation-delay: .62s }
+    .hero .bg img { animation: settle 2.4s ease-out both; }
+    .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+    .js .reveal.in { opacity: 1; transform: none; }
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  @keyframes settle { from { transform: scale(1.06); } to { transform: none; } }
   :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
 </style>
 </head>
 <body>
+<script>document.body.classList.add("js")</script>
 
 <nav class="nav" aria-label="Main">
   <div class="wrap">
@@ -335,17 +351,19 @@
 
 <section class="cream" id="order">
   <div class="wrap">
-    <div class="two rows">
+    <div class="two" style="align-items:end">
       <div>
         <p class="eyebrow g">The order</p>
         <h2>200 simulators. Three kinds of bay.</h2>
-        <p class="lede" style="margin-top:1.4rem">One platform across the chain, so a member in Sandton plays a member in Umhlanga on the same course on the same night.</p>
       </div>
-      <div class="phases" style="margin-top:0; align-self:end">
-        <div class="phase"><div class="k">Phase 1 · 2027</div><div class="n">40<small>units</small></div><p>Collection and flagship clubs. Point, Cape Town, first.</p></div>
-        <div class="phase"><div class="k">Phase 2 · 2027–28</div><div class="n">100<small>units</small></div><p>The metro clubs. Network Play across cities.</p></div>
-        <div class="phase top"><div class="k">Phase 3 · 2028–29</div><div class="n">60<small>units</small></div><p>The rest of the chain, Botswana and Namibia included.</p></div>
-      </div>
+      <p class="lede">One platform across the chain, so a member in Sandton plays a member in Umhlanga on the same course on the same night.</p>
+    </div>
+    <div class="phases" style="margin-top:2.6rem">
+      <div class="phase"><div class="k">Phase 1 · 2027</div><div class="n">40<small>units</small></div><p>20 Collection and flagship clubs, two bays each. The Point, Cape Town, first.</p></div>
+      <div class="phase"><div class="k">Phase 2 · 2027–28</div><div class="n">100<small>units</small></div><p>50 metro clubs, two bays each. Network Play across cities.</p></div>
+      <div class="phase top"><div class="k">Phase 3 · 2028–29</div><div class="n">60<small>units</small></div><p>60 smaller clubs, one bay each. Botswana and Namibia included.</p></div>
+    </div>
+    <div class="two rows" style="margin-top:2.6rem">
       <div>
         <div class="tablewrap" style="margin-top:0">
           <table>
@@ -526,5 +544,16 @@
     <p>Virgin Golf by Ernie Els is a concept proposed to Virgin Active by Get Lucky Golf Club (Pty) Ltd with Ernie Els. The Virgin name and marks belong to Virgin Group; their use is theirs to decide, and each territory is their own decision. Get Lucky Golf would own and operate the bays. Unit counts are the basis for a quotation, not a purchase order. Virgin Active figures are its published figures to March 2026. Private and confidential, prepared for Golfzon, September 2026.</p>
   </div>
 </footer>
+<script>
+  (function () {
+    var els = document.querySelectorAll('section > .wrap, section > .wrap.rel');
+    els.forEach(function (el) { el.classList.add('reveal'); });
+    if (!('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
 </body>
 </html>
