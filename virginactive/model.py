@@ -12,7 +12,8 @@ TERM_M = 60              # then 5-year amortising, per phase drawdown
 DEBT_PCT = 0.90          # RMB funds 90% of landed capex; Virgin Golf equity 10%
 LANDED = 1.30            # freight, duty, enclosure, screen, seating, install on top of hardware
 HOURS_PER_BAY = 15 * 360 # bookable hours a year (05:00-21:00 weekdays, shorter weekends)
-VA_SHARE = 0.20          # Virgin Active concession: 20% of bay revenue
+VA_SHARE = 0.20          # Virgin Active concession: 20% of bay revenue. Opening position, negotiable
+SHELL_PER_BAY = 150_000  # room shell and power if Virgin Golf builds it instead of Virgin Active. Opening position: Virgin Active builds
 CARD = 0.025             # card and booking fees
 MARKETING = 0.05         # of revenue
 ASSET_INS = 0.01         # of capex, a year
@@ -65,12 +66,12 @@ def debt_schedule(principal, start_year, years):
         out[y]["closing"] = bal
     return out, pmt
 
-def run(util_mult=1.0):
+def run(util_mult=1.0, va_share=VA_SHARE, shell=0.0):
     years = list(range(2027, 2033))
     rows = {}
     capex_by_phase = []
     for ph in PHASES:
-        cap = sum(BAYS[t]["capex"] * n for t, n in ph["units"].items())
+        cap = sum((BAYS[t]["capex"] + shell) * n for t, n in ph["units"].items())
         capex_by_phase.append(cap)
     total_capex = sum(capex_by_phase)
     debts = [debt_schedule(c * DEBT_PCT, ph["year"], years) for c, ph in zip(capex_by_phase, PHASES)]
@@ -101,7 +102,7 @@ def run(util_mult=1.0):
             r["membership"] += members * adoption * ADDON_ZAR_PM * 12 * live
         shared = r["bay_hire"] + r["membership"] + r["leagues"] + r["challenge"]
         r["revenue"] = shared + r["sponsorship"]
-        r["va_share"] = shared * VA_SHARE
+        r["va_share"] = shared * va_share
         r["card"] = shared * CARD
         r["marketing"] = r["revenue"] * MARKETING
         # people: hosts at Collection clubs, regional technicians, a small central team
@@ -126,6 +127,19 @@ def run(util_mult=1.0):
     return dict(years=years, rows=rows, total_capex=total_capex, capex_by_phase=capex_by_phase,
                 debt_total=total_capex * DEBT_PCT, equity_total=total_capex * (1 - DEBT_PCT),
                 pmt_monthly=[d[1] for d in debts])
+
+def negotiation():
+    """2031 outcome for each combination of Virgin Active's share and who builds the shell."""
+    grid = []
+    for shell_by, shell in (("Virgin Active", 0.0), ("Virgin Golf", SHELL_PER_BAY)):
+        for share in (0.15, 0.20, 0.25):
+            R = run(1.0, share, shell); r = R["rows"][2031]
+            trough = min(R["rows"][y]["cum_cash"] for y in R["years"])
+            grid.append(dict(shell_by=shell_by, share=share, capex=R["total_capex"], debt=R["debt_total"],
+                             va_income=r["va_share"], ebitda=r["ebitda"], debt_service=r["debt_service"],
+                             dscr=r["dscr"], cash_after_debt=r["cash_after_debt"], equity_need=-trough,
+                             dscr_low=run(0.7, share, shell)["rows"][2031]["dscr"]))
+    return grid
 
 def unit_econ(t, util_mult=1.0):
     b = BAYS[t]
@@ -154,7 +168,8 @@ if __name__ == "__main__":
                hours_per_bay=HOURS_PER_BAY, va_share=VA_SHARE, addon_zar_pm=ADDON_ZAR_PM, addon_adoption=ADDON_ADOPTION,
                members_per_club=MEMBERS_PER_CLUB, bays=BAYS, phases=PHASES,
                cases={k: run(v) for k, v in cases.items()},
-               unit={t: unit_econ(t) for t in BAYS}, unit_low={t: unit_econ(t, 0.7) for t in BAYS})
+               unit={t: unit_econ(t) for t in BAYS}, unit_low={t: unit_econ(t, 0.7) for t in BAYS},
+               shell_per_bay=SHELL_PER_BAY, negotiation=negotiation())
     json.dump(out, open("model.json", "w"), indent=1, default=float)
     m = lambda x: f"R{x/1e6:6.1f}m"
     for case, mult in cases.items():
@@ -165,6 +180,9 @@ if __name__ == "__main__":
             r = R["rows"][y]
             hpd = r["hours"] / r["bays"] / 360 if r["bays"] else 0
             print(f"{y:>6}{r['bays']:>6}{hpd:>10.1f}{m(r['revenue']):>10}{m(r['va_share']):>10}{m(r['ebitda']):>10}{r['ebitda']/r['revenue']*100 if r['revenue'] else 0:>7.0f}%{m(r['debt_service']):>10}{(r['dscr'] or 0):>6.2f}{m(r['cash_after_debt']):>10}{m(r['cum_cash']):>10}")
+    print("\n=== NEGOTIATION GRID, 2031")
+    for g in negotiation():
+        print(f"shell by {g['shell_by']:>13}, VA {g['share']*100:.0f}%: capex {m(g['capex'])} VA income {m(g['va_income'])} EBITDA {m(g['ebitda'])} DSCR {g['dscr']:.2f} (low {g['dscr_low']:.2f}) equity {m(g['equity_need'])}")
     print("\n=== UNIT ECONOMICS, mature bay, base case")
     for t in BAYS:
         u = unit_econ(t)

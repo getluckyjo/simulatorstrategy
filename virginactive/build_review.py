@@ -83,6 +83,15 @@ for p, c in zip(d["phases"], B["capex_by_phase"]):
     order_tbl += f"<tr><td>{p['name']}</td><td>{p['year']}</td><td>{units}</td><td class='n'>{p['clubs']}</td><td class='n'>{m(c)}</td><td class='n'>{m(c*0.9)}</td><td class='n'>{m(c*0.1)}</td></tr>"
 order_tbl += f"<tr class='total'><td>Total</td><td>2027–29</td><td>{bays} bays</td><td class='n'>{clubs}</td><td class='n'>{m(B['total_capex'])}</td><td class='n'>{m(B['debt_total'])}</td><td class='n'>{m(B['equity_total'])}</td></tr></tbody></table>"
 
+grid = d["negotiation"]
+grid_tbl = "<table><thead><tr><th>2031, base case</th><th>Shell built by</th><th>Virgin Active share</th><th>Capex</th><th>To Virgin Active</th><th>Virgin Golf EBITDA</th><th>Debt cover<small>base · low case</small></th><th>Equity needed</th></tr></thead><tbody>"
+for g in grid:
+    opening = g["shell_by"] == "Virgin Active" and abs(g["share"] - 0.20) < 1e-9
+    cls = " class='total'" if opening else ""
+    label = "Opening position" if opening else ""
+    grid_tbl += f"<tr{cls}><td>{label}</td><td>{g['shell_by']}</td><td class='n'>{pct(g['share'])}</td><td class='n'>{m(g['capex'],0)}</td><td class='n'><span class='va'>{m(g['va_income'],0)}</span></td><td class='n'>{m(g['ebitda'],0)}</td><td class='n'>{g['dscr']:.2f}× · {g['dscr_low']:.2f}×</td><td class='n'>{m(g['equity_need'],0)}</td></tr>"
+grid_tbl += "</tbody></table>"
+
 two_bay = U["Play"]["va_share"] * 2; four_bay = U["Signature"]["va_share"] * 4
 
 page = f"""<title>Virgin Golf Bay Model</title>
@@ -190,6 +199,11 @@ li b {{ font-weight: 600; }}
 <p>Use is the only assumption that matters. The low case cuts booked hours and add-on take-up to 70% of base, which is 3.5 hours a bay a day. It still covers RMB 1.6 times at maturity; it just needs more equity to get through 2028.</p>
 <div class="tbl">{cases_tbl}</div>
 
+<h2>The two movable posts</h2>
+<p>Two terms are Virgin Active's to negotiate and ours to move: its share of bay revenue, and who builds the room shell. The opening position is 20% and Virgin Active builds, inside refurbishments it has already budgeted. Every combination below still covers RMB, so both posts can move to make the deal work. Giving Virgin Active 25% costs Virgin Golf about R9m a year of EBITDA at maturity; building the shell ourselves adds R{d['shell_per_bay']/1e3:.0f}k a bay, R30m to the facility and R6m to the equity.</p>
+<div class="tbl">{grid_tbl}</div>
+<p class="note">Debt cover is the 2031 figure. Equity needed is the low point of cumulative cash, base case. The bank's floor is usually 1.3× on the low case; every cell clears it except 25% with Virgin Golf building, which sits at 1.26×.</p>
+
 <h2>What Virgin Active sees</h2>
 <ul>
   <li><b>{m(mature['va_share'],0)} a year</b> of concession income across 112 clubs at maturity, for space it is refurbishing anyway. That is about {k(two_bay)} a year from a 2-bay zone and {k(four_bay)} from a 4-bay Collection zone.</li>
@@ -210,10 +224,9 @@ li b {{ font-weight: 600; }}
   <li><b>FX</b> 18.5, as in the investor model. All figures ex VAT. Depreciation over seven years and tax at 27% are not shown; EBITDA and debt service are what the two readers look at first.</li>
 </ul>
 
-<h2>Decisions before this goes on a page</h2>
+<h2>Decisions</h2>
 <ol class="decide">
-  <li><span><b>Virgin Active's share.</b> 20% of bay revenue is the base. Alternatives: 15% with a minimum guarantee per club, or 25% with Virgin Active building the room shell. The share is the single lever Virgin Active will negotiate.</span></li>
-  <li><span><b>Who builds the room.</b> The model assumes Virgin Active supplies shell and power inside its refurbishments. If Virgin Golf builds, capex rises by about R30m and the RMB facility with it.</span></li>
+  <li><span><b>Settled: the share and the shell are the negotiation.</b> Open at 20% of bay revenue with Virgin Active building the shell and power inside its refurbishments. Both posts move as needed; the grid above shows what each move costs and that every combination still services RMB.</span></li>
   <li><span><b>Equity.</b> {m(-trough(B),0)} base, {m(-trough(L),0)} low, most of it in 2027 for the phase-one deposit of {m(B['capex_by_phase'][0]*0.1,1)} and the first half-year. Sources: the Get Lucky round, a Virgin Golf co-investor, Golfzon supplier credit on phase one, or a naming partner paying up front. This is the question RMB will ask first.</span></li>
   <li><span><b>The membership add-on.</b> R299 a month with one included hour. Virgin Active may want it inside its Collection tier instead. Either way it is billed by Virgin Active.</span></li>
   <li><span><b>Naming partner.</b> R25k a bay a year is deliberately modest. Santam, RMB itself, or a beverage brand could take the chain naming at a multiple of that.</span></li>
