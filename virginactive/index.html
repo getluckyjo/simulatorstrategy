@@ -291,11 +291,37 @@
   .case.base .n { color: var(--cream); }
   .case .s { font-size: .8rem; margin-top: .3rem; opacity: .7; }
   @media (max-width: 520px) { .cases { grid-template-columns: 1fr; } }
+  /* zone cards: payoff line aligned across the row */
+  .zone { display: flex; flex-direction: column; }
+  .zone .to { margin-top: auto; padding-top: 1rem; }
+  .zone dd { white-space: nowrap; }
+  .zone dl { margin-bottom: 1.2rem; }
+  /* stat strip: hairlines between tiles */
+  @media (min-width: 760px) { .stats:not(.mini) .stat + .stat { border-left: 1px solid rgba(245,240,225,.12); padding-left: 24px; } .cream .stats:not(.mini) .stat + .stat { border-left-color: rgba(51,82,49,.14); } }
+  /* chain table: the mature year */
+  tbody tr.mature td { background: rgba(74,122,61,.14) !important; font-weight: 600; }
+  /* party cards: even bottoms */
+  .party { display: flex; flex-direction: column; }
+  .party p:last-child { margin-bottom: 0; }
+  /* cards lift a touch on hover */
+  .card, .zone, .party { transition: transform .25s ease, border-color .25s ease; }
+  @media (hover: hover) { .card:hover, .zone:hover { transform: translateY(-3px); border-color: rgba(201,169,78,.45); } }
+  /* hero: one orchestrated entrance; sections: a quiet rise on scroll. Resting state is always visible. */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero .rel > * { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
+    .hero .rel > :nth-child(1) { animation-delay: .05s } .hero .rel > :nth-child(2) { animation-delay: .15s } .hero .rel > :nth-child(3) { animation-delay: .3s } .hero .rel > :nth-child(4) { animation-delay: .42s } .hero .rel > :nth-child(5) { animation-delay: .52s } .hero .rel > :nth-child(6) { animation-delay: .62s }
+    .hero .bg img { animation: settle 2.4s ease-out both; }
+    .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+    .js .reveal.in { opacity: 1; transform: none; }
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  @keyframes settle { from { transform: scale(1.06); } to { transform: none; } }
   :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
 </style>
 </head>
 <body>
+<script>document.body.classList.add("js")</script>
 
 <nav class="nav" aria-label="Main">
   <div class="wrap">
@@ -326,7 +352,7 @@
       <span class="golf">Golf</span>
     </div>
     <h1><span class="l1"><span class="by"><span class="ghost" aria-hidden="true">A golf </span>by Ernie Els</span>A golf zone in</span><span class="l2">every Virgin Active club.</span><span class="l3">Not a rand of your capital.</span></h1>
-    <p class="lede">200 Golfzon bays in 130 Southern African clubs, booked like padel. We buy them, RMB finances them, we run them, Ernie Els puts his name on the door. Virgin Active gives the room and the members, and takes 20% of every rand.</p>
+    <p class="lede">200 Golfzon bays in 130 Southern African clubs, booked like padel. We buy it. RMB finances it. We run it. Ernie Els fronts it. Virgin Active gives the room and the members, and takes 20% of every rand.</p>
     <div class="btns">
       <a class="btn gold" href="#offer">See the offer</a>
       <a class="btn ghost" href="#meet">Book the meeting</a>
@@ -434,7 +460,7 @@
         <h3>Two Signature bays</h3>
         <dl>
           <dt>Floor</dt><dd>about 60 m²</dd>
-          <dt>Booked hours a day, each bay</dt><dd>6.0</dd>
+          <dt>Hours a day, each bay</dt><dd>6.0</dd>
           <dt>Bay revenue a year</dt><dd>R2.8m</dd>
         </dl>
         <div class="to"><div class="n tab">R540K</div><div class="l">a year to Virgin Active</div></div>
@@ -444,7 +470,7 @@
         <h3>Two Play bays</h3>
         <dl>
           <dt>Floor</dt><dd>about 60 m²</dd>
-          <dt>Booked hours a day, each bay</dt><dd>5.0</dd>
+          <dt>Hours a day, each bay</dt><dd>5.0</dd>
           <dt>Bay revenue a year</dt><dd>R1.8m</dd>
         </dl>
         <div class="to"><div class="n tab">R345K</div><div class="l">a year to Virgin Active</div></div>
@@ -454,7 +480,7 @@
         <h3>One bay</h3>
         <dl>
           <dt>Floor</dt><dd>about 30 m²</dd>
-          <dt>Booked hours a day</dt><dd>4.5 to 5.0</dd>
+          <dt>Hours a day</dt><dd>4.5 to 5.0</dd>
           <dt>Bay revenue a year</dt><dd>R0.6m to R0.9m</dd>
         </dl>
         <div class="to"><div class="n tab">R120K+</div><div class="l">a year to Virgin Active</div></div>
@@ -486,7 +512,7 @@
               <tr><td><strong>2028</strong> <span class="mute" style="font-size:.85rem">phase two</span></td><td class="n">140</td><td class="n">70</td><td class="n">R67m</td><td class="n">R13.0m</td></tr>
               <tr><td><strong>2029</strong> <span class="mute" style="font-size:.85rem">phase three</span></td><td class="n">200</td><td class="n">130</td><td class="n">R140m</td><td class="n">R27.0m</td></tr>
               <tr><td><strong>2030</strong></td><td class="n">200</td><td class="n">130</td><td class="n">R181m</td><td class="n">R35.2m</td></tr>
-              <tr><td><strong>2031</strong> <span class="mute" style="font-size:.85rem">fully ramped</span></td><td class="n">200</td><td class="n">130</td><td class="n">R191m</td><td class="n">R37.2m</td></tr>
+              <tr class="mature"><td><strong>2031</strong> <span class="mute" style="font-size:.85rem">fully ramped</span></td><td class="n">200</td><td class="n">130</td><td class="n">R191m</td><td class="n">R37.2m</td></tr>
             </tbody>
           </table>
         </div>
@@ -498,20 +524,22 @@
 
 <section class="deep topo" id="zone">
   <div class="wrap">
-    <div class="two rows">
+    <div class="two" style="align-items:end">
       <div>
         <p class="eyebrow">The zone</p>
         <h2>Two bays in a club. One in the smaller clubs.</h2>
-        <p class="lede" style="margin-top:1.4rem; color:rgba(245,240,225,.78)">Golfzon: the world's largest simulator platform and the official simulator of the U.S. Open. One platform across the chain, so Sandton plays Umhlanga on the same course on the same night.</p>
       </div>
-      <div class="phases" style="margin-top:0; align-self:end">
+      <p class="lede" style="color:rgba(245,240,225,.78)">Golfzon: the world's largest simulator platform and the official simulator of the U.S. Open. One platform across the chain, so Sandton plays Umhlanga on the same course on the same night.</p>
+    </div>
+    <div class="phases" style="margin-top:2.6rem">
         <div class="phase"><div class="k">Phase 1 · 2027</div><div class="n">40<small>bays</small></div><p>20 Collection and flagship clubs, two bays each. The Point first.</p></div>
         <div class="phase"><div class="k">Phase 2 · 2028</div><div class="n">100<small>bays</small></div><p>50 metro clubs, two bays each.</p></div>
         <div class="phase top"><div class="k">Phase 3 · 2029</div><div class="n">60<small>bays</small></div><p>60 smaller clubs, one bay each. Botswana and Namibia included.</p></div>
-      </div>
+    </div>
+    <div class="two rows" style="margin-top:2.6rem">
       <div class="cards c2" style="margin-top:0">
         <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v6"/></svg></div><h3>Booked like padel</h3><p>In the Virgin Active app, by the hour. Members pay the member rate. Non-members pay full rate and meet the club.</p></div>
-        <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 11a4 4 0 1 0-8 0M4 21a8 8 0 0 1 16 0"/></svg></div><h3>A golf add-on on the bill</h3><p>R299 a month: an hour included, member rates, leagues. Billed and shared by Virgin Active.</p></div>
+        <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 11a4 4 0 1 0-8 0M4 21a8 8 0 0 1 16 0"/></svg></div><h3>A golf add‑on on the bill</h3><p>R299 a month: an hour included, member rates, leagues. Billed and shared by Virgin Active.</p></div>
         <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg></div><h3>Leagues and coaching</h3><p>Chain-wide leagues. Leadbetter coaching in the practice bays. A pro in every Collection club.</p></div>
         <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V3l14 5-14 5"/></svg></div><h3>The insured shot</h3><p>Get Lucky's product, indoors: R50 for a swing at R25,000, insured by Santam.</p></div>
       </div>
@@ -648,5 +676,16 @@
     <p>Virgin Golf by Ernie Els is a concept in development by Get Lucky Golf Club (Pty) Ltd with Ernie Els, not yet an agreement with Virgin Active or Virgin Group; use of the Virgin name is theirs to decide. Financial figures are forecasts from Virgin Golf's model on stated assumptions, ex VAT, and are not a guarantee. Golfzon pricing is indicative until quoted. Virgin Active figures are its published figures to March 2026. Private and confidential, prepared for Virgin Active, September 2026.</p>
   </div>
 </footer>
+<script>
+  (function () {
+    var els = document.querySelectorAll('section > .wrap, section > .wrap.rel');
+    els.forEach(function (el) { el.classList.add('reveal'); });
+    if (!('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
 </body>
 </html>
