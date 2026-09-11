@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virgin Golf by Ernie Els × Virgin Active</title>
+<meta name="description" content="A golf zone in every Virgin Active club, with no capital from Virgin Active. 200 Golfzon bays across 112 Southern African clubs, financed by RMB, run by Virgin Golf, Ernie Els on the door. A proposal for Virgin Active.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#16261a">
+<link rel="canonical" href="https://virginactive.virgingolf.co.za/">
+<meta property="og:url" content="https://virginactive.virgingolf.co.za/">
+<meta property="og:title" content="Virgin Golf by Ernie Els × Virgin Active">
+<meta property="og:description" content="A golf zone in every Virgin Active club, with no capital from Virgin Active. A proposal from Get Lucky Golf Club and Ernie Els.">
+<meta property="og:image" content="https://virginactive.virgingolf.co.za/images/ernie-hero.webp">
+<link rel="icon" type="image/webp" href="/logos/favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="/fonts/PosterGothicRoundATF-Heavy.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/images/ernie-hero.webp" as="image" fetchpriority="high">
+<link rel="preload" href="/logos/virgin.webp" as="image" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @font-face { font-family: "PosterGothic"; src: url("/fonts/PosterGothicRoundATF-Heavy.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
+  :root {
+    --green: #335231; --green-light: #4a7a3d; --green-dark: #1e3120; --green-deep: #16261a;
+    --cream: #f5f0e1; --cream-dark: #e8e0cc; --white: #fdfcf5;
+    --gold: #c9a94e; --gold-light: #e8d48b; --gold-text: #7a5d20;
+    --charcoal: #2a2a2a;
+    --virgin: #e10a0a; --virgin-soft: rgba(225,10,10,.12);
+    --display: "PosterGothic", Impact, "Arial Narrow", "Arial Black", sans-serif;
+    --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+    --wrap: 72rem; --r: 18px;
+  }
+  * { box-sizing: border-box; }
+  section, header, [id] { scroll-margin-top: 76px; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--green-deep); color: var(--cream); font-family: var(--sans); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  h1, h2, h3, .display { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: .01em; line-height: .95; margin: 0; text-wrap: balance; }
+  h1 { font-size: clamp(2.2rem, 9vw, 5.6rem); }
+  h2 { font-size: clamp(2rem, 5vw, 3.6rem); }
+  h2 + .lede, h2 + .two { margin-top: 1.4rem; }
+  h3 { font-size: 1.35rem; line-height: 1.05; }
+  p { margin: 0; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding-inline: 24px; }
+  .eyebrow { font-family: var(--sans); font-size: .74rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+  .eyebrow.g { color: var(--green-light); }
+  .gold { color: var(--gold); } .mute { opacity: .7; } .tab { font-variant-numeric: tabular-nums; }
+  .lede { font-size: 1.15rem; line-height: 1.65; max-width: 44rem; }
+  @media (min-width: 640px) { .lede { font-size: 1.25rem; } }
+  .btn { display: inline-flex; align-items: center; gap: .5rem; border-radius: 999px; padding: 1rem 2rem; font-size: .82rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; transition: transform .15s ease, background .15s ease, border-color .15s ease, color .15s ease; }
+  .btn.gold { background: var(--gold); color: var(--green-deep); } .btn.gold:hover { transform: scale(1.04); background: var(--gold-light); }
+  .btn.ghost { border: 1px solid rgba(245,240,225,.35); color: var(--cream); } .btn.ghost:hover { border-color: var(--gold); color: var(--gold); }
+  .btn.ghost.dark { border-color: rgba(51,82,49,.35); color: var(--green); } .btn.ghost.dark:hover { border-color: var(--green); }
+  .btns { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 2.2rem; }
+  .halftone { position: absolute; inset: 0; background-image: radial-gradient(rgba(245,240,225,.16) 1px, transparent 1.4px); background-size: 7px 7px; pointer-events: none; }
+  .topo { background-image: repeating-radial-gradient(circle at 12% 18%, transparent 0 46px, rgba(245,240,225,.035) 46px 47px), repeating-radial-gradient(circle at 88% 82%, transparent 0 60px, rgba(245,240,225,.03) 60px 61px); }
+  section { position: relative; padding-block: 88px; }
+  @media (min-width: 640px) { section { padding-block: 112px; } }
+  .bg { position: absolute; inset: 0; overflow: hidden; }
+  .bg img { width: 100%; height: 100%; object-fit: cover; }
+  .bg .tint { position: absolute; inset: 0; }
+  .rel { position: relative; z-index: 1; }
+  .cream { background: var(--cream); color: var(--charcoal); }
+  .cream h2, .cream h3 { color: var(--green); }
+  .cream .lede, .cream p { color: rgba(42,42,42,.82); }
+  .deep { background: var(--green-deep); } .grn { background: var(--green); }
+
+  /* nav */
+  .nav { position: sticky; top: 0; z-index: 50; background: rgba(22,38,26,.82); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(245,240,225,.08); }
+  .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+  .nav .sub { display: flex; gap: 6px; overflow-x: auto; padding: 0 24px 10px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .nav .sub::-webkit-scrollbar { display: none; }
+  .nav .sub a { flex: 0 0 auto; font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; color: rgba(245,240,225,.8); border: 1px solid rgba(245,240,225,.18); border-radius: 999px; padding: .38rem .8rem; }
+  @media (min-width: 900px) { .nav .sub { display: none; } }
+  .nav img { height: 40px; width: auto; }
+  .nav .links { display: none; gap: 26px; font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+  .nav .links a { text-decoration: none; opacity: .78; } .nav .links a:hover { opacity: 1; color: var(--gold); }
+  @media (min-width: 900px) { .nav .links { display: flex; } }
+  .nav .cta { font-size: .72rem; padding: .7rem 1.2rem; white-space: nowrap; }
+
+  /* hero */
+  .hero { min-height: min(88vh, 900px); display: flex; align-items: flex-end; text-align: center; padding-block: 120px 64px; }
+  @media (max-width: 640px) { .hero { padding-top: 230px; } }
+  .hero .bg img { object-position: 68% 0%; }
+  .hero .tint.a { background: linear-gradient(90deg, rgba(22,38,26,.94), rgba(22,38,26,.62) 55%, rgba(22,38,26,.22)); }
+  .hero .tint.b { background: linear-gradient(180deg, rgba(22,38,26,.28), transparent 35%, rgba(22,38,26,.96)); }
+  .hero .wrap { max-width: 58rem; }
+  
+  .hero .lede { margin: 1.4rem auto 0; font-size: 1.12rem; }
+  @media (min-width: 640px) { .hero .lede { font-size: 1.2rem; } }
+  .hero .btns { justify-content: center; }
+  .hero .tag { margin-top: 2rem; font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: rgba(245,240,225,.68); }
+
+
+  /* Virgin Golf lockup: script spans two rows; GOLF above, BY ERNIE ELS tucked beneath it */
+  .lockup { display: grid; grid-template-columns: auto auto; justify-content: center; align-items: center; column-gap: .1em; row-gap: 0; font-size: clamp(3rem, 8.6vw, 6.2rem); margin: .9rem 0 .4rem; }
+  .lockup img { grid-row: 1; grid-column: 1; height: 1.9em; width: auto; align-self: center; margin-top: .05em; }
+  .lockup .golf { grid-column: 2; grid-row: 1; align-self: center; font-family: var(--display); font-weight: 800; text-transform: uppercase; color: var(--cream); line-height: .82; letter-spacing: .01em; text-shadow: 0 4px 18px rgba(0,0,0,.35); }
+  .lockup .by { grid-column: 1 / span 2; grid-row: 3; justify-self: start; align-self: start; margin-top: .12em; margin-bottom: 0; margin-left: .06em; font-family: var(--display); font-weight: 800; text-transform: uppercase; color: var(--gold); letter-spacing: .3em; font-size: .25em; line-height: 1; padding-left: 0; }
+  .hero .eyebrow { margin-bottom: 1.4rem; }
+  .hero h1 { font-size: clamp(1.6rem, 4.6vw, 3rem); }
+  .hero h1 .l1 { display: inline-block; text-align: left; }
+  .hero h1 .l2, .hero h1 .l3 { display: block; }
+  .hero h1 .l3 { color: var(--gold); }
+  .hero h1 .by { display: block; position: relative; top: calc(-.4rem - 1.15em); font-size: clamp(.85rem, 2.3vw, 1.55rem); letter-spacing: .3em; color: var(--gold); line-height: 1; margin-bottom: .1rem; white-space: nowrap; }
+  .hero h1 .by .ghost { display: inline-block; height: 0; line-height: 0; overflow: hidden; visibility: hidden; font-size: clamp(1.6rem, 4.6vw, 3rem); letter-spacing: .01em; }
+
+
+
+  /* Virgin red: marks what is Virgin Active's — chapters, their numbers, their dates */
+  .eyebrow.v { color: var(--virgin); }
+  .ticks.v li::before { background-color: var(--virgin); }
+  .tl li.v::before { background: var(--virgin); }
+  .tl li.v time { color: var(--virgin); }
+  tfoot tr.v td { color: var(--green); background: rgba(74,122,61,.16); }
+  .chapter { display: inline-flex; align-items: center; gap: .6rem; }
+  .chapter::before { content: ""; width: 28px; height: 4px; background: var(--virgin); border-radius: 2px; }
+
+  .whyhead { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 32px 48px; }
+  .gzlogo { height: clamp(64px, 9vw, 118px); width: auto; opacity: .96; justify-self: end; }
+  @media (max-width: 900px) { .whyhead { grid-template-columns: 1fr; } .gzlogo { order: -1; height: 44px; justify-self: start; } }
+
+  /* stat strips */
+  .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  @media (min-width: 760px) { .stats { grid-template-columns: repeat(4, 1fr); } }
+  .stat .n { font-family: var(--display); font-size: clamp(2.4rem, 5vw, 3.4rem); color: var(--gold); line-height: 1; }
+  .stat .l { margin-top: .5rem; font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--cream); }
+  .stat .s { margin-top: .3rem; font-size: .8rem; line-height: 1.4; color: rgba(245,240,225,.55); }
+  .cream .stat .n { color: var(--green); } .cream .stat .l { color: var(--charcoal); } .cream .stat .s { color: rgba(42,42,42,.55); }
+
+  /* cards */
+  .cards { display: grid; gap: 18px; margin-top: 3rem; }
+  .cards.c2 { grid-template-columns: 1fr; } .cards.c3 { grid-template-columns: 1fr; } .cards.c4 { grid-template-columns: 1fr 1fr; }
+  @media (min-width: 700px) { .cards.c2 { grid-template-columns: 1fr 1fr; } .cards.c3 { grid-template-columns: repeat(3, 1fr); } .cards.c4 { grid-template-columns: repeat(4, 1fr); } }
+  .card { border-radius: var(--r); border: 1px solid rgba(245,240,225,.1); background: rgba(30,49,32,.55); padding: 26px; display: flex; flex-direction: column; gap: 10px; }
+  .card h3 { color: var(--cream); font-size: 1.25rem; }
+  .card p { font-size: .95rem; line-height: 1.55; color: rgba(245,240,225,.68); }
+  .card .ic { width: 44px; height: 44px; border-radius: 50%; background: rgba(201,169,78,.15); display: grid; place-items: center; color: var(--gold); margin-bottom: 4px; }
+  .card .ic svg { width: 22px; height: 22px; }
+  .cream .card { border-color: rgba(51,82,49,.12); background: rgba(253,252,245,.6); }
+  .cream .card h3 { color: var(--green); } .cream .card p { color: rgba(42,42,42,.72); }
+  .cream .card .ic { background: rgba(51,82,49,.1); color: var(--green); }
+
+  #concept .two { align-items: center; }
+  .panel { background: rgba(253,252,245,.82); border: 1px solid rgba(51,82,49,.12); border-radius: var(--r); padding: 24px 26px; backdrop-filter: blur(6px); }
+
+  /* two-col */
+  .two { display: grid; gap: 40px; align-items: start; }
+  @media (min-width: 900px) { .two { grid-template-columns: 1fr 1fr; gap: 56px; } }
+
+  /* order table */
+  .tablewrap { overflow-x: auto; border-radius: var(--r); border: 1px solid rgba(51,82,49,.14); background: rgba(253,252,245,.9); margin-top: 2rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .93rem; }
+  th, td { text-align: left; padding: 13px 16px; border-bottom: 1px solid rgba(51,82,49,.1); vertical-align: top; }
+  th { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-text); background: rgba(51,82,49,.06); }
+  tbody tr:nth-child(even) td { background: rgba(51,82,49,.03); }
+  tr:last-child td { border-bottom: 0; }
+  @media (max-width: 640px) { th, td { padding: 11px 12px; } }
+  td.n { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; font-weight: 600; color: var(--green); }
+  tfoot td { font-weight: 700; color: var(--green); background: rgba(51,82,49,.06); }
+
+  /* list with gold ticks */
+  .ticks { list-style: none; padding: 0; margin: 1.6rem 0 0; display: grid; gap: 14px; }
+  .ticks li { display: grid; grid-template-columns: 26px 1fr; gap: 12px; align-items: start; line-height: 1.5; }
+  .ticks li::before { content: ""; width: 18px; height: 18px; margin-top: 4px; border-radius: 50%; background: var(--gold); -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center / 14px no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center / 14px no-repeat; background-color: var(--gold); }
+  .ticks li b { display: block; color: var(--cream); }
+  .cream .ticks li b { color: var(--green-dark); }
+  .ticks li span { font-size: .95rem; opacity: .75; }
+
+  /* phases */
+  .phases { display: grid; gap: 14px; margin-top: 2rem; }
+  @media (min-width: 700px) { .phases { grid-template-columns: repeat(3, 1fr); } }
+  .phase { border-radius: var(--r); padding: 24px; background: var(--green); border: 1px solid var(--green); color: var(--cream); }
+  .phase .k { font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+  .phase .n { font-family: var(--display); font-size: 2.6rem; line-height: 1; margin: .4rem 0 .3rem; }
+  .phase .n small { font-family: var(--sans); font-size: .95rem; font-weight: 500; text-transform: none; letter-spacing: 0; opacity: .7; margin-left: 6px; }
+  .phase p { font-size: .92rem; color: rgba(245,240,225,.78); }
+  .phase.top { background: var(--gold); border-color: var(--gold); color: var(--green-deep); }
+  .phase.top .k { color: var(--green-deep); } .phase.top p { color: rgba(30,49,32,.8); }
+
+  /* resume list */
+  .resume { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }
+  .resume li { display: grid; grid-template-columns: 22px 1fr; gap: 12px; }
+  .resume li svg { width: 20px; height: 20px; color: var(--gold); margin-top: 3px; }
+  .resume b { display: block; color: var(--cream); } .resume span { font-size: .92rem; color: rgba(245,240,225,.65); line-height: 1.5; }
+
+  .cardimg { position: relative; margin: 22px -30px -30px; }
+  .cardimg img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 28%; display: block; }
+  .cardimg figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 30px 12px; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(245,240,225,.85); background: linear-gradient(180deg, transparent, rgba(22,38,26,.75)); }
+
+
+  /* matched rows, columns that fill, the step row */
+  .two.rows { align-items: start; row-gap: 32px; }
+  .col { display: flex; flex-direction: column; }
+  .col .stats { margin-top: auto !important; padding-top: 2rem; }
+  .stats.mini { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .stats.mini .n { font-size: clamp(2rem, 4vw, 2.8rem); }
+  .head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 18px 32px; }
+  .head .btn { margin-bottom: .4rem; }
+  .steps { list-style: none; padding: 0; margin: 2.4rem 0 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; counter-reset: step; }
+  @media (max-width: 1000px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 600px) { .steps { grid-template-columns: 1fr 1fr; } }
+  .steps li { position: relative; border-top: 3px solid var(--green); padding-top: 14px; }
+  .steps li::before { content: ""; position: absolute; top: -8px; left: 0; width: 13px; height: 13px; border-radius: 50%; background: var(--green); }
+  .steps li.key { border-top-color: var(--gold); } .steps li.key::before { background: var(--gold); }
+  .steps li.v { border-top-color: var(--virgin); } .steps li.v::before { background: var(--virgin); }
+  .steps time { display: block; font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-text); }
+  .steps li.v time { color: var(--virgin); }
+  .steps b { display: block; margin-top: .3rem; color: var(--green-dark); font-size: 1rem; line-height: 1.25; }
+  .steps span { display: block; margin-top: .3rem; font-size: .86rem; line-height: 1.45; color: rgba(42,42,42,.65); }
+
+  /* team */
+  .team { display: grid; gap: 18px; margin-top: 2.6rem; }
+  @media (min-width: 700px) { .team { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1000px) { .team { grid-template-columns: repeat(3, 1fr); } .person { grid-template-columns: 72px 1fr; gap: 14px; padding: 18px; } .person img { width: 72px; height: 72px; } .person b { font-size: 1.15rem; } .person p { font-size: .86rem; } }
+  .person { display: grid; grid-template-columns: 84px 1fr; gap: 18px; align-items: start; border-radius: var(--r); border: 1px solid rgba(245,240,225,.1); background: rgba(30,49,32,.55); padding: 20px; }
+  .person img { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(201,169,78,.5); }
+  .person b { display: block; font-family: var(--display); font-size: 1.25rem; text-transform: uppercase; }
+  .person .role { display: block; white-space: nowrap; font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+  .person p { font-size: .9rem; color: rgba(245,240,225,.65); margin-top: .4rem; }
+  .partners { margin-top: 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: 22px 36px; border-radius: var(--r); border: 1px solid rgba(245,240,225,.1); background: rgba(30,49,32,.4); padding: 22px 26px; }
+  .partners .marks { display: flex; align-items: center; gap: 28px; }
+  .partners img { height: 48px; width: auto; }
+  .partners .marks img:last-child { height: 60px; }
+  .partners p { font-size: .95rem; line-height: 1.55; color: rgba(245,240,225,.72); flex: 1 1 22rem; }
+  .partners p strong { color: var(--cream); font-weight: 600; }
+
+  /* timeline */
+  .tl { list-style: none; padding: 0; margin: 2.4rem 0 0; display: grid; gap: 0; border-left: 2px solid rgba(51,82,49,.2); }
+  .tl li { position: relative; padding: 0 0 24px 28px; }
+  .tl li::before { content: ""; position: absolute; left: -8px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: var(--green); border: 3px solid var(--cream); }
+  .tl li.key::before { background: var(--gold); }
+  .tl time { display: block; font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-text); }
+  .tl b { display: block; color: var(--green-dark); font-size: 1.05rem; }
+  .tl span { font-size: .92rem; color: rgba(42,42,42,.65); }
+
+  /* teaser */
+  .teaser { border-radius: var(--r); border: 1px solid rgba(201,169,78,.35); background: rgba(30,49,32,.5); padding: 28px 30px; display: grid; gap: 18px; align-items: center; }
+  @media (min-width: 760px) { .teaser { grid-template-columns: auto 1fr auto; gap: 28px; } }
+  .teaser .ic { width: 56px; height: 56px; border-radius: 50%; background: rgba(201,169,78,.15); display: grid; place-items: center; color: var(--gold); }
+  .teaser .ic svg { width: 26px; height: 26px; }
+  .teaser h3 { color: var(--cream); font-size: 1.6rem; } .teaser p { color: rgba(245,240,225,.7); margin-top: .4rem; }
+
+  /* cta */
+  .cta { text-align: center; padding-block: 120px; }
+  .cta .bg img { object-position: 30% center; }
+  .cta .tint { background: linear-gradient(90deg, rgba(22,38,26,.78), rgba(22,38,26,.9) 50%, rgba(22,38,26,.86)); }
+  .cta h2 span { color: var(--gold); display: block; }
+  .cta .btns { justify-content: center; }
+  .cta .flag { width: 40px; height: 40px; color: var(--virgin); margin: 0 auto 1.4rem; }
+  footer { padding-block: 40px; border-top: 1px solid rgba(245,240,225,.08); font-size: .8rem; color: rgba(245,240,225,.62); }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 18px 32px; align-items: center; justify-content: space-between; }
+  footer img { height: 36px; width: auto; }
+  footer p { max-width: 54rem; line-height: 1.55; }
+  /* the offer: three parties */
+  .parties { display: grid; gap: 18px; margin-top: 2.6rem; }
+  @media (min-width: 800px) { .parties { grid-template-columns: repeat(3, 1fr); } }
+  .party { border-radius: var(--r); border: 1px solid rgba(51,82,49,.12); background: rgba(253,252,245,.82); padding: 26px; border-top: 5px solid var(--green); }
+  .party.v { border-top-color: var(--virgin); } .party.rmb { border-top-color: var(--gold); }
+  .party h3 { color: var(--green); }
+  .party .k { display: block; margin-top: 1.2rem; font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-text); }
+  .party p { font-size: .95rem; line-height: 1.55; margin-top: .4rem; }
+  .party p strong { color: var(--green-dark); }
+  .party.v p strong { color: var(--virgin); }
+  .posts { margin-top: 2rem; border-radius: var(--r); background: var(--green); color: var(--cream); padding: 26px 30px; display: grid; gap: 18px; align-items: center; }
+  @media (min-width: 800px) { .posts { grid-template-columns: 1fr 1fr; gap: 40px; } }
+  .posts h3 { color: var(--gold-light); } .posts p { color: rgba(245,240,225,.82); font-size: .98rem; margin-top: .5rem; }
+  .posts .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .posts .post { border-left: 3px solid var(--gold); padding-left: 14px; }
+  .posts .post .n { font-family: var(--display); font-size: 2.2rem; line-height: 1; color: var(--cream); }
+  .posts .post .l { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-light); margin-top: .3rem; }
+  .posts .post .s { font-size: .85rem; color: rgba(245,240,225,.7); margin-top: .3rem; }
+  .zones { display: grid; gap: 18px; margin-top: 2.4rem; }
+  @media (min-width: 760px) { .zones { grid-template-columns: 1fr 1fr; } }
+  .zone { border-radius: var(--r); border: 1px solid rgba(245,240,225,.12); background: rgba(30,49,32,.55); padding: 26px; }
+  .zone .k { font-size: .7rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+  .zone h3 { margin-top: .5rem; color: var(--cream); font-size: 1.6rem; }
+  .zone dl { margin: 1.2rem 0 0; display: grid; grid-template-columns: 1fr auto; gap: 8px 18px; font-size: .95rem; }
+  .zone dt { color: rgba(245,240,225,.65); } .zone dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; color: var(--cream); }
+  .zone dd.v { color: #ff6b6b; }
+  .zone .to { margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid rgba(245,240,225,.12); display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+  .zone .to .n { font-family: var(--display); font-size: 2rem; color: #ff6b6b; line-height: 1; }
+  .zone .to .l { font-size: .8rem; color: rgba(245,240,225,.7); }
+  .cases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 1.6rem; }
+  .case { border-radius: 12px; padding: 16px 18px; background: rgba(51,82,49,.06); border: 1px solid rgba(51,82,49,.12); }
+  .case.base { background: var(--green); color: var(--cream); border-color: var(--green); }
+  .case .k { font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-text); }
+  .case.base .k { color: var(--gold-light); }
+  .case .n { font-family: var(--display); font-size: clamp(1.5rem, 3.5vw, 2.3rem); line-height: 1; margin-top: .4rem; color: var(--green); }
+  .case.base .n { color: var(--cream); }
+  .case .s { font-size: .8rem; margin-top: .3rem; opacity: .7; }
+  @media (max-width: 520px) { .cases { grid-template-columns: 1fr; } }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a href="#top" aria-label="Get Lucky Golf Club"><img src="/logos/logo-dark-bg.webp" alt="Get Lucky Golf Club" width="400" height="299"></a>
+    <div class="links">
+      <a href="#member">The member</a>
+      <a href="#offer">The offer</a>
+      <a href="#economics">The numbers</a>
+      <a href="#zone">The zone</a>
+      <a href="#who">Who we are</a>
+    </div>
+    <a class="btn gold cta" href="#meet">Book the meeting</a>
+  </div>
+  <div class="sub" aria-label="Sections">
+    <a href="#member">The member</a><a href="#offer">The offer</a><a href="#economics">The numbers</a><a href="#zone">The zone</a><a href="#who">Who we are</a><a href="#timeline">Timeline</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="bg" aria-hidden="true">
+    <img src="/images/ernie-hero.webp" alt="" width="1024" height="864" fetchpriority="high" decoding="async">
+    <div class="tint a"></div><div class="tint b"></div><div class="halftone" style="opacity:.5"></div>
+  </div>
+  <div class="wrap rel">
+    <p class="eyebrow">A proposal for Virgin Active · from Get Lucky Golf Club and Ernie Els</p>
+    <div class="lockup" role="img" aria-label="Virgin Golf by Ernie Els">
+      <img src="/logos/virgin.webp" alt="" width="900" height="805" fetchpriority="high" decoding="sync">
+      <span class="golf">Golf</span>
+    </div>
+    <h1><span class="l1"><span class="by"><span class="ghost" aria-hidden="true">A golf </span>by Ernie Els</span>A golf zone in</span><span class="l2">every Virgin Active club.</span><span class="l3">Not a rand of your capital.</span></h1>
+    <p class="lede">200 Golfzon bays across 112 Southern African clubs, booked like a padel court. We buy them, RMB finances them, we run them, and Ernie Els puts his name on the door. Virgin Active provides the room and the members, and takes a fifth of every rand the bays earn.</p>
+    <div class="btns">
+      <a class="btn gold" href="#offer">See the offer</a>
+      <a class="btn ghost" href="#meet">Book the meeting</a>
+    </div>
+    <p class="tag">200 bays · 112 clubs · R36 million a year to Virgin Active · zero capex</p>
+  </div>
+</header>
+
+<section class="cream" id="member">
+  <div class="bg" aria-hidden="true">
+    <img src="/images/ernie-invitation-2000.webp" srcset="/images/ernie-invitation-1200.webp 1200w, /images/ernie-invitation-2000.webp 2000w" sizes="100vw" alt="" width="2000" height="1334" loading="lazy" decoding="async" style="object-position:50% 35%">
+    <div class="tint" style="background:linear-gradient(180deg, rgba(245,240,225,.94), rgba(245,240,225,.88) 50%, rgba(245,240,225,.96))"></div>
+  </div>
+  <div class="wrap rel">
+    <div class="two">
+      <div>
+        <p class="eyebrow v chapter">Chapter one</p>
+        <h2>The member.</h2>
+        <p class="lede" style="margin-top:1.4rem">Padel showed what happens when Virgin Active gives its members a game: courts full at R400 an hour, a club within a club, a reason to come in on a Tuesday night. Golf is the bigger game and the older member, and it has nowhere to go in winter or after dark.</p>
+        <p class="lede" style="margin-top:1.2rem">You have already started. The Point in Cape Town opened with a simulator in it. We are proposing the rest of the chain, on one platform, with one name on the door.</p>
+      </div>
+      <div class="panel">
+        <ul class="ticks v" style="margin-top:0">
+          <li><div><b>623,000 members walk past the bay.</b><span>Every visit. A golf zone sells itself on the way to the changing room.</span></div></li>
+          <li><div><b>139,000 handicapped golfers in South Africa.</b><span>Affluent, loyal, under-served from May to August and every weeknight. Most of them are your members already.</span></div></li>
+          <li><div><b>A game the whole family plays.</b><span>Four people in a bay, an hour, a hundred rand each. Longest drive, closest to the pin, nine holes at Pebble Beach.</span></div></li>
+          <li><div><b>A reason not to cancel.</b><span>A golf add-on on the membership, billed by you, is a member who stays.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="deep topo">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><div class="n tab">136</div><div class="l">Clubs in Southern Africa</div><div class="s">112 of them take a golf zone</div></div>
+      <div class="stat"><div class="n tab">623K</div><div class="l">Active members</div><div class="s">Past the bay on every visit</div></div>
+      <div class="stat"><div class="n tab">R400</div><div class="l">An hour of padel</div><div class="s">What a bay is priced against</div></div>
+      <div class="stat"><div class="n tab">365K</div><div class="l">Bay-hours a year</div><div class="s">About 900,000 player visits, at maturity</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cream" id="offer">
+  <div class="wrap">
+    <p class="eyebrow g">The offer</p>
+    <h2>We bring the bays. You bring the members.</h2>
+    <p class="lede" style="margin-top:1.4rem">Virgin Golf buys, installs and operates 200 Golfzon bays inside Virgin Active clubs under a ten-year exclusive concession. RMB finances the equipment. Virgin Active provides the room, the power and its members, and takes 20% of everything the bays earn.</p>
+    <div class="parties">
+      <div class="party v">
+        <h3>Virgin Active</h3>
+        <span class="k">Puts in</span>
+        <p>A two-bay zone in 100 clubs and a four-bay zone in 12 Collection and flagship clubs, built into refurbishments already planned. Power and cleaning. Bay booking in the Virgin Active app. Marketing to members. A ten-year exclusive.</p>
+        <span class="k">Gets out</span>
+        <p><strong>R36 million a year</strong> at maturity, with no capital and no operating risk. A golf add-on on the member bill. Ernie Els on the door. First call on Virgin Golf for the UK, Italy, Australia and Asia.</p>
+      </div>
+      <div class="party">
+        <h3>Virgin Golf</h3>
+        <span class="k">Puts in</span>
+        <p>The bays, the equity, the Golfzon relationship, the Ernie Els brand, coaching content, chain-wide leagues, the insured-shot product, and a golf host in every Collection club. We run it.</p>
+        <span class="k">Gets out</span>
+        <p><strong>An operating business</strong> with 200 bays and Southern Africa's largest health club as the venue. The reference case for the rest of the Virgin Active group.</p>
+      </div>
+      <div class="party rmb">
+        <h3>RMB</h3>
+        <span class="k">Puts in</span>
+        <p>Asset finance for the equipment, drawn in three phases as the bays are commissioned, secured over the bays and the concession agreement.</p>
+        <span class="k">Gets out</span>
+        <p><strong>A financed order</strong> the bays repay from their own bookings. Virgin Active never carries the debt, the equipment or the operating cost.</p>
+      </div>
+    </div>
+    <div class="posts">
+      <div>
+        <h3>Two terms are yours to negotiate.</h3>
+        <p>We open at 20% of bay revenue, with Virgin Active building the room shell inside its refurbishments. Both posts move. A bigger share, or Virgin Golf building the shell, still works for us and still works for RMB. We would rather make the deal fit than hold a number.</p>
+      </div>
+      <div class="pair">
+        <div class="post"><div class="n">20%</div><div class="l">Virgin Active's share</div><div class="s">Of bay hire, memberships, leagues and the insured shot. Movable.</div></div>
+        <div class="post"><div class="n">Shell</div><div class="l">Built by Virgin Active</div><div class="s">Walls, floor and power in a planned refurb. We fit out from the wall in. Movable.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="deep" id="economics">
+  <div class="bg" aria-hidden="true">
+    <img src="/images/golfzon-bays.webp" alt="" width="1600" height="901" loading="lazy" decoding="async" style="object-position:50% 45%">
+    <div class="tint" style="background:linear-gradient(90deg, rgba(22,38,26,.97), rgba(22,38,26,.92) 55%, rgba(22,38,26,.86))"></div>
+  </div>
+  <div class="wrap rel">
+    <div class="two" style="align-items:start">
+      <div>
+        <p class="eyebrow">The numbers</p>
+        <h2>What a zone earns <span class="gold">the club it sits in.</span></h2>
+        <p class="lede" style="margin-top:1.4rem; color:rgba(245,240,225,.78)">A bay is bookable fifteen hours a day. We plan on five booked hours a day in a metro club at a blended R360 an hour, which is padel pricing and half the hours Golfzon's own venues run. A Collection bay does six hours at R520.</p>
+        <p class="lede" style="margin-top:1.2rem; color:rgba(245,240,225,.78)">On top of bay hire: a Virgin Golf add-on at R299 a month on the member bill, leagues between clubs, corporate evenings, coaching, and the Get Lucky insured shot, R50 for R25,000.</p>
+      </div>
+      <div class="zones" style="margin-top:0">
+        <div class="zone">
+          <div class="k">A standard club</div>
+          <h3>Two-bay zone</h3>
+          <dl>
+            <dt>Floor</dt><dd>about 110 m²</dd>
+            <dt>Booked hours a day, each bay</dt><dd>5.0</dd>
+            <dt>Bay revenue a year</dt><dd>R1.8m</dd>
+          </dl>
+          <div class="to"><div class="n tab">R345K</div><div class="l">a year to Virgin Active</div></div>
+        </div>
+        <div class="zone">
+          <div class="k">A Collection club</div>
+          <h3>Four-bay zone</h3>
+          <dl>
+            <dt>Floor</dt><dd>about 220 m²</dd>
+            <dt>Booked hours a day, each bay</dt><dd>6.0</dd>
+            <dt>Bay revenue a year</dt><dd>R5.5m</dd>
+          </dl>
+          <div class="to"><div class="n tab">R1.08M</div><div class="l">a year to Virgin Active</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cream" style="border-top:1px solid rgba(51,82,49,.12)">
+  <div class="wrap">
+    <div class="two rows">
+      <div>
+        <p class="eyebrow g">The chain</p>
+        <h2>R36 million a year, for space you are refurbishing anyway.</h2>
+        <p class="lede" style="margin-top:1.4rem">Three phases, 2027 to 2029. The chain is complete in 2029 and fully ramped in 2031. Virgin Active's share is paid monthly from the first booking.</p>
+        <div class="cases">
+          <div class="case"><div class="k">Quiet</div><div class="n tab">R26m</div><div class="s">3.5 hours a bay a day</div></div>
+          <div class="case base"><div class="k">The plan</div><div class="n tab">R36m</div><div class="s">5.1 hours a bay a day</div></div>
+          <div class="case"><div class="k">Busy</div><div class="n tab">R45m</div><div class="s">6.3 hours a bay a day</div></div>
+        </div>
+        <p style="margin-top:1rem; font-size:.82rem; color:rgba(42,42,42,.55)">Virgin Active's income in 2031 at three levels of use. Every level services the RMB facility.</p>
+      </div>
+      <div>
+        <div class="tablewrap" style="margin-top:0">
+          <table>
+            <thead><tr><th>Year</th><th class="n">Bays live</th><th class="n">Clubs</th><th class="n">Bay revenue</th><th class="n">To Virgin Active</th></tr></thead>
+            <tbody>
+              <tr><td><strong>2027</strong> <span class="mute" style="font-size:.85rem">phase one, from mid-year</span></td><td class="n">40</td><td class="n">12</td><td class="n">R14m</td><td class="n" style="color:var(--virgin)">R2.8m</td></tr>
+              <tr><td><strong>2028</strong> <span class="mute" style="font-size:.85rem">phase two</span></td><td class="n">140</td><td class="n">62</td><td class="n">R66m</td><td class="n" style="color:var(--virgin)">R12.7m</td></tr>
+              <tr><td><strong>2029</strong> <span class="mute" style="font-size:.85rem">phase three</span></td><td class="n">200</td><td class="n">112</td><td class="n">R137m</td><td class="n" style="color:var(--virgin)">R26.5m</td></tr>
+              <tr><td><strong>2030</strong></td><td class="n">200</td><td class="n">112</td><td class="n">R177m</td><td class="n" style="color:var(--virgin)">R34.4m</td></tr>
+              <tr><td><strong>2031</strong> <span class="mute" style="font-size:.85rem">fully ramped</span></td><td class="n">200</td><td class="n">112</td><td class="n">R187m</td><td class="n" style="color:var(--virgin)">R36.3m</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:1rem; font-size:.82rem; color:rgba(42,42,42,.55)">Ex VAT. Bay revenue is hire, add-on memberships, leagues and the insured shot. A bay reaches 80% of mature use in its second year and 100% in its third. The full model is available under NDA.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="deep topo" id="zone">
+  <div class="wrap">
+    <div class="two rows">
+      <div>
+        <p class="eyebrow">The zone</p>
+        <h2>Two bays in a club. Four in a Collection.</h2>
+        <p class="lede" style="margin-top:1.4rem; color:rgba(245,240,225,.78)">Golfzon: the world's largest simulator platform, the official simulator of the U.S. Open, Golf Digest's best for seven years running. One platform across the chain, so a member in Sandton plays a member in Umhlanga on the same course on the same night.</p>
+      </div>
+      <div class="phases" style="margin-top:0; align-self:end">
+        <div class="phase"><div class="k">Phase 1 · 2027</div><div class="n">40<small>bays</small></div><p>12 Collection and flagship clubs. The Point, Cape Town, first.</p></div>
+        <div class="phase"><div class="k">Phase 2 · 2028</div><div class="n">100<small>bays</small></div><p>50 metro clubs, two bays each. Leagues between cities.</p></div>
+        <div class="phase top"><div class="k">Phase 3 · 2029</div><div class="n">60<small>bays</small></div><p>50 more clubs, Botswana and Namibia included.</p></div>
+      </div>
+      <div class="cards c2" style="margin-top:0">
+        <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v6"/></svg></div><h3>Booked like padel</h3><p>In the Virgin Active app, by the hour, by the bay. Members get the member rate. Non-members pay full rate and meet the club.</p></div>
+        <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 11a4 4 0 1 0-8 0M4 21a8 8 0 0 1 16 0"/></svg></div><h3>A golf add-on on the bill</h3><p>R299 a month: an included hour, member rates, leagues. Billed by Virgin Active, shared with Virgin Active.</p></div>
+        <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg></div><h3>Leagues and coaching</h3><p>Chain-wide leagues on Golfzon Network Play. Leadbetter coaching content in the practice bays. A pro in every Collection club.</p></div>
+        <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V3l14 5-14 5"/></svg></div><h3>The insured shot</h3><p>Get Lucky's product, indoors: R50 for a swing at R25,000, insured by Santam. The bay measures it better than any camera on a tee.</p></div>
+      </div>
+      <div class="panel" style="background:rgba(30,49,32,.55); border-color:rgba(245,240,225,.12)">
+        <h3 style="color:var(--cream)">What we need from Virgin Active</h3>
+        <ul class="ticks" style="margin-top:1rem">
+          <li><div><b>A room in the refurb plan</b><span>About 110 m² for two bays, 220 m² for four. Walls, floor, power. We fit out from the wall in.</span></div></li>
+          <li><div><b>The Point first</b><span>Four Signature bays in the Collection Country Club as the reference zone, before the PGA Show in January.</span></div></li>
+          <li><div><b>Booking and billing</b><span>Bays in the Virgin Active app. The golf add-on on the member account.</span></div></li>
+          <li><div><b>Heads of terms this quarter</b><span>Share, shell, term and exclusivity. Then RMB draws phase one.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cream" id="group" style="border-top:1px solid rgba(51,82,49,.12)">
+  <div class="wrap">
+    <div class="two" style="align-items:center">
+      <div>
+        <p class="eyebrow v chapter">Chapter two</p>
+        <h2>The group.</h2>
+        <p class="lede" style="margin-top:1.4rem">One brand, eight countries, one membership that already crosses borders. The same zone, on the same platform, goes from Cape Town to London, Milan, Sydney, Singapore and Bangkok. A member at Sandton plays a member at Chiswick.</p>
+        <p class="lede" style="margin-top:1.2rem">Ernie has won in every one of those markets. South Africa proves the numbers; each territory is Virgin Active's own decision, financed on its own numbers.</p>
+      </div>
+      <div>
+        <div class="tablewrap" style="margin-top:0">
+          <table>
+            <thead><tr><th>Territory</th><th class="n">Clubs</th><th class="n">Bays</th><th>When</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Southern Africa</strong></td><td class="n">136</td><td class="n">200</td><td>2027–29</td></tr>
+              <tr><td><strong>United Kingdom</strong></td><td class="n">32</td><td class="n">~65</td><td>2029–30</td></tr>
+              <tr><td><strong>Italy</strong></td><td class="n">33</td><td class="n">~65</td><td>2029–30</td></tr>
+              <tr><td><strong>Australia</strong></td><td class="n">11</td><td class="n">~25</td><td>2030–31</td></tr>
+              <tr><td><strong>Singapore and Thailand</strong></td><td class="n">14</td><td class="n">~30</td><td>2030–31</td></tr>
+            </tbody>
+            <tfoot><tr class="v"><td>The group</td><td class="n">~230</td><td class="n">~385</td><td>2027–31</td></tr></tfoot>
+          </table>
+        </div>
+        <p style="margin-top:1rem; font-size:.82rem; color:rgba(42,42,42,.55)">Club counts are Virgin Active's published figures to March 2026. Bays outside South Africa assume two a club.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="deep topo" id="who">
+  <div class="bg" aria-hidden="true">
+    <img src="/images/ernie-celebrate-2000.webp" srcset="/images/ernie-celebrate-1200.webp 1200w, /images/ernie-celebrate-2000.webp 2000w" sizes="100vw" alt="" width="1920" height="1080" loading="lazy" decoding="async" style="object-position:50% 22%">
+    <div class="tint" style="background:linear-gradient(90deg, rgba(22,38,26,.96), rgba(22,38,26,.9) 50%, rgba(22,38,26,.84))"></div>
+    <div class="halftone" style="opacity:.4"></div>
+  </div>
+  <div class="wrap rel">
+    <div class="two" style="align-items:stretch">
+      <div class="col">
+        <p class="eyebrow">Who we are</p>
+        <h2>Get Lucky Golf Club.</h2>
+        <p class="lede" style="margin-top:1.4rem; color:rgba(245,240,225,.78)">South Africa's insured hole-in-one challenge: a swing at a signature par-3 for up to R1,000,000, live at 25 courses, 10,000 paid entries, underwritten and sponsored by Santam. Ernie Els is our founding partner. Virgin Golf by Ernie Els is what we are building together next.</p>
+        <div class="stats" style="margin-top:2.4rem; grid-template-columns:repeat(2,1fr)">
+          <div class="stat"><div class="n tab">25</div><div class="l">Partner courses</div></div>
+          <div class="stat"><div class="n tab">10K</div><div class="l">Paid entries</div></div>
+          <div class="stat"><div class="n tab">R9M</div><div class="l">Santam sponsorship</div></div>
+          <div class="stat"><div class="n tab">4</div><div class="l">Majors on the door</div></div>
+        </div>
+      </div>
+      <div class="card ernie" style="background:var(--green); border-color:var(--green); padding:30px; overflow:hidden">
+        <p class="eyebrow" style="margin-bottom:1.2rem; color:var(--gold-light)">Ernie Els</p>
+        <ul class="resume">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>Four majors, two U.S. Opens</b><span>Former world number one. Hall of Fame. 70-plus wins on every tour that matters.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>A name in every Virgin Active market</b><span>Two Opens in Britain, three Heineken Classics in Australia, a design business across Asia.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>South Africa's golfer</b><span>Every Virgin Active member already knows the name on the door.</span></div></li>
+        </ul>
+        <figure class="cardimg"><img src="/images/ernie-card.webp" alt="Ernie Els" width="1200" height="800" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="deep">
+  <div class="wrap">
+    <p class="eyebrow">The people you would deal with</p>
+    <h2>Operators, not a concession desk.</h2>
+    <div class="team">
+      <div class="person"><img src="/images/johannes.webp" alt="Johannes le Roux" width="320" height="320" loading="lazy" decoding="async"><div><b>Johannes le Roux</b><span class="role">Founder &amp; MD</span><p>Built The Duchess with AB InBev and RMB behind it. Leads Get Lucky and Virgin Golf.</p></div></div>
+      <div class="person"><img src="/images/willie.webp" alt="Willie Ross" width="320" height="320" loading="lazy" decoding="async"><div><b>Willie Ross</b><span class="role">Chief Financial Officer</span><p>Partner at Bellair Road, R5 billion under management. Harvard MBA. Owns the numbers and the financing.</p></div></div>
+      <div class="person"><img src="/images/andrew.webp" alt="Andrew Davenport" width="320" height="149" loading="lazy" decoding="async"><div><b>Andrew Davenport</b><span class="role">Founder &amp; Marketing</span><p>Fifteen years in beverage and entertainment brands. Runs partnerships and the Virgin Golf brand.</p></div></div>
+    </div>
+    <div class="partners">
+      <div class="marks"><img src="/logos/santam-white.png" alt="Santam" width="320" height="178" loading="lazy" decoding="async"><img src="/logos/rmb-white.webp" alt="RMB" width="242" height="260" loading="lazy" decoding="async"><img src="/logos/golfzon-white.webp" alt="Golfzon" width="779" height="256" loading="lazy" decoding="async" style="height:34px"></div>
+      <p>Prizes underwritten and sponsored by <strong>Santam</strong>, South Africa's largest short-term insurer. Equipment financed with <strong>RMB</strong>. Bays by <strong>Golfzon</strong>, the official simulator of the U.S. Open, in 13,000 venues worldwide.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cream" id="timeline">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow g">Timeline</p>
+        <h2>Proposal to first bay in nine months.</h2>
+      </div>
+      <a class="btn gold" href="#meet">Book the meeting</a>
+    </div>
+    <ol class="steps">
+      <li class="v"><time>Q4 2026</time><b>Virgin Active, Cape Town</b><span>This proposal. Heads of terms on share, shell, term and exclusivity.</span></li>
+      <li class="key"><time>Oct 2026</time><b>Golfzon HQ, Virginia</b><span>Platform confirmed, pricing and reference designs for the two zones.</span></li>
+      <li><time>Dec 2026</time><b>RMB phase one</b><span>Facility drawn against the concession. Phase one order placed.</span></li>
+      <li class="key"><time>26–29 Jan 2027</time><b>PGA Show, Orlando</b><span>The Virgin Golf reference zone on the Golfzon stand.</span></li>
+      <li class="v"><time>Mid 2027</time><b>The Point, Cape Town</b><span>Four Signature bays open in the Collection Country Club. Then 11 more flagship clubs.</span></li>
+      <li class="v"><time>2028–2029</time><b>The chain</b><span>160 more bays across 100 clubs. Then the group.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="cta" id="meet">
+  <div class="bg" aria-hidden="true">
+    <img src="/images/ernie-cta-2000.webp" srcset="/images/ernie-cta-1200.webp 1200w, /images/ernie-cta-2000.webp 2000w" sizes="100vw" alt="" width="2000" height="1333" loading="lazy" decoding="async">
+    <div class="tint"></div><div class="halftone" style="opacity:.4"></div>
+  </div>
+  <div class="wrap rel" style="max-width:52rem">
+    <svg class="flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V3l14 5-14 5"/></svg>
+    <h2>200 bays. 112 clubs. Ernie on the door. <span>Let's meet in Cape Town.</span></h2>
+    <p class="lede" style="margin:1.6rem auto 0; color:rgba(245,240,225,.8)">The founders and Ernie would like an hour with the Virgin Active leadership this quarter. We will bring the reference design, the Golfzon pricing and the full model.</p>
+    <div class="btns">
+      <a class="btn gold" href="mailto:johannes@getluckygolfclub.com?subject=Virgin%20Golf%20by%20Ernie%20Els%20%C3%97%20Virgin%20Active">Start the conversation</a>
+      <a class="btn ghost" href="https://wa.me/27609615091?text=Hi%20Johannes%2C%20I%27d%20like%20to%20talk%20about%20Virgin%20Golf." target="_blank" rel="noopener noreferrer">+27 60 961 5091</a>
+    </div>
+    <p style="margin-top:2rem; font-size:.9rem; color:rgba(245,240,225,.55)">Johannes le Roux · johannes@getluckygolfclub.com · Cape Town</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="/logos/logo-dark-bg.webp" alt="Get Lucky Golf Club" width="400" height="299" loading="lazy" decoding="async">
+    <p>Virgin Golf by Ernie Els is a concept in development by Get Lucky Golf Club (Pty) Ltd with Ernie Els, not yet an agreement with Virgin Active or Virgin Group; use of the Virgin name is theirs to decide. Financial figures are forecasts from Virgin Golf's model on stated assumptions, ex VAT, and are not a guarantee. Golfzon pricing is indicative until quoted. Virgin Active figures are its published figures to March 2026. Private and confidential, prepared for Virgin Active, September 2026.</p>
+  </div>
+</footer>
+</body>
+</html>
