@@ -122,7 +122,8 @@
 
   /* stat strips */
   .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-  @media (min-width: 760px) { .stats { grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 760px) { .stats { grid-template-columns: repeat(4, 1fr); } .stats.six { grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 1100px) { .stats.six { grid-template-columns: repeat(6, 1fr); gap: 18px; } .stats.six .n { font-size: clamp(2rem, 3.2vw, 2.8rem); } }
   .stat .n { font-family: var(--display); font-size: clamp(2.4rem, 5vw, 3.4rem); color: var(--gold); line-height: 1; }
   .stat .l { margin-top: .5rem; font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--cream); }
   .stat .s { margin-top: .3rem; font-size: .8rem; line-height: 1.4; color: rgba(245,240,225,.55); }
@@ -374,24 +375,29 @@
         <p class="lede" style="margin-top:1.2rem">The Point already has a simulator, and members use it. This is the rest of the chain, on one platform, with one name on the door.</p>
       </div>
       <div class="panel">
-        <ul class="ticks v" style="margin-top:0">
-          <li><div><b>623,000 members walk past the bay.</b><span>On every visit. It sells itself.</span></div></li>
-          <li><div><b>139,000 handicapped golfers in South Africa.</b><span>Affluent, loyal, idle from May to August. Most are your members already.</span></div></li>
-          <li><div><b>A game the whole family plays.</b><span>Four in a bay, an hour, R100 each. Nine holes at Pebble Beach.</span></div></li>
-          <li><div><b>A reason not to cancel.</b><span>A golf add-on on the bill is a member who stays.</span></div></li>
+        <h3 style="color:var(--green); margin-bottom:.2rem">What a golf zone does for a club</h3>
+        <ul class="ticks v" style="margin-top:.8rem">
+          <li><div><b>Chiswick already proved it.</b><span>Virgin Active's refurbished Chiswick Riverside club in London, simulator bay included, lifted membership 15%, revenue 23% and more than doubled EBITDA.</span></div></li>
+          <li><div><b>One in three members leaves a gym every year.</b><span>Industry retention is 66%, and the top reason for leaving is not visiting enough to justify the fee. A booked bay is a visit with a reason.</span></div></li>
+          <li><div><b>Half of simulator players are not golfers.</b><span>51% of the 8.1 million Americans playing on simulators never play on a course. The zone sells to members who have never held a club.</span></div></li>
+          <li><div><b>It feeds the course, not the other way round.</b><span>29% of course golfers who use simulators play more on grass because of it. 2% play less. Get Lucky's 30 partner courses are the other half of the loop.</span></div></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<section class="deep topo">
+<section class="deep topo" id="growth">
   <div class="wrap">
-    <div class="stats">
-      <div class="stat"><div class="n tab">136</div><div class="l">Clubs in Southern Africa</div><div class="s">130 of them take a golf zone</div></div>
-      <div class="stat"><div class="n tab">623K</div><div class="l">Active members</div><div class="s">Past the bay on every visit</div></div>
-      <div class="stat"><div class="n tab">R400</div><div class="l">An hour of padel</div><div class="s">What a bay is priced against</div></div>
-      <div class="stat"><div class="n tab">365K</div><div class="l">Bay-hours a year</div><div class="s">About 900,000 player visits, at maturity</div></div>
+    <p class="eyebrow">Simulator golf, by the numbers</p>
+    <h2>The fastest-growing way to play.</h2>
+    <div class="stats six" style="margin-top:2.4rem">
+      <div class="stat"><div class="n tab">8.1M</div><div class="l">Americans on simulators</div><div class="s">Up 73% on pre-pandemic. National Golf Foundation, 2025</div></div>
+      <div class="stat"><div class="n tab">51%</div><div class="l">Of them are not golfers</div><div class="s">Never played on a course. The bay is their first swing</div></div>
+      <div class="stat"><div class="n tab">3×</div><div class="l">US simulator venues since 2022</div><div class="s">1,500-plus, the average one three years old</div></div>
+      <div class="stat"><div class="n tab">2×</div><div class="l">Screen rounds vs grass, Korea</div><div class="s">9,000 venues, 100 million Golfzon rounds a year</div></div>
+      <div class="stat"><div class="n tab">16%</div><div class="l">A year, Europe's growth</div><div class="s">$2.1bn market in 2025, $4.1bn by 2033</div></div>
+      <div class="stat"><div class="n tab">4.2M</div><div class="l">Rounds a year in South Africa</div><div class="s">A R49 billion golf economy. Investec, 2026</div></div>
     </div>
   </div>
 </section>
@@ -604,7 +610,7 @@
 
 <section class="deep" id="partner">
   <div class="bg" aria-hidden="true">
-    <img src="/images/ernie-celebrate-2000.webp" srcset="/images/ernie-celebrate-1200.webp 1200w, /images/ernie-celebrate-2000.webp 2000w" sizes="100vw" alt="" width="1920" height="1080" loading="lazy" decoding="async" style="object-position:50% 22%">
+    <img src="/images/ernie-cta-2000.webp" srcset="/images/ernie-cta-1200.webp 1200w, /images/ernie-cta-2000.webp 2000w" sizes="100vw" alt="" width="2000" height="1333" loading="lazy" decoding="async" style="object-position:35% 50%">
     <div class="tint" style="background:linear-gradient(90deg, rgba(22,38,26,.96), rgba(22,38,26,.9) 50%, rgba(22,38,26,.84))"></div>
     <div class="halftone" style="opacity:.4"></div>
   </div>
@@ -634,7 +640,7 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>A brand beyond the fairway</b><span>The Els Club courses in Dubai and Malaysia, Ernie Els Wines, and the Els for Autism Foundation.</span></div></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0z"/></svg><div><b>South Africa's golfer</b><span>Every member already knows the name on the door.</span></div></li>
         </ul>
-        <figure class="cardimg"><img src="/images/ernie-card.webp" alt="Ernie Els" width="1200" height="800" loading="lazy" decoding="async"></figure>
+        <figure class="cardimg"><img src="/images/ernie-celebrate-2000.webp" srcset="/images/ernie-celebrate-1200.webp 1200w, /images/ernie-celebrate-2000.webp 2000w" sizes="(min-width: 900px) 40vw, 100vw" alt="Ernie Els" width="1920" height="1080" loading="lazy" decoding="async" style="object-position:50% 30%"></figure>
       </div>
     </div>
   </div>
@@ -696,7 +702,7 @@
 <footer>
   <div class="wrap">
     <img src="/logos/logo-dark-bg.webp" alt="Get Lucky Golf" width="400" height="299" loading="lazy" decoding="async">
-    <p>Virgin Golf is a concept proposed to Virgin Active by Get Lucky Golf (Pty) Ltd. The Virgin name and marks belong to Virgin Group; their use, and the name of any golf zone, are Virgin Active's to decide. Get Lucky Golf would own and operate the bays. Founding-partner discussions referred to in this proposal are confidential and not yet concluded. Financial figures are forecasts from Get Lucky Golf's model on stated assumptions, ex VAT, and are not a guarantee. Golfzon pricing is indicative until quoted. Virgin Active figures are its published figures to March 2026. Private and confidential, prepared for Virgin Active, September 2026. Course photographs: the Old Course at St Andrews, Pebble Beach, Leopard Creek and the Links at Fancourt, reproduced for this private proposal only.</p>
+    <p>Virgin Golf is a concept proposed to Virgin Active by Get Lucky Golf (Pty) Ltd. The Virgin name and marks belong to Virgin Group; their use, and the name of any golf zone, are Virgin Active's to decide. Get Lucky Golf would own and operate the bays. Founding-partner discussions referred to in this proposal are confidential and not yet concluded. Financial figures are forecasts from Get Lucky Golf's model on stated assumptions, ex VAT, and are not a guarantee. Golfzon pricing is indicative until quoted. Virgin Active figures are its published figures to March 2026. Private and confidential, prepared for Virgin Active, September 2026. Course photographs: the Old Course at St Andrews, Pebble Beach, Leopard Creek and the Links at Fancourt, reproduced for this private proposal only. Simulator figures: National Golf Foundation simulator research, 2023 and 2025; Golfzon; Fortune Business Insights and Straits Research market forecasts; Health &amp; Fitness Association 2025 Benchmarking Report; Investec, April 2026. Chiswick Riverside figures as reported by Moneyweb from Brait.</p>
   </div>
 </footer>
 <script>
