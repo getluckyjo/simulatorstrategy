@@ -186,7 +186,9 @@
   .resume b { display: block; color: var(--cream); } .resume span { font-size: .92rem; color: rgba(245,240,225,.65); line-height: 1.5; }
 
   .cardimg { position: relative; margin: 22px -30px -30px; }
-  .card.ernie { align-self: start; }
+  .card.ernie { align-self: stretch; }
+  .card.ernie .cardimg { flex: 1 1 auto; min-height: 240px; margin-top: 22px; }
+  .card.ernie .cardimg img { position: absolute; inset: 0; width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; }
   .cardimg img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 28%; display: block; }
   .cardimg figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 30px 12px; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(245,240,225,.85); background: linear-gradient(180deg, transparent, rgba(22,38,26,.75)); }
 
