@@ -316,6 +316,9 @@
   }
   @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
   @keyframes settle { from { transform: scale(1.06); } to { transform: none; } }
+  .goldcard { border-radius: var(--r); background: var(--gold); color: var(--green-deep); padding: 20px 24px; margin-top: 1.4rem; max-width: 40rem; }
+  .goldcard .k { font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--green-deep); opacity: .75; }
+  .goldcard p { margin-top: .4rem; font-size: 1.05rem; line-height: 1.5; color: var(--green-deep); }
   :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
 </style>
@@ -455,7 +458,7 @@
       </div>
       <div>
         <p class="lede" style="color:rgba(245,240,225,.78)">We plan on five booked hours a day at R360 an hour in a metro club. That is padel pricing, and half the hours Golfzon's own venues run. A Collection bay does six hours at R520.</p>
-        <p class="lede" style="margin-top:1.2rem; color:rgba(245,240,225,.78)">On top: a R299 a month golf add-on, leagues, corporate evenings, coaching, and the insured shot.</p>
+        <div class="goldcard"><div class="k">On top of bay hire</div><p>A R299 a month golf add-on, leagues, corporate evenings, coaching, and the insured shot.</p></div>
       </div>
     </div>
     <div class="zones">
