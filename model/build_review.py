@@ -142,7 +142,7 @@ th small {{ display: block; text-transform: none; letter-spacing: 0; font-weight
 td.n, th:not(:first-child) {{ text-align: right; }}
 td:first-child {{ white-space: normal; min-width: 14rem; }}
 tr.total td {{ font-weight: 700; border-top: 2px solid var(--ink); }}
-.va {{ color: var(--virgin); }} .mute {{ color: var(--mute); }}
+.va {{ color: var(--gold); font-weight: 600; }} .mute {{ color: var(--mute); }}
 ul {{ padding-left: 1.2rem; margin: .8rem 0 0; max-width: 44rem; }} li {{ margin-top: .45rem; }}
 li b {{ font-weight: 600; }}
 .note {{ font-size: .86rem; color: var(--mute); margin-top: .8rem; max-width: 44rem; }}
