@@ -1,4 +1,4 @@
-"""Virgin Golf by Ernie Els - bay economics for the Virgin Active concession
+"""Get Lucky Golf x Virgin Active (the Virgin Golf concept) - bay economics for the Virgin Active concession
 and the RMB asset-finance facility. Run: python3 model.py  -> writes model.json
 All money in ZAR ex VAT. FX 18.5 (same as the Get Lucky investor model).
 """
@@ -9,11 +9,11 @@ PRIME = 0.105            # SA prime, Sept 2026
 RATE = PRIME + 0.015     # RMB asset finance, prime + 1.5%
 IO_M = 12                # interest-only while a phase is commissioned and ramps
 TERM_M = 60              # then 5-year amortising, per phase drawdown
-DEBT_PCT = 0.90          # RMB funds 90% of landed capex; Virgin Golf equity 10%
+DEBT_PCT = 0.90          # RMB funds 90% of landed capex; Get Lucky Golf equity 10%
 LANDED = 1.30            # freight, duty, enclosure, screen, seating, install on top of hardware
 HOURS_PER_BAY = 15 * 360 # bookable hours a year (05:00-21:00 weekdays, shorter weekends)
 VA_SHARE = 0.20          # Virgin Active concession: 20% of bay revenue. Opening position, negotiable
-SHELL_PER_BAY = 150_000  # room shell and power if Virgin Golf builds it instead of Virgin Active. Opening position: Virgin Active builds
+SHELL_PER_BAY = 150_000  # room shell and power if Get Lucky Golf builds it instead of Virgin Active. Opening position: Virgin Active builds
 CARD = 0.025             # card and booking fees
 MARKETING = 0.05         # of revenue
 ASSET_INS = 0.01         # of capex, a year
@@ -23,7 +23,7 @@ LEAGUES_PER_BAY = 40_000 # leagues, events, corporate, at maturity
 SPONSOR_PER_BAY = 25_000 # naming partner, per bay a year
 CHALLENGE_PER_HOUR = 31 * 0.76  # Get Lucky insured shot: R50, 0.625 taken per booked hour, net of 24% premium
 MEMBERS_PER_CLUB = 623_000 / 136
-ADDON_ZAR_PM = 299       # Virgin Golf membership add-on, ex VAT
+ADDON_ZAR_PM = 299       # golf membership add-on on the Virgin Active bill, ex VAT
 ADDON_ADOPTION = 0.015   # of members at clubs with bays, at maturity
 DEPR_YEARS = 7
 TAX = 0.27
@@ -131,7 +131,7 @@ def run(util_mult=1.0, va_share=VA_SHARE, shell=0.0):
 def negotiation():
     """2031 outcome for each combination of Virgin Active's share and who builds the shell."""
     grid = []
-    for shell_by, shell in (("Virgin Active", 0.0), ("Virgin Golf", SHELL_PER_BAY)):
+    for shell_by, shell in (("Virgin Active", 0.0), ("Get Lucky Golf", SHELL_PER_BAY)):
         for share in (0.15, 0.20, 0.25):
             R = run(1.0, share, shell); r = R["rows"][2031]
             trough = min(R["rows"][y]["cum_cash"] for y in R["years"])

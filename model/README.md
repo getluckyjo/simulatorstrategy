@@ -1,4 +1,4 @@
-# Virgin Golf bay model
+# Virgin Golf bay model (Get Lucky Golf x Virgin Active)
 
 Bay economics for the Virgin Active concession and the RMB asset-finance facility.
 

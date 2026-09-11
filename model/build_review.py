@@ -24,7 +24,7 @@ def unit_table():
         ("Booked hours a day", lambda u: f"{u['hours']/360:.1f}"),
         ("Blended yield per booked hour", lambda u: r(u["yld"])),
         ("Bay hire", lambda u: k(u["bay_hire"])),
-        ("Virgin Golf membership add-on, allocated", lambda u: k(u["membership"])),
+        ("Golf membership add-on, allocated", lambda u: k(u["membership"])),
         ("Leagues, events, corporate", lambda u: k(u["leagues"])),
         ("Get Lucky insured shot, net of premium", lambda u: k(u["challenge"])),
         ("Naming partner", lambda u: k(u["sponsorship"])),
@@ -84,7 +84,7 @@ for p, c in zip(d["phases"], B["capex_by_phase"]):
 order_tbl += f"<tr class='total'><td>Total</td><td>2027–29</td><td>{bays} bays</td><td class='n'>{clubs}</td><td class='n'>{m(B['total_capex'])}</td><td class='n'>{m(B['debt_total'])}</td><td class='n'>{m(B['equity_total'])}</td></tr></tbody></table>"
 
 grid = d["negotiation"]
-grid_tbl = "<table><thead><tr><th>2031, base case</th><th>Shell built by</th><th>Virgin Active share</th><th>Capex</th><th>To Virgin Active</th><th>Virgin Golf EBITDA</th><th>Debt cover<small>base · low case</small></th><th>Equity needed</th></tr></thead><tbody>"
+grid_tbl = "<table><thead><tr><th>2031, base case</th><th>Shell built by</th><th>Virgin Active share</th><th>Capex</th><th>To Virgin Active</th><th>Get Lucky Golf EBITDA</th><th>Debt cover<small>base · low case</small></th><th>Equity needed</th></tr></thead><tbody>"
 for g in grid:
     opening = g["shell_by"] == "Virgin Active" and abs(g["share"] - 0.20) < 1e-9
     cls = " class='total'" if opening else ""
@@ -165,13 +165,13 @@ li b {{ font-weight: 600; }}
 </div>
 
 <h2>The structure</h2>
-<p>Virgin Golf (Pty) Ltd, a Get Lucky company with Ernie Els as founding partner, buys, installs and operates 200 Golfzon bays inside Virgin Active clubs under a ten-year exclusive concession. RMB finances the equipment against the concession agreement and the bays themselves. Virgin Active provides the room, the power and its members, bills the Virgin Golf membership add-on on the member's account, and takes a fifth of every rand the bays earn.</p>
+<p>Get Lucky Golf, with Ernie Els as founding partner, buys, installs and operates 200 Golfzon bays inside Virgin Active clubs under a ten-year exclusive concession. Virgin Golf is the concept name proposed for the zones; the Virgin marks are Virgin Group's, so the name is theirs to grant and Get Lucky Golf never owns it. RMB finances the equipment against the concession agreement and the bays themselves. Virgin Active provides the room, the power and its members, bills the golf membership add-on on the member's account, and takes a fifth of every rand the bays earn.</p>
 <div class="parties">
   <div class="party p-va"><h3>Virgin Active</h3><dl>
     <dt>Puts in</dt><dd>A two-bay zone of about 60 m² in 70 clubs and a single bay of about 30 m² in 60 smaller clubs, built into planned refurbishments. Power, cleaning, access control. Bay booking in the Virgin Active app. Marketing to 623,000 members. A ten-year exclusive.</dd>
-    <dt>Gets out</dt><dd>20% of bay revenue: <b class="va">{m(mature['va_share'],0)} a year</b> at maturity, about {k(two_bay)} a year for a two-bay zone, {k(sig_zone)} for a two-bay Collection zone and {k(one_bay)} for a single bay, with no capital and no operating risk. A member retention product. Ernie Els on the door. First call on Virgin Golf for the UK, Italy, Australia and Asia.</dd>
+    <dt>Gets out</dt><dd>20% of bay revenue: <b class="va">{m(mature['va_share'],0)} a year</b> at maturity, about {k(two_bay)} a year for a two-bay zone, {k(sig_zone)} for a two-bay Collection zone and {k(one_bay)} for a single bay, with no capital and no operating risk. A member retention product. Ernie Els on the door. First call on Get Lucky Golf for the UK, Italy, Australia and Asia.</dd>
   </dl></div>
-  <div class="party"><h3>Virgin Golf</h3><dl>
+  <div class="party"><h3>Get Lucky Golf</h3><dl>
     <dt>Puts in</dt><dd>Equity of about <b>{m(-trough(B),0)} in the base case</b>, {m(-trough(L),0)} in the low case: the phase-one deposit and the 2027 ramp. The phase-two and phase-three deposits are paid out of bay cash flow. The Golfzon relationship, the Ernie Els brand, coaching content, leagues, the insured-shot product, operations and a golf host in every Collection club.</dd>
     <dt>Gets out</dt><dd>EBITDA of {m(mature['ebitda'],0)} a year at maturity, {m(mature['cash_after_debt'],0)} after RMB. Payback on a bay from its own EBITDA in under two years. A 200-bay reference customer to take to Golfzon and to the rest of the Virgin Active group.</dd>
   </dl></div>
@@ -200,16 +200,16 @@ li b {{ font-weight: 600; }}
 <div class="tbl">{cases_tbl}</div>
 
 <h2>The two movable posts</h2>
-<p>Two terms are Virgin Active's to negotiate and ours to move: its share of bay revenue, and who builds the room shell. The opening position is 20% and Virgin Active builds, inside refurbishments it has already budgeted. Every combination below still covers RMB, so both posts can move to make the deal work. Giving Virgin Active 25% costs Virgin Golf about R9m a year of EBITDA at maturity; building the shell ourselves adds R{d['shell_per_bay']/1e3:.0f}k a bay, R30m to the facility and R6m to the equity.</p>
+<p>Two terms are Virgin Active's to negotiate and ours to move: its share of bay revenue, and who builds the room shell. The opening position is 20% and Virgin Active builds, inside refurbishments it has already budgeted. Every combination below still covers RMB, so both posts can move to make the deal work. Giving Virgin Active 25% costs Get Lucky Golf about R9m a year of EBITDA at maturity; building the shell ourselves adds R{d['shell_per_bay']/1e3:.0f}k a bay, R30m to the facility and R6m to the equity.</p>
 <div class="tbl">{grid_tbl}</div>
-<p class="note">Debt cover is the 2031 figure. Equity needed is the low point of cumulative cash, base case. The bank's floor is usually 1.3× on the low case; every cell clears it except 25% with Virgin Golf building, which sits at 1.26×.</p>
+<p class="note">Debt cover is the 2031 figure. Equity needed is the low point of cumulative cash, base case. The bank's floor is usually 1.3× on the low case; every cell clears it except 25% with Get Lucky Golf building, which sits at 1.26×.</p>
 
 <h2>What Virgin Active sees</h2>
 <ul>
   <li><b>{m(mature['va_share'],0)} a year</b> of concession income across {clubs} clubs at maturity, for space it is refurbishing anyway. That is about {k(two_bay)} a year from a two-bay zone, {k(sig_zone)} from a two-bay Collection zone and {k(one_bay)} from a single bay.</li>
   <li><b>{hours31/1e3:,.0f}k booked bay-hours a year</b>, roughly {hours31*2.5/1e6:.1f} million player visits. Every one is a member reason to come to the club on a winter weeknight.</li>
   <li><b>{addon_members:,.0f} members on a golf add-on</b> at R299 a month, billed by Virgin Active, with a share to Virgin Active and a reason not to cancel.</li>
-  <li><b>Zero capital, zero operating risk.</b> RMB carries the equipment, Golfzon services it, Virgin Golf runs it. Virgin Active can take a buy-out option on the bays at the end of the concession if it wants them.</li>
+  <li><b>Zero capital, zero operating risk.</b> RMB carries the equipment, Golfzon services it, Get Lucky Golf runs it. Virgin Active can take a buy-out option on the bays at the end of the concession if it wants them.</li>
 </ul>
 
 <h2>Assumptions and where they come from</h2>
@@ -227,13 +227,13 @@ li b {{ font-weight: 600; }}
 <h2>Decisions</h2>
 <ol class="decide">
   <li><span><b>Settled: the share and the shell are the negotiation.</b> Open at 20% of bay revenue with Virgin Active building the shell and power inside its refurbishments. Both posts move as needed; the grid above shows what each move costs and that every combination still services RMB.</span></li>
-  <li><span><b>Equity.</b> {m(-trough(B),0)} base, {m(-trough(L),0)} low, most of it in 2027 for the phase-one deposit of {m(B['capex_by_phase'][0]*0.1,1)} and the first half-year. Sources: the Get Lucky round, a Virgin Golf co-investor, Golfzon supplier credit on phase one, or a naming partner paying up front. This is the question RMB will ask first.</span></li>
+  <li><span><b>Equity.</b> {m(-trough(B),0)} base, {m(-trough(L),0)} low, most of it in 2027 for the phase-one deposit of {m(B['capex_by_phase'][0]*0.1,1)} and the first half-year. Sources: the Get Lucky round, a Get Lucky Golf co-investor, Golfzon supplier credit on phase one, or a naming partner paying up front. This is the question RMB will ask first.</span></li>
   <li><span><b>The membership add-on.</b> R299 a month with one included hour. Virgin Active may want it inside its Collection tier instead. Either way it is billed by Virgin Active.</span></li>
   <li><span><b>Naming partner.</b> R25k a bay a year is deliberately modest. Santam, RMB itself, or a beverage brand could take the chain naming at a multiple of that.</span></li>
   <li><span><b>Term and exit.</b> Ten-year exclusive with a Virgin Active buy-out option at year five or ten. RMB's facility runs six years per phase, so the concession must outlast it.</span></li>
-  <li><span><b>Group rights.</b> First refusal on the UK, Italy, Australia and Asia for Virgin Golf, with each territory financed on its own numbers.</span></li>
+  <li><span><b>Group rights.</b> First refusal on the UK, Italy, Australia and Asia for Get Lucky Golf, with each territory financed on its own numbers.</span></li>
 </ol>
-<p class="note">Virgin Golf by Ernie Els is a concept in development by Get Lucky Golf Club (Pty) Ltd with Ernie Els, not yet an agreement with Virgin Active, Virgin Group, Golfzon or RMB. Every forward figure is a forecast built on the stated assumptions.</p>
+<p class="note">Virgin Golf by Ernie Els is a concept proposed by Get Lucky Golf Club (Pty) Ltd with Ernie Els; the Virgin marks belong to Virgin Group and the name is theirs to grant. Not yet an agreement with Virgin Active, Virgin Group, Golfzon or RMB. Every forward figure is a forecast built on the stated assumptions.</p>
 </div>
 """
 open("review.html", "w").write(page)
