@@ -92,7 +92,7 @@ for g in grid:
     grid_tbl += f"<tr{cls}><td>{label}</td><td>{g['shell_by']}</td><td class='n'>{pct(g['share'])}</td><td class='n'>{m(g['capex'],0)}</td><td class='n'><span class='va'>{m(g['va_income'],0)}</span></td><td class='n'>{m(g['ebitda'],0)}</td><td class='n'>{g['dscr']:.2f}× · {g['dscr_low']:.2f}×</td><td class='n'>{m(g['equity_need'],0)}</td></tr>"
 grid_tbl += "</tbody></table>"
 
-two_bay = U["Play"]["va_share"] * 2; four_bay = U["Signature"]["va_share"] * 4
+two_bay = U["Play"]["va_share"] * 2; sig_zone = U["Signature"]["va_share"] * 2; one_bay = U["Play"]["va_share"]
 
 page = f"""<title>Virgin Golf Bay Model</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
@@ -168,8 +168,8 @@ li b {{ font-weight: 600; }}
 <p>Virgin Golf (Pty) Ltd, a Get Lucky company with Ernie Els as founding partner, buys, installs and operates 200 Golfzon bays inside Virgin Active clubs under a ten-year exclusive concession. RMB finances the equipment against the concession agreement and the bays themselves. Virgin Active provides the room, the power and its members, bills the Virgin Golf membership add-on on the member's account, and takes a fifth of every rand the bays earn.</p>
 <div class="parties">
   <div class="party p-va"><h3>Virgin Active</h3><dl>
-    <dt>Puts in</dt><dd>A 2-bay zone (about 110 m²) in 100 clubs and a 4-bay zone in 12 Collection and flagship clubs, built into planned refurbishments. Power, cleaning, access control. Bay booking in the Virgin Active app. Marketing to 623,000 members. A ten-year exclusive.</dd>
-    <dt>Gets out</dt><dd>20% of bay revenue: <b class="va">{m(mature['va_share'],0)} a year</b> at maturity, about {k(two_bay)} a year for a 2-bay zone and {k(four_bay)} for a 4-bay Collection zone, with no capital and no operating risk. A member retention product. Ernie Els on the door. First call on Virgin Golf for the UK, Italy, Australia and Asia.</dd>
+    <dt>Puts in</dt><dd>A two-bay zone of about 60 m² in 70 clubs and a single bay of about 30 m² in 60 smaller clubs, built into planned refurbishments. Power, cleaning, access control. Bay booking in the Virgin Active app. Marketing to 623,000 members. A ten-year exclusive.</dd>
+    <dt>Gets out</dt><dd>20% of bay revenue: <b class="va">{m(mature['va_share'],0)} a year</b> at maturity, about {k(two_bay)} a year for a two-bay zone, {k(sig_zone)} for a two-bay Collection zone and {k(one_bay)} for a single bay, with no capital and no operating risk. A member retention product. Ernie Els on the door. First call on Virgin Golf for the UK, Italy, Australia and Asia.</dd>
   </dl></div>
   <div class="party"><h3>Virgin Golf</h3><dl>
     <dt>Puts in</dt><dd>Equity of about <b>{m(-trough(B),0)} in the base case</b>, {m(-trough(L),0)} in the low case: the phase-one deposit and the 2027 ramp. The phase-two and phase-three deposits are paid out of bay cash flow. The Golfzon relationship, the Ernie Els brand, coaching content, leagues, the insured-shot product, operations and a golf host in every Collection club.</dd>
@@ -206,7 +206,7 @@ li b {{ font-weight: 600; }}
 
 <h2>What Virgin Active sees</h2>
 <ul>
-  <li><b>{m(mature['va_share'],0)} a year</b> of concession income across 112 clubs at maturity, for space it is refurbishing anyway. That is about {k(two_bay)} a year from a 2-bay zone and {k(four_bay)} from a 4-bay Collection zone.</li>
+  <li><b>{m(mature['va_share'],0)} a year</b> of concession income across {clubs} clubs at maturity, for space it is refurbishing anyway. That is about {k(two_bay)} a year from a two-bay zone, {k(sig_zone)} from a two-bay Collection zone and {k(one_bay)} from a single bay.</li>
   <li><b>{hours31/1e3:,.0f}k booked bay-hours a year</b>, roughly {hours31*2.5/1e6:.1f} million player visits. Every one is a member reason to come to the club on a winter weeknight.</li>
   <li><b>{addon_members:,.0f} members on a golf add-on</b> at R299 a month, billed by Virgin Active, with a share to Virgin Active and a reason not to cancel.</li>
   <li><b>Zero capital, zero operating risk.</b> RMB carries the equipment, Golfzon services it, Virgin Golf runs it. Virgin Active can take a buy-out option on the bays at the end of the concession if it wants them.</li>
@@ -217,9 +217,9 @@ li b {{ font-weight: 600; }}
   <li><b>Golfzon hardware</b>: TwoVision NX $60,000, Vision Standard $35,000, GDR Plus $22,000, from Golfzon's published commercial ranges ($25k to $90k a bay). To be replaced by the Golfzon quote in October.</li>
   <li><b>Rates</b>: Virgin Active padel R400 an hour; South African simulator venues R200 to R400 a bay an hour (Par 72, Golf Bar, Golf Sim Centre). Blended yields: Signature R520, Play R360, Practice R240.</li>
   <li><b>Use</b>: 6.0, 5.0 and 4.5 booked hours a day by bay type at maturity. Golfzon's venue guidance is 10 hours a day.</li>
-  <li><b>Virgin Active</b>: 136 Southern African clubs, 623,000 members (published, March 2026), so 4,580 members a club. 112 clubs take bays.</li>
+  <li><b>Virgin Active</b>: 136 Southern African clubs, 623,000 members (published, March 2026), so 4,580 members a club. {clubs} clubs take bays: two in 70, one in 60. Golfzon's TwoVision NX bay is about 5.6 m by 5.5 m with a 3.1 m ceiling, so a two-bay zone is about 60 m² and a single bay about 30 m².</li>
   <li><b>RMB</b>: prime 10.5% (August 2026) plus 1.5%; 12 months interest-only then 60 amortising, per phase; 90% of landed cost financed.</li>
-  <li><b>Costs</b>: Golfzon software, courses and service at 4% of hardware a year; consumables R24k a bay; card fees 2.5%; marketing 5% of revenue; asset insurance 1% of capex; people R12m a year at maturity (a golf host in each Collection club, four regional technicians, a small central team) and R4m central overhead.</li>
+  <li><b>Costs</b>: Golfzon software, courses and service at 4% of hardware a year; consumables R24k a bay; card fees 2.5%; marketing 5% of revenue; asset insurance 1% of capex; people R12m a year at maturity (a golf host in each Collection and flagship club, four regional technicians, a small central team) and R4m central overhead.</li>
   <li><b>Insured shot</b>: R50 for R25,000, one in four players in a bay-hour takes one, 24% ceded to Santam, per the Get Lucky model. Small in rand terms, the whole story in brand terms.</li>
   <li><b>FX</b> 18.5, as in the investor model. All figures ex VAT. Depreciation over seven years and tax at 27% are not shown; EBITDA and debt service are what the two readers look at first.</li>
 </ul>

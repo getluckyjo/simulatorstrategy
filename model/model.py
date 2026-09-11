@@ -39,9 +39,9 @@ for b in BAYS.values():
 
 # phases: (year commissioned, fraction of that year live, {type: units}, clubs)
 PHASES = [
-    dict(name="Phase 1", year=2027, live=0.50, units={"Signature": 40}, clubs=12),
-    dict(name="Phase 2", year=2028, live=0.50, units={"Play": 100}, clubs=50),
-    dict(name="Phase 3", year=2029, live=0.60, units={"Play": 20, "Practice": 40}, clubs=50),
+    dict(name="Phase 1", year=2027, live=0.50, units={"Signature": 40}, clubs=20),   # two Signature bays a club
+    dict(name="Phase 2", year=2028, live=0.50, units={"Play": 100}, clubs=50),       # two Play bays a club
+    dict(name="Phase 3", year=2029, live=0.60, units={"Play": 20, "Practice": 40}, clubs=60),  # one bay a club
 ]
 RAMP = {0: 0.55, 1: 0.80}  # of mature, by bay age in years; 2+ = 1.0
 def ramp(age): return RAMP.get(age, 1.0)
