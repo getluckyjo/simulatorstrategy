@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Virgin Golf by Ernie Els × Virgin Active</title>
-<meta name="description" content="A golf zone in every Virgin Active club, with no capital from Virgin Active. 200 Golfzon bays across 130 Southern African clubs, financed by RMB, run by Get Lucky Golf, Ernie Els on the door. A proposal for Virgin Active.">
+<title>Virgin Golf × Virgin Active</title>
+<meta name="description" content="A golf zone in every Virgin Active club, with no capital from Virgin Active. 200 Golfzon bays across 130 Southern African clubs, financed by RMB, run by Get Lucky Golf. A proposal for Virgin Active.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#16261a">
 <link rel="canonical" href="https://pitch.virgingolf.co.za/">
 <meta property="og:url" content="https://pitch.virgingolf.co.za/">
-<meta property="og:title" content="Virgin Golf by Ernie Els × Virgin Active">
-<meta property="og:description" content="A golf zone in every Virgin Active club, with no capital from Virgin Active. A proposal from Get Lucky Golf and Ernie Els.">
-<meta property="og:image" content="https://pitch.virgingolf.co.za/images/ernie-hero.webp">
+<meta property="og:title" content="Virgin Golf × Virgin Active">
+<meta property="og:description" content="A golf zone in every Virgin Active club, with no capital from Virgin Active. A proposal from Get Lucky Golf.">
+<meta property="og:image" content="https://pitch.virgingolf.co.za/images/golfzon-bays.webp">
 <link rel="icon" type="image/webp" href="/logos/favicon.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" href="/fonts/PosterGothicRoundATF-Heavy.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/images/ernie-hero.webp" as="image" fetchpriority="high">
+<link rel="preload" href="/images/golfzon-bays.webp" as="image" fetchpriority="high">
 <link rel="preload" href="/logos/virgin.webp" as="image" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -83,7 +83,7 @@
   /* hero */
   .hero { min-height: min(88vh, 900px); display: flex; align-items: flex-end; text-align: center; padding-block: 120px 64px; }
   @media (max-width: 640px) { .hero { padding-top: 230px; } }
-  .hero .bg img { object-position: 68% 0%; }
+  .hero .bg img { object-position: 50% 42%; }
   .hero .tint.a { background: linear-gradient(90deg, rgba(22,38,26,.94), rgba(22,38,26,.62) 55%, rgba(22,38,26,.22)); }
   .hero .tint.b { background: linear-gradient(180deg, rgba(22,38,26,.28), transparent 35%, rgba(22,38,26,.96)); }
   .hero .wrap { max-width: 58rem; }
@@ -94,18 +94,16 @@
   .hero .tag { margin-top: 2rem; font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: rgba(245,240,225,.68); }
 
 
-  /* Virgin Golf lockup: script spans two rows; GOLF above, BY ERNIE ELS tucked beneath it */
+  /* Virgin Golf lockup: the Virgin script beside GOLF */
   .lockup { display: grid; grid-template-columns: auto auto; justify-content: center; align-items: center; column-gap: .1em; row-gap: 0; font-size: clamp(3rem, 8.6vw, 6.2rem); margin: .9rem 0 .4rem; }
   .lockup img { grid-row: 1; grid-column: 1; height: 1.9em; width: auto; align-self: center; margin-top: .05em; }
   .lockup .golf { grid-column: 2; grid-row: 1; align-self: center; font-family: var(--display); font-weight: 800; text-transform: uppercase; color: var(--cream); line-height: .82; letter-spacing: .01em; text-shadow: 0 4px 18px rgba(0,0,0,.35); }
-  .lockup .by { grid-column: 1 / span 2; grid-row: 3; justify-self: start; align-self: start; margin-top: .12em; margin-bottom: 0; margin-left: .06em; font-family: var(--display); font-weight: 800; text-transform: uppercase; color: var(--gold); letter-spacing: .3em; font-size: .25em; line-height: 1; padding-left: 0; }
   .hero .eyebrow { margin-bottom: 1.4rem; }
   .hero h1 { font-size: clamp(1.6rem, 4.6vw, 3rem); }
   .hero h1 .l1 { display: inline-block; text-align: left; }
   .hero h1 .l2, .hero h1 .l3 { display: block; }
   .hero h1 .l3 { color: var(--gold); }
-  .hero h1 .by { display: block; position: relative; top: calc(-.4rem - 1.15em); font-size: clamp(.85rem, 2.3vw, 1.55rem); letter-spacing: .3em; color: var(--gold); line-height: 1; margin-bottom: .1rem; white-space: nowrap; }
-  .hero h1 .by .ghost { display: inline-block; height: 0; line-height: 0; overflow: hidden; visibility: hidden; font-size: clamp(1.6rem, 4.6vw, 3rem); letter-spacing: .01em; }
+  .stamp { display: inline-block; border: 1px solid var(--gold); color: var(--gold); border-radius: 6px; padding: .45rem .9rem; font-size: .68rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; margin-bottom: 1.4rem; }
 
 
 
@@ -187,6 +185,7 @@
   .resume b { display: block; color: var(--cream); } .resume span { font-size: .92rem; color: rgba(245,240,225,.65); line-height: 1.5; }
 
   .cardimg { position: relative; margin: 22px -30px -30px; }
+  .card.ernie .cardimg { margin-top: auto; padding-top: 22px; }
   .cardimg img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 28%; display: block; }
   .cardimg figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 30px 12px; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(245,240,225,.85); background: linear-gradient(180deg, transparent, rgba(22,38,26,.75)); }
 
@@ -342,17 +341,17 @@
 
 <header class="hero" id="top">
   <div class="bg" aria-hidden="true">
-    <img src="/images/ernie-hero.webp" alt="" width="1024" height="864" fetchpriority="high" decoding="async">
+    <img src="/images/golfzon-bays.webp" alt="" width="1600" height="901" fetchpriority="high" decoding="async">
     <div class="tint a"></div><div class="tint b"></div><div class="halftone" style="opacity:.5"></div>
   </div>
   <div class="wrap rel">
-    <p class="eyebrow">A proposal for Virgin Active · from Get Lucky Golf and Ernie Els</p>
-    <div class="lockup" role="img" aria-label="Virgin Golf by Ernie Els">
+    <p class="eyebrow">A proposal for Virgin Active · from Get Lucky Golf</p>
+    <div class="lockup" role="img" aria-label="Virgin Golf">
       <img src="/logos/virgin.webp" alt="" width="900" height="805" fetchpriority="high" decoding="sync">
       <span class="golf">Golf</span>
     </div>
-    <h1><span class="l1"><span class="by"><span class="ghost" aria-hidden="true">A golf </span>by Ernie Els</span>A golf zone in</span><span class="l2">every Virgin Active club.</span><span class="l3">Not a rand of your capital.</span></h1>
-    <p class="lede">200 Golfzon bays in 130 Southern African clubs, booked like padel. Get Lucky Golf buys it. RMB finances it. We run it. Ernie Els fronts it. Virgin Active gives the room and the members, and takes 20% of every rand.</p>
+    <h1><span class="l1">A golf zone in</span><span class="l2">every Virgin Active club.</span><span class="l3">Not a rand of your capital.</span></h1>
+    <p class="lede">200 Golfzon bays in 130 Southern African clubs, booked like padel. Get Lucky Golf buys it. RMB finances it. We run it. Virgin Active gives the room and the members, and takes 20% of every rand.</p>
     <div class="btns">
       <a class="btn gold" href="#offer">See the offer</a>
       <a class="btn ghost" href="#meet">Book the meeting</a>
@@ -362,10 +361,6 @@
 </header>
 
 <section class="cream" id="member">
-  <div class="bg" aria-hidden="true">
-    <img src="/images/ernie-invitation-2000.webp" srcset="/images/ernie-invitation-1200.webp 1200w, /images/ernie-invitation-2000.webp 2000w" sizes="100vw" alt="" width="2000" height="1334" loading="lazy" decoding="async" style="object-position:50% 35%">
-    <div class="tint" style="background:linear-gradient(180deg, rgba(245,240,225,.94), rgba(245,240,225,.88) 50%, rgba(245,240,225,.96))"></div>
-  </div>
   <div class="wrap rel">
     <div class="two">
       <div>
@@ -408,12 +403,12 @@
         <span class="k">Puts in</span>
         <p>Two bays (60 m²) in 70 clubs, one bay (30 m²) in 60 smaller clubs, inside planned refurbishments. Booking in the Virgin Active app. Marketing to members. Ten-year exclusive.</p>
         <span class="k">Gets out</span>
-        <p><strong>R37 million a year</strong> at maturity. No capital, no operating risk. A golf add-on on the member bill. Ernie Els on the door. First call on the UK, Italy, Australia and Asia.</p>
+        <p><strong>R37 million a year</strong> at maturity. No capital, no operating risk. A golf add-on on the member bill. First call on the UK, Italy, Australia and Asia.</p>
       </div>
       <div class="party">
         <h3>Get Lucky Golf</h3>
         <span class="k">Puts in</span>
-        <p>The bays, the equity, Golfzon, the Ernie Els brand, coaching, leagues, the insured shot, and a golf host in every Collection club. We run it.</p>
+        <p>The bays, the equity, Golfzon, a founding partner from the top of the game, coaching, leagues, the insured shot, and a golf host in every Collection club. We run it.</p>
         <span class="k">Gets out</span>
         <p><strong>An operating business</strong> of 200 bays, and the reference case for the rest of the Virgin Active group.</p>
       </div>
@@ -441,7 +436,7 @@
 <section class="deep" id="economics">
   <div class="bg" aria-hidden="true">
     <img src="/images/golfzon-bays.webp" alt="" width="1600" height="901" loading="lazy" decoding="async" style="object-position:50% 45%">
-    <div class="tint" style="background:linear-gradient(90deg, rgba(22,38,26,.97), rgba(22,38,26,.92) 55%, rgba(22,38,26,.86))"></div>
+    <div class="tint" style="background:linear-gradient(90deg, rgba(22,38,26,.98), rgba(22,38,26,.96) 55%, rgba(22,38,26,.93))"></div>
   </div>
   <div class="wrap rel">
     <div class="two" style="align-items:start">
@@ -562,7 +557,7 @@
       <div>
         <p class="eyebrow v chapter">Chapter two</p>
         <h2>The group.</h2>
-        <p class="lede" style="margin-top:1.4rem">One brand, eight countries. The same zone goes from Cape Town to London, Milan, Sydney, Singapore and Bangkok. Ernie has won in every one of those markets.</p>
+        <p class="lede" style="margin-top:1.4rem">One brand, eight countries. The same zone goes from Cape Town to London, Milan, Sydney, Singapore and Bangkok.</p>
         <p class="lede" style="margin-top:1.2rem">South Africa proves the numbers. Each territory is Virgin Active's own decision.</p>
       </div>
       <div>
@@ -586,6 +581,20 @@
 </section>
 
 <section class="deep topo" id="who">
+  <div class="wrap rel">
+    <p class="eyebrow">Who we are</p>
+    <h2>Get Lucky Golf.</h2>
+    <p class="lede" style="margin-top:1.4rem; color:rgba(245,240,225,.78)">South Africa's insured hole-in-one challenge: a swing at a par-3 for up to R1,000,000, live at 30 courses, underwritten and sponsored by Santam. Virgin Golf is the concept we are proposing: your brand, our bays.</p>
+    <div class="stats" style="margin-top:2.6rem">
+      <div class="stat"><div class="n tab">30</div><div class="l">Partner courses</div></div>
+      <div class="stat"><div class="n tab">10K</div><div class="l">Paid entries</div></div>
+      <div class="stat"><div class="n tab">R9M</div><div class="l">Santam sponsorship</div></div>
+      <div class="stat"><div class="n tab">R1M</div><div class="l">Top insured prize</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="deep" id="partner">
   <div class="bg" aria-hidden="true">
     <img src="/images/ernie-celebrate-2000.webp" srcset="/images/ernie-celebrate-1200.webp 1200w, /images/ernie-celebrate-2000.webp 2000w" sizes="100vw" alt="" width="1920" height="1080" loading="lazy" decoding="async" style="object-position:50% 22%">
     <div class="tint" style="background:linear-gradient(90deg, rgba(22,38,26,.96), rgba(22,38,26,.9) 50%, rgba(22,38,26,.84))"></div>
@@ -594,14 +603,18 @@
   <div class="wrap rel">
     <div class="two" style="align-items:stretch">
       <div class="col">
-        <p class="eyebrow">Who we are</p>
-        <h2>Get Lucky Golf.</h2>
-        <p class="lede" style="margin-top:1.4rem; color:rgba(245,240,225,.78)">South Africa's insured hole-in-one challenge: a swing at a par-3 for up to R1,000,000, live at 30 courses, underwritten and sponsored by Santam. Ernie Els is our founding partner. Virgin Golf is the concept we are proposing: your brand, our bays.</p>
-        <div class="stats" style="margin-top:2.4rem; grid-template-columns:repeat(2,1fr)">
-          <div class="stat"><div class="n tab">30</div><div class="l">Partner courses</div></div>
-          <div class="stat"><div class="n tab">10K</div><div class="l">Paid entries</div></div>
-          <div class="stat"><div class="n tab">R9M</div><div class="l">Santam sponsorship</div></div>
-          <div class="stat"><div class="n tab">4</div><div class="l">Majors on the door</div></div>
+        <span class="stamp">Confidential · for the Virgin Active leadership only</span>
+        <p class="eyebrow">Founding partner</p>
+        <h2>Our future founding partner.</h2>
+        <p class="lede" style="margin-top:1.4rem; color:rgba(245,240,225,.78)">We are engaging Ernie Els as founding partner of Get Lucky Golf and of this concept. It is not yet signed, so it is not on the cover of this proposal. We share it with you in confidence because it changes what the door says.</p>
+        <div class="panel" style="background:rgba(30,49,32,.55); border-color:rgba(245,240,225,.12); margin-top:2rem">
+          <h3 style="color:var(--cream)">What he brings</h3>
+          <ul class="ticks" style="margin-top:1rem">
+            <li><div><b>The name on the door</b><span>Of every zone, in every club. Every member already knows it.</span></div></li>
+            <li><div><b>The group already knows him</b><span>Britain, Italy, Australia and Asia. The concept travels with the name.</span></div></li>
+            <li><div><b>The reference zone opening</b><span>A Johannesburg flagship, 2027.</span></div></li>
+          </ul>
+          <p style="margin-top:1.2rem; color:rgba(245,240,225,.72); font-size:.95rem">Nothing in the numbers depends on it. The door does.</p>
         </div>
       </div>
       <div class="card ernie" style="background:var(--green); border-color:var(--green); padding:30px; overflow:hidden">
@@ -653,17 +666,16 @@
   </div>
 </section>
 
-<section class="cta" id="meet">
+<section class="cta deep topo" id="meet">
   <div class="bg" aria-hidden="true">
-    <img src="/images/ernie-cta-2000.webp" srcset="/images/ernie-cta-1200.webp 1200w, /images/ernie-cta-2000.webp 2000w" sizes="100vw" alt="" width="2000" height="1333" loading="lazy" decoding="async">
-    <div class="tint"></div><div class="halftone" style="opacity:.4"></div>
+    <div class="halftone" style="opacity:.35"></div>
   </div>
   <div class="wrap rel" style="max-width:52rem">
     <svg class="flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V3l14 5-14 5"/></svg>
-    <h2>200 bays. 130 clubs. Ernie on the door. <span>Let's meet in Cape Town.</span></h2>
-    <p class="lede" style="margin:1.6rem auto 0; color:rgba(245,240,225,.8)">An hour with the Virgin Active leadership this quarter. The founders and Ernie will bring the reference design, the Golfzon pricing and the full model.</p>
+    <h2>200 bays. 130 clubs. Zero capex. <span>Let's meet in Cape Town.</span></h2>
+    <p class="lede" style="margin:1.6rem auto 0; color:rgba(245,240,225,.8)">An hour with the Virgin Active leadership this quarter. The founders will bring the reference design, the Golfzon pricing and the full model.</p>
     <div class="btns">
-      <a class="btn gold" href="mailto:johannes@getluckygolfclub.com?subject=Virgin%20Golf%20by%20Ernie%20Els%20%C3%97%20Virgin%20Active">Start the conversation</a>
+      <a class="btn gold" href="mailto:johannes@getluckygolfclub.com?subject=Virgin%20Golf%20%C3%97%20Virgin%20Active">Start the conversation</a>
       <a class="btn ghost" href="https://wa.me/27609615091?text=Hi%20Johannes%2C%20I%27d%20like%20to%20talk%20about%20Virgin%20Golf." target="_blank" rel="noopener noreferrer">+27 60 961 5091</a>
     </div>
     <p style="margin-top:2rem; font-size:.9rem; color:rgba(245,240,225,.55)">Johannes le Roux · johannes@getluckygolfclub.com · Cape Town</p>
@@ -673,7 +685,7 @@
 <footer>
   <div class="wrap">
     <img src="/logos/logo-dark-bg.webp" alt="Get Lucky Golf" width="400" height="299" loading="lazy" decoding="async">
-    <p>Virgin Golf by Ernie Els is a concept proposed to Virgin Active by Get Lucky Golf (Pty) Ltd with Ernie Els. The Virgin name and marks belong to Virgin Group; their use, and the name of any golf zone, are Virgin Active's to decide. Get Lucky Golf would own and operate the bays. Financial figures are forecasts from Get Lucky Golf's model on stated assumptions, ex VAT, and are not a guarantee. Golfzon pricing is indicative until quoted. Virgin Active figures are its published figures to March 2026. Private and confidential, prepared for Virgin Active, September 2026.</p>
+    <p>Virgin Golf is a concept proposed to Virgin Active by Get Lucky Golf (Pty) Ltd. The Virgin name and marks belong to Virgin Group; their use, and the name of any golf zone, are Virgin Active's to decide. Get Lucky Golf would own and operate the bays. Founding-partner discussions referred to in this proposal are confidential and not yet concluded. Financial figures are forecasts from Get Lucky Golf's model on stated assumptions, ex VAT, and are not a guarantee. Golfzon pricing is indicative until quoted. Virgin Active figures are its published figures to March 2026. Private and confidential, prepared for Virgin Active, September 2026.</p>
   </div>
 </footer>
 <script>
