@@ -233,7 +233,7 @@ li b {{ font-weight: 600; }}
   <li><span><b>Term and exit.</b> Ten-year exclusive with a Virgin Active buy-out option at year five or ten. RMB's facility runs six years per phase, so the concession must outlast it.</span></li>
   <li><span><b>Group rights.</b> First refusal on the UK, Italy, Australia and Asia for Get Lucky Golf, with each territory financed on its own numbers.</span></li>
 </ol>
-<p class="note">Virgin Golf by Ernie Els is a concept proposed by Get Lucky Golf Club (Pty) Ltd with Ernie Els; the Virgin marks belong to Virgin Group and the name is theirs to grant. Not yet an agreement with Virgin Active, Virgin Group, Golfzon or RMB. Every forward figure is a forecast built on the stated assumptions.</p>
+<p class="note">Virgin Golf by Ernie Els is a concept proposed by Get Lucky Golf (Pty) Ltd with Ernie Els; the Virgin marks belong to Virgin Group and the name is theirs to grant. Not yet an agreement with Virgin Active, Virgin Group, Golfzon or RMB. Every forward figure is a forecast built on the stated assumptions.</p>
 </div>
 """
 open("review.html", "w").write(page)

@@ -7,3 +7,7 @@ Bay economics for the Virgin Active concession and the RMB asset-finance facilit
 - `review.html` — the page. Regenerate, never hand-edit.
 
 Change an assumption in `model.py`, run both scripts, and the page follows.
+
+## The workbook
+
+`build_xlsx.py` writes `virgin-golf-bay-model.xlsx`, the same model as live Excel formulas: Assumptions (blue inputs, a yellow case selector), Unit economics, Chain (selected case), Chain low, Chain high, Debt (monthly, by phase), Negotiation (share × shell grid) and Sources. Every cell is a formula; nothing is typed in. Rebuild after changing `model.py`, then recalculate with LibreOffice and tie out against `model.json`.

@@ -21,7 +21,7 @@ GOLFZON_SVC = 0.04       # software, courses, service contract: % of hardware a 
 CONSUMABLES = 24_000     # per bay a year
 LEAGUES_PER_BAY = 40_000 # leagues, events, corporate, at maturity
 SPONSOR_PER_BAY = 25_000 # naming partner, per bay a year
-CHALLENGE_PER_HOUR = 31 * 0.76  # Get Lucky insured shot: R50, 0.625 taken per booked hour, net of 24% premium
+CHALLENGE_PER_HOUR = 50 * 0.625 * 0.76  # Get Lucky insured shot: R50, 0.625 taken per booked hour, net of 24% premium
 MEMBERS_PER_CLUB = 623_000 / 136
 ADDON_ZAR_PM = 299       # golf membership add-on on the Virgin Active bill, ex VAT
 ADDON_ADOPTION = 0.015   # of members at clubs with bays, at maturity
@@ -63,7 +63,7 @@ def debt_schedule(principal, start_year, years):
             pr = 0.0 if month <= IO_M else min(pmt - i, bal)
             bal -= pr
             out[y]["interest"] += i; out[y]["principal"] += pr
-        out[y]["closing"] = bal
+        out[y]["closing"] = bal if y >= start_year else 0.0
     return out, pmt
 
 def run(util_mult=1.0, va_share=VA_SHARE, shell=0.0):
