@@ -81,12 +81,12 @@ johannes@getluckygolfclub.com
 - Send a deck. The brief is the deck.
 
 ## Addresses that reach Sean Pyun (added 12 Sept 2026)
-Golfzon America's email format is First.Last@golfzon.com, confirmed by Taylor Frampton's published address. HQ: 3863 Centerview Drive, Suite 300, Chantilly, VA 20151. Main line 833-693-4653.
+Golfzon America uses more than one email format: Taylor.Frampton@golfzon.com is published, but the CEO verifies as seanp@golfzon.com. Verify each inferred address before sending. HQ: 3863 Centerview Drive, Suite 300, Chantilly, VA 20151. Main line 833-693-4653.
 
 | Route | Who | Address | Why it forwards |
 |---|---|---|---|
 | 1 | Taylor Frampton, Director of Marketing Strategy and Enablement, Golfzon America | Taylor.Frampton@golfzon.com, +1 571-730-6901 | Named contact on Golfzon's partnership releases (Golf Genius, GDR MAX, SCPGA). Partnership enquiries land on her desk and go to the CEO. |
-| 2 | Sean Pyun direct | Sean.Pyun@golfzon.com (inferred from the format, verify before relying on it) | The man himself. LinkedIn: linkedin.com/in/seanpyun |
+| 2 | Sean Pyun direct | seanp@golfzon.com (verified 12 Sept 2026; Sean.Pyun@ is not on record) | The man himself. LinkedIn: linkedin.com/in/seanpyun |
 | 3 | Aaron Flink, EVP and Chief Strategy Officer, Golfzon America | Aaron.Flink@golfzon.com (inferred) | Fronted the Pebble Beach partnership. Strategy owns chain and operator deals. |
 | 4 | Stephanie Krasner, Director of Business Development | Stephanie.Krasner@golfzon.com (inferred) | Business development is where a 200-bay operator deal gets qualified. |
 | 5 | Golfzon America sales | sales_usa@golfzon.com | The official address on every page. Creates the record inside Golfzon. Kyle Poeti is Director of National Sales. |
