@@ -79,3 +79,20 @@ johannes@getluckygolfclub.com
 - Put Ernie in writing.
 - Let a distributor own the relationship.
 - Send a deck. The brief is the deck.
+
+## Addresses that reach Sean Pyun (added 12 Sept 2026)
+Golfzon America's email format is First.Last@golfzon.com, confirmed by Taylor Frampton's published address. HQ: 3863 Centerview Drive, Suite 300, Chantilly, VA 20151. Main line 833-693-4653.
+
+| Route | Who | Address | Why it forwards |
+|---|---|---|---|
+| 1 | Taylor Frampton, Director of Marketing Strategy and Enablement, Golfzon America | Taylor.Frampton@golfzon.com, +1 571-730-6901 | Named contact on Golfzon's partnership releases (Golf Genius, GDR MAX, SCPGA). Partnership enquiries land on her desk and go to the CEO. |
+| 2 | Sean Pyun direct | Sean.Pyun@golfzon.com (inferred from the format, verify before relying on it) | The man himself. LinkedIn: linkedin.com/in/seanpyun |
+| 3 | Aaron Flink, EVP and Chief Strategy Officer, Golfzon America | Aaron.Flink@golfzon.com (inferred) | Fronted the Pebble Beach partnership. Strategy owns chain and operator deals. |
+| 4 | Stephanie Krasner, Director of Business Development | Stephanie.Krasner@golfzon.com (inferred) | Business development is where a 200-bay operator deal gets qualified. |
+| 5 | Golfzon America sales | sales_usa@golfzon.com | The official address on every page. Creates the record inside Golfzon. Kyle Poeti is Director of National Sales. |
+| 6 | Bluetext, Golfzon's PR agency | golfzon@bluetext.com, thomas@bluetext.com (Thomas Walter, +1 646-265-3144) | Media contact on every 2026 release (Global Hub, Pebble Beach, Miami Dolphins, CityGolf). Pitch it as a story: Virgin Active's first golf zones. Agencies forward partnership stories to the client's marketing head and CEO the same day. |
+| 7 | Golfzon Korea HQ PR (Intercommunications, Taeyoung Chun) | golfpr@golfzon.com | Used on the release announcing Pyun's appointment. Reaches Seoul, which routes global business back to Pyun. |
+| 8 | Web forms | golfzongolf.com/partner-with-us and golfzongolf.com/contact-sales | Enterprise leads get escalated. Quote Virgin Active, 200 bays, 130 clubs. |
+| 9 | Courier | Sean Pyun, GOLFZON America, 3863 Centerview Drive, Suite 300, Chantilly, VA 20151 | A printed brief and a Get Lucky ball on his desk. Nobody else's email lands like that. |
+
+Send order: 1 and 2 on the same day, then 6 as a story pitch two days later, then 5 and 8 for the record. Hold 3, 4 and 7 for the second week if nothing comes back. Courier in week two regardless.
