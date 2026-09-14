@@ -5,7 +5,7 @@ Model: `model/model_pf.py` and `model_pf.json`. 72 bays in 42 clubs, R70.8m land
 
 ## Why Planet Fitness
 - 51 clubs across Planet Fitness, Planet Fitness Signature and JustGym. Gauteng-heavy, now in Cape Town (De Waterkant, Cavendish, Durbanville, Parklands, Plattekloof, Brackenfell), Durban (Umhlanga, Westville), George, and the platteland.
-- Privately owned and founder-led for 30 years. About R1bn a year in revenue. Plans about five new clubs a year to 2030, a 50% bigger network in five years. Put the golf zone in the drawings of every new club.
+- Privately owned and founder-led for 30 years. About R1bn a year in revenue. Plans about five new clubs a year to 2030, a 50% bigger network in five years. Put the golf sim in the drawings of every new club.
 - Already partners on sport: Planet Padel Club with Africa Padel, booked on Playtomic, 20% off for members. And Sim Race SA events at Cavendish.
 - No brand doctrine to argue with, no listing process, no offshore group CEO. Two founders decide.
 
@@ -33,7 +33,7 @@ Phase 3, 2029, twelve clubs, one bay each: Queenswood, Centurion Heuweloord, Ben
 - Proudly South African, like them. Leopard Creek and Fancourt are the only course photographs. The hero tag and the Who We Are section say it outright: two South African companies built from scratch, decisions taken in Sandton and Cape Town, every rand staying in the country. Virgin Active cannot say that.
 
 ## Email to Manny Rivera, copy Mannee de Wet
-Subject: Golf zones in Planet Fitness, zero capex, booked like padel
+Subject: Golf sims in Planet Fitness, zero capex, booked like padel
 
 Hi Manny,
 
@@ -54,6 +54,6 @@ johannes@getluckygolfclub.com
 
 ## Sequence
 1. Verify both addresses. Send the email to Manny with Mannee copied.
-2. Five days later, a LinkedIn note to Mannee: "Sent Manny a proposal for golf zones in your clubs, zero capex, booked like padel. Would value your read as the operator. Link in the email." 
+2. Five days later, a LinkedIn note to Mannee: "Sent Manny a proposal for golf sims in your clubs, zero capex, booked like padel. Would value your read as the operator. Link in the email." 
 3. If nothing in two weeks, Christopher Butcher, and a printed brief couriered to Atrium on 5th.
 4. Keep the Virgin Active product route alive in parallel. A signed Planet Fitness pilot is the strongest card with Virgin Active.
