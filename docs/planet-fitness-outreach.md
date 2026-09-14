@@ -1,6 +1,6 @@
 # Planet Fitness: the pitch and who to send it to
 
-Pitch: https://getluckyplanetfitness.vercel.app/proposal (Vercel project getluckyplanetfitness, root `planetfitness/`, production from `main`). Add a custom domain in Vercel when you have one.
+Pitch: https://pitch.planetgolf.co.za/proposal (Vercel project getluckyplanetfitness, root `planetfitness/`, production from `main`). Add a custom domain in Vercel when you have one.
 Model: `model/model_pf.py` and `model_pf.json`. 72 bays in 42 clubs, R70.8m landed capex, R13.7m a year to Planet Fitness at maturity (R9.7m quiet, R16.9m busy).
 
 ## Why Planet Fitness
@@ -43,7 +43,7 @@ I want to put Golfzon golf bays into Planet Fitness. 72 bays in 42 clubs over th
 
 Why it works in a gym: half the people playing simulator golf never play on a course. They are your members. Padel already proved members will book time for a game, and you have done that deal once with Africa Padel. Virgin Active's Chiswick refurb in London, simulator bay included, lifted membership 15% and revenue 23%. I would rather Planet Fitness had that in Sandton first.
 
-The proposal is here: https://getluckyplanetfitness.vercel.app/proposal
+The proposal is here: https://pitch.planetgolf.co.za/proposal
 
 Would you and Mannee give me an hour in Sandton this quarter? I will bring the reference design, the Golfzon pricing and the full model.
 
