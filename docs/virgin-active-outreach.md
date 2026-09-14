@@ -3,10 +3,16 @@
 Pitch: https://pitch.virgingolf.co.za/proposal
 Email format at Virgin Active South Africa: First.Last@virginactive.co.za (about 90% of staff). Verify each address in Apollo before sending. Switchboard +27 21 684 3800 (Cape Town HQ).
 
+## Status, 14 Sept 2026
+- Andrew Louw (Marketing Director) has seen the pitch on WhatsApp. His read: it does not fit the Social Wellness Club positioning or the five product pillars, it belongs in golf venues, and it is a product proposal, not a marketing one. He buys the retention benefit but says it is not the focus right now. He asked whether we did the Chiswick bay and suggested working through that contact. We replied: Chiswick was Virgin Active's own London refurb, we agree it is a product proposal in the mould of Virgin Active Padel Club, and asked him to recommend who on the product side to speak to. Waiting on his answer.
+- Lesson: lead with product and retention, not brand. The Chiswick numbers and the padel precedent are the two things that landed. "Social wellness" language on its own did not.
+- Next: whoever Andrew names gets the product email. If he names nobody, it goes to Fatima Nosarka, Head of Product Operations. Elian Wiener (padel) is now the most important warm route.
+- Gmail drafts ready, none sent: Spira (no address yet), Kowarski with du Preez copied, Wiener, Louw (superseded by the WhatsApp thread), Nosarka.
+
 ## The order that works
 1. Warm first: Jessica Spira and Elian Wiener. Both know the inside of Virgin Active and one of them did this exact deal.
 2. Then the operators: Dean Kowarski and Derick du Preez on the same day.
-3. Then the people who make it real: Andrew Louw (story), Mike Willis (numbers), Jeff Hacker (room).
+3. Then the product side, which is where Andrew Louw says this sits: Fatima Nosarka or whoever he names. Then Mike Willis (numbers) and Jeff Hacker (room).
 4. Brait last, and only once Virgin Active management has seen the pitch. Going over the operators' heads first kills it.
 
 ## Virgin Active: decision makers
@@ -16,7 +22,8 @@ Email format at Virgin Active South Africa: First.Last@virginactive.co.za (about
 | Derick du Preez | Chief Operating Officer, Virgin Active South Africa (since May 2022; ex Viva Gym MD) | Derick.duPreez@virginactive.co.za (inferred, verify) | Runs the clubs. Anything that goes into a club goes through him. |
 | SA Managing Director | Jessica Spira held it 2022 to 2023. Current holder not confirmed online. | | Ask Spira or Wiener who sits in the seat today. |
 | Mike Willis | Finance Director, Virgin Active South Africa (ex Old Mutual CFO) | Mike.Willis@virginactive.co.za (inferred, verify) | The 20% share, the shell question and the zero-capex line land on his desk. Send him the one-pager. |
-| Andrew Louw | Marketing Director, Virgin Active South Africa (joined Aug 2026, ex Sixty60 and Checkers) | Andrew.Louw@virginactive.co.za (inferred, verify) | New in the job and needs a story. Golf in the gym, booked like padel, is one. Owns the member base and the R299 add-on. |
+| Fatima Nosarka | Head of Product Operations, Virgin Active South Africa | Fatima.Nosarka@virginactive.co.za (inferred, verify) | Andrew Louw says this is a product proposal for a different team. Product operations is where padel sits. Send the product email, or send it to whoever Andrew names instead. |
+| Andrew Louw | Marketing Director, Virgin Active South Africa (joined Aug 2026, ex Sixty60 and Checkers) | Andrew.Louw@virginactive.co.za (inferred, verify) | Contacted on WhatsApp. Not the buyer: says it is a product proposal, not marketing, and not the SA focus right now. Buys the retention benefit. Use him for a referral, not a decision. |
 | Jeff Hacker | Head of Property Projects, Virgin Active South Africa | Jeff.Hacker@virginactive.co.za (inferred, verify) | The room, the shell, the power. Two Signature bays need his sign-off on the reference design. |
 | Tobie Vermeulen | Group Chief Information Officer and SA IT Director | Tobie.Vermeulen@virginactive.co.za (inferred, verify) | Booking through the Virgin Active app the way padel runs through Playtomic. Bring him in once the operators say yes. |
 | Karen Walker | Global Head of Spatial Design, Virgin Active | Karen.Walker@virginactive.co.za (inferred, verify) | Designs the Collection clubs. Wembley Square is being built now. Get the golf zone into the drawings. |
@@ -97,8 +104,34 @@ I run Get Lucky Golf. We are proposing Golfzon golf zones in Virgin Active, fina
 Warm regards,
 Johannes
 
+### To Fatima Nosarka (or whoever Andrew names on the product side)
+Subject: Golf zones in Virgin Active, a product proposal
+
+Hi Fatima,
+
+I run Get Lucky Golf in Cape Town. We run the Hole-in-One Challenge at 30 partner golf clubs and 600 golf days a year, with prizes underwritten by Santam.
+
+Andrew Louw looked at a proposal of ours and pointed out that it is a product proposal rather than a marketing one, so I am coming to you.
+
+The short version: Golfzon simulator bays inside Virgin Active clubs, set up the way Virgin Active Padel Club was. We buy the bays, asset finance pays for them, we operate them and members book them through the app. Virgin Active gives the room and takes a share of every rand. No capex for the club. The plan is 200 bays across 130 clubs over three years, starting with two bays in one flagship club in 2027.
+
+Why we think it belongs in a social wellness club rather than a golf venue: 51% of people playing simulator golf never play on a course. They are gym members. A bay with coaching on the screen is closer to a personal trainer session than a round of golf, and padel has already shown that a game gets members to book time and stay in the club. Virgin Active's own Chiswick Riverside refurb in London, simulator bay included, lifted membership 15%, revenue 23% and more than doubled EBITDA.
+
+The proposal is here: pitch.virgingolf.co.za/proposal
+
+Would you be open to 30 minutes for us to walk you and the product team through it? No obligation. If it makes sense, the easy first step is a two-bay pilot in one club, and we measure bookings.
+
+Warm regards,
+Johannes
+
+### The WhatsApp thread with Andrew Louw, for the record
+Andrew: does not align with SWC positioning and the five pillars; better suited to golf clubs or driving ranges.
+Us: not a golf product; 51% of simulator players never play on a course; the range is intimidating, a bay with coaching is a personal trainer session; padel proved a game turns a gym into a social space; Chiswick numbers; asked for 30 minutes with the team, and whether we could send it to Dean and Derick.
+Andrew: did you do the Chiswick bay, work through that contact; this is a product proposal, different team; personally not the right fit for SA right now; buys the retention benefit but it is not the focus.
+Us: Chiswick was Virgin Active's own refurb; agreed it is a product proposal like Virgin Active Padel Club; asked who to speak to on the product side.
+
 ## Four weeks
 - Week 1: Spira and Wiener. Verify the Virgin Active addresses in Apollo.
-- Week 2: Kowarski and du Preez, same morning. Louw, Willis and Hacker two days later, each with the piece of the pitch that is theirs.
+- Week 2: the product contact Andrew names, or Fatima Nosarka. Kowarski and du Preez only once product has engaged, so the CEO email can say the product team is already looking at it. Willis and Hacker after that.
 - Week 3: the Cape Town meeting. Take the pitch, the rollout workbook, the one-pager.
 - Week 4: Brait, through Spira or direct to Hayward-Butt, with Virgin Active's reaction in hand.
