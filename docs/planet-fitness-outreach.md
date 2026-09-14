@@ -22,7 +22,7 @@ Email format at Planet Fitness is First.Last@planetfitness.co.za (Prospeo). Both
 ## Which clubs first
 Phase 1, 2027, ten clubs, two Signature bays each: Wanderers (Signature Megaclub), Sandton Gate, Sandton The Marc, Midrand (Signature), De Waterkant (Signature), Fourways Mall, Waterkloof Ridge, Umhlanga, Bedfordview Megaclub, Centurion Gate Megaclub. Sandton first.
 Phase 2, 2028, twenty clubs, two Play bays each: Fourways Megaclub, Morningside, Randburg, Greenstone, Boksburg, Benoni Lakefield, Roodepoort, Krugersdorp, Hazelwood, Lynnwood, Silver Lakes, Olympus, Irene, Centurion Hennopsview, Montana, Cavendish, Plattekloof Megaclub, Durbanville, Westville Megaclub, Witbank Megaclub.
-Phase 3, 2029, twelve clubs, one bay each: Queenswood, Centurion Heuweloord, Benoni Northmead, Brakpan, Parklands, Brackenfell, George, Middelburg, Potchefstroom, Rustenburg Cashan, Midlands, Fourways Mall's sister if opened. JustGym (nine clubs) excluded from the plan; one Practice bay each is an option from 2030.
+Phase 3, 2029, twelve clubs, one bay each: Queenswood, Centurion Heuweloord, Benoni Northmead, Brakpan, Parklands, Brackenfell, George, Middelburg, Potchefstroom, Rustenburg Cashan, Midlands, Fourways Mall's sister if opened. JustGym (nine clubs) is not in the plan. It is the budget brand and a sim there works against the positioning.
 
 ## What is different from the Virgin Active pitch
 - 72 bays, 42 clubs, R14m a year, not 200, 130 and R37m. Same per-bay economics.
