@@ -30,6 +30,7 @@ Phase 3, 2029, twelve clubs, one bay each: Queenswood, Centurion Heuweloord, Ben
 - "Chapter two" is the next 25 clubs Planet Fitness will open, not eight countries.
 - The Planet Golf lockup uses the Planet Fitness mark cropped to "planet", in cream, beside GOLF. Their marks stay theirs; the footer says so.
 - Chiswick stays in. It is Virgin Active's own number, and it is the competitor's.
+- Proudly South African, like them. Leopard Creek and Fancourt are the only course photographs. The hero tag and the Who We Are section say it outright: two South African companies built from scratch, decisions taken in Sandton and Cape Town, every rand staying in the country. Virgin Active cannot say that.
 
 ## Email to Manny Rivera, copy Mannee de Wet
 Subject: Golf zones in Planet Fitness, zero capex, booked like padel
