@@ -25,7 +25,7 @@
 <link rel="icon" type="image/webp" href="/logos/favicon.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="/logos/planet-cream.webp" as="image" fetchpriority="high">
+<link rel="preload" href="/logos/planetgolf-cream.webp" as="image" fetchpriority="high">
 <link rel="preload" href="/fonts/PosterGothicRoundATF-Heavy.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/images/course-st-andrews-2000.webp" as="image" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -91,24 +91,24 @@
   .nav .cta { font-size: .72rem; padding: .7rem 1.2rem; white-space: nowrap; }
 
   /* hero */
-  .hero { min-height: min(88vh, 900px); display: flex; align-items: flex-end; text-align: center; padding-block: 120px 64px; }
+  .hero { min-height: min(94vh, 980px); display: flex; align-items: flex-end; text-align: center; padding-block: 150px 96px; }
   @media (max-width: 640px) { .hero { padding-top: 230px; } }
   .hero .bg img { object-position: 50% 55%; }
   .hero .tint.a { background: linear-gradient(90deg, rgba(22,38,26,.94), rgba(22,38,26,.62) 55%, rgba(22,38,26,.22)); }
   .hero .tint.b { background: linear-gradient(180deg, rgba(22,38,26,.28), transparent 35%, rgba(22,38,26,.96)); }
   .hero .wrap { max-width: 58rem; }
   
-  .hero .lede { margin: 1.4rem auto 0; font-size: 1.12rem; }
+  .hero .lede { margin: 2rem auto 0; font-size: 1.12rem; }
   @media (min-width: 640px) { .hero .lede { font-size: 1.2rem; } }
   .hero .btns { justify-content: center; }
-  .hero .tag { margin-top: 2rem; font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: rgba(245,240,225,.68); }
+  .hero .tag { margin-top: 2.8rem; font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; color: rgba(245,240,225,.68); }
 
 
-  /* Planet Golf lockup: PLANET beside GOLF */
-  .lockup { display: grid; grid-template-columns: auto auto; justify-content: center; align-items: center; column-gap: .1em; row-gap: 0; font-size: clamp(3rem, 8.6vw, 6.2rem); margin: .9rem 0 .4rem; }
-  .lockup img { grid-row: 1; grid-column: 1; height: .86em; width: auto; align-self: center; margin-right: .22em; margin-top: .04em; filter: drop-shadow(0 4px 14px rgba(0,0,0,.35)); }
+  /* Planet Golf lockup: the Planet Fitness mark, cropped to planet, with golf set beside it in the same style */
+  .lockup { display: flex; justify-content: center; align-items: center; font-size: clamp(3rem, 8.6vw, 6.2rem); margin: 1rem 0 .8rem; }
+  .lockup img { height: 1.3em; width: auto; max-width: 100%; filter: drop-shadow(0 4px 14px rgba(0,0,0,.35)); }
   .lockup .golf { grid-column: 2; grid-row: 1; align-self: center; font-family: var(--display); font-weight: 800; text-transform: uppercase; color: var(--cream); line-height: .82; letter-spacing: .01em; text-shadow: 0 4px 18px rgba(0,0,0,.35); }
-  .hero .eyebrow { margin-bottom: 1.4rem; }
+  .hero .eyebrow { margin-bottom: 2.2rem; }
   .hero h1 { font-size: clamp(1.6rem, 4.6vw, 3rem); }
   .hero h1 .l1 { display: inline-block; text-align: left; }
   .hero h1 .l2, .hero h1 .l3 { display: block; }
@@ -365,8 +365,7 @@
   <div class="wrap rel">
     <p class="eyebrow">A proposal for Planet Fitness · from Get Lucky Golf</p>
     <div class="lockup" role="img" aria-label="Planet Golf">
-      <img src="/logos/planet-cream.webp" alt="" width="1617" height="588" fetchpriority="high" decoding="sync">
-      <span class="golf">Golf</span>
+      <img src="/logos/planetgolf-cream.webp" alt="" width="2280" height="588" fetchpriority="high" decoding="sync">
     </div>
     <h1><span class="l1">A golf zone in</span><span class="l2">every Planet Fitness club.</span><span class="l3">Not a rand of your capital.</span></h1>
     <p class="lede">72 Golfzon™ bays in 42 Planet Fitness clubs, booked like padel. Get Lucky Golf buys it. RMB or the bank you prefer finances it. We run it. Planet Fitness gives the room and the members, and takes 20% of every rand.</p>
@@ -576,8 +575,7 @@
         </ul>
       </div>
         <div class="lockup small" role="img" aria-label="Planet Golf">
-          <img src="/logos/planet-cream.webp" alt="" width="1617" height="588" loading="lazy" decoding="async">
-          <span class="golf">Golf</span>
+          <img src="/logos/planetgolf-cream.webp" alt="" width="2280" height="588" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
