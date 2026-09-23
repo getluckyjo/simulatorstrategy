@@ -25,6 +25,16 @@ What Golfzon gets:
 
 What we need from him: chain pricing for the three bay types, a reference design for a two-bay zone, an SA service partner, and a date at Chantilly.
 
+## Meeting: Friday 25 September 2026
+This meeting is move 1 of the core strategy (`docs/core-strategy.md`). The bays get us in the room; the software is the prize. Ask in this order:
+1. **Hardware:** chain pricing on the three bay types, a two-bay reference design, and an SA service partner. Frame it as indicative, "subject to finance and concessions".
+2. **Software:** agreement in principle to scope **Get Lucky mode** inside Golfzon: tee locked to the tier distance, settings enforced, signed shot events to Get Lucky's cloud, NASMO video. Get Lucky runs the wallet, identity checks, Santam cover, claims and payouts. It becomes a prize product Golfzon can offer every operator.
+3. **Data:** an NDA covering Golfzon's ace-rate history (for Santam's pricing) and bay counts by country.
+4. **Icons:** a Golfzon demo bay in the Icons Cup fan zone at Fancourt (11–13 Dec) playing the Get Lucky hole. It puts Golfzon on a broadcast to 150+ countries.
+5. **Next step:** a named owner, a pricing date, and Chantilly in Q4 or the PGA Show in January.
+
+Say "the programme we're rolling out", not "the order". Ernie stays verbal only.
+
 ## Keep Ernie out of it
 Nothing signed. No mention in writing to Golfzon. If it comes up on a call, "we are in talks with a major-winning founding partner".
 

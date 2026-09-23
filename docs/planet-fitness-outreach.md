@@ -52,6 +52,20 @@ Johannes le Roux
 Founder, Get Lucky Golf
 johannes@getluckygolfclub.com
 
+## Meeting: Friday 2 October 2026, Mannee de Wet
+This meeting is move 2 of the core strategy (`docs/core-strategy.md`). Planet Fitness is the first chain to sign, because a signed PF pilot unlocks both RMB and Virgin Active.
+- **Bring:**
+  - the Golfzon outcome from 25 September (pricing and reference design on the way);
+  - RMB finance;
+  - the PF model: R13.7m a year to Planet Fitness at maturity, zero capex;
+  - the Icons story: a R10m shot at Fancourt, with Ernie captaining Team South Africa.
+- **Ask:**
+  - an LOI for phase 1 (10 clubs, 20 Signature bays, 2027), subject to finance and the reference design, with Sandton first;
+  - member and footfall numbers for RMB;
+  - golf zones in the drawings of new clubs;
+  - a "Back an Icon" free-swing promotion for members in October–November, so Planet Fitness is part of the Fancourt story now;
+  - a date with Manny, and Icons hospitality for both founders.
+
 ## Sequence
 1. Verify both addresses. Send the email to Manny with Mannee copied.
 2. Five days later, a LinkedIn note to Mannee: "Sent Manny a proposal for golf sims in your clubs, zero capex, booked like padel. Would value your read as the operator. Link in the email." 
