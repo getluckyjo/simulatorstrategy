@@ -8,7 +8,7 @@ The CEO of GOLFZON America is **Sean Pyun** (President and CEO, GOLFZON America,
 There is no Shaun Payne at Golfzon. If the LinkedIn request went to a "Shaun Payne", withdraw it and send one to Sean Pyun.
 
 ## Why he is the right door
-- March 2026: Golfzon moved its Global Business Division to Chantilly, Virginia, under Pyun. International deals, Africa included, now run through him, not Seoul.
+- March 2026: Golfzon moved its Global Business Division to Chantilly, Virginia, under Pyun. His stated remit is North America, Europe, the Middle East and select SE Asia; Africa is not named (checked 23 Sep 2026). Pitch South Africa as the proof site for a global product, not as a market he has to build.
 - Golfzon sells into gyms already (golfzongolf.com has a "Gyms and fitness centers" page). Virgin Active is that page at chain scale.
 - His playbook is partnerships with operators, not one-off sales: Arcis Golf (courses scanned into the sim), NGCOA, SCPGA, Golf Genius (leagues), Miami Dolphins, Five Iron money leagues, Leadbetter.
 - 16 years at the LPGA (Chief Business Officer, LPGA Asia). He brought Golfzon on as an LPGA sponsor. He thinks in tours, leagues and brands.
@@ -97,7 +97,7 @@ Golfzon America uses more than one email format: Taylor.Frampton@golfzon.com is 
 |---|---|---|---|
 | 1 | Taylor Frampton, Director of Marketing Strategy and Enablement, Golfzon America | Taylor.Frampton@golfzon.com, +1 571-730-6901 | Named contact on Golfzon's partnership releases (Golf Genius, GDR MAX, SCPGA). Partnership enquiries land on her desk and go to the CEO. |
 | 2 | Sean Pyun direct | seanp@golfzon.com (verified 12 Sept 2026; Sean.Pyun@ is not on record) | The man himself. LinkedIn: linkedin.com/in/seanpyun |
-| 3 | Aaron Flink, EVP and Chief Strategy Officer, Golfzon America | Aaron.Flink@golfzon.com (inferred) | Fronted the Pebble Beach partnership. Strategy owns chain and operator deals. |
+| 3 | ~~Aaron Flink~~: **not Golfzon.** He is EVP and Chief Strategy Officer at **Pebble Beach**, and spoke on the Golfzon–Pebble deal (checked 23 Sep 2026). Do not email him at golfzon.com. For Golfzon competitions, try Dean Schneider, Director of GOLFZON Competitions. | | |
 | 4 | Stephanie Krasner, Director of Business Development | Stephanie.Krasner@golfzon.com (inferred) | Business development is where a 200-bay operator deal gets qualified. |
 | 5 | Golfzon America sales | sales_usa@golfzon.com | The official address on every page. Creates the record inside Golfzon. Kyle Poeti is Director of National Sales. |
 | 6 | Bluetext, Golfzon's PR agency | golfzon@bluetext.com, thomas@bluetext.com (Thomas Walter, +1 646-265-3144) | Media contact on every 2026 release (Global Hub, Pebble Beach, Miami Dolphins, CityGolf). Pitch it as a story: Virgin Active's first golf zones. Agencies forward partnership stories to the client's marketing head and CEO the same day. |
