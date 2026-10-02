@@ -42,7 +42,7 @@ Planet Golf: 72 Golfzon bays in 42 clubs, 2027–2029. We buy and operate the ba
 
 ## Do not say / watch
 - **Do not share Golfzon pricing or the proposal decks.** Golfzon asked that nothing be shared with third parties without consent. Quote our model outputs only, not Golfzon's price list.
-- **Ernie Els:** not signed. Stick to "in talks with a major-winning founding partner" if it arises.
+- **Ernie Els:** now in the written talking points as "advanced talks", marked confidential. Nothing is signed, so don't go further than that (no terms, no announcements).
 - Golfzon has not yet given: warranty, payment terms, lead times, SA distribution and service, underwriting for the insured shot, pilot date. Say these are "being finalised with Golfzon".
 - Members per club (3,500) is our assumption, not their number. Ask for the real figure.
 - Phase 3 list in the older doc has a placeholder ("Fourways Mall's sister if opened"). Confirm 12 clubs.

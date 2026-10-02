@@ -19,6 +19,7 @@ Looking forward to speaking shortly. A few points to guide the conversation:
 - Golfzon is the global leader in commercial indoor golf (15,000+ locations) and has confirmed its partnership. Proposal in hand.
 - Members already book time for a game: you proved it with padel.
 - Planet Fitness South Africa would be the first Golfzon gym rollout in the country.
+- We are in advanced talks with Ernie Els to back Get Lucky's Hole-in-One Challenge and the health-club rollout. Please treat this as confidential.
 
 **To explore with you**
 1. Two or three pilot clubs and the rooms available.
