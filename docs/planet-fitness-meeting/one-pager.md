@@ -30,6 +30,18 @@ Planet Golf: 72 Golfzon bays in 42 clubs, 2027–2029. We buy and operate the ba
 - Founders decide: Manny Rivera (Group CEO) and Mannee de Wet (MD). Plans about five new clubs a year to 2030: the zone goes into every set of drawings.
 - Proudly South African, decisions in Sandton and Cape Town.
 
+## Planet Fitness at a glance (our research, not company-published)
+51 clubs (Planet Fitness, Signature, JustGym) | ~R1bn annual revenue | 30 years founder-led from one gym | ~5 new clubs a year to 2030 | network +50% in five years | 42 clubs in our plan (excl. 9 JustGym).
+
+## Why the concept lands
+- **1 in 3** members leave a gym every year (industry retention 66–71%). Top reason: not visiting enough to justify the fee. (HFA benchmarking)
+- **40–65%** drop out in the first six months. (PMC fitness-club study)
+- **Chiswick** (Virgin Active, sim bay in refurb): membership +15%, revenue +23%, EBITDA more than doubled.
+- **98%** of golfers don't play alone; participation 2x since 2014. (Golfzon)
+- **8.1M** US simulator players, up 73% on pre-pandemic; **51%** never play on a course. (NGF 2025)
+- **19M** Americans play only off-course; 43% are women; 18–34s are the largest adult group; 7.5M young non-golfers say they want to play. (NGF)
+- Beginners spend **30% more** inside venues; 60% of lessons fall off-peak. (Golfzon)
+
 ## Community benefits for members (from Golfzon's proposal, 1 Oct)
 - **Golfzon Tour:** 130+ venues, 15 countries, $300k purse (2026). Winners can earn exemptions into GTour, China Open and CityGolf events.
 - **Network Play:** play friends live, club to club, nationwide and worldwide, with video chat.
