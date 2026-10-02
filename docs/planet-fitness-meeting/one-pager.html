@@ -1,93 +1,126 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Planet Golf: meeting brief</title>
+<!doctype html><html><head><meta charset="utf-8"><title>Planet Fitness meeting brief</title>
 <style>
 @font-face{font-family:"PosterGothic";src:url("../../planetfitness/fonts/PosterGothicRoundATF-Heavy.woff2") format("woff2");font-weight:800}
+@font-face{font-family:"Inter";src:url("fonts/Inter-latin.woff2") format("woff2");font-weight:100 900}
 @page{size:A4;margin:0}
-
-:root{--deep:#1E3120;--green:#345231;--green-mid:#2a4328;--lime:#D6FB4B;--ink:#0A0A0A;--white:#fdfcf5;--mute:rgba(253,252,245,.72);
---display:"PosterGothic",Impact,"Arial Narrow",sans-serif;--sans:"Inter","Helvetica Neue",Arial,sans-serif}
-*{box-sizing:border-box}
-html,body{margin:0;background:var(--deep)}
-body{font:7.4pt/1.26 var(--sans);color:var(--white);width:210mm;height:297mm;overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact;position:relative}
-.hd{padding:4mm 10mm 2.4mm;display:flex;justify-content:space-between;align-items:center;border-bottom:.4mm solid rgba(214,251,75,.35)}
-.hd img{height:11.5mm}
-.hd .eb{font-size:6.2pt;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--lime);text-align:right;margin-bottom:1.5mm}
-.hd h1{font:800 21pt/.95 var(--display);text-transform:uppercase;margin:0;text-align:right}
-.pitch{margin:3mm 10mm 0;background:var(--lime);color:var(--deep);border-radius:2.5mm;padding:2.6mm 3.6mm;font-size:7.9pt;line-height:1.38;box-shadow:1.3mm 1.6mm 0 var(--green)}
-.pitch b{font-weight:800;color:var(--deep);border-bottom:.35mm solid var(--deep)}
-.pitch .l{font:800 9pt/1 var(--display);letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:1.2mm}
-.body{padding:2mm 10mm 0}
-h2{font:800 10pt/1 var(--display);text-transform:uppercase;color:var(--lime);margin:2.2mm 0 1mm;letter-spacing:.01em}
-.cols{display:flex;gap:6mm}.cols>div{flex:1}
-ul{margin:0;padding-left:3.4mm}li{margin:0 0 .8mm}li::marker{color:var(--lime)}
-b{color:var(--lime);font-weight:700}
-table{border-collapse:collapse;width:100%}
-td{padding:.9mm 0;border-bottom:1px solid rgba(253,252,245,.14)}td:last-child{text-align:right;font-weight:700;color:var(--lime);white-space:nowrap;font-variant-numeric:tabular-nums}
-.big{display:flex;gap:2.5mm;margin:0 0 2.2mm}
-.big div{flex:1;background:var(--green);border-radius:2mm;padding:2mm 2.5mm;text-align:center;box-shadow:.9mm 1.1mm 0 var(--ink)}
-.big strong{display:block;font:800 13pt/1 var(--display);color:var(--lime)}
-.big span{font-size:5.8pt;letter-spacing:.1em;text-transform:uppercase;opacity:.85}
-.com{background:var(--green);border-radius:2.5mm;padding:2mm 3.2mm;margin-top:2.6mm;box-shadow:1.1mm 1.4mm 0 var(--ink)}
-.com h2{margin-top:0}
-.warn{border:.4mm solid var(--lime);border-radius:2mm;padding:2mm 3mm;margin-top:3mm;font-size:7.4pt;color:var(--mute)}
+:root{--deep:#1E3120;--card:#2b4429;--card2:#345231;--lime:#D6FB4B;--ink:#0d150e;--white:#fdfcf5;--body:rgba(253,252,245,.86);--mute:rgba(253,252,245,.62);--rule:rgba(253,252,245,.14);
+--display:"PosterGothic",Impact,sans-serif;--sans:"Inter","Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--deep)}
+body{width:210mm;height:297mm;overflow:hidden;position:relative;font:400 7.3pt/1.36 var(--sans);color:var(--body);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{padding:0 10mm}
+b{font-weight:650;color:var(--white)}
+.eb{font:700 5.8pt/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--lime)}
+h1{font:800 22pt/.92 var(--display);text-transform:uppercase;color:var(--white);letter-spacing:.005em}
+h2{font:800 10.5pt/1 var(--display);text-transform:uppercase;color:var(--lime);letter-spacing:.02em;margin:0 0 1.6mm}
+section{margin-top:3.9mm}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+/* header */
+.hd{display:flex;justify-content:space-between;align-items:flex-end;padding:5mm 10mm 3mm;border-bottom:.3mm solid rgba(214,251,75,.3)}
+.hd img{height:11.5mm;display:block}
+.hd .t{text-align:right}.hd .eb{margin-bottom:1.8mm}
+/* pitch */
+.pitch{margin-top:3.4mm;background:var(--lime);color:var(--deep);border-radius:2.4mm;padding:2.8mm 4mm 3mm;box-shadow:1.2mm 1.4mm 0 var(--card2)}
+.pitch .eb{color:var(--deep);margin-bottom:1.6mm}
+.pitch p{font:500 7.6pt/1.42 var(--sans)}
+.pitch b{color:var(--deep);font-weight:750}
+/* tiles */
+.tiles{display:grid;gap:2.4mm}
+.t4{grid-template-columns:repeat(4,1fr)}.t6{grid-template-columns:repeat(6,1fr)}
+.tile{background:var(--card);border-radius:2mm;padding:2mm 1.8mm 1.9mm;text-align:center;box-shadow:.8mm 1mm 0 var(--ink)}
+.tile strong{display:block;font:800 15pt/1 var(--display);color:var(--lime);letter-spacing:.01em}
+.t6 .tile strong{font-size:12pt}
+.tile span{display:block;margin-top:1.1mm;font:600 5.6pt/1.25 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.lead{margin-bottom:2.2mm}
+table{width:100%;border-collapse:collapse}
+td{padding:.8mm 0;border-bottom:.25mm solid var(--rule)}
+td.n{font-feature-settings:"tnum" 1;text-align:right;font-weight:650;color:var(--white);white-space:nowrap}
+ul{list-style:none}
+li{position:relative;padding-left:3mm;margin-bottom:.8mm}
+li::before{content:"";position:absolute;left:0;top:1.25mm;width:1.2mm;height:1.2mm;border-radius:50%;background:var(--lime)}
+ol{padding-left:3.6mm}ol li{padding-left:.6mm}ol li::before{display:none}ol li::marker{color:var(--lime);font-weight:700}
+.sub{margin:2.4mm 0 1.4mm}
+/* stat cards */
+.stat{background:var(--card);border-radius:2mm;padding:1.9mm 2.4mm 2mm;box-shadow:.8mm 1mm 0 var(--ink)}
+.stat strong{display:block;font:800 13pt/1 var(--display);color:var(--lime);margin-bottom:.9mm;white-space:nowrap}
+.stat p{font-size:6.6pt;line-height:1.32}
+.src{margin-top:1.8mm;font-size:5.6pt;color:var(--mute)}
+.panel{background:var(--card);border-radius:2.4mm;padding:2.6mm 3.4mm 1.8mm;box-shadow:1mm 1.2mm 0 var(--ink)}
+.warn{margin-top:3.2mm;border:.3mm solid var(--lime);border-radius:2mm;padding:2.2mm 3.2mm;font-size:6.5pt;line-height:1.38;color:var(--mute)}
 .warn b{color:var(--lime)}
-.ft{position:absolute;bottom:0;left:0;right:0;background:var(--ink);color:var(--white);font:700 6.2pt var(--sans);padding:2.2mm 10mm;letter-spacing:.14em;text-transform:uppercase;display:flex;justify-content:space-between}
+.ft{position:absolute;left:0;right:0;bottom:0;background:var(--ink);padding:2.3mm 10mm;display:flex;justify-content:space-between;font:700 5.8pt/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
 .ft span:first-child{color:var(--lime)}
-
-.mini{display:flex;gap:1.8mm;margin:0}
-.mini div{flex:1;background:var(--green);border-radius:1.8mm;padding:1.3mm 1.2mm;text-align:center;box-shadow:.6mm .8mm 0 var(--ink)}
-.mini strong{display:block;font:800 11pt/1 var(--display);color:var(--lime)}
-.mini span{display:block;font-size:5.6pt;letter-spacing:.06em;text-transform:uppercase;opacity:.85;line-height:1.2;margin-top:.5mm}
-.st{display:flex;gap:2mm;align-items:baseline;margin:0 0 1mm}
-.st strong{font:800 10pt/1 var(--display);color:var(--lime);min-width:17mm;white-space:nowrap}
-.st em{font-style:normal;color:var(--mute)}
-.src{font-size:5.6pt;opacity:.6;margin-top:1mm}
 </style></head><body>
-<div class="hd"><img src="../../planetfitness/logos/logo-dark-bg.webp"><div><div class="eb">Internal brief · 2 Oct 2026</div><h1>Planet Fitness CEO meeting</h1></div></div>
-<div class="pitch"><span class="l">Open with this</span>Manny, every Planet Fitness club already has your members; what none of them has is a <b>reason to come on the nights they would otherwise skip</b>. We want to give you that: Golfzon golf bays, the world's biggest commercial indoor golf network, in your clubs, booked like padel. Members play friends across your clubs and around the world, take lessons from Leadbetter coaches, get instant swing analysis, and their kids get their own junior tour. It costs Planet Fitness nothing: we buy the bays on asset finance and run them, and you take <b>20% of every rand, about R14 million a year</b> at maturity. We start with two bays in Sandton in 2027 and put the zone in the drawings of every club you open after that.</div>
-<div class="body">
-<h2 style="margin-top:0">The ask</h2>
-<div>72 Golfzon bays in 42 clubs, 2027–2029. We buy and operate on RMB asset finance; Planet Fitness gives the room and members, takes 20% of bay revenue, no capex. Leave with a <b>Sandton pilot agreed</b>, club and room specs, and a named ops lead. Two founders decide: Manny Rivera and Mannee de Wet.</div>
-<h2>The deal (base case)</h2>
-<div class="big"><div><strong>R63.7m</strong><span>Landed capex</span></div><div><strong>R13.7m</strong><span>To PF a year, 2031</span></div><div><strong>R39.5m</strong><span>EBITDA 2031 (56%)</span></div><div><strong>2.58x</strong><span>Debt cover (1.65x low)</span></div></div>
-<div class="cols"><div><table>
-<tr><td>Phase 1, 2027: 20 Signature bays, 10 clubs</td><td></td></tr>
-<tr><td>Phase 2, 2028: 40 Play bays, 20 clubs</td><td></td></tr>
-<tr><td>Phase 3, 2029: 12 bays, 12 clubs</td><td></td></tr>
-<tr><td>Debt 90% / our equity</td><td>R57.4m / R6.4m</td></tr>
-<tr><td>PF share at 15% / 20% / 25%</td><td>R10.2 / 13.7 / 17.1m</td></tr>
-</table></div><div><ul>
-<li>Golfzon (CEO Sean Pyun) sent its proposal 1 Oct, after the 29 Sep call</li>
-<li>Per sim, units 1–40: Motion Plate $43k, Dual $35k, Basic $30k. Software $99/month. Shipping, duties, booth extra</li>
-<li>With Virgin Active: 272 bays combined</li></ul></div></div>
-<h2>Planet Fitness at a glance</h2>
-<div class="mini"><div><strong>51</strong><span>Clubs: Planet Fitness, Signature, JustGym</span></div><div><strong>~R1bn</strong><span>Annual revenue</span></div><div><strong>30 yrs</strong><span>Founder-led, from one gym</span></div><div><strong>~5 a year</strong><span>New clubs planned to 2030</span></div><div><strong>+50%</strong><span>Network in five years</span></div><div><strong>42</strong><span>Clubs in our plan (excl. 9 JustGym)</span></div></div>
-<h2>Why the concept lands</h2>
-<div class="cols"><div>
-<div class="st"><strong>1 in 3</strong><em><b>Members leave a gym every year.</b> Industry retention is 66–71%. Top reason: not visiting enough to justify the fee.</em></div>
-<div class="st"><strong>40-65%</strong><em>Drop out in the <b>first six months</b>. A booked bay and a league give them a reason to return.</em></div>
-<div class="st"><strong>+15%/23%</strong><em>Virgin Active Chiswick (sim bay in refurb): <b>membership up 15%, revenue up 23%</b>, EBITDA more than doubled.</em></div>
-<div class="st"><strong>98%</strong><em><b>Of golfers don't play alone.</b> Indoor golf is social, like padel (Golfzon).</em></div>
-</div><div>
-<div class="st"><strong>8.1M</strong><em>US sim players, <b>up 73%</b> on pre-pandemic (NGF 2025). Participation 2x since 2014 (Golfzon).</em></div>
-<div class="st"><strong>51%</strong><em>Of them <b>never play on a course</b>. The bay is their first swing: your members.</em></div>
-<div class="st"><strong>19M</strong><em>Americans play <b>only off-course</b> (ranges, sims, Topgolf). 43% are women; 18–34s are the largest adult group; 7.5M young non-golfers say they want to play (NGF).</em></div>
-<div class="st"><strong>+30%</strong><em>Beginners <b>spend 30% more</b> inside venues; 60% of lessons fall off-peak (Golfzon).</em></div>
-</div></div>
-<div class="src">Sources: HFA benchmarking; PMC fitness-club study; NGF 2025; Golfzon proposal. Planet Fitness figures are our research, not company-published.</div>
-<div class="com"><h2>Community benefits for members</h2><div class="cols"><div><ul>
-<li><b>Golfzon Tour:</b> 130+ venues, 15 countries, $300k purse; club winners can earn exemptions into GTour, China Open, CityGolf</li>
-<li><b>Network Play:</b> live play with friends, club to club and worldwide, with video chat</li>
-<li><b>Monthly Challenges:</b> Golfzon-funded prizes (e.g. Pebble Beach, US Open access)</li>
-<li><b>Inter-club league and championship*</b> run by a Golfzon Competitions Director</li>
-<li><b>Golfzon Global App:</b> book, track progress, invite friends</li></ul></div><div><ul>
-<li><b>Real-time swing analysis:</b> HD cameras, instant feedback; Motion Plate adds stance sensing</li>
-<li><b>Kids club:</b> Leadbetter Junior Tour, under-18s, six age divisions, winners train with David Leadbetter</li>
-<li><b>Leadbetter Connect:</b> live lessons from certified coaches via the sim; fills off-peak</li>
-<li><b>Get Lucky Hole-in-One Challenge:</b> paid-entry insured shot live from day one, Santam-underwritten prizes; plus leagues and corporate days</li></ul></div></div></div>
-<div class="cols" style="margin-top:2.4mm"><div><h2 style="margin-top:0">Likely pushback</h2><ul>
-<li><b>Floor space earns money:</b> separate room, they get 20%, pilot at 2 clubs first</li><li><b>What if it fails:</b> we carry capex and risk, remove at our cost</li><li><b>Why 20%:</b> opening position; can go to 25% and still cover debt at 2.36x</li><li><b>Service:</b> Golfzon plus a local technician; SA service not yet confirmed</li></ul></div>
-<div><h2 style="margin-top:0">Ask them</h2><ol style="margin:0;padding-left:3.6mm"><li>Which 2–3 clubs for the pilot, and what rooms exist?</li><li>Real member counts and peak hours</li><li>Concession norms: share, term, exit</li><li>Who is their ops lead?</li><li>Brand rules on "Planet Golf"?</li></ol></div></div>
-<div class="warn"><b>Watch out.</b> Don't share Golfzon's prices or decks (no third-party sharing without consent). Golfzon hasn't given warranty, payment terms, lead times or a pilot date: promise no dates. Ernie Els: "advanced talks, confidential"; nothing signed, no terms. 3,500 members per club is our assumption: ask for the real number. *Championship was written for Virgin Active; we'd ask for the same here. Benefits are Golfzon's claims.</div>
+<header class="hd"><img src="../../planetfitness/logos/logo-dark-bg.webp" alt="Get Lucky Golf"><div class="t"><div class="eb">Internal brief · 2 Oct 2026</div><h1>Planet Fitness CEO meeting</h1></div></header>
+<div class="page">
+
+<div class="pitch"><div class="eb">Open with this</div><p>Manny, every Planet Fitness club already has your members; what none of them has is <b>a reason to come on the nights they would otherwise skip</b>. We want to give you that: Golfzon golf bays, the world's biggest commercial indoor golf network, in your clubs, booked like padel. Members play friends across your clubs and around the world, take lessons from Leadbetter coaches, get instant swing analysis, and their kids get their own junior tour. It costs Planet Fitness nothing: we buy the bays on asset finance and run them, and you take <b>20% of every rand, about R14 million a year</b> at maturity. We start with two bays in Sandton in 2027 and put the zone in the drawings of every club you open after that.</p></div>
+
+<section><h2>The deal</h2>
+<p class="lead">72 Golfzon bays in 42 clubs, 2027–2029, on RMB asset finance. Planet Fitness gives the room and the members and takes 20% of bay revenue, with no capex. <b>Leave with a Sandton pilot agreed</b>, club and room specs, and a named ops lead. Two founders decide: Manny Rivera and Mannee de Wet.</p>
+<div class="tiles t4"><div class="tile"><strong>R63.7m</strong><span>Landed capex</span></div><div class="tile"><strong>R13.7m</strong><span>To Planet Fitness a year, 2031</span></div><div class="tile"><strong>R39.5m</strong><span>EBITDA 2031 · 56%</span></div><div class="tile"><strong>2.58x</strong><span>Debt cover · 1.65x low case</span></div></div>
+<div class="grid2" style="margin-top:3mm"><table>
+<tr><td>Phase 1 · 2027 · Signature bays</td><td class="n">20 bays · 10 clubs</td></tr>
+<tr><td>Phase 2 · 2028 · Play bays</td><td class="n">40 bays · 20 clubs</td></tr>
+<tr><td>Phase 3 · 2029 · one bay a club</td><td class="n">12 bays · 12 clubs</td></tr>
+<tr><td>Debt 90% / our equity</td><td class="n">R57.4m / R6.4m</td></tr>
+<tr><td>To PF at 15% / 20% / 25% share</td><td class="n">R10.2m / R13.7m / R17.1m</td></tr>
+</table><ul>
+<li><b>Golfzon proposal in hand,</b> 1 Oct, after our call with CEO Sean Pyun</li>
+<li>Per sim, units 1–40: Motion Plate $43k, Dual Plate $35k, Basic $30k. Software $99 a month. Shipping, duties and booth build extra</li>
+<li>With Virgin Active, the programme is 272 bays</li></ul></div>
+</section>
+
+<section><h2>Planet Fitness at a glance</h2>
+<div class="tiles t6"><div class="tile"><strong>51</strong><span>Clubs, all brands</span></div><div class="tile"><strong>~220,000</strong><span>Members · Sept 2025</span></div><div class="tile"><strong>~4,300</strong><span>Members per club</span></div><div class="tile"><strong>~R1bn</strong><span>Revenue a year</span></div><div class="tile"><strong>30 yrs</strong><span>Founder-led</span></div><div class="tile"><strong>~5 a year</strong><span>New clubs to 2030</span></div></div>
+</section>
+
+<section><h2>Why the concept lands</h2>
+<div class="eb sub" style="margin-top:0">Gym retention</div>
+<div class="tiles t4">
+<div class="stat"><strong>1 in 3</strong><p><b>Members leave a gym every year.</b> Retention runs 66–71%; the top reason is not visiting enough.</p></div>
+<div class="stat"><strong>40–65%</strong><p><b>Quit in the first six months.</b> A booked bay and a league give them a reason to come back.</p></div>
+<div class="stat"><strong>+15% / +23%</strong><p><b>Chiswick membership and revenue</b> after Virgin Active's refurb with a sim bay.</p></div>
+<div class="stat"><strong>98%</strong><p><b>Of golfers don't play alone.</b> Golf is social, like padel.</p></div>
 </div>
-<div class="ft"><span>GET LUCKY GOLF × PLANET FITNESS</span><span>Internal. Not for sending.</span></div>
+<div class="eb sub">Simulator golf</div>
+<div class="tiles t4">
+<div class="stat"><strong>8.1M</strong><p><b>US simulator players,</b> up 73% on pre-pandemic.</p></div>
+<div class="stat"><strong>51%</strong><p><b>Never play on a course.</b> The new golfers are gym members.</p></div>
+<div class="stat"><strong>43%</strong><p><b>Of off-course-only golfers are women.</b></p></div>
+<div class="stat"><strong>18–34</strong><p><b>The largest adult golf group;</b> 7.5M young non-golfers want to play.</p></div>
+</div>
+<p class="src">Sources: Health &amp; Fitness Association; PMC study; National Golf Foundation 2025; Golfzon. Planet Fitness: Sept 2025 report and our research. Golf figures are US and global, not South African.</p>
+</section>
+
+<section class="panel"><h2>Community benefits for members</h2>
+<div class="grid2"><ul>
+<li><b>Golfzon Tour.</b> 130+ venues in 15 countries, $300k purse</li>
+<li><b>Network Play.</b> Live games club to club and worldwide, with video chat</li>
+<li><b>Monthly Challenges.</b> Golfzon-funded prizes, like US Open access</li>
+<li><b>Inter-club league.*</b> Run by a Golfzon Competitions Director</li>
+<li><b>Golfzon Global App.</b> Book, track progress, invite friends</li>
+</ul><ul>
+<li><b>Swing analysis.</b> HD cameras, instant feedback, stance sensing</li>
+<li><b>Kids club.</b> Leadbetter Junior Tour; winners train with David Leadbetter</li>
+<li><b>Leadbetter Connect.</b> Live coaching through the sim, in off-peak hours</li>
+<li><b>Get Lucky Hole-in-One Challenge.</b> Insured shot from day one, plus leagues and corporate days</li>
+</ul></div></section>
+
+<section class="grid2"><div><h2>Likely pushback</h2><ul>
+<li><b>"Floor space earns money."</b> Separate room; they take 20%</li>
+<li><b>"What if it fails?"</b> Our capex and risk; we remove the bays at our cost</li>
+<li><b>"Why 20%?"</b> Opening position; at 25% debt cover is still 2.36x</li>
+<li><b>"Who services it?"</b> Golfzon and a local technician; SA service tbc</li>
+</ul></div><div><h2>Ask them</h2><ol>
+<li>Which two or three pilot clubs, and what rooms?</li>
+<li>Member counts and peak hours for those clubs</li>
+<li>Concession norms: share, term, exit</li>
+<li>Who is their operations lead?</li>
+<li>Any brand rules for "Planet Golf"?</li>
+</ol></div></section>
+
+<div class="warn"><b>Watch out.</b> Don't share Golfzon's prices or decks: no third-party sharing without consent. Golfzon hasn't confirmed warranty, payment terms, lead times or a pilot date, so promise no dates. Ernie Els: "advanced talks, confidential"; nothing signed, no terms. The model assumes 3,500 members a club, about 20% below the reported ~4,300, so it's conservative. *The championship was written for Virgin Active; we'd ask for the same here. Benefits are Golfzon's claims.</div>
+</div>
+<footer class="ft"><span>Get Lucky Golf × Planet Fitness</span><span>Internal · not for sending</span></footer>
 </body></html>

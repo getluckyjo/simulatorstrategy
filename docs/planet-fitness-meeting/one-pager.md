@@ -31,7 +31,7 @@ Planet Golf: 72 Golfzon bays in 42 clubs, 2027–2029. We buy and operate the ba
 - Proudly South African, decisions in Sandton and Cape Town.
 
 ## Planet Fitness at a glance (our research, not company-published)
-51 clubs (Planet Fitness, Signature, JustGym) | ~R1bn annual revenue | 30 years founder-led from one gym | ~5 new clubs a year to 2030 | network +50% in five years | 42 clubs in our plan (excl. 9 JustGym).
+51 clubs (Planet Fitness, Signature, JustGym) | ~220,000 members (September 2025 report), ~4,300 per club | ~R1bn annual revenue | 30 years founder-led from one gym | ~5 new clubs a year to 2030 | network +50% in five years | 42 clubs in our plan (excl. 9 JustGym).
 
 ## Why the concept lands
 - **1 in 3** members leave a gym every year (industry retention 66–71%). Top reason: not visiting enough to justify the fee. (HFA benchmarking)
@@ -71,7 +71,7 @@ Manny, every Planet Fitness club already has your members; what none of them has
 - **Do not share Golfzon pricing or the proposal decks.** Golfzon asked that nothing be shared with third parties without consent. Quote our model outputs only, not Golfzon's price list.
 - **Ernie Els:** now in the written talking points as "advanced talks", marked confidential. Nothing is signed, so don't go further than that (no terms, no announcements).
 - Golfzon has not yet given: warranty, payment terms, lead times, SA distribution and service, underwriting for the insured shot, pilot date. Say these are "being finalised with Golfzon".
-- Members per club (3,500) is our assumption, not their number. Ask for the real figure.
+- The model uses 3,500 members per club, about 20% below the reported ~4,300 average (220,000 members, September 2025): conservative.
 - Phase 3 list in the older doc has a placeholder ("Fourways Mall's sister if opened"). Confirm 12 clubs.
 
 ## Questions to ask them
