@@ -30,6 +30,21 @@ Planet Golf: 72 Golfzon bays in 42 clubs, 2027–2029. We buy and operate the ba
 - Founders decide: Manny Rivera (Group CEO) and Mannee de Wet (MD). Plans about five new clubs a year to 2030: the zone goes into every set of drawings.
 - Proudly South African, decisions in Sandton and Cape Town.
 
+## Community benefits for members (from Golfzon's proposal, 1 Oct)
+- **Golfzon Tour:** 130+ venues, 15 countries, $300k purse (2026). Winners can earn exemptions into GTour, China Open and CityGolf events.
+- **Network Play:** play friends live, club to club, nationwide and worldwide, with video chat.
+- **Monthly Challenges:** Golfzon-funded prizes at any skill level (e.g. Pebble Beach challenge with US Open access).
+- **Inter-club league and championship:** run by a Golfzon Competitions Director, with leaderboards. Written for Virgin Active; we would ask for the same for Planet Fitness.
+- **Real-time swing analysis:** HD cameras, instant feedback. Motion Plate adds stance pressure sensing and 56,000 slope lies.
+- **Kids club:** Golfzon Leadbetter Junior Tour, under-18s, six age divisions, winners train with David Leadbetter.
+- **Leadbetter Connect:** live lessons from certified coaches through the sim; fills off-peak hours.
+- **Get Lucky Hole-in-One Challenge:** paid-entry insured shot live from day one, Santam-underwritten prizes, plus leagues and corporate days (600 golf days a year).
+- **Golfzon Global App:** book, track progress, invite friends with one tap.
+These are Golfzon's claims. The championship is not yet offered for Planet Fitness.
+
+## Opening pitch (say this first)
+Manny, every Planet Fitness club already has your members; what none of them has is a reason to come on the nights they would otherwise skip. We want to give you that: Golfzon golf bays, the world's biggest commercial indoor golf network, in your clubs, booked like padel. Your members play friends across your clubs and around the world, take lessons from Leadbetter coaches, get instant swing analysis, and their kids get their own junior tour. It costs Planet Fitness nothing: we buy the bays on asset finance and run them, and you take 20% of every rand, about R14 million a year at maturity. We start with two bays in Sandton in 2027 and put the zone in the drawings of every club you open after that.
+
 ## Likely objections
 | Objection | Answer |
 |---|---|
