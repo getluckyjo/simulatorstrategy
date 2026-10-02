@@ -1,7 +1,7 @@
 # Planet Fitness: the pitch and who to send it to
 
 Pitch: https://pitch.planetgolf.co.za/proposal (Vercel project getluckyplanetfitness, root `planetfitness/`, production from `main`). Add a custom domain in Vercel when you have one.
-Model: `model/model_pf.py` and `model_pf.json`. 72 bays in 42 clubs, R70.8m landed capex, R13.7m a year to Planet Fitness at maturity (R9.7m quiet, R16.9m busy).
+Model: `model/model_pf.py` and `model_pf.json`. 72 bays in 42 clubs, R63.7m landed capex (Golfzon pricing of 1 Oct 2026), R13.7m a year to Planet Fitness at maturity (R9.7m quiet, R16.9m busy). Meeting prep: `docs/planet-fitness-meeting/`. The pitch page `planetfitness/index.html` still shows R70.8m-era numbers where capex is quoted; check before resending.
 
 ## Why Planet Fitness
 - 51 clubs across Planet Fitness, Planet Fitness Signature and JustGym. Gauteng-heavy, now in Cape Town (De Waterkant, Cavendish, Durbanville, Parklands, Plattekloof, Brackenfell), Durban (Umhlanga, Westville), George, and the platteland.

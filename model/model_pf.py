@@ -17,7 +17,8 @@ SHELL_PER_BAY = 150_000  # room shell and power if Get Lucky Golf builds it inst
 CARD = 0.025             # card and booking fees
 MARKETING = 0.05         # of revenue
 ASSET_INS = 0.01         # of capex, a year
-GOLFZON_SVC = 0.04       # software, courses, service contract: % of hardware a year
+LICENCE_USD_PM = 99      # Golfzon commercial software licence, USD per system a month (Golfzon proposal, 1 Oct 2026)
+SERVICE = 0.02           # our allowance for service and spares, % of hardware a year. Golfzon's proposal is silent on service
 CONSUMABLES = 24_000     # per bay a year
 LEAGUES_PER_BAY = 40_000 # leagues, events, corporate, at maturity
 SPONSOR_PER_BAY = 25_000 # naming partner, per bay a year
@@ -29,9 +30,10 @@ DEPR_YEARS = 7
 TAX = 0.27
 
 BAYS = {  # hardware USD, mature utilisation, blended yield per booked hour (ZAR)
-    "Signature": dict(hw_usd=60_000, util=0.40, yld=520, label="TwoVision NX, Collection and flagship clubs"),
-    "Play":      dict(hw_usd=35_000, util=0.33, yld=360, label="Vision Standard, metro clubs"),
-    "Practice":  dict(hw_usd=22_000, util=0.30, yld=240, label="GDR Plus, coaching bays"),
+    # hardware USD = Golfzon proposal of 1 Oct 2026, Tier 2 (units 1-40) price, applied to all units (conservative; units 41+ are $3-5k cheaper)
+    "Signature": dict(hw_usd=43_000, util=0.40, yld=520, label="TwoVision NX Motion Plate, Signature and flagship clubs"),
+    "Play":      dict(hw_usd=35_000, util=0.33, yld=360, label="TwoVision NX Dual Plate, metro clubs"),
+    "Practice":  dict(hw_usd=30_000, util=0.30, yld=240, label="TwoVision NX Basic, coaching bays"),
 }
 for b in BAYS.values():
     b["hw"] = b["hw_usd"] * FX
@@ -94,7 +96,7 @@ def run(util_mult=1.0, va_share=VA_SHARE, shell=0.0):
                 r["challenge"] += hrs * CHALLENGE_PER_HOUR
                 r["leagues"] += n * LEAGUES_PER_BAY * f
                 r["sponsorship"] += n * SPONSOR_PER_BAY * live
-                r["golfzon"] += n * b["hw"] * GOLFZON_SVC * live
+                r["golfzon"] += n * (b["hw"] * SERVICE + LICENCE_USD_PM * 12 * FX) * live
                 r["consumables"] += n * CONSUMABLES * live
                 r["asset_ins"] += cap * ASSET_INS * live / sum(ph["units"].values()) * n
             members = ph["clubs"] * MEMBERS_PER_CLUB
@@ -152,7 +154,7 @@ def unit_econ(t, util_mult=1.0):
     shared = bay_hire + challenge + leagues + membership
     revenue = shared + sponsor
     costs = dict(va_share=shared * VA_SHARE, card=shared * CARD, marketing=revenue * MARKETING,
-                 golfzon=b["hw"] * GOLFZON_SVC, consumables=CONSUMABLES, asset_ins=b["capex"] * ASSET_INS,
+                 golfzon=b["hw"] * SERVICE + LICENCE_USD_PM * 12 * FX, consumables=CONSUMABLES, asset_ins=b["capex"] * ASSET_INS,
                  people_central=6.8e6 / bays)
     ebitda = revenue - sum(costs.values())
     debt = annuity(b["capex"] * DEBT_PCT, RATE / 12, TERM_M) * 12  # full amortising year
