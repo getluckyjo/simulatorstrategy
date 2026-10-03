@@ -62,22 +62,25 @@ USPTO. Foreign-domiciled applicants must be represented by a US-licensed attorne
 
 ## Who files it, and who owns it (3 October 2026)
 
-**US filing: Erik M. Pelton & Associates, Falls Church, Virginia.** A separate US firm from Viollier, chosen on three grounds:
+Two routes, pick one. Stripe Atlas itself has no trademark product; its perks partner Elevate lists a US trademark application at $985 plus the USPTO fee, which is dearer than the modern route below.
 
-1. **Former USPTO examiner, trademark only.** Founded 1999 by Erik Pelton after his time as a USPTO examining attorney; the practice is limited to federal trademark matters; 5,000+ registrations; A+ Better Business Bureau rating; works with international applicants.
-2. **The flat fee covers the whole application, start to finish.** Basic USPTO search, drafting, all USPTO correspondence over the 10–15 months, and any office action responses or arguments. With "LUCKY" already flagged as descriptive in South Africa, a US disclaimer requirement or a likelihood-of-confusion query is probable, so a fee that already includes the response is worth more than a cheaper filing-only quote. The flat fee is quoted at the free consultation (comparison sites put the search-and-file package around $1,400 plus USPTO fees).
-3. **Twenty minutes from Golfzon's Chantilly office.** The founders are in Virginia in October and can meet the attorney in person the same trip.
+**Route A, modern online platform: Trama (tramatm.com).** A legal-tech firm with a New York office, a US attorney of record (Marek Krizka), former USPTO and EUIPO examiners on staff, 20,000+ brands, 4.8 on Trustpilot. Everything runs online: a free lawyer's check within 24 hours, then the application drafted in 3 to 5 days. One price includes the government fee, and non-substantive office actions (a disclaimer requirement is normally one of these) are resolved at no extra charge.
 
-Contact: info@erikpelton.com, +1 703 525 8009, 111 Park Place, Falls Church VA 22046. Book the free initial consultation on erikpelton.com/connect.
+| Country | Trama price, one class, all fees in |
+|---|---|
+| United States | $590 (each extra class $435) |
+| United Kingdom | $545 |
+| European Union | $1,285 |
+| South Korea | $1,040 |
+| China | $500 |
 
-Alternatives if the quote or the fit is wrong:
+Two or more countries earns 15% off the service fee on the additional marks. VAT may be added to the service fee. Before ordering, ask them in writing to confirm three things: the applicant is Get Lucky Golf Club (Pty) Ltd of South Africa, the US filing is intent-to-use with Section 44(e) added once the SA certificate issues, and a substantive refusal (likelihood of confusion) would be quoted separately.
 
-| Firm | What they offer | Published fee |
-|---|---|---|
-| Gerben IP, Washington DC | 10,000+ registrations; two-software, two-paralegal clearance search; non-substantive office actions included | $3,000 flat for search and application in up to two classes (use-based; confirm the intent-to-use quote) |
-| JPG Legal, Washington DC | Budget flat-fee packages; standalone comprehensive search $450 | Value and Safe packages, confirm on their order form |
+**Route B, senior US counsel: Erik M. Pelton & Associates, Falls Church, Virginia.** Founded 1999 by a former USPTO examining attorney, practice limited to federal trademark matters, 5,000+ registrations, A+ Better Business Bureau rating. One flat fee covers the whole application including office action arguments; the fee is quoted at a free consultation (comparison sites put the package around $1,400 plus USPTO fees). Twenty minutes from Golfzon's Chantilly office, so the founders can meet them in October. Contact: info@erikpelton.com, +1 703 525 8009.
 
-Avoid online filing services that are not law firms. A foreign applicant must have a US-licensed attorney of record in any case.
+Recommendation: Route A for the US, UK, EU, Korea and China together, because the five filings sit on one dashboard with one owner record and the total is under $4,000 all-in. Move to Route B only if the US application draws a substantive refusal.
+
+Avoid online filing mills that are not law firms (the $49 to $249 tier). A foreign applicant must have a US-licensed attorney of record in any case.
 
 **Hand-off between the two firms.** Viollier keeps the SA file and the "LUCKY" disclaimer response. Ask them to send the US attorney the SA application details now and the registration certificate as soon as it issues, so the US application can add the Section 44(e) basis. The US attorney should mirror the SA disclaimer in the US application if the examiner asks, so the two records read the same.
 
