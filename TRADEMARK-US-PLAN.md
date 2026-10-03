@@ -60,6 +60,21 @@ USPTO. Foreign-domiciled applicants must be represented by a US-licensed attorne
 - Keep every specimen dated and in its original form from day one of the pilot; recreated specimens get refused.
 - Do not file the logo until the words have cleared examination; the logo inherits the same refusals at twice the cost.
 
+## Who files it, and who owns it (3 October 2026)
+
+**Use Viollier for the US filing too.** Stephan Viollier is admitted in New York as well as South Africa, so the firm can act as the attorney of record at the USPTO without an associate. Their published flat fees: US registration $950, clearance search $390, simple office action $450, complex $900, hourly $290. One firm holding the SA and US files means the SA registration certificate flows straight into the Section 44(e) basis, the "LUCKY" disclaimer is handled the same way on both sides, and the UK and EU filings (£850 and €1,450 flat) sit in the same portfolio later. Ask them to confirm in writing that Stephan signs as US attorney of record himself and that the $950 covers the application through to filing in one class.
+
+Fallback if Viollier declines or quotes above that: a US flat-fee trademark boutique run by a former USPTO examiner, such as Erik M. Pelton & Associates in Virginia (full-search packages around $1,400) or Gerben Law (around $950). Avoid online filing services that are not law firms. A foreign applicant must have a US-licensed attorney on the record in any case.
+
+**The South African company owns the mark.** Get Lucky Golf Club (Pty) Ltd is the applicant in the US, in the same name as the CIPC record, for four reasons:
+
+1. Section 44(e) only works when the US applicant is the owner of the home registration. The SA company is that owner.
+2. The Santam, Ernie Els and RMB agreements sit with the SA company. The brand should sit with the contracts.
+3. A single owner makes the later UK, EU, Korea and China filings, and any Madrid International Registration, one portfolio with one renewal calendar.
+4. An intent-to-use US application cannot be assigned before use is shown, except together with the whole business. Changing the owner later is expensive or impossible, so the choice is made now.
+
+The US entity operates under a written licence from the SA company: non-exclusive or exclusive for the US, royalty as the group's transfer-pricing advice requires, and a quality-control clause (the SA company approves how the mark is used). Without quality control the licence is "naked" and can weaken the US registration. Use by the licensee counts as use by the owner for the Statement of Use, so the pilot run by the US entity still supports the SA company's application. Record the licence only if the US attorney advises it; the USPTO does not require it.
+
 ## What to send the attorney in the first email
 
-The SA application number, filing date and the acceptance letter; the mark exactly as used; the list of classes and services above; the company's registration details; and the note that the applicant is foreign-domiciled and the services launch in the US in January 2027.
+The SA application number, filing date and the acceptance letter; the mark exactly as used; the list of classes and services above; the company's registration details; and the note that the applicant is the South African company, the US services will be delivered by its licensed US subsidiary, and the services launch in the US in January 2027.
