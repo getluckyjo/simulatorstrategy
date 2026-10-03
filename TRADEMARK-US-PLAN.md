@@ -62,9 +62,24 @@ USPTO. Foreign-domiciled applicants must be represented by a US-licensed attorne
 
 ## Who files it, and who owns it (3 October 2026)
 
-**Use Viollier for the US filing too.** Stephan Viollier is admitted in New York as well as South Africa, so the firm can act as the attorney of record at the USPTO without an associate. Their published flat fees: US registration $950, clearance search $390, simple office action $450, complex $900, hourly $290. One firm holding the SA and US files means the SA registration certificate flows straight into the Section 44(e) basis, the "LUCKY" disclaimer is handled the same way on both sides, and the UK and EU filings (£850 and €1,450 flat) sit in the same portfolio later. Ask them to confirm in writing that Stephan signs as US attorney of record himself and that the $950 covers the application through to filing in one class.
+**US filing: Erik M. Pelton & Associates, Falls Church, Virginia.** A separate US firm from Viollier, chosen on three grounds:
 
-Fallback if Viollier declines or quotes above that: a US flat-fee trademark boutique run by a former USPTO examiner, such as Erik M. Pelton & Associates in Virginia (full-search packages around $1,400) or Gerben Law (around $950). Avoid online filing services that are not law firms. A foreign applicant must have a US-licensed attorney on the record in any case.
+1. **Former USPTO examiner, trademark only.** Founded 1999 by Erik Pelton after his time as a USPTO examining attorney; the practice is limited to federal trademark matters; 5,000+ registrations; A+ Better Business Bureau rating; works with international applicants.
+2. **The flat fee covers the whole application, start to finish.** Basic USPTO search, drafting, all USPTO correspondence over the 10–15 months, and any office action responses or arguments. With "LUCKY" already flagged as descriptive in South Africa, a US disclaimer requirement or a likelihood-of-confusion query is probable, so a fee that already includes the response is worth more than a cheaper filing-only quote. The flat fee is quoted at the free consultation (comparison sites put the search-and-file package around $1,400 plus USPTO fees).
+3. **Twenty minutes from Golfzon's Chantilly office.** The founders are in Virginia in October and can meet the attorney in person the same trip.
+
+Contact: info@erikpelton.com, +1 703 525 8009, 111 Park Place, Falls Church VA 22046. Book the free initial consultation on erikpelton.com/connect.
+
+Alternatives if the quote or the fit is wrong:
+
+| Firm | What they offer | Published fee |
+|---|---|---|
+| Gerben IP, Washington DC | 10,000+ registrations; two-software, two-paralegal clearance search; non-substantive office actions included | $3,000 flat for search and application in up to two classes (use-based; confirm the intent-to-use quote) |
+| JPG Legal, Washington DC | Budget flat-fee packages; standalone comprehensive search $450 | Value and Safe packages, confirm on their order form |
+
+Avoid online filing services that are not law firms. A foreign applicant must have a US-licensed attorney of record in any case.
+
+**Hand-off between the two firms.** Viollier keeps the SA file and the "LUCKY" disclaimer response. Ask them to send the US attorney the SA application details now and the registration certificate as soon as it issues, so the US application can add the Section 44(e) basis. The US attorney should mirror the SA disclaimer in the US application if the examiner asks, so the two records read the same.
 
 **The South African company owns the mark.** Get Lucky Golf Club (Pty) Ltd is the applicant in the US, in the same name as the CIPC record, for four reasons:
 
